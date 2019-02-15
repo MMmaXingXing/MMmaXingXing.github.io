@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Jane - A super concise theme for Hugo</title>
+    <title>Categories on Astar Blog</title>
     <link>https://mmmaxingxing.github.io/categories/</link>
-    <description>Recent content in Categories on Jane - A super concise theme for Hugo</description>
+    <description>Recent content in Categories on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     
@@ -11,45 +11,27 @@
     
     
     <item>
-      <title>Development</title>
-      <link>https://mmmaxingxing.github.io/categories/development/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/categories/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Docs</title>
       <link>https://mmmaxingxing.github.io/categories/docs/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/categories/docs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>English</title>
-      <link>https://mmmaxingxing.github.io/categories/english/</link>
-      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
+      <title>Github</title>
+      <link>https://mmmaxingxing.github.io/categories/github/</link>
+      <pubDate>Fri, 15 Feb 2019 16:43:08 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/categories/english/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://mmmaxingxing.github.io/categories/golang/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/categories/golang/</guid>
+      <guid>https://mmmaxingxing.github.io/categories/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Index</title>
       <link>https://mmmaxingxing.github.io/categories/index/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/categories/index/</guid>
       <description></description>
@@ -58,27 +40,9 @@
     <item>
       <title>Shortcodes</title>
       <link>https://mmmaxingxing.github.io/categories/shortcodes/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/categories/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Syntax Highlighting</title>
-      <link>https://mmmaxingxing.github.io/categories/syntax-highlighting/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/categories/syntax-highlighting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://mmmaxingxing.github.io/categories/test/</link>
-      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/categories/test/</guid>
       <description></description>
     </item>
     
