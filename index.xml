@@ -20,128 +20,63 @@
       
         <description>
 
-&lt;h2 id=&#34;依靠github创建自己的博客文档&#34;&gt;依靠github创建自己的博客文档。&lt;/h2&gt;
+&lt;h2 id=&#34;一-依靠github创建自己的博客文档&#34;&gt;一、依靠github创建自己的博客文档。&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://github-1253441827.cos.ap-shanghai.myqcloud.com/github_blog/creat_githubblog_01.png&#34; alt=&#34;步骤1&#34; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&#34;此步骤网上教程拼接得到-按需调整-放在最后生成上传之后查看是否需要-打包上传从本地测试感觉似乎github有缓存&#34;&gt;此步骤网上教程拼接得到，按需调整（放在最后生成上传之后查看是否需要）打包上传从本地测试感觉似乎github有缓存&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://github-1253441827.cos.ap-shanghai.myqcloud.com/github_blog/creat_githubblog_02.png&#34; alt=&#34;步骤2&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;电脑上安装-hugo&#34;&gt;电脑上安装 hugo&lt;/h2&gt;
+
+&lt;p&gt;window 平台只需下载一个exe进行安装即可，以下为安装教程&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34;&gt;https://gohugo.io/getting-started/installing/&lt;/a&gt; （官网教程）&lt;/p&gt;
+
+&lt;h2 id=&#34;用hugo建站&#34;&gt;用hugo建站&lt;/h2&gt;
+
+&lt;h3 id=&#34;1-初始化站点&#34;&gt;1、初始化站点&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;
+hugo new site blogsname
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;2-添加一个主题&#34;&gt;2、添加一个主题&lt;/h3&gt;
+
+&lt;p&gt;主题选择 &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git submodule add -b master https://github.com/xianmin/hugo-theme-jane.git themes/jane
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;clone好主题以后 将 themes/jane/exampleSite/content 中的内容剪切到 blogsname文件夹下的content中&lt;/p&gt;
+
+&lt;p&gt;将 themes/jane/exampleSite/config.toml 复制到 blogsname文件夹下&lt;/p&gt;
+
+&lt;h3 id=&#34;3-本地测试&#34;&gt;3、本地测试&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;    hugo server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;运行成功后访问 localhost:1313&lt;/p&gt;
+
+&lt;h3 id=&#34;4-打包&#34;&gt;4、打包&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;运行 hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;打包后的文件在public中&lt;/p&gt;
+
+&lt;p&gt;将public中的文件上传到第一步创建的.io的项目中，访问 &lt;a href=&#34;https://name.github.io即可&#34;&gt;https://name.github.io即可&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;以上-创建完成&#34;&gt;以上 创建完成&lt;/h4&gt;
+
+&lt;h2 id=&#34;二-借助issue建立评论系统&#34;&gt;二、借助issue建立评论系统&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;
+    略，待更新
+&lt;/code&gt;&lt;/p&gt;
 </description>
-      
-    </item>
-    
-    <item>
-      <title>Image Preview</title>
-      <link>https://mmmaxingxing.github.io/post/image-preview/</link>
-      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/image-preview/</guid>
-      
-        <description>&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/liwenyip/hugo-easy-gallery&#34;&gt;liwenyip/hugo-easy-gallery&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/pull/48&#34;&gt;Zebradil · Pull Request #48&lt;/a&gt; .&lt;/p&gt;
-
-&lt;p&gt;Now, we could use &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode in hugo-theme-jane.&lt;/p&gt;
-
-&lt;h2 id=&#34;normal-image&#34;&gt;Normal Image&lt;/h2&gt;
-
-&lt;p&gt;This is an image in &lt;code&gt;static/image&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![This is an image in `static/image` folder.](/image/example.jpg)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;figure-shortcode&#34;&gt;&lt;code&gt;{{&amp;lt; figure &amp;gt;}}&lt;/code&gt; shortcode&lt;/h2&gt;
-
-&lt;h3 id=&#34;figure-image-with-title&#34;&gt;figure image with title&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; figure src=&amp;quot;/image/example.jpg&amp;quot; title=&amp;quot;figure image with title&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;figure-image-with-caption&#34;&gt;figure image with caption&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; figure src=&amp;quot;/image/example.jpg&amp;quot; caption=&amp;quot;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;more-figure-shortcode-usage&#34;&gt;more &lt;code&gt;{{&amp;lt; figure &amp;gt;}}&lt;/code&gt; shortcode usage&lt;/h3&gt;
-
-&lt;p&gt;Specifying your image files:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{{&amp;lt; figure src=&amp;quot;thumb.jpg&amp;quot; link=&amp;quot;image.jpg&amp;quot; &amp;gt;}}&lt;/code&gt; will use &lt;code&gt;thumb.jpg&lt;/code&gt; for thumbnail and &lt;code&gt;image.jpg&lt;/code&gt; for lightbox&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;{{&amp;lt; figure src=&amp;quot;image.jpg&amp;quot; &amp;gt;}}&lt;/code&gt; or &lt;code&gt;{{&amp;lt; figure link=&amp;quot;image.jpg&amp;quot; &amp;gt;}}&lt;/code&gt; will use &lt;code&gt;image.jpg&lt;/code&gt; for both thumbnail and lightbox&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;{{&amp;lt; figure link=&amp;quot;image.jpg&amp;quot; thumb=&amp;quot;-small&amp;quot; &amp;gt;}}&lt;/code&gt; will use &lt;code&gt;image-small.jpg&lt;/code&gt; for thumbnail and &lt;code&gt;image.jpg&lt;/code&gt; for lightbox&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Optional parameters:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;All the &lt;a href=&#34;https://gohugo.io/extras/shortcodes&#34;&gt;features/parameters&lt;/a&gt; of Hugo&amp;rsquo;s built-in &lt;code&gt;figure&lt;/code&gt; shortcode work as normal, i.e. src, link, title, caption, class, attr (attribution), attrlink, alt&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;size&lt;/code&gt; (e.g. &lt;code&gt;size=&amp;quot;1024x768&amp;quot;&lt;/code&gt;) pre-defines the image size for PhotoSwipe. Use this option if you don&amp;rsquo;t want to pre-load the linked image to determine its size.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt; allows you to set any custom classes you want on the &lt;code&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; tag.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Optional parameters for standalone &lt;code&gt;{{&amp;lt; figure &amp;gt;}}&lt;/code&gt; shortcodes only (i.e. don&amp;rsquo;t use on &lt;code&gt;{{&amp;lt; figure &amp;gt;}}&lt;/code&gt; inside &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; - strange things may happen if you do):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;caption-position&lt;/code&gt; and &lt;code&gt;caption-effect&lt;/code&gt; work the same as for the &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode (see below).&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;width&lt;/code&gt; defines the &lt;a href=&#34;https://www.w3schools.com/cssref/pr_dim_max-width.asp&#34;&gt;&lt;code&gt;max-width&lt;/code&gt;&lt;/a&gt; of the image displayed on the page. If using a thumbnail for a standalone figure, set this equal to your thumbnail&amp;rsquo;s native width to make the captions behave properly (or feel free to come up with a better solution and submit a pull request :-)). Also use this option if you don&amp;rsquo;t have a thumbnail and you don&amp;rsquo;t want the hi-res image to take up the entire width of the screen/container.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;class=&amp;quot;no-photoswipe&amp;quot;&lt;/code&gt; prevents a &lt;code&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; from being loaded into PhotoSwipe. If you click on the figure you&amp;rsquo;ll instead a good ol&amp;rsquo; fashioned hyperlink to a bigger image (or - if you haven&amp;rsquo;t specified a bigger image - the same one).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;gallery-shortcode&#34;&gt;&lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode&lt;/h2&gt;
-
-&lt;h3 id=&#34;simple-gallery&#34;&gt;simple gallery&lt;/h3&gt;
-
-&lt;p&gt;To specify a directory of image files:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; gallery dir=&amp;quot;/img/your-directory-of-images/&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The images are automatically captioned with the file name.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;[image].jpg&lt;/code&gt; is used for the hi-res image, and &lt;code&gt;[image]-thumb.jpg&lt;/code&gt; is used for the thumbnails.&lt;/li&gt;
-&lt;li&gt;If &lt;code&gt;[image]-thumb.jpg&lt;/code&gt; doesn&amp;rsquo;t exist, then &lt;code&gt;[image].jpg&lt;/code&gt; will be used for both hi-res and thumbnail images.&lt;/li&gt;
-&lt;li&gt;The default thumbnail suffix is &lt;code&gt;-thumb&lt;/code&gt;, but you can specify a different one e.g. &lt;code&gt;thumb=&amp;quot;-small&amp;quot;&lt;/code&gt; or &lt;code&gt;thumb=&amp;quot;_150x150&amp;quot;&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;to-specify-individual-image-files&#34;&gt;To specify individual image files&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; gallery &amp;gt;}}
-  {{&amp;lt; figure src=&amp;quot;image1.jpg&amp;quot; &amp;gt;}}
-  {{&amp;lt; figure src=&amp;quot;image2.jpg&amp;quot; &amp;gt;}}
-  {{&amp;lt; figure src=&amp;quot;image3.jpg&amp;quot; &amp;gt;}}
-{{&amp;lt; /gallery &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Optional parameters:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;caption-position&lt;/code&gt; - determines the captions&amp;rsquo; position over the image. Options:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;bottom&lt;/code&gt; (default)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;center&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;none&lt;/code&gt; hides captions on the page (they will only show in PhotoSwipe)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;caption-effect&lt;/code&gt; - determines if/how captions appear upon hover. Options:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;slide&lt;/code&gt; (default)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;fade&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;none&lt;/code&gt; (captions always visible)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hover-effect&lt;/code&gt; - determines if/how images change upon hover. Options:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;zoom&lt;/code&gt; (default)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;grow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;shrink&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;slideup&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;slidedown&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;none&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;hover-transition&lt;/code&gt; - determines if/how images change upon hover. Options:
-
-&lt;ul&gt;
-&lt;li&gt;not set - smooth transition (default)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;none&lt;/code&gt; - hard transition&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
       
     </item>
     

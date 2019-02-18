@@ -17,25 +17,7 @@
       <pubDate>Fri, 15 Feb 2019 16:43:08 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/2019fe/creat_github_blog/</guid>
-      <description>依靠github创建自己的博客文档。</description>
-    </item>
-    
-    <item>
-      <title>Image Preview</title>
-      <link>https://mmmaxingxing.github.io/post/image-preview/</link>
-      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/image-preview/</guid>
-      <description>&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/liwenyip/hugo-easy-gallery&#34;&gt;liwenyip/hugo-easy-gallery&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/pull/48&#34;&gt;Zebradil · Pull Request #48&lt;/a&gt; .&lt;/p&gt;
-
-&lt;p&gt;Now, we could use &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode in hugo-theme-jane.&lt;/p&gt;
-
-&lt;h2 id=&#34;normal-image&#34;&gt;Normal Image&lt;/h2&gt;
-
-&lt;p&gt;This is an image in &lt;code&gt;static/image&lt;/code&gt; folder.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![This is an image in `static/image` folder.](/image/example.jpg)
-&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>一、依靠github创建自己的博客文档。 此步骤网上教程拼接得到，按需调整（放在最后生成上传之后查看是否需要）打包上传从本地测试感觉似乎git</description>
     </item>
     
   </channel>
