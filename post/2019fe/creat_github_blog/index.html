@@ -70,7 +70,7 @@
 
 <meta itemprop="datePublished" content="2019-02-15T16:43:08&#43;08:00" />
 <meta itemprop="dateModified" content="2019-02-18T15:44:08&#43;08:00" />
-<meta itemprop="wordCount" content="330">
+<meta itemprop="wordCount" content="823">
 
 
 
@@ -281,8 +281,8 @@
             <a href="https://mmmaxingxing.github.io/categories/github/"> github </a>
             
           </div>
-        <span class="more-meta"> 约 330 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+        <span class="more-meta"> 约 823 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
 
         
         
@@ -322,7 +322,22 @@
 <li><a href="#以上-创建完成">以上 创建完成</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#二-借助issues建立评论系统">二、借助issues建立评论系统</a></li>
+<li><a href="#二-借助issues建立评论系统">二、借助issues建立评论系统</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#1-在博客根目录下运行">1、在博客根目录下运行</a></li>
+<li><a href="#2-https-github-com-settings-applications-new-网页申请认证">2、<a href="https://github.com/settings/applications/new">https://github.com/settings/applications/new</a> 网页申请认证</a>
+<ul>
+<li><a href="#3-gitment配置">3.gitment配置</a></li>
+<li><a href="#4-项目引入">4、项目引入</a></li>
+<li><a href="#5-出现的问题">5、出现的问题</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -386,9 +401,71 @@ hugo new site blogsname
 
 <h2 id="二-借助issues建立评论系统">二、借助issues建立评论系统</h2>
 
-<p><code>
-    略，待更新
-</code></p>
+<p>借助开源插件 gitment</p>
+
+<p>引入及安装教程详见官网 <a href="https://github.com/imsun/gitment">https://github.com/imsun/gitment</a></p>
+
+<h5 id="1-在博客根目录下运行">1、在博客根目录下运行</h5>
+
+<pre><code>npm i --save gitment
+</code></pre>
+
+<h5 id="2-https-github-com-settings-applications-new-网页申请认证">2、<a href="https://github.com/settings/applications/new">https://github.com/settings/applications/new</a> 网页申请认证</h5>
+
+<pre><code>Application name:随便写
+Homepage URL:这个也可以随意写,就写你的博客地址就行
+Application description:描述,也可以随意写
+Authorization callback URL:这个必须写你的博客地址
+</code></pre>
+
+<h6 id="3-gitment配置">3.gitment配置</h6>
+
+<pre><code># Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+gitment:
+  enable: true
+  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  count: true # Show comments count in post meta area
+  lazy: false # Comments lazy loading with a button
+  cleanly: false # Hide 'Powered by ...' on footer, and more
+  language: # Force language, or auto switch by theme
+  github_user: {you github user id}
+  github_repo: 随便写一个你的公开的git仓库就行,到时候评论会作为那个项目的issue
+  client_id: {刚才申请的ClientID}
+  client_secret: {刚才申请的Client Secret}
+  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+</code></pre>
+
+<p>项目实际配置</p>
+
+<pre><code>config.toml 中
+
+[params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment 关于git的评论系统
+    owner = &quot;MMmaXingXing&quot;              # Your GitHub ID
+    repo = &quot;comments&quot;               # The repo to store comments
+    clientId = &quot;&quot;           # Your client ID
+    clientSecret = &quot;&quot;       # Your client secret
+</code></pre>
+
+<h6 id="4-项目引入">4、项目引入</h6>
+
+<pre><code>config.toml 中 手动写入cdn
+
+[params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
+    enable = false
+    jquery = '&lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js&quot; integrity=&quot;sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;'
+    slideout = '&lt;script src=&quot;https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js&quot; integrity=&quot;sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;'
+    fancyboxJs = '&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js&quot; integrity=&quot;sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;'
+    fancyboxCss = '&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css&quot; integrity=&quot;sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=&quot; crossorigin=&quot;anonymous&quot;&gt;'
+    gitmentJS = '&lt;script src=&quot;https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;'
+    gitmentCSS = '&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css&quot; crossorigin=&quot;anonymous&quot;&gt;'
+</code></pre>
+
+<h6 id="5-出现的问题">5、出现的问题</h6>
+
+<pre><code>此项目公共的url证书失效，可以选择换成自己的证书或者换成网上的证书
+</code></pre>
 
     </div>
 
