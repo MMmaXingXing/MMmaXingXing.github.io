@@ -20,5 +20,14 @@
       <description>一、依靠github创建自己的博客文档。 此步骤网上教程拼接得到，按需调整（放在最后生成上传之后查看是否需要）打包上传从本地测试感觉似乎git</description>
     </item>
     
+    <item>
+      <title>mockjs引入以及使用方式</title>
+      <link>https://mmmaxingxing.github.io/post/2019fe/mockjs_bas/</link>
+      <pubDate>Tue, 19 Feb 2019 16:08:52 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/2019fe/mockjs_bas/</guid>
+      <description>一、mock引入 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;quot;./mock&amp;quot; 二、mock 代码相关 拦截部分 // 引入mockjs import Mock from &#39;mockjs&#39; import loginAPI from</description>
+    </item>
+    
   </channel>
 </rss>

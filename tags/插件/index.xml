@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>插件 on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/%E6%8F%92%E4%BB%B6/</link>
+    <description>Recent content in 插件 on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 19 Feb 2019 16:08:52 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/tags/%E6%8F%92%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mockjs引入以及使用方式</title>
+      <link>https://mmmaxingxing.github.io/post/2019fe/mockjs_bas/</link>
+      <pubDate>Tue, 19 Feb 2019 16:08:52 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/2019fe/mockjs_bas/</guid>
+      <description>一、mock引入 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;quot;./mock&amp;quot; 二、mock 代码相关 拦截部分 // 引入mockjs import Mock from &#39;mockjs&#39; import loginAPI from</description>
+    </item>
+    
+  </channel>
+</rss>

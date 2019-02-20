@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>https://mmmaxingxing.github.io/post/2019fe/mockjs_bas/</loc>
+    <lastmod>2019-02-19T16:08:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mmmaxingxing.github.io/</loc>
     <lastmod>2019-02-18T15:44:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -30,6 +37,13 @@
   </url>
   
   <url>
+    <loc>https://mmmaxingxing.github.io/tags/github/</loc>
+    <lastmod>2019-02-18T15:44:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mmmaxingxing.github.io/categories/github/</loc>
     <lastmod>2019-02-18T15:44:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -37,8 +51,8 @@
   </url>
   
   <url>
-    <loc>https://mmmaxingxing.github.io/tags/github/</loc>
-    <lastmod>2019-02-18T15:44:08+08:00</lastmod>
+    <loc>https://mmmaxingxing.github.io/tags/javascript/</loc>
+    <lastmod>2019-02-19T16:08:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -53,6 +67,27 @@
   <url>
     <loc>https://mmmaxingxing.github.io/tags/</loc>
     <lastmod>2019-02-18T15:44:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2019-02-19T16:08:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/tags/%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2019-02-19T16:08:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/categories/%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2019-02-19T16:08:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

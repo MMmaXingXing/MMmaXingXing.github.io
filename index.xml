@@ -71,11 +71,128 @@ hugo new site blogsname
 
 &lt;h4 id=&#34;以上-创建完成&#34;&gt;以上 创建完成&lt;/h4&gt;
 
-&lt;h2 id=&#34;二-借助issue建立评论系统&#34;&gt;二、借助issue建立评论系统&lt;/h2&gt;
+&lt;h2 id=&#34;二-借助issues建立评论系统&#34;&gt;二、借助issues建立评论系统&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;
     略，待更新
 &lt;/code&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>mockjs引入以及使用方式</title>
+      <link>https://mmmaxingxing.github.io/post/2019fe/mockjs_bas/</link>
+      <pubDate>Tue, 19 Feb 2019 16:08:52 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/2019fe/mockjs_bas/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;一-mock引入&#34;&gt;一、mock引入&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-script&#34;&gt;1、普通引入 script src 即可
+2、vue中使用 
+npm install mockjs --dev 
+main.js中
+import &amp;quot;./mock&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;二-mock-代码相关&#34;&gt;二、mock 代码相关&lt;/h3&gt;
+
+&lt;h5 id=&#34;拦截部分&#34;&gt;拦截部分&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;// 引入mockjs
+import Mock from &#39;mockjs&#39;
+import loginAPI from &#39;./login&#39;
+// import articleAPI from &#39;./article&#39;
+// import remoteSearchAPI from &#39;./remoteSearch&#39;
+// import transactionAPI from &#39;./transaction&#39;
+// 获取 mock.Random 对象
+// const Random = Mock.Random;
+// // mock一组数据
+// const produceNewsData = function() {
+//     let articles = [];
+//     for (let i = 0; i &amp;lt; 100; i++) {
+//         let newArticleObject = {
+//             title: Random.csentence(5, 30), //  Random.csentence( min, max )
+//             thumbnail_pic_s: Random.dataImage(&#39;300x250&#39;, &#39;mock的图片&#39;), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码
+//             author_name: Random.cname(), // Random.cname() 随机生成一个常见的中文姓名
+//             date: Random.date() + &#39; &#39; + Random.time() // Random.date()指示生成的日期字符串的格式,默认为yyyy-MM-dd；Random.time() 返回一个随机的时间字符串
+//         }
+//         articles.push(newArticleObject)
+//     }
+
+//     return {
+//         articles: articles
+//     }
+// }
+
+// Mock.mock( url, post/get , 返回的数据)；
+
+
+// 修复在使用 MockJS 情况下，设置 withCredentials = true，且未被拦截的跨域请求丢失 Cookies 的问题
+// https://github.com/nuysoft/Mock/issues/300
+Mock.XHR.prototype.proxy_send = Mock.XHR.prototype.send
+Mock.XHR.prototype.send = function() {
+    if (this.custom.xhr) {
+        this.custom.xhr.withCredentials = this.withCredentials || false
+    }
+    this.proxy_send(...arguments)
+}
+
+// Mock.setup({
+//   timeout: &#39;350-600&#39;
+// })
+
+
+// 登录相关
+Mock.mock(/\/login/, &#39;post&#39;, loginAPI.loginByUsername)
+Mock.mock(/\/scene\/get_all/, &#39;post&#39;, loginAPI.getcontentListInfo)
+    // Mock.mock(/\/login\/logout/, &#39;post&#39;, loginAPI.logout)
+    // Mock.mock(/\/user\/info\.*/, &#39;get&#39;, loginAPI.getUserInfo)
+export default Mock
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;数据校验部分&#34;&gt;数据校验部分&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;const userMap = {
+    admin: {
+        data: {
+            access_token: &amp;quot;zwLB6rnP6vn5As3R1L2gaZRmPT7bT4th&amp;quot;,
+            expire_time: &amp;quot;100000&amp;quot;,
+            refresh_token: &amp;quot;jwWw4RmUdngWnczlnsjDVENpJUDIMmzJ&amp;quot;,
+        },
+        state: true,
+    },
+}
+
+const contentList = {
+    data: [{
+        camera_info: [{ camera_no: &amp;quot;camera_5_defalt&amp;quot;, camera_name: &amp;quot;5楼门口&amp;quot;, rmtp_url: &amp;quot;557fe66c52bf4a228a36265ffd4a3c3b&amp;quot; }],
+        movie_name: &amp;quot;5楼&amp;quot;,
+        movie_no: &amp;quot;floor_5&amp;quot;
+    }, {
+        camera_info: [{ camera_no: &amp;quot;camera_5_defalt&amp;quot;, camera_name: &amp;quot;5楼门口&amp;quot;, rmtp_url: &amp;quot;557fe66c52bf4a228a36265ffd4a3c3b&amp;quot; }],
+        movie_name: &amp;quot;6楼&amp;quot;,
+        movie_no: &amp;quot;floor_6&amp;quot;
+    }],
+    state: true
+}
+
+export default {
+    loginByUsername: config =&amp;gt; {
+        console.log(config)
+        console.log(JSON.parse(config.body))
+        const { username } = JSON.parse(config.body)
+        return userMap[username]
+    },
+    getcontentListInfo: config =&amp;gt; {
+        return contentList
+    },
+    logout: () =&amp;gt; &#39;success&#39;
+}
+&lt;/code&gt;&lt;/pre&gt;
 </description>
       
     </item>
