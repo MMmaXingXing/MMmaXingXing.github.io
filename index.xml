@@ -286,7 +286,8 @@ busuanziJs = &amp;#39;&amp;lt;script async src=&amp;#34;//busuanzi.ibruce.info/b
       
         <description>
 
-&lt;p&gt;&lt;div align=center&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/css/Snipaste_2019-02-21_17-43-35.png&#34; alt=&#34;效果实现&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div align=center&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/css/Snipaste_2019-02-21_17-43-35.png&#34; alt=&#34;效果实现&#34; /&gt;
+&lt;div align=left&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;一-创建一个dom元素并为其增加宽高&#34;&gt;一、创建一个dom元素并为其增加宽高&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
