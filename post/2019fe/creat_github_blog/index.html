@@ -70,7 +70,7 @@
 
 <meta itemprop="datePublished" content="2019-02-15T16:43:08&#43;08:00" />
 <meta itemprop="dateModified" content="2019-02-18T15:44:08&#43;08:00" />
-<meta itemprop="wordCount" content="823">
+<meta itemprop="wordCount" content="1213">
 
 
 
@@ -281,8 +281,8 @@
             <a href="https://mmmaxingxing.github.io/categories/github/"> github </a>
             
           </div>
-        <span class="more-meta"> 约 823 字 </span>
-          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span class="more-meta"> 约 1213 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
 
         
         
@@ -464,7 +464,13 @@ gitment:
 
 <h6 id="5-出现的问题">5、出现的问题</h6>
 
-<pre><code>此项目公共的url证书失效，可以选择换成自己的证书或者换成网上的证书
+<pre><code>使用gitment，要先在评论区登录github，否则显示Error: Comments Not Initialized(中文显示评论不可用之类)；登录后点击Initialize Comments。另外可能会报错[object ProgressEvent]或者gh-oauth.imsun.net链接不上。这是因为gh-oauth.imsun.net网站证书失效了！解决方法：
+
+方案一：单独访问这个网站https://gh-oauth.imsun.net/，加入例外，允许浏览器访问。但这个方案，别人看你博客的人不一定知道要加，所以不好。
+
+方案二：更改node_modules/gitment/dist/gitment.js中https://gh-oauth.imsun.net，直接改为请求 github 认证的接口https://github.com/login/oauth/access_token
+
+参考：imsun/gitment/issues#102,gitment评论模块接入hexo
 </code></pre>
 
     </div>

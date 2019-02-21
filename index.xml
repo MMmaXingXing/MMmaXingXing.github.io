@@ -136,7 +136,13 @@ gitment:
 
 &lt;h6 id=&#34;5-出现的问题&#34;&gt;5、出现的问题&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code&gt;此项目公共的url证书失效，可以选择换成自己的证书或者换成网上的证书
+&lt;pre&gt;&lt;code&gt;使用gitment，要先在评论区登录github，否则显示Error: Comments Not Initialized(中文显示评论不可用之类)；登录后点击Initialize Comments。另外可能会报错[object ProgressEvent]或者gh-oauth.imsun.net链接不上。这是因为gh-oauth.imsun.net网站证书失效了！解决方法：
+
+方案一：单独访问这个网站https://gh-oauth.imsun.net/，加入例外，允许浏览器访问。但这个方案，别人看你博客的人不一定知道要加，所以不好。
+
+方案二：更改node_modules/gitment/dist/gitment.js中https://gh-oauth.imsun.net，直接改为请求 github 认证的接口https://github.com/login/oauth/access_token
+
+参考：imsun/gitment/issues#102,gitment评论模块接入hexo
 &lt;/code&gt;&lt;/pre&gt;
 </description>
       
