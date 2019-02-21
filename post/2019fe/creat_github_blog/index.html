@@ -70,7 +70,7 @@
 
 <meta itemprop="datePublished" content="2019-02-15T16:43:08&#43;08:00" />
 <meta itemprop="dateModified" content="2019-02-18T15:44:08&#43;08:00" />
-<meta itemprop="wordCount" content="1213">
+<meta itemprop="wordCount" content="1305">
 
 
 
@@ -271,25 +271,25 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">依靠github创建自己的博客站点</h1>
-      
-      <div class="post-meta">
-        <time datetime="2019-02-15" class="post-time">
+        <h1 class="post-title">依靠github创建自己的博客站点</h1>
+        
+        <div class="post-meta">
+            <time datetime=" 2019-02-15 " class="post-time">
           2019-02-15
-        </time>
-        <div class="post-category">
-            <a href="https://mmmaxingxing.github.io/categories/github/"> github </a>
+        </time> <div class="post-category">
+                <a href="https://mmmaxingxing.github.io/categories/github/"> github </a> 
+            </div> 
+
             
-          </div>
-        <span class="more-meta"> 约 1213 字 </span>
-          <span class="more-meta"> 预计阅读 3 分钟 </span>
+            
+            <span id="busuanzi_container_page_pv">
+            | 本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </span>
+            
 
-        
-        
-
-        
-        
-      </div>
+            
+            
+        </div>
     </header>
 
     
@@ -329,13 +329,17 @@
 <li>
 <ul>
 <li><a href="#1-在博客根目录下运行">1、在博客根目录下运行</a></li>
-<li><a href="#2-https-github-com-settings-applications-new-网页申请认证">2、<a href="https://github.com/settings/applications/new">https://github.com/settings/applications/new</a> 网页申请认证</a>
+<li><a href="#2-网页申请认证-https-github-com-settings-applications-new">2、<a href="https://github.com/settings/applications/new">网页申请认证</a></a>
 <ul>
 <li><a href="#3-gitment配置">3.gitment配置</a></li>
 <li><a href="#4-项目引入">4、项目引入</a></li>
 <li><a href="#5-出现的问题">5、出现的问题</a></li>
 </ul></li>
 </ul></li>
+</ul></li>
+<li><a href="#3-使用不蒜子添加网站及文章访问量">3、使用不蒜子添加网站及文章访问量</a>
+<ul>
+<li><a href="#向我提问">向我提问</a></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -346,21 +350,21 @@
 
     
     <div class="post-content">
-      
+        
 
 <h2 id="一-依靠github创建自己的博客文档">一、依靠github创建自己的博客文档。</h2>
 
-<p><img src="https://github-1253441827.cos.ap-shanghai.myqcloud.com/github_blog/creat_githubblog_01.png" alt="步骤1" /></p>
+<p><img src="/image/github_blog/creat_githubblog_01.png" alt="步骤1" /></p>
 
 <h5 id="此步骤网上教程拼接得到-按需调整-放在最后生成上传之后查看是否需要-打包上传从本地测试感觉似乎github有缓存">此步骤网上教程拼接得到，按需调整（放在最后生成上传之后查看是否需要）打包上传从本地测试感觉似乎github有缓存</h5>
 
-<p><img src="https://github-1253441827.cos.ap-shanghai.myqcloud.com/github_blog/creat_githubblog_02.png" alt="步骤2" /></p>
+<p><img src="/image/github_blog/creat_githubblog_02.png" alt="步骤2" /></p>
 
 <h2 id="电脑上安装-hugo">电脑上安装 hugo</h2>
 
 <p>window 平台只需下载一个exe进行安装即可，以下为安装教程</p>
 
-<p><a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/</a> （官网教程）</p>
+<p><a href="https://gohugo.io/getting-started/installing/">官网教程</a></p>
 
 <h2 id="用hugo建站">用hugo建站</h2>
 
@@ -372,27 +376,39 @@ hugo new site blogsname
 
 <h3 id="2-添加一个主题">2、添加一个主题</h3>
 
-<p>主题选择 <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
-
-<pre><code>git submodule add -b master https://github.com/xianmin/hugo-theme-jane.git themes/jane
-</code></pre>
-
+<p><a href="https://themes.gohugo.io/">主题选择</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git submodule add -b master https://github.com/xianmin/hugo-theme-jane.git themes/jane</pre></td></tr></table>
+</div>
+</div>
 <p>clone好主题以后 将 themes/jane/exampleSite/content 中的内容剪切到 blogsname文件夹下的content中</p>
 
 <p>将 themes/jane/exampleSite/config.toml 复制到 blogsname文件夹下</p>
 
 <h3 id="3-本地测试">3、本地测试</h3>
-
-<pre><code>    hugo server
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    hugo server</pre></td></tr></table>
+</div>
+</div>
 <p>运行成功后访问 localhost:1313</p>
 
 <h3 id="4-打包">4、打包</h3>
-
-<pre><code>运行 hugo
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">运行 hugo</pre></td></tr></table>
+</div>
+</div>
 <p>打包后的文件在public中</p>
 
 <p>将public中的文件上传到第一步创建的.io的项目中，访问 <a href="https://name.github.io即可">https://name.github.io即可</a></p>
@@ -403,75 +419,192 @@ hugo new site blogsname
 
 <p>借助开源插件 gitment</p>
 
-<p>引入及安装教程详见官网 <a href="https://github.com/imsun/gitment">https://github.com/imsun/gitment</a></p>
+<p>引入及安装教程详见<a href="https://github.com/imsun/gitment">官网</a></p>
 
 <h5 id="1-在博客根目录下运行">1、在博客根目录下运行</h5>
-
-<pre><code>npm i --save gitment
-</code></pre>
-
-<h5 id="2-https-github-com-settings-applications-new-网页申请认证">2、<a href="https://github.com/settings/applications/new">https://github.com/settings/applications/new</a> 网页申请认证</h5>
-
-<pre><code>Application name:随便写
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">npm i --save gitment</pre></td></tr></table>
+</div>
+</div>
+<h5 id="2-网页申请认证-https-github-com-settings-applications-new">2、<a href="https://github.com/settings/applications/new">网页申请认证</a></h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">Application name:随便写
 Homepage URL:这个也可以随意写,就写你的博客地址就行
 Application description:描述,也可以随意写
-Authorization callback URL:这个必须写你的博客地址
-</code></pre>
-
+Authorization callback URL:这个必须写你的博客地址</pre></td></tr></table>
+</div>
+</div>
 <h6 id="3-gitment配置">3.gitment配置</h6>
-
-<pre><code># Gitment
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"># Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
   enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
-  cleanly: false # Hide 'Powered by ...' on footer, and more
+  cleanly: false # Hide &#39;Powered by ...&#39; on footer, and more
   language: # Force language, or auto switch by theme
   github_user: {you github user id}
   github_repo: 随便写一个你的公开的git仓库就行,到时候评论会作为那个项目的issue
   client_id: {刚才申请的ClientID}
   client_secret: {刚才申请的Client Secret}
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
-  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
-</code></pre>
-
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled</pre></td></tr></table>
+</div>
+</div>
 <p>项目实际配置</p>
-
-<pre><code>config.toml 中
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">config.toml 中
 
 [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment 关于git的评论系统
-    owner = &quot;MMmaXingXing&quot;              # Your GitHub ID
-    repo = &quot;comments&quot;               # The repo to store comments
-    clientId = &quot;&quot;           # Your client ID
-    clientSecret = &quot;&quot;       # Your client secret
-</code></pre>
-
+    owner = &#34;MMmaXingXing&#34;              # Your GitHub ID
+    repo = &#34;comments&#34;               # The repo to store comments
+    clientId = &#34;&#34;           # Your client ID
+    clientSecret = &#34;&#34;       # Your client secret</pre></td></tr></table>
+</div>
+</div>
 <h6 id="4-项目引入">4、项目引入</h6>
-
-<pre><code>config.toml 中 手动写入cdn
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">config.toml 中 手动写入cdn
 
 [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = false
-    jquery = '&lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js&quot; integrity=&quot;sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;'
-    slideout = '&lt;script src=&quot;https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js&quot; integrity=&quot;sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;'
-    fancyboxJs = '&lt;script src=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js&quot; integrity=&quot;sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;'
-    fancyboxCss = '&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css&quot; integrity=&quot;sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=&quot; crossorigin=&quot;anonymous&quot;&gt;'
-    gitmentJS = '&lt;script src=&quot;https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;'
-    gitmentCSS = '&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css&quot; crossorigin=&quot;anonymous&quot;&gt;'
-</code></pre>
-
+    jquery = &#39;&lt;script src=&#34;https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js&#34; integrity=&#34;sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#39;
+    slideout = &#39;&lt;script src=&#34;https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js&#34; integrity=&#34;sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#39;
+    fancyboxJs = &#39;&lt;script src=&#34;https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js&#34; integrity=&#34;sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#39;
+    fancyboxCss = &#39;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css&#34; integrity=&#34;sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=&#34; crossorigin=&#34;anonymous&#34;&gt;&#39;
+    gitmentJS = &#39;&lt;script src=&#34;https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;&#39;
+    gitmentCSS = &#39;&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css&#34; crossorigin=&#34;anonymous&#34;&gt;&#39;</pre></td></tr></table>
+</div>
+</div>
 <h6 id="5-出现的问题">5、出现的问题</h6>
-
-<pre><code>使用gitment，要先在评论区登录github，否则显示Error: Comments Not Initialized(中文显示评论不可用之类)；登录后点击Initialize Comments。另外可能会报错[object ProgressEvent]或者gh-oauth.imsun.net链接不上。这是因为gh-oauth.imsun.net网站证书失效了！解决方法：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">使用gitment，要先在评论区登录github，否则显示Error: Comments Not Initialized(中文显示评论不可用之类)；登录后点击Initialize Comments。另外可能会报错[object ProgressEvent]或者gh-oauth.imsun.net链接不上。这是因为gh-oauth.imsun.net网站证书失效了！解决方法：
 
 方案一：单独访问这个网站https://gh-oauth.imsun.net/，加入例外，允许浏览器访问。但这个方案，别人看你博客的人不一定知道要加，所以不好。
 
 方案二：更改node_modules/gitment/dist/gitment.js中https://gh-oauth.imsun.net，直接改为请求 github 认证的接口https://github.com/login/oauth/access_token
 
-参考：imsun/gitment/issues#102,gitment评论模块接入hexo
-</code></pre>
+参考：imsun/gitment/issues#102,gitment评论模块接入hexo</pre></td></tr></table>
+</div>
+</div>
+<h3 id="3-使用不蒜子添加网站及文章访问量">3、使用不蒜子添加网站及文章访问量</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">config.toml中CDN部分增加
+
+busuanziJs = &#39;&lt;script async src=&#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&#34;&gt;&lt;/script&gt;&#39;
+
+添加以下代码块
+
+ [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
+    enable = true
+
+同时
+
+ moreMeta = false
+
+ 即可</pre></td></tr></table>
+</div>
+</div>
+<h4 id="向我提问">向我提问</h4>
+
+
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-和作者沟通 hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+        <div class="box">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <div class="img" style="background-image: url('https://mmmaxingxing.github.io//image/qusition/%e5%90%91%e4%bd%9c%e8%80%85%e6%8f%90%e9%97%ae.png');" >
+              <img itemprop="thumbnail" src="https://mmmaxingxing.github.io//image/qusition/%e5%90%91%e4%bd%9c%e8%80%85%e6%8f%90%e9%97%ae.png" alt="向作者提问" />
+            </div>
+            <figcaption>
+              <p>向作者提问</p>
+            </figcaption>
+            <a href="https://mmmaxingxing.github.io//image/qusition/%e5%90%91%e4%bd%9c%e8%80%85%e6%8f%90%e9%97%ae.png" itemprop="contentUrl"></a>
+          </figure>
+        </div>
+</div>
+
 
     </div>
 
@@ -481,24 +614,36 @@ gitment:
 
     
     
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/image/weixin.png">
+        <span>微信打赏</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/image/ali.png">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
 
     <footer class="post-footer">
-      <div class="post-tags">
-          <a href="https://mmmaxingxing.github.io/tags/github/">github</a>
-          <a href="https://mmmaxingxing.github.io/tags/blog/">blog</a>
-          <a href="https://mmmaxingxing.github.io/tags/%E6%95%99%E7%A8%8B/">教程</a>
-          
+        <div class="post-tags">
+            <a href="https://mmmaxingxing.github.io/tags/github/">github</a> <a href="https://mmmaxingxing.github.io/tags/blog/">blog</a> <a href="https://mmmaxingxing.github.io/tags/%E6%95%99%E7%A8%8B/">教程</a> 
         </div>
 
-      
-      <nav class="post-nav">
         
-        
-          <a class="next" href="/post/2019fe/mockjs_bas/">
-            <span class="next-text nav-default">mockjs引入以及使用方式</span>
-            <span class="prev-text nav-mobile">下一篇</span>
-            
-            <i class="iconfont">
+        <nav class="post-nav">
+             
+            <a class="next" href="/post/2019fe/mockjs_bas/">
+                <span class="next-text nav-default">mockjs引入以及使用方式</span>
+                <span class="prev-text nav-mobile">下一篇</span> 
+                <i class="iconfont">
               <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18">
@@ -506,16 +651,16 @@ gitment:
 </svg>
 
             </i>
-          </a>
-      </nav>
+            </a>
+        </nav>
     </footer>
-  </article>
+</article>
 
-  
-  
 
-  
-  
+
+
+
+
 
   
   
@@ -556,7 +701,7 @@ gitment:
 
     <footer id="footer" class="footer">
       <div class="icon-links">
-  
+    
   
     <a href="mailto:1172406997@qq.com" rel="me noopener" class="iconfont"
       title="email" >
@@ -589,19 +734,19 @@ gitment:
 </svg>
 
   </a>
-   
+  
 </div>
 
 <div class="copyright">
-  <span class="power-by">
+    <span class="power-by">
     Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
   </span>
-  <span class="division">|</span>
-  <span class="theme-info">
+    <span class="division">|</span>
+    <span class="theme-info">
     Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
   </span>
 
-  <span class="copyright-year">
+    <span class="copyright-year">
     &copy;
     2019
     <span class="heart">
@@ -620,12 +765,11 @@ gitment:
         
       </span></span>
 
-  
-  
-
-  
+    
+    
+    
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次  
 </div>
-
     </footer>
 
     <div class="back-to-top" id="back-to-top">
@@ -669,6 +813,8 @@ gitment:
 
 
 
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

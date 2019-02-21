@@ -26,7 +26,7 @@
       <pubDate>Tue, 19 Feb 2019 16:08:52 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/2019fe/mockjs_bas/</guid>
-      <description>一、mock引入 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;quot;./mock&amp;quot; 二、mock 代码相关 拦截部分 // 引入mockjs import Mock from &#39;mockjs&#39; import loginAPI from</description>
+      <description>一、mock引入 1 2 3 4 5 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;#34;./mock&amp;#34; 二、mock 代码相关 拦截部分 1 2 3 4 5 6 7 8 9 10 11</description>
     </item>
     
   </channel>
