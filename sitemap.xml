@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/post/cours/creat_github_blog/</loc>
-    <lastmod>2019-02-21T15:44:08+08:00</lastmod>
+    <lastmod>2019-02-21T17:44:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -25,14 +25,14 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/</loc>
-    <lastmod>2019-02-21T15:44:08+08:00</lastmod>
+    <lastmod>2019-02-21T17:44:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mmmaxingxing.github.io/tags/blog/</loc>
-    <lastmod>2019-02-21T15:44:08+08:00</lastmod>
+    <lastmod>2019-02-21T17:44:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -59,14 +59,7 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/tags/github/</loc>
-    <lastmod>2019-02-21T15:44:08+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mmmaxingxing.github.io/categories/github/</loc>
-    <lastmod>2019-02-21T15:44:08+08:00</lastmod>
+    <lastmod>2019-02-21T17:44:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -80,14 +73,14 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/post/</loc>
-    <lastmod>2019-02-21T15:44:08+08:00</lastmod>
+    <lastmod>2019-02-21T17:44:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mmmaxingxing.github.io/tags/</loc>
-    <lastmod>2019-02-21T15:44:08+08:00</lastmod>
+    <lastmod>2019-02-21T17:44:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -115,7 +108,14 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2019-02-21T15:44:08+08:00</lastmod>
+    <lastmod>2019-02-21T17:44:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2019-02-21T17:44:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

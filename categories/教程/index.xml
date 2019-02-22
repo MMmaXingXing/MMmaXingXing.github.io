@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>教程 on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/categories/%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in 教程 on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 15 Feb 2019 16:43:08 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>依靠github创建自己的博客站点</title>
+      <link>https://mmmaxingxing.github.io/post/cours/creat_github_blog/</link>
+      <pubDate>Fri, 15 Feb 2019 16:43:08 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/creat_github_blog/</guid>
+      <description>一、依靠github创建自己的博客文档。 此步骤网上教程拼接得到，按需调整（放在最后生成上传之后查看是否需要）打包上传从本地测试感觉似乎git</description>
+    </item>
+    
+  </channel>
+</rss>
