@@ -70,7 +70,7 @@
 
 
 
-<meta itemprop="wordCount" content="433">
+<meta itemprop="wordCount" content="859">
 
 
 
@@ -388,10 +388,16 @@
 }</code></pre></td></tr></table>
 </div>
 </div>
-<h4 id="实际实现-自己">实际实现 （自己）</h4>
+<p>复杂度分析</p>
+
+<p>时间复杂度：O(n)O(n)， 假设数组的长度是 nn，那么 ii 和 jj 分别最多遍历 nn 步。</p>
+
+<p>空间复杂度：O(1)O(1)。</p>
+
+<h4 id="实际实现">实际实现</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt"> 1
+<pre class="chroma"><code class="language-javascript 236m（自己）" data-lang="javascript 236m（自己）"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -404,22 +410,161 @@
 </span><span class="lnt">11
 </span><span class="lnt">12
 </span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">removeDuplicates</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">nums</span> <span class="k">instanceof</span> <span class="nb">Array</span><span class="p">){</span>
-        <span class="kd">let</span> <span class="nx">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">while</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">&lt;</span> <span class="nx">nums</span><span class="p">.</span><span class="nx">length</span><span class="p">){</span>
-            <span class="k">if</span><span class="p">(</span><span class="nx">nums</span><span class="p">[</span><span class="nx">idx</span><span class="p">]</span><span class="o">==</span><span class="nx">nums</span><span class="p">[</span><span class="nx">idx</span><span class="o">+</span><span class="mi">1</span><span class="p">]){</span>
-                <span class="nx">nums</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">idx</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
-            <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-                <span class="nx">idx</span><span class="o">++</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-        <span class="k">return</span> <span class="nx">nums</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-javascript 236m（自己）" data-lang="javascript 236m（自己）">var removeDuplicates = function(nums) {
+    if(nums instanceof Array){
+        if (nums.length == 0){
+            return nums.length
+        } 
+        let idx = 0;
+        while (idx &lt; nums.length){
+            if(nums[idx]==nums[idx+1]){
+                nums.splice(idx,1);
+            }else{
+                idx++;
+            }
+        }
+        return nums.length;
+    }
+};</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-jivascript 120ms (Catouse)" data-lang="jivascript 120ms (Catouse)"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jivascript 120ms (Catouse)" data-lang="jivascript 120ms (Catouse)">var removeDuplicates = function(nums) {
+    return nums.splice(0, nums.length, ...Array.from(new Set(nums))).length;
+};</code></pre></td></tr></table>
+</div>
+</div>
+<h5 id="知识点">知识点</h5>
+
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值</a>
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from">Array.from()</a>
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set">new Set()</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">解构赋值：语法是一个 Javascript 表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。
+
+Array.from(参数1,参数2，参数3)
+1.想要转换成数组的伪数组对象或可迭代对象
+2.新数组中的每个元素会执行该回调函数
+3.执行回调里面的this指谁
+返回一个新的数组实例
+
+
+new Set([iterable]);
+iterable：可迭代对象
+返回：新的set对象</pre></td></tr></table>
+</div>
+</div>
+<h4 id="go语言实现">Go语言实现</h4>
+
+<p>在强制类型里面的构造和弱类型语言中不同，强制类型中的arr是不可以动态改变的，由此此题解法需要采用官方双指针法求解</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-GO 116ms" data-lang="GO 116ms"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-GO 116ms" data-lang="GO 116ms">func removeDuplicates(nums []int) int {
+    if len(nums)==0 {
+        return 0;
+    }else{
+        i := 0;
+        j := 1;
+        for i+j&lt;len(nums) {
+            if nums[i]==nums[j+i]{
+                j++;
+            }else{
+                i++;
+                nums[i] = nums[j+i-1];
+            }
+        }
+        return len(nums)-j+1;
+    }
+}</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-Go 0s 非排序可执行 15123850133" data-lang="Go 0s 非排序可执行 15123850133"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Go 0s 非排序可执行 15123850133" data-lang="Go 0s 非排序可执行 15123850133">func removeDuplicates(nums []int) int {
+    length:=len(nums)
+    var count int
+    if length&gt;0{
+        count=1
+    }
+    maps:= map[int]int{}
+    for i,v :=range nums{
+        maps[v]=v
+        for j:=i+1;j&lt;length;j++{
+            if _,ok:= maps[nums[j]];!ok{
+                nums[i+1]=nums[j]
+                maps[nums[j]]=nums[j]
+                count++
+                break
+            }
+        }
+    }
+    return count
+}</code></pre></td></tr></table>
 </div>
 </div>
     </div>
