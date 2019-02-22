@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Array_从排序数组中删除重复项</title>
+      <link>https://mmmaxingxing.github.io/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/</link>
+      <pubDate>Fri, 22 Feb 2019 10:54:40 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/</guid>
+      <description>题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原</description>
+    </item>
+    
+    <item>
       <title>CSS绘制心形</title>
       <link>https://mmmaxingxing.github.io/post/technology/css/heart/</link>
       <pubDate>Thu, 21 Feb 2019 17:17:52 +0800</pubDate>
@@ -36,15 +45,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/technology/mockjs_bas/</guid>
       <description>一、mock引入 1 2 3 4 5 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;#34;./mock&amp;#34; 二、mock 代码相关 拦截部分 1 2 3 4 5 6 7 8 9 10 11</description>
-    </item>
-    
-    <item>
-      <title>Array_从排序数组中删除重复项</title>
-      <link>https://mmmaxingxing.github.io/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/</guid>
-      <description>题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原</description>
     </item>
     
   </channel>
