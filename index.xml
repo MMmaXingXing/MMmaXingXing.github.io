@@ -6,10 +6,121 @@
     <description>Recent content on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Feb 2019 10:54:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 Feb 2019 11:11:48 +0800</lastBuildDate>
     
         <atom:link href="https://mmmaxingxing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vueX的知识总结（包括在vue-cli中的使用）</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</link>
+      <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;介绍&#34;&gt;介绍&lt;/h4&gt;
+
+&lt;h5 id=&#34;vuex是一个专门为vue-js应用程序开发的状态管理模式-四个部分&#34;&gt;Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;（1）、state：单一状态树，每个应用仅仅包含一个sate实例，使用时&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;this.$store.state.状态名字 （使用）&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;mapState([&amp;ldquo;title&amp;rdquo;])&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;（2）、getters：从store中的state中派生出一些状态，可以认为是state的计算属性&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;this.$store.getters.计算属性名字 （使用）&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;mapGetters([&amp;ldquo;getFilms&amp;rdquo;])&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;（3）、mutations：更改Vuex的store中的状态的唯一方法&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;常量的设计风格&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;[SOME_MUTATION](state){
+// mutate state
+}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;必须是同步函数&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;this.$store.commit(&amp;ldquo;type&amp;rdquo;,&amp;ldquo;payload&amp;rdquo;)（调用）&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;（4）、actions：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Action 提交的是mulation，而不是直接变更状态。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Action 可以包含任意异步操作。&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;this.$store.dispatch(&amp;ldquo;type&amp;rdquo;,&amp;ldquo;payload&amp;rdquo;)&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;(5)、基础模板&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;// module 模板
+const store = new Vuex.Store({
+    state:{
+        count:0
+    },
+    mutations:{
+        increment(state,payload){
+
+        }
+    },
+    actions:{
+        increment(context,payload){
+            context.commit(&amp;#34;increment&amp;#34;);
+        }
+    }
+})&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;（6）、注意&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;应用层级的状态应该集中到单个store对象中&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;提交mulation是更改状态的唯一方法，并且这个过程是同步的&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;异步逻辑都应该封装到action里面&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;其他 查看vuex数据流可以使用 vue chrome devtools此工具&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>Array_从排序数组中删除重复项</title>
@@ -425,10 +536,10 @@ transform-origin: 50% 50% 0;//默认旋转点是中心点
     
     <item>
       <title>mockjs引入以及使用方式</title>
-      <link>https://mmmaxingxing.github.io/post/technology/mockjs_bas/</link>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</link>
       <pubDate>Tue, 19 Feb 2019 16:08:52 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/technology/mockjs_bas/</guid>
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</guid>
       
         <description>
 
