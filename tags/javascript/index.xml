@@ -29,5 +29,14 @@
       <description>一、mock引入 1 2 3 4 5 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;#34;./mock&amp;#34; 二、mock 代码相关 拦截部分 1 2 3 4 5 6 7 8 9 10 11</description>
     </item>
     
+    <item>
+      <title>promise async await</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
+      <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>
+    </item>
+    
   </channel>
 </rss>

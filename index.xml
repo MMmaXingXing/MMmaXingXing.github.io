@@ -1017,5 +1017,54 @@ busuanziJs = &amp;#39;&amp;lt;script async src=&amp;#34;//busuanzi.ibruce.info/b
       
     </item>
     
+    <item>
+      <title>promise async await</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;promise&#34;&gt;Promise&lt;/h3&gt;
+
+&lt;p&gt;promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promise是一个对象，从他可以获取异步操作的消息。Promise提供统一的api，各种异步操作都可以用相同的方法进行处理。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;promise对象有以下两个特点&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;（1）对象的状态不受外界影响。Promise对象代表一个异步操作，有三种状态：&lt;br /&gt;
+* pending 进行中
+* fulfilled 已成功
+* rejected 已失败&lt;/p&gt;
+
+&lt;p&gt;（2）一旦状态改变，就不可以再变。&lt;/p&gt;
+
+&lt;p&gt;缺点&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;无法取消Promise，一旦新建立就会执行，无法中途取消。&lt;/li&gt;
+&lt;li&gt;如果不设置回调函数，内部抛出的错误不会反应到外部。&lt;/li&gt;
+&lt;li&gt;处于pending时，无法得知目前进行到了哪个状态。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;async-await&#34;&gt;async/await&lt;/h3&gt;
+
+&lt;p&gt;从字面意义理解 async是&amp;rdquo;异步&amp;rdquo;的简写 ，await可以认为是async wait的简写。因此 async是用域申明一个函数是异步的，await用于等待一个异步方法执行完成。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;async起什么作用&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;async 返回一个promise对象，promise的特点是无等待，不使用await情况下与直接返回promise没有什么区别&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;await在等什么&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;根据语法说明，await等待的是一个表达式，这个表达式的计算结果可以为promise对象或其他对象。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;等到之后呢&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;await等到了要等的东西之后，非promise对象则返回，promise对象则阻塞后面的代码，等着promise对象resolve，然后得到resolve的值，作为其运算结果。&lt;/p&gt;
+</description>
+      
+    </item>
+    
   </channel>
 </rss>
