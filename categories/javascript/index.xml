@@ -6,6 +6,7 @@
     <description>Recent content in Javascript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
+    <lastBuildDate>Mon, 04 Mar 2019 17:29:17 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +14,7 @@
     <item>
       <title>promise async await</title>
       <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Mar 2019 17:29:17 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
       <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>

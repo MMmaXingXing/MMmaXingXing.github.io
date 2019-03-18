@@ -6,10 +6,19 @@
     <description>Recent content in 算法 on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Feb 2019 10:54:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 Mar 2019 23:05:51 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/categories/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>数据结构与算法</title>
+      <link>https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sat, 16 Mar 2019 23:05:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</guid>
+      <description>数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 + 算法 数据结构，就是数据关系，</description>
+    </item>
     
     <item>
       <title>Array_从排序数组中删除重复项</title>

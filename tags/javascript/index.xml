@@ -6,10 +6,28 @@
     <description>Recent content in Javascript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Feb 2019 11:11:48 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Mar 2019 23:33:08 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vue elementui 使用记录 图片上传</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/elementuiupload/</link>
+      <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/elementuiupload/</guid>
+      <description>一、前端做图片上传展示 1 2 let _URL = window.URL || window.webkitURL; self.form.imageLogo = _URL.createObjectURL(file); 二、elementui 判断图片大小 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 const isSize = new Promise(function(resolve, reject) { let width =</description>
+    </item>
+    
+    <item>
+      <title>promise async await</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
+      <pubDate>Mon, 04 Mar 2019 17:29:17 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
+      <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>
+    </item>
     
     <item>
       <title>vueX的知识总结（包括在vue-cli中的使用）</title>
@@ -27,15 +45,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</guid>
       <description>一、mock引入 1 2 3 4 5 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;#34;./mock&amp;#34; 二、mock 代码相关 拦截部分 1 2 3 4 5 6 7 8 9 10 11</description>
-    </item>
-    
-    <item>
-      <title>promise async await</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
-      <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>
     </item>
     
   </channel>
