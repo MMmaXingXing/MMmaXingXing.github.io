@@ -23,7 +23,7 @@
     <item>
       <title>input type number 火狐兼容</title>
       <link>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</link>
-      <pubDate>Mon, 25 Mar 2019 17:52:44 +0800</pubDate>
+      <pubDate>Sun, 24 Mar 2019 17:52:44 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</guid>
       <description>input type number 火狐兼容 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; appearance: none; margin: 0; } input{ -moz-appearance:textfield !important; }</description>
