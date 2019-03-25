@@ -6,10 +6,28 @@
     <description>Recent content in 前端 on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 15 Mar 2019 23:33:08 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 18 Mar 2019 22:22:27 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vueX的知识总结（包括在vue-cli中的使用）</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 18 Mar 2019 22:22:27 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
+      <description>webpack 之 dev.env.js &amp;amp;&amp;amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 //dev.env.js //开发版本 &amp;#39;use strict&amp;#39; const merge = require(&amp;#39;webpack-merge&amp;#39;) const prodEnv = require(&amp;#39;./prod.env&amp;#39;) module.exports = merge(prodEnv, { NODE_ENV: &amp;#39;&amp;#34;development&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, }) 1 2 3 4 5 6 7 //prod.env.js //线上 &amp;#39;use strict&amp;#39; module.exports = { NODE_ENV: &amp;#39;&amp;#34;production&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, } 1 2 3 4 5 6 7</description>
+    </item>
+    
+    <item>
+      <title>diff算法</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/diff-%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sat, 16 Mar 2019 23:05:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/diff-%E7%AE%97%E6%B3%95/</guid>
+      <description>一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多</description>
+    </item>
     
     <item>
       <title>vue elementui 使用记录 图片上传</title>
@@ -27,6 +45,15 @@
       
       <guid>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</guid>
       <description>介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使</description>
+    </item>
+    
+    <item>
+      <title>冒泡排序</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description></description>
     </item>
     
     <item>
