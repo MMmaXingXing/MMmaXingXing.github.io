@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/html/</link>
+    <description>Recent content in Html on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 25 Mar 2019 17:55:13 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>创建一个手机端项目</title>
+      <link>https://mmmaxingxing.github.io/post/cours/compatible/%E6%89%8B%E6%9C%BA%E7%89%88%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA/</link>
+      <pubDate>Mon, 25 Mar 2019 17:55:13 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/compatible/%E6%89%8B%E6%9C%BA%E7%89%88%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA/</guid>
+      <description>meta 标签 1 2 3 4 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; //1：1屏占比 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0&amp;#34;/&amp;gt; //手机端完美视图 &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt; //打开浏览器为ie9及以上版本 &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; //有限打开内核为webkit 引入</description>
+    </item>
+    
+    <item>
+      <title>input type number 火狐兼容</title>
+      <link>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</link>
+      <pubDate>Mon, 25 Mar 2019 17:52:44 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</guid>
+      <description>input type number 火狐兼容 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; appearance: none; margin: 0; } input{ -moz-appearance:textfield !important; }</description>
+    </item>
+    
+  </channel>
+</rss>
