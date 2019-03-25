@@ -509,6 +509,14 @@ if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;学习掌握一些好的算法，对我们解决问题很有帮助。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;其他&#34;&gt;其他&lt;/h4&gt;
+
+&lt;p&gt;我们不说怎么能够成为XXX，我们先来看看成为XXX之后要做什么事情，而做这些事情，需要什么样的能力，在拥有了这些能力、做上了这件事情之后，又能向什么方向发展。&lt;/p&gt;
+
+&lt;p&gt;把算法当黑盒用的问题在于：黑盒能够解决问题的时候，使用方便，而一旦不能解决问题，或者对质量有所要求，就会感觉无所适从。&lt;/p&gt;
+
+&lt;p&gt;作为程序员、工程人员，想用机器学习算法解决实际问题，就得对算法有一定程度的掌握，此外对于数据处理和模型验证，也需具备相应知识。&lt;/p&gt;
 </description>
       
     </item>
