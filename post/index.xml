@@ -6,10 +6,46 @@
     <description>Recent content in Posts on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 25 Mar 2019 17:55:13 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 30 Mar 2019 21:07:20 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue-Cli兼容IE9</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</link>
+      <pubDate>Sat, 30 Mar 2019 21:07:20 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</guid>
+      <description>1、meta标签要写好 1 2 3 4 5 6 &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;author&amp;#34; content=&amp;#34;lyadmin&amp;#34;&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=Edge,chrome=1&amp;#34;&amp;gt; 2、编译插件要装好 1 npm install babel-polyfill --save-dev 3、其他配置要配好 1 2 3 4 5 6 7 8 9 // webpack.base.conf.js entry:</description>
+    </item>
+    
+    <item>
+      <title>利用Array From 实现分页骚操作</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/paging/</link>
+      <pubDate>Fri, 29 Mar 2019 15:24:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/paging/</guid>
+      <description>Array.form 是什么 array用于将两类对象转换为真正的数组, 即:类似数组的对象(array-likeobject) 和可遍历（iterable）的对象 包</description>
+    </item>
+    
+    <item>
+      <title>js数组扁平化操作</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Wed, 27 Mar 2019 13:55:25 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E6%93%8D%E4%BD%9C/</guid>
+      <description>常规操作 for of 递归实现 1 2 3 4 5 6 7 8 9 function flatten(arr, result = []) { for (let item of arr) { if (Array.isArray(item.children)) flatten(item.children, result) else result.push(item) } return result } 迭代器实现 生成器实现 reduce 三句话实现法 降维打击法 lodash 层次法 参考感</description>
+    </item>
+    
+    <item>
+      <title>手机端网页调试小技巧</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Tue, 26 Mar 2019 20:15:50 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
+      <description>chrome真机调试 只能调用手机端chrome浏览器，简单容易上手 1、访问 chrome://inspect 勾选&amp;rdquo;discovery usb device&amp;rdquo; 手机连接usb调试，ch</description>
+    </item>
     
     <item>
       <title>创建一个手机端项目</title>
@@ -39,7 +75,7 @@
     </item>
     
     <item>
-      <title>vueX的知识总结（包括在vue-cli中的使用）</title>
+      <title>webpack配置使用小技巧</title>
       <link>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Mon, 18 Mar 2019 22:22:27 +0800</pubDate>
       
@@ -71,6 +107,15 @@
       <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/elementuiupload/</guid>
+      <description>一、前端做图片上传展示 1 2 let _URL = window.URL || window.webkitURL; self.form.imageLogo = _URL.createObjectURL(file); 二、elementui 判断图片大小 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 const isSize = new Promise(function(resolve, reject) { let width =</description>
+    </item>
+    
+    <item>
+      <title>vue elementui 使用记录 图片上传</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</link>
+      <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</guid>
       <description>一、前端做图片上传展示 1 2 let _URL = window.URL || window.webkitURL; self.form.imageLogo = _URL.createObjectURL(file); 二、elementui 判断图片大小 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 const isSize = new Promise(function(resolve, reject) { let width =</description>
     </item>
     
