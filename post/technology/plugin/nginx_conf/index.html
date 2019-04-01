@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Astar Blog</title>
+  <title>nginx 配置 申请 - Astar Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Astar" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="反向代理和负载均衡 什么是反向代理 当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集" />
+
   <meta name="keywords" content="Hugo, blog, Astar" />
 
 
@@ -36,8 +37,7 @@
 
 
 
-<link rel="canonical" href="https://mmmaxingxing.github.io/" />
-<link href="https://mmmaxingxing.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Astar Blog" />
+<link rel="canonical" href="https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/" />
 
 
 
@@ -59,19 +59,27 @@
 
 
 
-<meta property="og:title" content="Astar Blog" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/" />
+<meta property="og:title" content="nginx 配置 申请" />
+<meta property="og:description" content="反向代理和负载均衡 什么是反向代理 当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/" />
+<meta property="article:published_time" content="2019-03-31T17:15:23&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-31T17:15:23&#43;08:00"/>
 
-<meta property="og:updated_time" content="2019-02-28T11:11:48&#43;08:00"/>
+<meta itemprop="name" content="nginx 配置 申请">
+<meta itemprop="description" content="反向代理和负载均衡 什么是反向代理 当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集">
 
-<meta itemprop="name" content="Astar Blog">
-<meta itemprop="description" content="Hugo theme jane example site.">
 
+<meta itemprop="datePublished" content="2019-03-31T17:15:23&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-31T17:15:23&#43;08:00" />
+<meta itemprop="wordCount" content="561">
+
+
+
+<meta itemprop="keywords" content="nginx,环境配置," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Astar Blog"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:title" content="nginx 配置 申请"/>
+<meta name="twitter:description" content="反向代理和负载均衡 什么是反向代理 当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -210,7 +218,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -264,301 +272,182 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-  <section id="posts" class="posts">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+        <h1 class="post-title">nginx 配置 申请</h1>
+        
+        <div class="post-meta">
+            <time datetime=" 2019-03-31 " class="post-time">
+          2019-03-31
+        </time> <div class="post-category">
+                <a href="https://mmmaxingxing.github.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"> 环境配置 </a> 
+            </div> 
+
+            
+            
+            <span id="busuanzi_container_page_pv">
+            | 本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </span>
+            
+
+            
+            
+        </div>
+    </header>
+
     
     
+
     
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-        <span class="post-pinned">
-          <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
-  width="32" height="32">
-  <path d="M682.666667 512V170.666667h42.666666V85.333333H298.666667v85.333334h42.666666v341.333333l-85.333333 85.333333v85.333334h221.866667v256h68.266666v-256H768v-85.333334l-85.333333-85.333333z"></path>
+    <div class="post-content">
+        
+
+<h3 id="反向代理和负载均衡">反向代理和负载均衡</h3>
+
+<h4 id="什么是反向代理">什么是反向代理</h4>
+
+<p>当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集群服务器的时候无法访问，必须通过第三方服务器才能访问集群</p>
+
+<p>这个时候，我们通过第三方服务器访问服务器集群的内容，但是我们并不知道是哪一台服务器提供的内容，此种代理方式称为反向代理</p>
+
+<h4 id="什么是负载均衡">什么是负载均衡</h4>
+
+<p>公司会建立很多的服务器，这些服务器组成了服务器集群，然后，当用户访问网站的时候，先访问一个中间服务器，再让这个中间服务器在服务器集群中选择一个压力较小的服务器，然后将该访问请求引入选择的服务器</p>
+
+<p>所以，用户每次访问，都会保证服务器集群中的每个服务器压力趋于平衡，分担了服务器压力，避免了服务器崩溃的情况</p>
+
+<p>一句话：nginx会给你分配服务器压力小的去访问</p>
+
+<h3 id="nginx-安装">nginx 安装</h3>
+
+<p>进入nginx 官网 根据不同环境配置安装</p>
+
+<p>window 直接下载 运行 即可</p>
+
+<p>Linux 安装 (回头补)</p>
+
+<h3 id="常用命令">常用命令</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">nginx //打开运行nginx
+
+nginx -s stop //停止nginx
+
+nginx -s reload //重新运行nginx
+
+ps -ef | grep nginx  // linux 查看 nginx.conf是从哪开始的
+
+find /|grep nginx.conf // linux 查看是否已安装nginx 及其安装路径
+
+nginx -t //检查语法是否正确</pre></td></tr></table>
+</div>
+</div>
+<h3 id="配置项">配置项</h3>
+
+<p>找到 nginx.conf</p>
+
+<h4 id="proxy-pass-反向代理配置">proxy_pass 反向代理配置</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">server {
+    listen 80;
+    server_name  chd.news.so.m.qss.test.so.com ;
+    location / {
+        proxy_pass http://10.10.10.10:20186;
+    }
+    #api server 完全代理
+    location /wwwthings {
+        proxy_pass http://verify7011;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header REMOTE-HOST $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;    
+    }
+}</pre></td></tr></table>
+</div>
+</div>
+<h4 id="负载均衡配置">负载均衡配置</h4>
+
+    </div>
+
+    
+    
+
+
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-tags">
+            <a href="https://mmmaxingxing.github.io/tags/nginx/">nginx</a> <a href="https://mmmaxingxing.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">环境配置</a> 
+        </div>
+
+        
+        <nav class="post-nav">
+            
+            <a class="prev" href="/post/technology/resource/admin-ui/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
 </svg>
 
-        </span>
-      
-      <a class="post-link" href="/post/technology/plugin/vuex-knowledge/">vueX的知识总结（包括在vue-cli中的使用）</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-02-28" class="post-time">
-        2019-02-28
-      </time>
-      <div class="post-category">
-          <a href="https://mmmaxingxing.github.io/categories/%E6%8F%92%E4%BB%B6/"> 插件 </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使
-    </div>
-    <div class="read-more">
-      <a href="/post/technology/plugin/vuex-knowledge/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-        <span class="post-pinned">
-          <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
-  width="32" height="32">
-  <path d="M682.666667 512V170.666667h42.666666V85.333333H298.666667v85.333334h42.666666v341.333333l-85.333333 85.333333v85.333334h221.866667v256h68.266666v-256H768v-85.333334l-85.333333-85.333333z"></path>
+            </i>
+            <span class="prev-text nav-default">资源汇总之后台管理系统</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a> 
+            <a class="next" href="/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/">
+                <span class="next-text nav-default">Vue-Cli兼容IE9</span>
+                <span class="prev-text nav-mobile">下一篇</span> 
+                <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
 </svg>
 
-        </span>
-      
-      <a class="post-link" href="/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">冒泡排序</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-02-28" class="post-time">
-        2019-02-28
-      </time>
-      <div class="post-category">
-          <a href="https://mmmaxingxing.github.io/categories/%E6%8F%92%E4%BB%B6/"> 插件 </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
+            </i>
+            </a>
+        </nav>
+    </footer>
 </article>
 
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-        <span class="post-pinned">
-          <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
-  width="32" height="32">
-  <path d="M682.666667 512V170.666667h42.666666V85.333333H298.666667v85.333334h42.666666v341.333333l-85.333333 85.333333v85.333334h221.866667v256h68.266666v-256H768v-85.333334l-85.333333-85.333333z"></path>
-</svg>
-
-        </span>
-      
-      <a class="post-link" href="/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/">Array_从排序数组中删除重复项</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-02-22" class="post-time">
-        2019-02-22
-      </time>
-      <div class="post-category">
-          <a href="https://mmmaxingxing.github.io/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原
-    </div>
-    <div class="read-more">
-      <a href="/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-        <span class="post-pinned">
-          <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
-  width="32" height="32">
-  <path d="M682.666667 512V170.666667h42.666666V85.333333H298.666667v85.333334h42.666666v341.333333l-85.333333 85.333333v85.333334h221.866667v256h68.266666v-256H768v-85.333334l-85.333333-85.333333z"></path>
-</svg>
-
-        </span>
-      
-      <a class="post-link" href="/post/technology/css/heart/">CSS绘制心形</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-02-21" class="post-time">
-        2019-02-21
-      </time>
-      <div class="post-category">
-          <a href="https://mmmaxingxing.github.io/categories/css/"> CSS </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      一、创建一个dom元素并为其增加宽高 1 &lt;div id=&#34;heart&#34;&gt; &lt;/div&gt; 1 2 3 4 5 #heart { position: relative; width: 50px; height: 40px; } 二、对目标元素的伪元素进行操作 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 #heart::before, #heart::after {
-    </div>
-    <div class="read-more">
-      <a href="/post/technology/css/heart/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-        <span class="post-pinned">
-          <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
-  width="32" height="32">
-  <path d="M682.666667 512V170.666667h42.666666V85.333333H298.666667v85.333334h42.666666v341.333333l-85.333333 85.333333v85.333334h221.866667v256h68.266666v-256H768v-85.333334l-85.333333-85.333333z"></path>
-</svg>
-
-        </span>
-      
-      <a class="post-link" href="/post/technology/plugin/mockjs_bas/">mockjs引入以及使用方式</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-02-19" class="post-time">
-        2019-02-19
-      </time>
-      <div class="post-category">
-          <a href="https://mmmaxingxing.github.io/categories/%E6%8F%92%E4%BB%B6/"> 插件 </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      一、mock引入 1 2 3 4 5 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &#34;./mock&#34; 二、mock 代码相关 拦截部分 1 2 3 4 5 6 7 8 9 10 11
-    </div>
-    <div class="read-more">
-      <a href="/post/technology/plugin/mockjs_bas/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-        <span class="post-pinned">
-          <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
-  width="32" height="32">
-  <path d="M682.666667 512V170.666667h42.666666V85.333333H298.666667v85.333334h42.666666v341.333333l-85.333333 85.333333v85.333334h221.866667v256h68.266666v-256H768v-85.333334l-85.333333-85.333333z"></path>
-</svg>
-
-        </span>
-      
-      <a class="post-link" href="/post/cours/creat_github_blog/">依靠github创建自己的博客站点</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-02-15" class="post-time">
-        2019-02-15
-      </time>
-      <div class="post-category">
-          <a href="https://mmmaxingxing.github.io/categories/%E6%95%99%E7%A8%8B/"> 教程 </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      一、依靠github创建自己的博客文档。 此步骤网上教程拼接得到，按需调整（放在最后生成上传之后查看是否需要）打包上传从本地测试感觉似乎git
-    </div>
-    <div class="read-more">
-      <a href="/post/cours/creat_github_blog/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-  </section>
-
-  
-  
 
 
 
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li >
-        <a href="/">1</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/page/2/">2</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
 
 
 

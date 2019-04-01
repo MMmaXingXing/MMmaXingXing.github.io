@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Feb 2019 10:54:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 17:15:23 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Admin Ui</title>
+      <link>https://mmmaxingxing.github.io/tags/admin-ui/</link>
+      <pubDate>Mon, 01 Apr 2019 17:15:23 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/tags/admin-ui/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Array</title>
@@ -80,6 +89,24 @@
       <pubDate>Fri, 29 Mar 2019 15:24:51 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>https://mmmaxingxing.github.io/tags/nginx/</link>
+      <pubDate>Sun, 31 Mar 2019 17:15:23 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resource</title>
+      <link>https://mmmaxingxing.github.io/tags/resource/</link>
+      <pubDate>Mon, 01 Apr 2019 17:15:23 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/tags/resource/</guid>
       <description></description>
     </item>
     
@@ -156,29 +183,11 @@
     </item>
     
     <item>
-      <title>算法</title>
-      <link>https://mmmaxingxing.github.io/tags/%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
+      <title>环境配置</title>
+      <link>https://mmmaxingxing.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 31 Mar 2019 17:15:23 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>调试</title>
-      <link>https://mmmaxingxing.github.io/tags/%E8%B0%83%E8%AF%95/</link>
-      <pubDate>Tue, 26 Mar 2019 20:15:50 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/tags/%E8%B0%83%E8%AF%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>面试</title>
-      <link>https://mmmaxingxing.github.io/tags/%E9%9D%A2%E8%AF%95/</link>
-      <pubDate>Wed, 27 Mar 2019 13:55:25 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/tags/%E9%9D%A2%E8%AF%95/</guid>
+      <guid>https://mmmaxingxing.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description></description>
     </item>
     

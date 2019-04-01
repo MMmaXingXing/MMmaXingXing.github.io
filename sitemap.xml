@@ -3,6 +3,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</loc>
+    <lastmod>2019-04-01T17:15:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</loc>
+    <lastmod>2019-03-31T17:15:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</loc>
     <lastmod>2019-03-30T21:07:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -136,6 +150,20 @@
   </url>
   
   <url>
+    <loc>https://mmmaxingxing.github.io/tags/admin-ui/</loc>
+    <lastmod>2019-04-01T17:15:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/categories/admin-ui/</loc>
+    <lastmod>2019-04-01T17:15:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mmmaxingxing.github.io/tags/array/</loc>
     <lastmod>2019-02-22T15:13:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -144,7 +172,7 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/</loc>
-    <lastmod>2019-03-30T21:07:20+08:00</lastmod>
+    <lastmod>2019-04-01T17:15:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -158,6 +186,7 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/categories/</loc>
+    <lastmod>2019-04-01T17:15:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -219,15 +248,29 @@
   </url>
   
   <url>
+    <loc>https://mmmaxingxing.github.io/tags/nginx/</loc>
+    <lastmod>2019-03-31T17:15:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mmmaxingxing.github.io/post/</loc>
-    <lastmod>2019-03-30T21:07:20+08:00</lastmod>
+    <lastmod>2019-04-01T17:15:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/tags/resource/</loc>
+    <lastmod>2019-04-01T17:15:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mmmaxingxing.github.io/tags/</loc>
-    <lastmod>2019-02-22T15:13:40+08:00</lastmod>
+    <lastmod>2019-04-01T17:15:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -312,6 +355,20 @@
   <url>
     <loc>https://mmmaxingxing.github.io/tags/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2019-03-16T23:05:51+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2019-03-31T17:15:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2019-03-31T17:15:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 30 Mar 2019 21:07:20 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 17:15:23 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>资源汇总之后台管理系统</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</link>
+      <pubDate>Mon, 01 Apr 2019 17:15:23 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</guid>
+      <description>vue技术栈 后台管理系统 vue-element-admin vuetify 正常技术栈 后台管理系统 bootstrap: Admin LTE php 技术栈 后台管理系统 fastAdmin</description>
+    </item>
+    
+    <item>
+      <title>nginx 配置 申请</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</link>
+      <pubDate>Sun, 31 Mar 2019 17:15:23 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</guid>
+      <description>反向代理和负载均衡 什么是反向代理 当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集</description>
+    </item>
     
     <item>
       <title>Vue-Cli兼容IE9</title>
@@ -171,15 +189,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</guid>
       <description>一、mock引入 1 2 3 4 5 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;#34;./mock&amp;#34; 二、mock 代码相关 拦截部分 1 2 3 4 5 6 7 8 9 10 11</description>
-    </item>
-    
-    <item>
-      <title>依靠github创建自己的博客站点</title>
-      <link>https://mmmaxingxing.github.io/post/cours/creat_github_blog/</link>
-      <pubDate>Fri, 15 Feb 2019 16:43:08 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/creat_github_blog/</guid>
-      <description>一、依靠github创建自己的博客文档。 此步骤网上教程拼接得到，按需调整（放在最后生成上传之后查看是否需要）打包上传从本地测试感觉似乎git</description>
     </item>
     
   </channel>
