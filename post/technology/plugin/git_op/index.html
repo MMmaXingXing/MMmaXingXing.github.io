@@ -72,7 +72,7 @@
 
 <meta itemprop="datePublished" content="2019-03-23T23:13:46&#43;08:00" />
 <meta itemprop="dateModified" content="2019-03-23T23:13:46&#43;08:00" />
-<meta itemprop="wordCount" content="1506">
+<meta itemprop="wordCount" content="763">
 
 
 
@@ -331,16 +331,6 @@
 </div>
 </div>
 <h4 id="2-设置配置">2、设置配置</h4>
-
-<h5 id="git的配置范围">git的配置范围</h5>
-
-<p>global选项是告知Git应该在多大范围内使用这一配置的一种方式&ndash;它应该应用到哪些仓库。Git模型旨在应用于多个较小的仓库，而不是较少的整体单一式仓库。由于用户通常会使用多个仓库，因此必须在每个仓库中配置相同的设置会很不方便。因此，Git提供了简化选择配置值范围的选项。有三种可用的级别配置：系统、全局和本地</p>
-
-<p>　　①系统：系统级别的配置意味着一个配置值会被应用到指定系统上的所有仓库，除非在一个较低的级别上对其重写。为了确保配置值应用在系统级别，要为config命令指定&ndash;system选项，比如git config &ndash;system core.autocrlf true</p>
-
-<p>　　②全局：全局级别的配置表明配置值适用于特定用户的所有仓库，除非在本地级别对其进行了重写。否则这就是用户要使用的最常见级别，因为它避免了必须为每一个仓库设置值的工作。这些设置被存储在每个用户的主目录中的一个名为.gitconfig的文件中</p>
-
-<p>③本地：在本地级别设置一个配置值意味着该设置只应用与一个仓库的上下文中，这对于指定一个特定仓库的唯一设置的场景来说会很有用。如果需要临时重写一个较高级别的设置，那么它也会很有用。本地仓库的配置会被存储在本地Git仓库的.git/config中</p>
 
 <p>全局配置</p>
 <div class="highlight"><div class="chroma">
@@ -664,64 +654,6 @@ ssh git@网址</pre></td></tr></table>
 //指定文件差异
 
 git diff dev master -- index</pre></td></tr></table>
-</div>
-</div>
-<h4 id="6-本地仓库推送到远端">6、本地仓库推送到远端</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">// 1、远端创建git仓库
-
-//2、本地仓库与远端仓库关联
-git remote add origin &#34;远端仓库路径&#34;
-
-//3、远端仓库为空则
-git push -u origin master
-//否则
-git pull --rebase origin master
-
-//4、提交到远程仓库
-git push origin master</pre></td></tr></table>
-</div>
-</div>
-<h4 id="7-拉取远程分支">7、拉取远程分支</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">//拉取远程分支 默认为住分支
-git clone git地址
-
-//拉取远程指定分支
-git clone -b dev git地址
-
-//拉取主分支后，基于远端指定分支本次创建新分支
-git branch -av //红色部分代表远端分支
-
-git branch dev origin/dev //基于远端的dev分支本次创建dev分支</pre></td></tr></table>
 </div>
 </div>
     </div>

@@ -803,16 +803,6 @@ input{
 &lt;/div&gt;
 &lt;h4 id=&#34;2-设置配置&#34;&gt;2、设置配置&lt;/h4&gt;
 
-&lt;h5 id=&#34;git的配置范围&#34;&gt;git的配置范围&lt;/h5&gt;
-
-&lt;p&gt;global选项是告知Git应该在多大范围内使用这一配置的一种方式&amp;ndash;它应该应用到哪些仓库。Git模型旨在应用于多个较小的仓库，而不是较少的整体单一式仓库。由于用户通常会使用多个仓库，因此必须在每个仓库中配置相同的设置会很不方便。因此，Git提供了简化选择配置值范围的选项。有三种可用的级别配置：系统、全局和本地&lt;/p&gt;
-
-&lt;p&gt;　　①系统：系统级别的配置意味着一个配置值会被应用到指定系统上的所有仓库，除非在一个较低的级别上对其重写。为了确保配置值应用在系统级别，要为config命令指定&amp;ndash;system选项，比如git config &amp;ndash;system core.autocrlf true&lt;/p&gt;
-
-&lt;p&gt;　　②全局：全局级别的配置表明配置值适用于特定用户的所有仓库，除非在本地级别对其进行了重写。否则这就是用户要使用的最常见级别，因为它避免了必须为每一个仓库设置值的工作。这些设置被存储在每个用户的主目录中的一个名为.gitconfig的文件中&lt;/p&gt;
-
-&lt;p&gt;③本地：在本地级别设置一个配置值意味着该设置只应用与一个仓库的上下文中，这对于指定一个特定仓库的唯一设置的场景来说会很有用。如果需要临时重写一个较高级别的设置，那么它也会很有用。本地仓库的配置会被存储在本地Git仓库的.git/config中&lt;/p&gt;
-
 &lt;p&gt;全局配置&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1136,64 +1126,6 @@ ssh git@网址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 git diff dev master -- index&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;6-本地仓库推送到远端&#34;&gt;6、本地仓库推送到远端&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;// 1、远端创建git仓库
-
-//2、本地仓库与远端仓库关联
-git remote add origin &amp;#34;远端仓库路径&amp;#34;
-
-//3、远端仓库为空则
-git push -u origin master
-//否则
-git pull --rebase origin master
-
-//4、提交到远程仓库
-git push origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;7-拉取远程分支&#34;&gt;7、拉取远程分支&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//拉取远程分支 默认为住分支
-git clone git地址
-
-//拉取远程指定分支
-git clone -b dev git地址
-
-//拉取主分支后，基于远端指定分支本次创建新分支
-git branch -av //红色部分代表远端分支
-
-git branch dev origin/dev //基于远端的dev分支本次创建dev分支&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
 &lt;/div&gt;</description>
       
     </item>
@@ -1251,6 +1183,104 @@ var falt = (res) =&amp;gt; {
         res.push(res)
     }
 }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>斐波拉契实现</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript.1/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript.1/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;斐波拉契&#34;&gt;斐波拉契&lt;/h4&gt;
+
+&lt;p&gt;斐波那契数列 1, 1, 2,3,5,8,13,21…..
+使用公式f( n ) = f(n-1)+f(n-2),结束条件f(2) =1, f(1) = 1&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;    //初始实现
+    function fib(n) {
+        if( n==1 || n == 2){
+            return 1;
+        }
+        else{
+            return fib(n-1)+fib(n-2);
+        }
+    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;    // for 循环实现
+
+    function fib(n){
+        var res = [1,1];
+        if( n==1 || n == 2){
+            return 1;
+        }
+        for(var i=2; i&amp;lt;n; i++){
+            res.push(res[i-1]+res[i-2]);
+        }
+        return res[n-1];
+    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;    var cache = [];
+    function fib(n){        
+        if(cache[n] !== undefined){               
+            return cache[n];
+        }          
+        if(n &amp;lt;= 2){               
+            cache[n] = 1;
+            return 1;
+        }    
+        cache.push(fib(n - 1) + fib(n - 2));
+        return cache[n];
+    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
       
@@ -1671,6 +1701,196 @@ if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !
     
     <item>
       <title>vue elementui 使用记录 图片上传</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript.1/elementuiupload/</link>
+      <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript.1/elementuiupload/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;一-前端做图片上传展示&#34;&gt;一、前端做图片上传展示&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;let _URL = window.URL || window.webkitURL;
+self.form.imageLogo = _URL.createObjectURL(file);&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;二-elementui-判断图片大小&#34;&gt;二、elementui 判断图片大小&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;    const isSize = new Promise(function(resolve, reject) {
+        let width = 800;
+        let height = 800;
+        let _URL = window.URL || window.webkitURL;
+        let img = new Image();
+        img.onload = function() {
+          let valid = img.width &amp;lt;= width &amp;amp;&amp;amp; img.height &amp;lt;= height;
+          valid ? resolve() : reject();
+        };
+        img.src = _URL.createObjectURL(file);
+      }).then(
+        () =&amp;gt; {
+          let _URL = window.URL || window.webkitURL;
+          self.form.imageLogo = _URL.createObjectURL(file);
+          return file;
+        },
+        () =&amp;gt; {
+          this.$message.error(&amp;#34;上传的icon必须是小于或等于800*800!&amp;#34;);
+          return Promise.reject();
+        }
+    );&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;三-创建表单文件&#34;&gt;三、创建表单文件&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;var formData = new FormData();//通过append方法添加数据
+// 用表单来初始化
+var formData = new FormData(form);
+// 我们可以根据name来访问表单中的字段
+var name = formData.get(&amp;#34;name&amp;#34;); // 获取名字
+var psw = formData.get(&amp;#34;psw&amp;#34;); // 获取密码
+// 当然也可以在此基础上，添加其他数据
+formData.append(&amp;#34;token&amp;#34;,&amp;#34;kshdfiwi3rh&amp;#34;);&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>vue elementui 使用记录 图片上传</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/elementuiupload/</link>
+      <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/elementuiupload/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;一-前端做图片上传展示&#34;&gt;一、前端做图片上传展示&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;let _URL = window.URL || window.webkitURL;
+self.form.imageLogo = _URL.createObjectURL(file);&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;二-elementui-判断图片大小&#34;&gt;二、elementui 判断图片大小&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;    const isSize = new Promise(function(resolve, reject) {
+        let width = 800;
+        let height = 800;
+        let _URL = window.URL || window.webkitURL;
+        let img = new Image();
+        img.onload = function() {
+          let valid = img.width &amp;lt;= width &amp;amp;&amp;amp; img.height &amp;lt;= height;
+          valid ? resolve() : reject();
+        };
+        img.src = _URL.createObjectURL(file);
+      }).then(
+        () =&amp;gt; {
+          let _URL = window.URL || window.webkitURL;
+          self.form.imageLogo = _URL.createObjectURL(file);
+          return file;
+        },
+        () =&amp;gt; {
+          this.$message.error(&amp;#34;上传的icon必须是小于或等于800*800!&amp;#34;);
+          return Promise.reject();
+        }
+    );&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;三-创建表单文件&#34;&gt;三、创建表单文件&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;var formData = new FormData();//通过append方法添加数据
+// 用表单来初始化
+var formData = new FormData(form);
+// 我们可以根据name来访问表单中的字段
+var name = formData.get(&amp;#34;name&amp;#34;); // 获取名字
+var psw = formData.get(&amp;#34;psw&amp;#34;); // 获取密码
+// 当然也可以在此基础上，添加其他数据
+formData.append(&amp;#34;token&amp;#34;,&amp;#34;kshdfiwi3rh&amp;#34;);&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>vue elementui 使用记录 图片上传</title>
       <link>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</link>
       <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
       
@@ -1766,10 +1986,10 @@ formData.append(&amp;#34;token&amp;#34;,&amp;#34;kshdfiwi3rh&amp;#34;);&lt;/code
     
     <item>
       <title>promise async await</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript.1/async_await_promise/</link>
       <pubDate>Mon, 04 Mar 2019 17:29:17 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript.1/async_await_promise/</guid>
       
         <description>
 
@@ -1814,535 +2034,50 @@ formData.append(&amp;#34;token&amp;#34;,&amp;#34;kshdfiwi3rh&amp;#34;);&lt;/code
     </item>
     
     <item>
-      <title>vueX的知识总结（包括在vue-cli中的使用）</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</link>
-      <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
+      <title>promise async await</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
+      <pubDate>Mon, 04 Mar 2019 17:29:17 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</guid>
-      
-        <description>
-
-&lt;h4 id=&#34;介绍&#34;&gt;介绍&lt;/h4&gt;
-
-&lt;h5 id=&#34;vuex是一个专门为vue-js应用程序开发的状态管理模式-四个部分&#34;&gt;Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分&lt;/h5&gt;
-
-&lt;p&gt;&lt;strong&gt;（1）、state：单一状态树，每个应用仅仅包含一个sate实例，使用时&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;this.$store.state.状态名字 （使用）&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;mapState([&amp;ldquo;title&amp;rdquo;])&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;（2）、getters：从store中的state中派生出一些状态，可以认为是state的计算属性&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;this.$store.getters.计算属性名字 （使用）&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;mapGetters([&amp;ldquo;getFilms&amp;rdquo;])&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;（3）、mutations：更改Vuex的store中的状态的唯一方法&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;常量的设计风格&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;[SOME_MUTATION](state){
-// mutate state
-}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;必须是同步函数&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;this.$store.commit(&amp;ldquo;type&amp;rdquo;,&amp;ldquo;payload&amp;rdquo;)（调用）&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;（4）、actions：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Action 提交的是mulation，而不是直接变更状态。&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Action 可以包含任意异步操作。&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;this.$store.dispatch(&amp;ldquo;type&amp;rdquo;,&amp;ldquo;payload&amp;rdquo;)&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;(5)、基础模板&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;// module 模板
-const store = new Vuex.Store({
-    state:{
-        count:0
-    },
-    mutations:{
-        increment(state,payload){
-
-        }
-    },
-    actions:{
-        increment(context,payload){
-            context.commit(&amp;#34;increment&amp;#34;);
-        }
-    }
-})&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;（6）、注意&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;应用层级的状态应该集中到单个store对象中&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;提交mulation是更改状态的唯一方法，并且这个过程是同步的&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;异步逻辑都应该封装到action里面&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;其他 查看vuex数据流可以使用 vue chrome devtools此工具&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>冒泡排序</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
-      <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Array_从排序数组中删除重复项</title>
-      <link>https://mmmaxingxing.github.io/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/</link>
-      <pubDate>Fri, 22 Feb 2019 10:54:40 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
       
         <description>
 
-&lt;h4 id=&#34;题目描述&#34;&gt;题目描述&lt;/h4&gt;
+&lt;h3 id=&#34;promise&#34;&gt;Promise&lt;/h3&gt;
 
-&lt;p&gt;给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。&lt;/p&gt;
+&lt;p&gt;promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promise是一个对象，从他可以获取异步操作的消息。Promise提供统一的api，各种异步操作都可以用相同的方法进行处理。&lt;/p&gt;
 
-&lt;p&gt;不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-示例1&#34; data-lang=&#34;示例1&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-示例1&#34; data-lang=&#34;示例1&#34;&gt;给定数组 nums = [1,1,2], 
+&lt;p&gt;&lt;strong&gt;promise对象有以下两个特点&lt;/strong&gt;&lt;/p&gt;
 
-函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 
+&lt;p&gt;（1）对象的状态不受外界影响。Promise对象代表一个异步操作，有三种状态：&lt;br /&gt;
+* pending 进行中
+* fulfilled 已成功
+* rejected 已失败&lt;/p&gt;
 
-你不需要考虑数组中超出新长度后面的元素。&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;解题思路&#34;&gt;解题思路&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;一、审题 提取关键信息
+&lt;p&gt;（2）一旦状态改变，就不可以再变。&lt;/p&gt;
 
-1、输入 处理 输出  
+&lt;p&gt;缺点&lt;/p&gt;
 
-输入:数组 数组为有序 （此题延申为数组无序时如何处理，如何效率更高）
+&lt;ul&gt;
+&lt;li&gt;无法取消Promise，一旦新建立就会执行，无法中途取消。&lt;/li&gt;
+&lt;li&gt;如果不设置回调函数，内部抛出的错误不会反应到外部。&lt;/li&gt;
+&lt;li&gt;处于pending时，无法得知目前进行到了哪个状态。&lt;/li&gt;
+&lt;/ul&gt;
 
-处理：删除重复的元素
+&lt;h3 id=&#34;async-await&#34;&gt;async/await&lt;/h3&gt;
 
-输出：处理过的数组长度
+&lt;p&gt;从字面意义理解 async是&amp;rdquo;异步&amp;rdquo;的简写 ，await可以认为是async wait的简写。因此 async是用域申明一个函数是异步的，await用于等待一个异步方法执行完成。&lt;/p&gt;
 
-2、特殊条件 不使用额外的数组空间&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;考点可以为数组函数的使用&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;async起什么作用&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;js中对数组本身进行操作的函数为split&lt;/p&gt;
+&lt;p&gt;async 返回一个promise对象，promise的特点是无等待，不使用await情况下与直接返回promise没有什么区别&lt;/p&gt;
 
-&lt;p&gt;java中为remove 等&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;await在等什么&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h5 id=&#34;官方处理-双指针法&#34;&gt;官方处理 （双指针法）&lt;/h5&gt;
+&lt;p&gt;根据语法说明，await等待的是一个表达式，这个表达式的计算结果可以为promise对象或其他对象。&lt;/p&gt;
 
-&lt;p&gt;数组不变 有序时每 后一个和前一个不等则 ++ return&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-官方示例java&#34; data-lang=&#34;官方示例java&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-官方示例java&#34; data-lang=&#34;官方示例java&#34;&gt;public int removeDuplicates(int[] nums) {
-    if (nums.length == 0) return 0;
-    int i = 0;
-    for (int j = 1; j &amp;lt; nums.length; j++) {
-        if (nums[j] != nums[i]) {
-            i++;
-            nums[i] = nums[j];
-        }
-    }
-    return i + 1;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;复杂度分析&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;等到之后呢&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;时间复杂度：O(n)O(n)， 假设数组的长度是 nn，那么 ii 和 jj 分别最多遍历 nn 步。&lt;/p&gt;
-
-&lt;p&gt;空间复杂度：O(1)O(1)。&lt;/p&gt;
-
-&lt;h4 id=&#34;实际实现&#34;&gt;实际实现&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript 236m（自己）&#34; data-lang=&#34;javascript 236m（自己）&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript 236m（自己）&#34; data-lang=&#34;javascript 236m（自己）&#34;&gt;var removeDuplicates = function(nums) {
-    if(nums instanceof Array){
-        if (nums.length == 0){
-            return nums.length
-        } 
-        let idx = 0;
-        while (idx &amp;lt; nums.length){
-            if(nums[idx]==nums[idx+1]){
-                nums.splice(idx,1);
-            }else{
-                idx++;
-            }
-        }
-        return nums.length;
-    }
-};&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jivascript 120ms (Catouse)&#34; data-lang=&#34;jivascript 120ms (Catouse)&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jivascript 120ms (Catouse)&#34; data-lang=&#34;jivascript 120ms (Catouse)&#34;&gt;var removeDuplicates = function(nums) {
-    return nums.splice(0, nums.length, ...Array.from(new Set(nums))).length;
-};&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h5 id=&#34;知识点&#34;&gt;知识点&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment&#34;&gt;解构赋值&lt;/a&gt;
-&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from&#34;&gt;Array.from()&lt;/a&gt;
-&lt;a href=&#34;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set&#34;&gt;new Set()&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;解构赋值：语法是一个 Javascript 表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。
-
-Array.from(参数1,参数2，参数3)
-1.想要转换成数组的伪数组对象或可迭代对象
-2.新数组中的每个元素会执行该回调函数
-3.执行回调里面的this指谁
-返回一个新的数组实例
-
-
-new Set([iterable]);
-iterable：可迭代对象
-返回：新的set对象&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;go语言实现&#34;&gt;Go语言实现&lt;/h4&gt;
-
-&lt;p&gt;在强制类型里面的构造和弱类型语言中不同，强制类型中的arr是不可以动态改变的，由此此题解法需要采用官方双指针法求解&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-GO 116ms&#34; data-lang=&#34;GO 116ms&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-GO 116ms&#34; data-lang=&#34;GO 116ms&#34;&gt;func removeDuplicates(nums []int) int {
-    if len(nums)==0 {
-        return 0;
-    }else{
-        i := 0;
-        j := 1;
-        for i+j&amp;lt;len(nums) {
-            if nums[i]==nums[j+i]{
-                j++;
-            }else{
-                i++;
-                nums[i] = nums[j+i-1];
-            }
-        }
-        return len(nums)-j+1;
-    }
-}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Go 0s 非排序可执行 15123850133&#34; data-lang=&#34;Go 0s 非排序可执行 15123850133&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Go 0s 非排序可执行 15123850133&#34; data-lang=&#34;Go 0s 非排序可执行 15123850133&#34;&gt;func removeDuplicates(nums []int) int {
-    length:=len(nums)
-    var count int
-    if length&amp;gt;0{
-        count=1
-    }
-    maps:= map[int]int{}
-    for i,v :=range nums{
-        maps[v]=v
-        for j:=i+1;j&amp;lt;length;j++{
-            if _,ok:= maps[nums[j]];!ok{
-                nums[i+1]=nums[j]
-                maps[nums[j]]=nums[j]
-                count++
-                break
-            }
-        }
-    }
-    return count
-}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>CSS绘制心形</title>
-      <link>https://mmmaxingxing.github.io/post/technology/css/heart/</link>
-      <pubDate>Thu, 21 Feb 2019 17:17:52 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/css/heart/</guid>
-      
-        <description>
-
-&lt;p&gt;&lt;div align=center&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/css/Snipaste_2019-02-21_17-43-35.png&#34; alt=&#34;效果实现&#34; /&gt;
-&lt;div align=left&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;一-创建一个dom元素并为其增加宽高&#34;&gt;一、创建一个dom元素并为其增加宽高&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;heart&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt; &lt;span class=&#34;p&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;heart&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;position&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;relative&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;width&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;height&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;二-对目标元素的伪元素进行操作&#34;&gt;二、对目标元素的伪元素进行操作&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;        #heart::before,
-        #heart::after {
-            position: absolute;
-            left: 0;
-            top: 0;
-            content: &amp;#34;&amp;#34;;
-            width: 25px;
-            height: 40px;
-            background: red;
-            border-radius: 20px 20px 0 0;
-        }
-        
-        #heart::after {
-            left: 25px;
-            top: 0;
-        }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;三-最后一步-旋转操作&#34;&gt;三、最后一步 旋转操作&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;        #heart::before,
-        #heart::after {
-            /* 最后一步 */
-            transform: rotate(-45deg);
-            transform-origin: 100% -50%;
-        }
-        
-        #heart::after {
-            /* 最后一步 */
-            transform: rotate(45deg);
-            transform-origin: 100% 100%;
-        }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;四-知识点&#34;&gt;四、知识点&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;border-radius: top-left top-right bottom-right bottom-left;
-
-transform-origin: 50% 50% 0;//默认旋转点是中心点
-
-//改变被转换元素的中心点
-
-//可接受关键字或长度单位&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;五-项目地址-https-github-com-mmmaxingxing-css-blob-master-heart-html&#34;&gt;五、&lt;a href=&#34;https://github.com/MMmaXingXing/CSS/blob/master/heart.html&#34;&gt;项目地址&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h3 id=&#34;六-get到张鑫旭大神实现过的css样式-https-www-zhangxinxu-com-wordpress-2019-01-pure-css-shapes&#34;&gt;六、&lt;a href=&#34;https://www.zhangxinxu.com/wordpress/2019/01/pure-css-shapes/&#34;&gt;get到张鑫旭大神实现过的css样式&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;await等到了要等的东西之后，非promise对象则返回，promise对象则阻塞后面的代码，等着promise对象resolve，然后得到resolve的值，作为其运算结果。&lt;/p&gt;
 </description>
       
     </item>
