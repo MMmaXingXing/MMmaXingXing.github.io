@@ -13,15 +13,6 @@
     
     <item>
       <title>斐波拉契实现</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript.1/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</link>
-      <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript.1/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</guid>
-      <description>斐波拉契 斐波那契数列 1, 1, 2,3,5,8,13,21….. 使用公式f( n ) = f(n-1)+f(n-2),结束条件f(2) =1, f(1) = 1 1 2 3 4 5 6 7</description>
-    </item>
-    
-    <item>
-      <title>斐波拉契实现</title>
       <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
       
