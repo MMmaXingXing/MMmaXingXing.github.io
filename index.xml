@@ -6,10 +6,1812 @@
     <description>Recent content on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Feb 2019 11:11:48 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 17:15:23 +0800</lastBuildDate>
     
         <atom:link href="https://mmmaxingxing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>资源汇总之后台管理系统</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</link>
+      <pubDate>Mon, 01 Apr 2019 17:15:23 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;vue技术栈&#34;&gt;vue技术栈&lt;/h3&gt;
+
+&lt;h4 id=&#34;后台管理系统&#34;&gt;后台管理系统&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/PanJiaChen/vue-element-admin&#34;&gt;vue-element-admin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://vuetifyjs.com/zh-Hans/getting-started/quick-start&#34;&gt;vuetify&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;正常技术栈&#34;&gt;正常技术栈&lt;/h3&gt;
+
+&lt;h4 id=&#34;后台管理系统-1&#34;&gt;后台管理系统&lt;/h4&gt;
+
+&lt;p&gt;bootstrap:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ColorlibHQ/AdminLTE&#34;&gt;Admin LTE&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;php-技术栈&#34;&gt;php 技术栈&lt;/h3&gt;
+
+&lt;h4 id=&#34;后台管理系统-2&#34;&gt;后台管理系统&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.fastadmin.net/&#34;&gt;fastAdmin&lt;/a&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>nginx 配置 申请</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</link>
+      <pubDate>Sun, 31 Mar 2019 17:15:23 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;反向代理和负载均衡&#34;&gt;反向代理和负载均衡&lt;/h3&gt;
+
+&lt;h4 id=&#34;什么是反向代理&#34;&gt;什么是反向代理&lt;/h4&gt;
+
+&lt;p&gt;当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集群服务器的时候无法访问，必须通过第三方服务器才能访问集群&lt;/p&gt;
+
+&lt;p&gt;这个时候，我们通过第三方服务器访问服务器集群的内容，但是我们并不知道是哪一台服务器提供的内容，此种代理方式称为反向代理&lt;/p&gt;
+
+&lt;h4 id=&#34;什么是负载均衡&#34;&gt;什么是负载均衡&lt;/h4&gt;
+
+&lt;p&gt;公司会建立很多的服务器，这些服务器组成了服务器集群，然后，当用户访问网站的时候，先访问一个中间服务器，再让这个中间服务器在服务器集群中选择一个压力较小的服务器，然后将该访问请求引入选择的服务器&lt;/p&gt;
+
+&lt;p&gt;所以，用户每次访问，都会保证服务器集群中的每个服务器压力趋于平衡，分担了服务器压力，避免了服务器崩溃的情况&lt;/p&gt;
+
+&lt;p&gt;一句话：nginx会给你分配服务器压力小的去访问&lt;/p&gt;
+
+&lt;h3 id=&#34;nginx-安装&#34;&gt;nginx 安装&lt;/h3&gt;
+
+&lt;p&gt;进入nginx 官网 根据不同环境配置安装&lt;/p&gt;
+
+&lt;p&gt;window 直接下载 运行 即可&lt;/p&gt;
+
+&lt;p&gt;Linux 安装 (回头补)&lt;/p&gt;
+
+&lt;h3 id=&#34;常用命令&#34;&gt;常用命令&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;nginx //打开运行nginx
+
+nginx -s stop //停止nginx
+
+nginx -s reload //重新运行nginx
+
+ps -ef | grep nginx  // linux 查看 nginx.conf是从哪开始的
+
+find /|grep nginx.conf // linux 查看是否已安装nginx 及其安装路径
+
+nginx -t //检查语法是否正确&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;配置项&#34;&gt;配置项&lt;/h3&gt;
+
+&lt;p&gt;找到 nginx.conf&lt;/p&gt;
+
+&lt;h4 id=&#34;proxy-pass-反向代理配置&#34;&gt;proxy_pass 反向代理配置&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;server {
+    listen 80;
+    server_name  chd.news.so.m.qss.test.so.com ;
+    location / {
+        proxy_pass http://10.10.10.10:20186;
+    }
+    #api server 完全代理
+    location /wwwthings {
+        proxy_pass http://verify7011;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header REMOTE-HOST $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;    
+    }
+}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;负载均衡配置-upstream&#34;&gt;负载均衡配置 Upstream&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ip_hash指令&lt;/li&gt;
+&lt;li&gt;server 指令&lt;/li&gt;
+&lt;li&gt;upstream 指令以及其相关变量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;// 修改nginx.conf
+worker_processes 1;
+events {
+    worker_connections 1024;
+}
+http {
+    upstream firstdemo {
+        server 39.106.145.33;
+        server 47.93.6.93;
+    }
+    server {
+        listen 8080;
+        location / {
+            proxy_pass http://firstdemo;
+        }
+    }
+}
+
+//示意
+worker_processes
+工作进程数，和CPU核数相同
+worker_connections
+每个进程允许的最大连接数
+upstream模块
+负载均衡就靠它
+语法格式：upstream name {}
+里面写的两个server分别对应着不同的服务器
+server模块
+实现反向代理
+listen监督端口号
+location / {}访问根路径
+proxy_pass http://firstdemo，代理到firstdemo里两个服务器上&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;每次刷新都会访问不同的服务器，这样就做到了负载均衡处理&lt;/p&gt;
+
+&lt;p&gt;不过，更应该做到的是当用户第一次访问到其中一台服务器后，下次再访问的时候就直接访问该台服务器就好了，不用总变化了。那么就发挥了ip_hash的威力了&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt; upstream firstdemo {
+        ip_hash;
+        server 39.106.145.33;
+        server 47.93.6.93;
+    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;ip_hash它的作用是如果第一次访问该服务器后就记录，之后再访问都是该服务器了，这样比如第一次访问是33服务器，那之后再访问也会分配为33服务器访问了&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Vue-Cli兼容IE9</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</link>
+      <pubDate>Sat, 30 Mar 2019 21:07:20 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;1-meta标签要写好&#34;&gt;1、meta标签要写好&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt;
+  &amp;lt;meta name=&amp;#34;viewport&amp;#34;
+    content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34;&amp;gt;
+  &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt;
+  &amp;lt;meta name=&amp;#34;author&amp;#34; content=&amp;#34;lyadmin&amp;#34;&amp;gt;
+  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=Edge,chrome=1&amp;#34;&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;2-编译插件要装好&#34;&gt;2、编译插件要装好&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npm install babel-polyfill --save-dev&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;3-其他配置要配好&#34;&gt;3、其他配置要配好&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;// webpack.base.conf.js
+entry: {
+    app: [&amp;#39;babel-polyfill&amp;#39;,&amp;#39;./src/main.js&amp;#39;]
+  },
+
+
+  // main.js
+  
+  import &amp;#39;babel-polyfill&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>利用Array From 实现分页骚操作</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/paging/</link>
+      <pubDate>Fri, 29 Mar 2019 15:24:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/paging/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;array-form-是什么&#34;&gt;Array.form 是什么&lt;/h4&gt;
+
+&lt;h5 id=&#34;array用于将两类对象转换为真正的数组&#34;&gt;array用于将两类对象转换为真正的数组,&lt;/h5&gt;
+
+&lt;p&gt;即:类似数组的对象(array-likeobject) 和可遍历（iterable）的对象 包括[Set]和[Map]&lt;/p&gt;
+
+&lt;p&gt;代码如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;let arrLike = {
+    &amp;#34;0&amp;#34;:&amp;#34;a&amp;#34;,
+    &amp;#34;1&amp;#34;:&amp;#34;b&amp;#34;,
+    &amp;#34;2&amp;#34;:&amp;#34;c&amp;#34;,
+    length:3
+}
+
+//ES5
+
+let arr1 = [].slice.call(arrLike) //[&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;]
+
+//ES6
+
+let arr2 = Array.from(arrLike) //[&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;, &amp;#34;c&amp;#34;]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;实际应用，常见的类似数组的对象是DOM操作返回的NodeList集合，以及函数内部的arguments对象。&lt;/p&gt;
+
+&lt;p&gt;Array.from 都可以将它们转为真正的数组。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;// node list 对象
+
+let ps = document.querySelectorAll(&amp;#34;p&amp;#34;);
+
+Array.from(ps).filter(p =&amp;gt; {
+    return p.textContent.length &amp;gt; 100;
+})
+//转为数组 返回filter 对象
+
+//arguments 对象
+function foo (){
+    var args = Array.from(arguments);
+}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h5 id=&#34;部署了iterator的接口的数据结构-array-from都可以将其转为数组&#34;&gt;部署了Iterator的接口的数据结构，Array.from都可以将其转为数组;&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;Array.from(&amp;#39;hello&amp;#39;)
+// [&amp;#39;h&amp;#39;, &amp;#39;e&amp;#39;, &amp;#39;l&amp;#39;, &amp;#39;l&amp;#39;, &amp;#39;o&amp;#39;]
+
+let namesSet = new Set([&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;])
+Array.from(namesSet) // [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h5 id=&#34;兼容处理&#34;&gt;兼容处理：&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;const toArray = (() =&amp;gt;
+  Array.from ? Array.from : obj =&amp;gt; [].slice.call(obj)
+)();&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h5 id=&#34;array-from-的-第二个参数&#34;&gt;array.from 的 第二个参数:&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;Array.from([1,2,3],(x) =&amp;gt; x*x);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;用类似于map的方法，对数据进行处理&lt;/p&gt;
+
+&lt;p&gt;如果map函数里面用到了this关键字，还可以传入Array.from的第三个参数，用来绑定this。&lt;/p&gt;
+
+&lt;h5 id=&#34;array-from-的-第一个参数-可以-指定-第二个参数的运行次数&#34;&gt;array.from 的 第一个参数  可以 指定 第二个参数的运行次数&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;Array.from({ length: 2 }, () =&amp;gt; &amp;#39;jack&amp;#39;)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h5 id=&#34;其他&#34;&gt;其他：&lt;/h5&gt;
+
+&lt;p&gt;Array.from()的另一个应用是，将字符串转为数组，然后返回字符串的长度。因为它能正确处理各种 Unicode 字符，可以避免 JavaScript 将大于\uFFFF的 Unicode 字符，算作两个字符的 bug。&lt;/p&gt;
+
+&lt;h5 id=&#34;array-from-的兼容性&#34;&gt;array.from 的兼容性&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/plugin_javascript/array.from.jpg&#34; alt=&#34;MDN截图&#34; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;代码实现分页&#34;&gt;代码实现分页&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;const chunk = (arr,size) =&amp;gt;
+
+Array.from({length:Math.ceil(arr.length/size)},(v,i) =&amp;gt; {
+    arr.slice( i*size , i*size+size)
+});&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>js数组扁平化操作</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Wed, 27 Mar 2019 13:55:25 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E6%93%8D%E4%BD%9C/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;常规操作-for-of-递归实现&#34;&gt;常规操作 for of 递归实现&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;    function flatten(arr, result = []) {
+          for (let item of arr) {
+            if (Array.isArray(item.children))
+              flatten(item.children, result)
+            else
+              result.push(item)
+          }
+          return result
+    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;迭代器实现&#34;&gt;迭代器实现&lt;/h3&gt;
+
+&lt;h3 id=&#34;生成器实现&#34;&gt;生成器实现&lt;/h3&gt;
+
+&lt;h3 id=&#34;reduce-三句话实现法&#34;&gt;reduce 三句话实现法&lt;/h3&gt;
+
+&lt;h3 id=&#34;降维打击法&#34;&gt;降维打击法&lt;/h3&gt;
+
+&lt;h3 id=&#34;lodash-层次法&#34;&gt;lodash 层次法&lt;/h3&gt;
+
+&lt;h4 id=&#34;参考感谢-https-www-jianshu-com-p-b1fb3434e1f5&#34;&gt;参考感谢 &lt;a href=&#34;https://www.jianshu.com/p/b1fb3434e1f5&#34;&gt;https://www.jianshu.com/p/b1fb3434e1f5&lt;/a&gt;&lt;/h4&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>手机端网页调试小技巧</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Tue, 26 Mar 2019 20:15:50 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;chrome真机调试&#34;&gt;chrome真机调试&lt;/h3&gt;
+
+&lt;p&gt;只能调用手机端chrome浏览器，简单容易上手&lt;/p&gt;
+
+&lt;p&gt;1、访问 chrome://inspect  勾选&amp;rdquo;discovery usb device&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/github_blog/debugging/debugging.png&#34; alt=&#34;操作展示&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;手机连接usb调试，chrome自动查询到，手机端访问的页面可以直接打开。&lt;/p&gt;
+
+&lt;h3 id=&#34;weinre调试&#34;&gt;weinre调试&lt;/h3&gt;
+
+&lt;p&gt;Weinre(WebInspector Remote)是一款基于Web Inspector(Webkit)的远程调试工具，借助于网络，可以在PC上直接调试运行在移动设备上的远程页面。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;//安装
+
+npm install -g weinre
+
+//打开 运行 成功则进入默认页面
+weinre --httpPort 8090 --boundHost -all-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;weinew启动参数说明&lt;/p&gt;
+
+&lt;p&gt;httpPort：设置Wninre使用的端口号，默认是8080。
+boundHost：[hostname | Ip | -all-]: 默认是 ‘localhost’。&lt;br /&gt;
+debug [true | false]：这个选项与–verbose类似， 会输出更多的信息。默认为false。
+readTimeout [seconds]：Server发送信息到Target/Client的超时时间， 默认为5s。&lt;br /&gt;
+deathTimeout [seconds]：默认为3倍的readTimeout， 如果页面超过这个时间都没有任何响应， 那么就会断开连接。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;//在要调试的页面中新增 script 脚本
+
+&amp;lt;script src=&amp;#34;http://自己的ip:8090/target/target-script-min.js#anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;修改样式时，会在手机端即时生效，并且也可以查看控制台信息，唯一一点就是，不能进行断点调试。&lt;/p&gt;
+
+&lt;p&gt;最后，在调试结束之后，别忘记删除嵌入的script。&lt;/p&gt;
+
+&lt;h3 id=&#34;spy-debugger调试&#34;&gt;spy-debugger调试&lt;/h3&gt;
+
+&lt;p&gt;Spy-debugger内部集成了weinre，通过代理的方式拦截所有html自动注入weinre所需的js代码。简化了weinre需要给每个调试的页面添加js代码。spy-debugger原理是拦截所有html页面请求注入weinre所需要的js代码。让页面调试更加方便。&lt;/p&gt;
+
+&lt;p&gt;特性：&lt;/p&gt;
+
+&lt;p&gt;页面调试＋抓包&lt;br /&gt;
+操作简单&lt;br /&gt;
+支持HTTPS。
+spy-debugger内部集成了weinre、node-mitmproxy、AnyProxy。
+自动忽略原生App发起的https请求，只拦截webview发起的https请求。对使用了SSL pinning技术的原生App不造成任何影响。
+可以配合其它代理工具一起使用(默认使用AnyProxy)&lt;/p&gt;
+
+&lt;p&gt;安装：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;// 全局安装
+npm install –g spy-debugger
+
+//运行
+
+spy-debugger&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;设置手机的HTTP代理：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;代理的地址为PC的IP地址，代理的端口为spy-debugger的启动端口(默认端口为：9888)默认端口是 9888。
+如果要指定端口： spy-debugger–p8888。
+Android设置步骤：设置 - WLAN - 长按选中网络 - 修改网络 - 高级 - 代理设置 - 手动。
+iOS设置代理步骤：设置 - 无线局域网 - 选中网络 - HTTP代理手动。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;手机安装证书(node-mitmproxy CA根证书)：&lt;/p&gt;
+
+&lt;h5 id=&#34;第一步-生成证书&#34;&gt;第一步：生成证书&lt;/h5&gt;
+
+&lt;p&gt;生成CA根证书，根证书生成在 /Users/XXX/node-mitmproxy/ 目录下(Mac)。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;spy-debugger initCA&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h5 id=&#34;第二步-安装证书&#34;&gt;第二步：安装证书&lt;/h5&gt;
+
+&lt;p&gt;把node-mitmproxy文件夹下的 node-mitmproxy.ca.crt 传到手机上，点击安装即可。&lt;/p&gt;
+
+&lt;p&gt;Spy-debugger启动界面，同样，在手机端刷新页面之后，targets中会有记录。&lt;/p&gt;
+
+&lt;h3 id=&#34;eruda&#34;&gt;Eruda&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/liriliri/eruda&#34;&gt;https://github.com/liriliri/eruda&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在html页面中引入此工具，既可自动使用控制台调试工具。&lt;/p&gt;
+
+&lt;h3 id=&#34;微信-web开发者工具&#34;&gt;微信 web开发者工具&lt;/h3&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>创建一个手机端项目</title>
+      <link>https://mmmaxingxing.github.io/post/cours/compatible/%E6%89%8B%E6%9C%BA%E7%89%88%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA/</link>
+      <pubDate>Mon, 25 Mar 2019 17:55:13 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/compatible/%E6%89%8B%E6%9C%BA%E7%89%88%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;meta-标签&#34;&gt;meta 标签&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; //1：1屏占比
+&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0&amp;#34;/&amp;gt;  //手机端完美视图
+&amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt; //打开浏览器为ie9及以上版本
+&amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt;  //有限打开内核为webkit&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;引入处理&#34;&gt;引入处理&lt;/h4&gt;
+
+&lt;h5 id=&#34;选择性引入样式表&#34;&gt;选择性引入样式表&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; media=&amp;#34;screen and (min-width: 1026px)&amp;#34; href=&amp;#34;css/style1.css&amp;#34;&amp;gt;
+&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; media=&amp;#34;screen and (max-width: 1025px)&amp;#34; href=&amp;#34;css/Mobal.css&amp;#34;&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;兼容处理&#34;&gt;兼容处理&lt;/h4&gt;
+
+&lt;p&gt;手机端单位处理： （此处为手淘的flex解决方案，还有一版解决方案为Ydui）&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>input type number 火狐兼容</title>
+      <link>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</link>
+      <pubDate>Sun, 24 Mar 2019 17:52:44 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;input-type-number-火狐兼容&#34;&gt;input type number 火狐兼容&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-input&#34; data-lang=&#34;input&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-input&#34; data-lang=&#34;input&#34;&gt;input::-webkit-outer-spin-button,
+
+input::-webkit-inner-spin-button {
+
+-webkit-appearance: none;
+
+appearance: none;
+
+margin: 0;
+
+}
+
+input{
+
+-moz-appearance:textfield !important;
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>git 常用操作</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/git_op/</link>
+      <pubDate>Sat, 23 Mar 2019 23:13:46 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/git_op/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;git-是什么&#34;&gt;git 是什么&lt;/h3&gt;
+
+&lt;p&gt;GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分布式版本库方式。&lt;/p&gt;
+
+&lt;h3 id=&#34;基本操作指令&#34;&gt;基本操作指令&lt;/h3&gt;
+
+&lt;h4 id=&#34;1-创建仓库&#34;&gt;1、创建仓库&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;    // a 当前目录创建仓库 
+
+    git init 
+
+    // b 指定目录创建仓库
+
+    git init 目录名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;2-设置配置&#34;&gt;2、设置配置&lt;/h4&gt;
+
+&lt;h5 id=&#34;git的配置范围&#34;&gt;git的配置范围&lt;/h5&gt;
+
+&lt;p&gt;global选项是告知Git应该在多大范围内使用这一配置的一种方式&amp;ndash;它应该应用到哪些仓库。Git模型旨在应用于多个较小的仓库，而不是较少的整体单一式仓库。由于用户通常会使用多个仓库，因此必须在每个仓库中配置相同的设置会很不方便。因此，Git提供了简化选择配置值范围的选项。有三种可用的级别配置：系统、全局和本地&lt;/p&gt;
+
+&lt;p&gt;　　①系统：系统级别的配置意味着一个配置值会被应用到指定系统上的所有仓库，除非在一个较低的级别上对其重写。为了确保配置值应用在系统级别，要为config命令指定&amp;ndash;system选项，比如git config &amp;ndash;system core.autocrlf true&lt;/p&gt;
+
+&lt;p&gt;　　②全局：全局级别的配置表明配置值适用于特定用户的所有仓库，除非在本地级别对其进行了重写。否则这就是用户要使用的最常见级别，因为它避免了必须为每一个仓库设置值的工作。这些设置被存储在每个用户的主目录中的一个名为.gitconfig的文件中&lt;/p&gt;
+
+&lt;p&gt;③本地：在本地级别设置一个配置值意味着该设置只应用与一个仓库的上下文中，这对于指定一个特定仓库的唯一设置的场景来说会很有用。如果需要临时重写一个较高级别的设置，那么它也会很有用。本地仓库的配置会被存储在本地Git仓库的.git/config中&lt;/p&gt;
+
+&lt;p&gt;全局配置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git config --global user.name woniu
+git config --global user.email woniu@163.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;设置本地仓库配置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git config --local user.name woniu
+git config --local user.email woniu@163.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;查看配置信息&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git config --global --list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;生成 shh-key&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;//切换到ssh文件夹
+
+cd ~/.ssh
+
+//没有则创建
+
+mkdir ~/.ssh
+
+//生成key
+ssh-keygen -t rsa -C &amp;#34;邮件地址&amp;#34;
+
+//生成地址
+/C/用户/Admin/.ssh
+
+//测试是否添加成功
+ssh git@网址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;3-工作文件新增到暂存区&#34;&gt;3、工作文件新增到暂存区&lt;/h4&gt;
+
+&lt;p&gt;提交指定文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git add a.cpp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;提交指当前目录所有文件&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git add .&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;把提交过暂存区，已经发生改变的文件再次提交到暂存区&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git add -u&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;4-暂存区文件提交到版本库&#34;&gt;4、暂存区文件提交到版本库&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git commit -m &amp;#34;初始版本&amp;#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;5-查看git提交日志&#34;&gt;5、查看git提交日志&lt;/h4&gt;
+
+&lt;p&gt;全部日志&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git log&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;简化日志&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git log --oneline&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;查看前5个日志&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git log -n5 --oneline&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;查看所有日志&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git log --all&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;图像化查看所有日志&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git log --all --graph&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;6-查看上次提交后是否有修改&#34;&gt;6、查看上次提交后是否有修改&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git status&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;7-查看差异&#34;&gt;7、查看差异&lt;/h4&gt;
+
+&lt;p&gt;查看工作区与暂存区差异&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git diff&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;查看暂存区与仓库之间的差异&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git diff --cached&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;比较不同commit的差异&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git diff HEAD1 Mastar2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;8-清空暂存区-工作区修改&#34;&gt;8、清空暂存区，工作区修改&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git reset --hard&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;9-删除工作区和暂存文件&#34;&gt;9、删除工作区和暂存文件&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git rm 文件名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;10-重命名文件&#34;&gt;10、重命名文件&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git mv a.app  b.app&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;11-版本回滚&#34;&gt;11、版本回滚&lt;/h4&gt;
+
+&lt;p&gt;恢复暂存区与head一致&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git reset HEAD&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;恢复暂存区指定文件与head一致&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git reset HEAD --文件名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;恢复工作区与暂存区一致&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git checkout --文件名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;回退到指定commit，会清除之前提交的commit&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git reset --hard HEAD&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;分支管理&#34;&gt;分支管理&lt;/h3&gt;
+
+&lt;h4 id=&#34;1-创建分支&#34;&gt;1、创建分支&lt;/h4&gt;
+
+&lt;p&gt;直接创建&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git branch dev（分支名）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;基于某个历史版本创建分支&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git branch dev HEAD&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;2-查看分支&#34;&gt;2、查看分支&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git branch -av&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;3-删除分支&#34;&gt;3、删除分支&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git branch -d dev&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;4-切换分支&#34;&gt;4、切换分支&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git checkout dev&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;5-查看分支差异&#34;&gt;5、查看分支差异&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git diff dev master
+
+//指定文件差异
+
+git diff dev master -- index&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;6-本地仓库推送到远端&#34;&gt;6、本地仓库推送到远端&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;// 1、远端创建git仓库
+
+//2、本地仓库与远端仓库关联
+git remote add origin &amp;#34;远端仓库路径&amp;#34;
+
+//3、远端仓库为空则
+git push -u origin master
+//否则
+git pull --rebase origin master
+
+//4、提交到远程仓库
+git push origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;7-拉取远程分支&#34;&gt;7、拉取远程分支&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;//拉取远程分支 默认为住分支
+git clone git地址
+
+//拉取远程指定分支
+git clone -b dev git地址
+
+//拉取主分支后，基于远端指定分支本次创建新分支
+git branch -av //红色部分代表远端分支
+
+git branch dev origin/dev //基于远端的dev分支本次创建dev分支&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>多维数组转一维数组</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 21 Mar 2019 23:11:11 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;二维数组转一维&#34;&gt;二维数组转一维&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;let data = [[1,2,3],[1,2,3],[1,2,3]];
+let res = [];
+data.forEach(item =&amp;gt; {
+    item.forEach? item.forEach(val =&amp;gt;{res.push(val)}) :res.push(item)
+})&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;let data = [[1,2,3],[1,2,3],[1,2,3]];
+let res = [];
+
+var falt = (res) =&amp;gt; {
+    if(res.forEach){
+        res.forEach(val =&amp;gt; {
+            val.forEach ? falt(val) : res.push(val)
+        })
+    }else{
+        res.push(res)
+    }
+}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>斐波拉契实现</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;斐波拉契&#34;&gt;斐波拉契&lt;/h4&gt;
+
+&lt;p&gt;斐波那契数列 1, 1, 2,3,5,8,13,21…..
+使用公式f( n ) = f(n-1)+f(n-2),结束条件f(2) =1, f(1) = 1&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;    //初始实现
+    function fib(n) {
+        if( n==1 || n == 2){
+            return 1;
+        }
+        else{
+            return fib(n-1)+fib(n-2);
+        }
+    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;    // for 循环实现
+
+    function fib(n){
+        var res = [1,1];
+        if( n==1 || n == 2){
+            return 1;
+        }
+        for(var i=2; i&amp;lt;n; i++){
+            res.push(res[i-1]+res[i-2]);
+        }
+        return res[n-1];
+    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;    var cache = [];
+    function fib(n){        
+        if(cache[n] !== undefined){               
+            return cache[n];
+        }          
+        if(n &amp;lt;= 2){               
+            cache[n] = 1;
+            return 1;
+        }    
+        cache.push(fib(n - 1) + fib(n - 2));
+        return cache[n];
+    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>webpack配置使用小技巧</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 18 Mar 2019 22:22:27 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;webpack-之-dev-env-js-prod-env-js&#34;&gt;webpack 之 dev.env.js &amp;amp;&amp;amp; prod.env.js&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;//dev.env.js  //开发版本
+
+&amp;#39;use strict&amp;#39;
+const merge = require(&amp;#39;webpack-merge&amp;#39;)
+const prodEnv = require(&amp;#39;./prod.env&amp;#39;)
+
+module.exports = merge(prodEnv, {
+  NODE_ENV: &amp;#39;&amp;#34;development&amp;#34;&amp;#39;,
+  BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;,
+})&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;//prod.env.js  //线上
+
+&amp;#39;use strict&amp;#39;
+module.exports = {
+  NODE_ENV: &amp;#39;&amp;#34;production&amp;#34;&amp;#39;,
+  BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;,
+}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;//webpack.dev.conf.js
+
+plugins: [
+    new webpack.DefinePlugin({
+      &amp;#39;process.env&amp;#39;: require(&amp;#39;../config/dev.env&amp;#39;)
+    }),
+  ]
+
+
+  //总文件
+  //build.js
+  //webpack.prode.conf.js
+  //webpack.base.conf.js
+  //webpack.dev.conf.js&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;//页面中使用
+
+process.env.BASE_API
+
+//其他&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>diff算法</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/diff-%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sun, 17 Mar 2019 23:05:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/diff-%E7%AE%97%E6%B3%95/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;一-虚拟dom&#34;&gt;一、虚拟dom&lt;/h3&gt;
+
+&lt;p&gt;众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多了，如果每次都生成dom，对浏览器性能是巨大的浪费。&lt;/p&gt;
+
+&lt;p&gt;virtual dom就是解决这个问题的一个思路，到底什么是virtual dom呢？通俗易懂的来说就是用一个简单的对象去代替复杂的dom对象。&lt;/p&gt;
+
+&lt;p&gt;示例如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;var mydiv = document.createElement(&amp;#39;div&amp;#39;);
+mydiv.className = &amp;#39;a&amp;#39;;
+document.body.appendChild(mydiv);&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;//伪代码
+var mydivVirtual = { 
+  tagName: &amp;#39;DIV&amp;#39;,
+  className: &amp;#39;a&amp;#39;
+};
+var newmydivVirtual = {
+   tagName: &amp;#39;DIV&amp;#39;,
+   className: &amp;#39;b&amp;#39;
+}
+if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !== newmydivVirtual.className){
+   change(mydiv)
+}
+
+// 会执行相应的修改 mydiv.className = &amp;#39;b&amp;#39;;
+//最后  &amp;lt;div class=&amp;#39;b&amp;#39;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;有些网站会选择采用手工优化的方式，确实在一定构建环境中手工优化效率高于 virtual Dom ，virtual dom很多时候都不是最优的操作，但它具有普适性，在效率、可维护性之间达平衡。&lt;/p&gt;
+
+&lt;h3 id=&#34;diff算法&#34;&gt;diff算法&lt;/h3&gt;
+
+&lt;p&gt;diff算法是一些前端框架常用的一种算法。它的作用是&lt;/p&gt;
+
+&lt;p&gt;在交叉对比的时候，当新节点跟旧节点==头尾交叉对比==没有结果的时候，会根据旧节点的key去对比旧节点数组中的key，从而找到相应旧节点（这里对应的是一个key=&amp;gt;index的map映射）。如果没找到就认为是一个新增节点。而如果没找到就认为是一个新增节点。而如果没有key，那么就会采用一种遍历查找的方式去找到对应的旧节点两种实现方式，一种是map映射，另一种是遍历查找。相比而言。map映射速度更快。&lt;/p&gt;
+
+&lt;h3 id=&#34;diff-比较规则&#34;&gt;diff 比较规则&lt;/h3&gt;
+
+&lt;p&gt;同级比较，不会越级比较。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>数据结构与算法</title>
+      <link>https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sat, 16 Mar 2019 23:05:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;数据结构&#34;&gt;数据结构&lt;/h4&gt;
+
+&lt;p&gt;一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题&lt;/p&gt;
+
+&lt;p&gt;程序设计 = 数据结构 + 算法&lt;/p&gt;
+
+&lt;p&gt;数据结构，就是数据关系，就是数据元素之间存在的一种或多种特定关系的集合。&lt;/p&gt;
+
+&lt;h4 id=&#34;逻辑结构和物理结构&#34;&gt;逻辑结构和物理结构&lt;/h4&gt;
+
+&lt;h5 id=&#34;逻辑结构&#34;&gt;逻辑结构&lt;/h5&gt;
+
+&lt;p&gt;数据对象中数据元素之间的相互关系，也是我们之后需要关注和谈论的问题。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;常见逻辑结构&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;集合结构：集合结构中数据同属于一个集合，它们之间没有其他不三不四的关系。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;线性结构：线性结构中数据是一对一的逻辑关系。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;树形结构：元素之间存在一对多的层次关系。像WBS, dom树一样的类型结构。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;图形结构：（最复杂），图形结构数据元素是多对多的关系。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;物理结构&#34;&gt;物理结构&lt;/h5&gt;
+
+&lt;p&gt;数据逻辑结构在计算机中存储的方式。研究的就是把数据元素存储到计算机的存储器中。&lt;/p&gt;
+
+&lt;p&gt;数据元素的存储结构形式主要有两种&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;顺序存储：把数据元素放在地址连续的存储单元中，其数据间的逻辑关系和物理关系是一致的。例如，编程语言的数组结构。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;链式存储： 将数据元素放在任意的存储单元里，这组存储单元可以是连续的，也可以是不连续的。需要用指针存放数据元素的地址。例如：医院排队，你只需要注意前一个数据的情况。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;算法&#34;&gt;算法&lt;/h4&gt;
+
+&lt;p&gt;数据结构与算法是紧密相关的一组概念。&lt;/p&gt;
+
+&lt;p&gt;算法是解决特定问题求解步骤的描述，在计算机中表现为指令的有限序列，并且每条指令表示一个或多个操作。&lt;/p&gt;
+
+&lt;p&gt;类似于：技巧和方式。对于给定的问题，是可以用多种算法来解决的。&lt;/p&gt;
+
+&lt;p&gt;算法的五个特性：输入、输出、有穷性、确定性和可行性。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;输入、输出：0个或多个&lt;/li&gt;
+&lt;li&gt;有穷性：不可以死循环&lt;/li&gt;
+&lt;li&gt;确定性： 每一个步骤都有确定的含义，不会出现二义性。&lt;/li&gt;
+&lt;li&gt;正确性
+1、无语法错误
+2、合法输入产出满足要求输出。
+3、非法输入能够产生满足规格的说明
+4、对于故意刁难的测试输入都有满足要求的输出结果。&lt;/li&gt;
+&lt;li&gt;可读性 便于阅读、理解和交流&lt;/li&gt;
+&lt;li&gt;健壮性&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;时间效率高和存储量低&lt;/p&gt;
+
+&lt;h5 id=&#34;示例引入&#34;&gt;示例引入&lt;/h5&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;从1累加到100，用计算机算出来&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sun&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+
+&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 高斯算法
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 算法速率增大
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sun&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+
+&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+
+&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;学习掌握一些好的算法，对我们解决问题很有帮助。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;其他&#34;&gt;其他&lt;/h4&gt;
+
+&lt;p&gt;我们不说怎么能够成为XXX，我们先来看看成为XXX之后要做什么事情，而做这些事情，需要什么样的能力，在拥有了这些能力、做上了这件事情之后，又能向什么方向发展。&lt;/p&gt;
+
+&lt;p&gt;把算法当黑盒用的问题在于：黑盒能够解决问题的时候，使用方便，而一旦不能解决问题，或者对质量有所要求，就会感觉无所适从。&lt;/p&gt;
+
+&lt;p&gt;作为程序员、工程人员，想用机器学习算法解决实际问题，就得对算法有一定程度的掌握，此外对于数据处理和模型验证，也需具备相应知识。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>vue elementui 使用记录 图片上传</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</link>
+      <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;一-前端做图片上传展示&#34;&gt;一、前端做图片上传展示&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;let _URL = window.URL || window.webkitURL;
+self.form.imageLogo = _URL.createObjectURL(file);&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;二-elementui-判断图片大小&#34;&gt;二、elementui 判断图片大小&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;    const isSize = new Promise(function(resolve, reject) {
+        let width = 800;
+        let height = 800;
+        let _URL = window.URL || window.webkitURL;
+        let img = new Image();
+        img.onload = function() {
+          let valid = img.width &amp;lt;= width &amp;amp;&amp;amp; img.height &amp;lt;= height;
+          valid ? resolve() : reject();
+        };
+        img.src = _URL.createObjectURL(file);
+      }).then(
+        () =&amp;gt; {
+          let _URL = window.URL || window.webkitURL;
+          self.form.imageLogo = _URL.createObjectURL(file);
+          return file;
+        },
+        () =&amp;gt; {
+          this.$message.error(&amp;#34;上传的icon必须是小于或等于800*800!&amp;#34;);
+          return Promise.reject();
+        }
+    );&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;三-创建表单文件&#34;&gt;三、创建表单文件&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;var formData = new FormData();//通过append方法添加数据
+// 用表单来初始化
+var formData = new FormData(form);
+// 我们可以根据name来访问表单中的字段
+var name = formData.get(&amp;#34;name&amp;#34;); // 获取名字
+var psw = formData.get(&amp;#34;psw&amp;#34;); // 获取密码
+// 当然也可以在此基础上，添加其他数据
+formData.append(&amp;#34;token&amp;#34;,&amp;#34;kshdfiwi3rh&amp;#34;);&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>promise async await</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
+      <pubDate>Mon, 04 Mar 2019 17:29:17 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;promise&#34;&gt;Promise&lt;/h3&gt;
+
+&lt;p&gt;promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promise是一个对象，从他可以获取异步操作的消息。Promise提供统一的api，各种异步操作都可以用相同的方法进行处理。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;promise对象有以下两个特点&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;（1）对象的状态不受外界影响。Promise对象代表一个异步操作，有三种状态：&lt;br /&gt;
+* pending 进行中
+* fulfilled 已成功
+* rejected 已失败&lt;/p&gt;
+
+&lt;p&gt;（2）一旦状态改变，就不可以再变。&lt;/p&gt;
+
+&lt;p&gt;缺点&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;无法取消Promise，一旦新建立就会执行，无法中途取消。&lt;/li&gt;
+&lt;li&gt;如果不设置回调函数，内部抛出的错误不会反应到外部。&lt;/li&gt;
+&lt;li&gt;处于pending时，无法得知目前进行到了哪个状态。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;async-await&#34;&gt;async/await&lt;/h3&gt;
+
+&lt;p&gt;从字面意义理解 async是&amp;rdquo;异步&amp;rdquo;的简写 ，await可以认为是async wait的简写。因此 async是用域申明一个函数是异步的，await用于等待一个异步方法执行完成。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;async起什么作用&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;async 返回一个promise对象，promise的特点是无等待，不使用await情况下与直接返回promise没有什么区别&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;await在等什么&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;根据语法说明，await等待的是一个表达式，这个表达式的计算结果可以为promise对象或其他对象。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;等到之后呢&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;await等到了要等的东西之后，非promise对象则返回，promise对象则阻塞后面的代码，等着promise对象resolve，然后得到resolve的值，作为其运算结果。&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>vueX的知识总结（包括在vue-cli中的使用）</title>
@@ -119,6 +1921,17 @@ const store = new Vuex.Store({
 &lt;li&gt;&lt;p&gt;其他 查看vuex数据流可以使用 vue chrome devtools此工具&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>冒泡排序</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      
+        <description></description>
       
     </item>
     
@@ -530,538 +2343,6 @@ transform-origin: 50% 50% 0;//默认旋转点是中心点
 &lt;h3 id=&#34;五-项目地址-https-github-com-mmmaxingxing-css-blob-master-heart-html&#34;&gt;五、&lt;a href=&#34;https://github.com/MMmaXingXing/CSS/blob/master/heart.html&#34;&gt;项目地址&lt;/a&gt;&lt;/h3&gt;
 
 &lt;h3 id=&#34;六-get到张鑫旭大神实现过的css样式-https-www-zhangxinxu-com-wordpress-2019-01-pure-css-shapes&#34;&gt;六、&lt;a href=&#34;https://www.zhangxinxu.com/wordpress/2019/01/pure-css-shapes/&#34;&gt;get到张鑫旭大神实现过的css样式&lt;/a&gt;&lt;/h3&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>mockjs引入以及使用方式</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</link>
-      <pubDate>Tue, 19 Feb 2019 16:08:52 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;一-mock引入&#34;&gt;一、mock引入&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;1、普通引入 script src 即可
-2、vue中使用 
-npm install mockjs --dev 
-main.js中
-import &amp;#34;./mock&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;二-mock-代码相关&#34;&gt;二、mock 代码相关&lt;/h3&gt;
-
-&lt;h5 id=&#34;拦截部分&#34;&gt;拦截部分&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;// 引入mockjs
-import Mock from &amp;#39;mockjs&amp;#39;
-import loginAPI from &amp;#39;./login&amp;#39;
-// import articleAPI from &amp;#39;./article&amp;#39;
-// import remoteSearchAPI from &amp;#39;./remoteSearch&amp;#39;
-// import transactionAPI from &amp;#39;./transaction&amp;#39;
-// 获取 mock.Random 对象
-// const Random = Mock.Random;
-// // mock一组数据
-// const produceNewsData = function() {
-//     let articles = [];
-//     for (let i = 0; i &amp;lt; 100; i++) {
-//         let newArticleObject = {
-//             title: Random.csentence(5, 30), //  Random.csentence( min, max )
-//             thumbnail_pic_s: Random.dataImage(&amp;#39;300x250&amp;#39;, &amp;#39;mock的图片&amp;#39;), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码
-//             author_name: Random.cname(), // Random.cname() 随机生成一个常见的中文姓名
-//             date: Random.date() + &amp;#39; &amp;#39; + Random.time() // Random.date()指示生成的日期字符串的格式,默认为yyyy-MM-dd；Random.time() 返回一个随机的时间字符串
-//         }
-//         articles.push(newArticleObject)
-//     }
-
-//     return {
-//         articles: articles
-//     }
-// }
-
-// Mock.mock( url, post/get , 返回的数据)；
-
-
-// 修复在使用 MockJS 情况下，设置 withCredentials = true，且未被拦截的跨域请求丢失 Cookies 的问题
-// https://github.com/nuysoft/Mock/issues/300
-Mock.XHR.prototype.proxy_send = Mock.XHR.prototype.send
-Mock.XHR.prototype.send = function() {
-    if (this.custom.xhr) {
-        this.custom.xhr.withCredentials = this.withCredentials || false
-    }
-    this.proxy_send(...arguments)
-}
-
-// Mock.setup({
-//   timeout: &amp;#39;350-600&amp;#39;
-// })
-
-
-// 登录相关
-Mock.mock(/\/login/, &amp;#39;post&amp;#39;, loginAPI.loginByUsername)
-Mock.mock(/\/scene\/get_all/, &amp;#39;post&amp;#39;, loginAPI.getcontentListInfo)
-    // Mock.mock(/\/login\/logout/, &amp;#39;post&amp;#39;, loginAPI.logout)
-    // Mock.mock(/\/user\/info\.*/, &amp;#39;get&amp;#39;, loginAPI.getUserInfo)
-export default Mock&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h5 id=&#34;数据校验部分&#34;&gt;数据校验部分&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;const userMap = {
-    admin: {
-        data: {
-            access_token: &amp;#34;zwLB6rnP6vn5As3R1L2gaZRmPT7bT4th&amp;#34;,
-            expire_time: &amp;#34;100000&amp;#34;,
-            refresh_token: &amp;#34;jwWw4RmUdngWnczlnsjDVENpJUDIMmzJ&amp;#34;,
-        },
-        state: true,
-    },
-}
-
-const contentList = {
-    data: [{
-        camera_info: [{ camera_no: &amp;#34;camera_5_defalt&amp;#34;, camera_name: &amp;#34;5楼门口&amp;#34;, rmtp_url: &amp;#34;557fe66c52bf4a228a36265ffd4a3c3b&amp;#34; }],
-        movie_name: &amp;#34;5楼&amp;#34;,
-        movie_no: &amp;#34;floor_5&amp;#34;
-    }, {
-        camera_info: [{ camera_no: &amp;#34;camera_5_defalt&amp;#34;, camera_name: &amp;#34;5楼门口&amp;#34;, rmtp_url: &amp;#34;557fe66c52bf4a228a36265ffd4a3c3b&amp;#34; }],
-        movie_name: &amp;#34;6楼&amp;#34;,
-        movie_no: &amp;#34;floor_6&amp;#34;
-    }],
-    state: true
-}
-
-export default {
-    loginByUsername: config =&amp;gt; {
-        console.log(config)
-        console.log(JSON.parse(config.body))
-        const { username } = JSON.parse(config.body)
-        return userMap[username]
-    },
-    getcontentListInfo: config =&amp;gt; {
-        return contentList
-    },
-    logout: () =&amp;gt; &amp;#39;success&amp;#39;
-}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>依靠github创建自己的博客站点</title>
-      <link>https://mmmaxingxing.github.io/post/cours/creat_github_blog/</link>
-      <pubDate>Fri, 15 Feb 2019 16:43:08 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/creat_github_blog/</guid>
-      
-        <description>
-
-&lt;h2 id=&#34;一-依靠github创建自己的博客文档&#34;&gt;一、依靠github创建自己的博客文档。&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/github_blog/creat_githubblog_01.png&#34; alt=&#34;步骤1&#34; /&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;此步骤网上教程拼接得到-按需调整-放在最后生成上传之后查看是否需要-打包上传从本地测试感觉似乎github有缓存&#34;&gt;此步骤网上教程拼接得到，按需调整（放在最后生成上传之后查看是否需要）打包上传从本地测试感觉似乎github有缓存&lt;/h5&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/github_blog/creat_githubblog_02.png&#34; alt=&#34;步骤2&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;电脑上安装-hugo&#34;&gt;电脑上安装 hugo&lt;/h2&gt;
-
-&lt;p&gt;window 平台只需下载一个exe进行安装即可，以下为安装教程&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34;&gt;官网教程&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;用hugo建站&#34;&gt;用hugo建站&lt;/h2&gt;
-
-&lt;h3 id=&#34;1-初始化站点&#34;&gt;1、初始化站点&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;
-hugo new site blogsname
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;2-添加一个主题&#34;&gt;2、添加一个主题&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;主题选择&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git submodule add -b master https://github.com/xianmin/hugo-theme-jane.git themes/jane&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;clone好主题以后 将 themes/jane/exampleSite/content 中的内容剪切到 blogsname文件夹下的content中&lt;/p&gt;
-
-&lt;p&gt;将 themes/jane/exampleSite/config.toml 复制到 blogsname文件夹下&lt;/p&gt;
-
-&lt;h3 id=&#34;3-本地测试&#34;&gt;3、本地测试&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;    hugo server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;运行成功后访问 localhost:1313&lt;/p&gt;
-
-&lt;h3 id=&#34;4-打包&#34;&gt;4、打包&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;运行 hugo&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;打包后的文件在public中&lt;/p&gt;
-
-&lt;p&gt;将public中的文件上传到第一步创建的.io的项目中，访问 &lt;a href=&#34;https://name.github.io即可&#34;&gt;https://name.github.io即可&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;以上-创建完成&#34;&gt;以上 创建完成&lt;/h4&gt;
-
-&lt;h2 id=&#34;二-借助issues建立评论系统&#34;&gt;二、借助issues建立评论系统&lt;/h2&gt;
-
-&lt;p&gt;借助开源插件 gitment&lt;/p&gt;
-
-&lt;p&gt;引入及安装教程详见&lt;a href=&#34;https://github.com/imsun/gitment&#34;&gt;官网&lt;/a&gt;&lt;/p&gt;
-
-&lt;h5 id=&#34;1-在博客根目录下运行&#34;&gt;1、在博客根目录下运行&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;npm i --save gitment&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h5 id=&#34;2-网页申请认证-https-github-com-settings-applications-new&#34;&gt;2、&lt;a href=&#34;https://github.com/settings/applications/new&#34;&gt;网页申请认证&lt;/a&gt;&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;Application name:随便写
-Homepage URL:这个也可以随意写,就写你的博客地址就行
-Application description:描述,也可以随意写
-Authorization callback URL:这个必须写你的博客地址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h6 id=&#34;3-gitment配置&#34;&gt;3.gitment配置&lt;/h6&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;# Gitment
-# Introduction: https://imsun.net/posts/gitment-introduction/
-gitment:
-  enable: true
-  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
-  count: true # Show comments count in post meta area
-  lazy: false # Comments lazy loading with a button
-  cleanly: false # Hide &amp;#39;Powered by ...&amp;#39; on footer, and more
-  language: # Force language, or auto switch by theme
-  github_user: {you github user id}
-  github_repo: 随便写一个你的公开的git仓库就行,到时候评论会作为那个项目的issue
-  client_id: {刚才申请的ClientID}
-  client_secret: {刚才申请的Client Secret}
-  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
-  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;项目实际配置&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;config.toml 中
-
-[params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment 关于git的评论系统
-    owner = &amp;#34;MMmaXingXing&amp;#34;              # Your GitHub ID
-    repo = &amp;#34;comments&amp;#34;               # The repo to store comments
-    clientId = &amp;#34;&amp;#34;           # Your client ID
-    clientSecret = &amp;#34;&amp;#34;       # Your client secret&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h6 id=&#34;4-项目引入&#34;&gt;4、项目引入&lt;/h6&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;config.toml 中 手动写入cdn
-
-[params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
-    enable = false
-    jquery = &amp;#39;&amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js&amp;#34; integrity=&amp;#34;sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;#39;
-    slideout = &amp;#39;&amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js&amp;#34; integrity=&amp;#34;sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;#39;
-    fancyboxJs = &amp;#39;&amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js&amp;#34; integrity=&amp;#34;sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;#39;
-    fancyboxCss = &amp;#39;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css&amp;#34; integrity=&amp;#34;sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;#39;
-    gitmentJS = &amp;#39;&amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;#39;
-    gitmentCSS = &amp;#39;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h6 id=&#34;5-出现的问题&#34;&gt;5、出现的问题&lt;/h6&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;使用gitment，要先在评论区登录github，否则显示Error: Comments Not Initialized(中文显示评论不可用之类)；登录后点击Initialize Comments。另外可能会报错[object ProgressEvent]或者gh-oauth.imsun.net链接不上。这是因为gh-oauth.imsun.net网站证书失效了！解决方法：
-
-方案一：单独访问这个网站https://gh-oauth.imsun.net/，加入例外，允许浏览器访问。但这个方案，别人看你博客的人不一定知道要加，所以不好。
-
-方案二：更改node_modules/gitment/dist/gitment.js中https://gh-oauth.imsun.net，直接改为请求 github 认证的接口https://github.com/login/oauth/access_token
-
-参考：imsun/gitment/issues#102,gitment评论模块接入hexo&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;3-使用不蒜子添加网站及文章访问量&#34;&gt;3、使用不蒜子添加网站及文章访问量&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;config.toml中CDN部分增加
-
-busuanziJs = &amp;#39;&amp;lt;script async src=&amp;#34;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;#39;
-
-添加以下代码块
-
- [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
-    enable = true
-
-同时
-
- moreMeta = false
-
- 即可&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;向我提问&#34;&gt;向我提问&lt;/h4&gt;
-
-
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://mmmaxingxing.github.io/css/hugo-easy-gallery.css&#34; /&gt;
-
-&lt;div class=&#34;gallery caption-position-bottom caption-effect-和作者沟通 hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
-        &lt;div class=&#34;box&#34;&gt;
-          &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-            &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://mmmaxingxing.github.io//image/qusition/%e5%90%91%e4%bd%9c%e8%80%85%e6%8f%90%e9%97%ae.png&#39;);&#34; &gt;
-              &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://mmmaxingxing.github.io//image/qusition/%e5%90%91%e4%bd%9c%e8%80%85%e6%8f%90%e9%97%ae.png&#34; alt=&#34;向作者提问&#34; /&gt;
-            &lt;/div&gt;
-            &lt;figcaption&gt;
-              &lt;p&gt;向作者提问&lt;/p&gt;
-            &lt;/figcaption&gt;
-            &lt;a href=&#34;https://mmmaxingxing.github.io//image/qusition/%e5%90%91%e4%bd%9c%e8%80%85%e6%8f%90%e9%97%ae.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-          &lt;/figure&gt;
-        &lt;/div&gt;
-&lt;/div&gt;
-
-</description>
-      
-    </item>
-    
-    <item>
-      <title>promise async await</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;promise&#34;&gt;Promise&lt;/h3&gt;
-
-&lt;p&gt;promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promise是一个对象，从他可以获取异步操作的消息。Promise提供统一的api，各种异步操作都可以用相同的方法进行处理。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;promise对象有以下两个特点&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;（1）对象的状态不受外界影响。Promise对象代表一个异步操作，有三种状态：&lt;br /&gt;
-* pending 进行中
-* fulfilled 已成功
-* rejected 已失败&lt;/p&gt;
-
-&lt;p&gt;（2）一旦状态改变，就不可以再变。&lt;/p&gt;
-
-&lt;p&gt;缺点&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;无法取消Promise，一旦新建立就会执行，无法中途取消。&lt;/li&gt;
-&lt;li&gt;如果不设置回调函数，内部抛出的错误不会反应到外部。&lt;/li&gt;
-&lt;li&gt;处于pending时，无法得知目前进行到了哪个状态。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;async-await&#34;&gt;async/await&lt;/h3&gt;
-
-&lt;p&gt;从字面意义理解 async是&amp;rdquo;异步&amp;rdquo;的简写 ，await可以认为是async wait的简写。因此 async是用域申明一个函数是异步的，await用于等待一个异步方法执行完成。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;async起什么作用&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;async 返回一个promise对象，promise的特点是无等待，不使用await情况下与直接返回promise没有什么区别&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;await在等什么&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;根据语法说明，await等待的是一个表达式，这个表达式的计算结果可以为promise对象或其他对象。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;等到之后呢&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;await等到了要等的东西之后，非promise对象则返回，promise对象则阻塞后面的代码，等着promise对象resolve，然后得到resolve的值，作为其运算结果。&lt;/p&gt;
 </description>
       
     </item>

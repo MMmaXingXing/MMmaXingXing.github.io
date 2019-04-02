@@ -6,10 +6,154 @@
     <description>Recent content in Posts on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Feb 2019 11:11:48 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Apr 2019 17:15:23 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>资源汇总之后台管理系统</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</link>
+      <pubDate>Mon, 01 Apr 2019 17:15:23 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</guid>
+      <description>vue技术栈 后台管理系统 vue-element-admin vuetify 正常技术栈 后台管理系统 bootstrap: Admin LTE php 技术栈 后台管理系统 fastAdmin</description>
+    </item>
+    
+    <item>
+      <title>nginx 配置 申请</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</link>
+      <pubDate>Sun, 31 Mar 2019 17:15:23 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</guid>
+      <description>反向代理和负载均衡 什么是反向代理 当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集</description>
+    </item>
+    
+    <item>
+      <title>Vue-Cli兼容IE9</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</link>
+      <pubDate>Sat, 30 Mar 2019 21:07:20 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</guid>
+      <description>1、meta标签要写好 1 2 3 4 5 6 &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;author&amp;#34; content=&amp;#34;lyadmin&amp;#34;&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=Edge,chrome=1&amp;#34;&amp;gt; 2、编译插件要装好 1 npm install babel-polyfill --save-dev 3、其他配置要配好 1 2 3 4 5 6 7 8 9 // webpack.base.conf.js entry:</description>
+    </item>
+    
+    <item>
+      <title>利用Array From 实现分页骚操作</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/paging/</link>
+      <pubDate>Fri, 29 Mar 2019 15:24:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/paging/</guid>
+      <description>Array.form 是什么 array用于将两类对象转换为真正的数组, 即:类似数组的对象(array-likeobject) 和可遍历（iterable）的对象 包</description>
+    </item>
+    
+    <item>
+      <title>js数组扁平化操作</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Wed, 27 Mar 2019 13:55:25 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E6%93%8D%E4%BD%9C/</guid>
+      <description>常规操作 for of 递归实现 1 2 3 4 5 6 7 8 9 function flatten(arr, result = []) { for (let item of arr) { if (Array.isArray(item.children)) flatten(item.children, result) else result.push(item) } return result } 迭代器实现 生成器实现 reduce 三句话实现法 降维打击法 lodash 层次法 参考感</description>
+    </item>
+    
+    <item>
+      <title>手机端网页调试小技巧</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Tue, 26 Mar 2019 20:15:50 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
+      <description>chrome真机调试 只能调用手机端chrome浏览器，简单容易上手 1、访问 chrome://inspect 勾选&amp;rdquo;discovery usb device&amp;rdquo; 手机连接usb调试，ch</description>
+    </item>
+    
+    <item>
+      <title>创建一个手机端项目</title>
+      <link>https://mmmaxingxing.github.io/post/cours/compatible/%E6%89%8B%E6%9C%BA%E7%89%88%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA/</link>
+      <pubDate>Mon, 25 Mar 2019 17:55:13 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/compatible/%E6%89%8B%E6%9C%BA%E7%89%88%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA/</guid>
+      <description>meta 标签 1 2 3 4 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; //1：1屏占比 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0&amp;#34;/&amp;gt; //手机端完美视图 &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt; //打开浏览器为ie9及以上版本 &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; //有限打开内核为webkit 引入</description>
+    </item>
+    
+    <item>
+      <title>input type number 火狐兼容</title>
+      <link>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</link>
+      <pubDate>Sun, 24 Mar 2019 17:52:44 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</guid>
+      <description>input type number 火狐兼容 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; appearance: none; margin: 0; } input{ -moz-appearance:textfield !important; }</description>
+    </item>
+    
+    <item>
+      <title>git 常用操作</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/git_op/</link>
+      <pubDate>Sat, 23 Mar 2019 23:13:46 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/git_op/</guid>
+      <description>git 是什么 GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分</description>
+    </item>
+    
+    <item>
+      <title>多维数组转一维数组</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 21 Mar 2019 23:11:11 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>二维数组转一维 1 2 3 4 5 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; data.forEach(item =&amp;gt; { item.forEach? item.forEach(val =&amp;gt;{res.push(val)}) :res.push(item) }) 1 2 3 4 5 6 7 8 9 10 11 12 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; var falt = (res) =&amp;gt; { if(res.forEach){ res.forEach(val =&amp;gt; { val.forEach ? falt(val) : res.push(val) }) }else{ res.push(res) } }</description>
+    </item>
+    
+    <item>
+      <title>斐波拉契实现</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</guid>
+      <description>斐波拉契 斐波那契数列 1, 1, 2,3,5,8,13,21….. 使用公式f( n ) = f(n-1)+f(n-2),结束条件f(2) =1, f(1) = 1 1 2 3 4 5 6 7</description>
+    </item>
+    
+    <item>
+      <title>webpack配置使用小技巧</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 18 Mar 2019 22:22:27 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
+      <description>webpack 之 dev.env.js &amp;amp;&amp;amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 //dev.env.js //开发版本 &amp;#39;use strict&amp;#39; const merge = require(&amp;#39;webpack-merge&amp;#39;) const prodEnv = require(&amp;#39;./prod.env&amp;#39;) module.exports = merge(prodEnv, { NODE_ENV: &amp;#39;&amp;#34;development&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, }) 1 2 3 4 5 6 7 //prod.env.js //线上 &amp;#39;use strict&amp;#39; module.exports = { NODE_ENV: &amp;#39;&amp;#34;production&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, } 1 2 3 4 5 6 7</description>
+    </item>
+    
+    <item>
+      <title>diff算法</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/diff-%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sun, 17 Mar 2019 23:05:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/diff-%E7%AE%97%E6%B3%95/</guid>
+      <description>一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多</description>
+    </item>
+    
+    <item>
+      <title>数据结构与算法</title>
+      <link>https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sat, 16 Mar 2019 23:05:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</guid>
+      <description>数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 + 算法 数据结构，就是数据关系，</description>
+    </item>
+    
+    <item>
+      <title>vue elementui 使用记录 图片上传</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</link>
+      <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</guid>
+      <description>一、前端做图片上传展示 1 2 let _URL = window.URL || window.webkitURL; self.form.imageLogo = _URL.createObjectURL(file); 二、elementui 判断图片大小 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 const isSize = new Promise(function(resolve, reject) { let width =</description>
+    </item>
+    
+    <item>
+      <title>promise async await</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
+      <pubDate>Mon, 04 Mar 2019 17:29:17 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
+      <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>
+    </item>
     
     <item>
       <title>vueX的知识总结（包括在vue-cli中的使用）</title>
@@ -18,6 +162,15 @@
       
       <guid>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</guid>
       <description>介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使</description>
+    </item>
+    
+    <item>
+      <title>冒泡排序</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -36,33 +189,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/technology/css/heart/</guid>
       <description>一、创建一个dom元素并为其增加宽高 1 &amp;lt;div id=&amp;#34;heart&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; 1 2 3 4 5 #heart { position: relative; width: 50px; height: 40px; } 二、对目标元素的伪元素进行操作 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 #heart::before, #heart::after {</description>
-    </item>
-    
-    <item>
-      <title>mockjs引入以及使用方式</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</link>
-      <pubDate>Tue, 19 Feb 2019 16:08:52 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</guid>
-      <description>一、mock引入 1 2 3 4 5 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;#34;./mock&amp;#34; 二、mock 代码相关 拦截部分 1 2 3 4 5 6 7 8 9 10 11</description>
-    </item>
-    
-    <item>
-      <title>依靠github创建自己的博客站点</title>
-      <link>https://mmmaxingxing.github.io/post/cours/creat_github_blog/</link>
-      <pubDate>Fri, 15 Feb 2019 16:43:08 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/creat_github_blog/</guid>
-      <description>一、依靠github创建自己的博客文档。 此步骤网上教程拼接得到，按需调整（放在最后生成上传之后查看是否需要）打包上传从本地测试感觉似乎git</description>
-    </item>
-    
-    <item>
-      <title>promise async await</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
-      <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>
     </item>
     
   </channel>

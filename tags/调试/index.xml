@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>调试 on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/%E8%B0%83%E8%AF%95/</link>
+    <description>Recent content in 调试 on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 26 Mar 2019 20:15:50 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/tags/%E8%B0%83%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>手机端网页调试小技巧</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Tue, 26 Mar 2019 20:15:50 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
+      <description>chrome真机调试 只能调用手机端chrome浏览器，简单容易上手 1、访问 chrome://inspect 勾选&amp;rdquo;discovery usb device&amp;rdquo; 手机连接usb调试，ch</description>
+    </item>
+    
+  </channel>
+</rss>

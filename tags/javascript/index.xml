@@ -6,10 +6,73 @@
     <description>Recent content in Javascript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Feb 2019 11:11:48 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2019 15:24:51 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>利用Array From 实现分页骚操作</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/paging/</link>
+      <pubDate>Fri, 29 Mar 2019 15:24:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/paging/</guid>
+      <description>Array.form 是什么 array用于将两类对象转换为真正的数组, 即:类似数组的对象(array-likeobject) 和可遍历（iterable）的对象 包</description>
+    </item>
+    
+    <item>
+      <title>多维数组转一维数组</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 21 Mar 2019 23:11:11 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>二维数组转一维 1 2 3 4 5 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; data.forEach(item =&amp;gt; { item.forEach? item.forEach(val =&amp;gt;{res.push(val)}) :res.push(item) }) 1 2 3 4 5 6 7 8 9 10 11 12 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; var falt = (res) =&amp;gt; { if(res.forEach){ res.forEach(val =&amp;gt; { val.forEach ? falt(val) : res.push(val) }) }else{ res.push(res) } }</description>
+    </item>
+    
+    <item>
+      <title>斐波拉契实现</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</guid>
+      <description>斐波拉契 斐波那契数列 1, 1, 2,3,5,8,13,21….. 使用公式f( n ) = f(n-1)+f(n-2),结束条件f(2) =1, f(1) = 1 1 2 3 4 5 6 7</description>
+    </item>
+    
+    <item>
+      <title>webpack配置使用小技巧</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 18 Mar 2019 22:22:27 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
+      <description>webpack 之 dev.env.js &amp;amp;&amp;amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 //dev.env.js //开发版本 &amp;#39;use strict&amp;#39; const merge = require(&amp;#39;webpack-merge&amp;#39;) const prodEnv = require(&amp;#39;./prod.env&amp;#39;) module.exports = merge(prodEnv, { NODE_ENV: &amp;#39;&amp;#34;development&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, }) 1 2 3 4 5 6 7 //prod.env.js //线上 &amp;#39;use strict&amp;#39; module.exports = { NODE_ENV: &amp;#39;&amp;#34;production&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, } 1 2 3 4 5 6 7</description>
+    </item>
+    
+    <item>
+      <title>diff算法</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/diff-%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sun, 17 Mar 2019 23:05:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/diff-%E7%AE%97%E6%B3%95/</guid>
+      <description>一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多</description>
+    </item>
+    
+    <item>
+      <title>vue elementui 使用记录 图片上传</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</link>
+      <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</guid>
+      <description>一、前端做图片上传展示 1 2 let _URL = window.URL || window.webkitURL; self.form.imageLogo = _URL.createObjectURL(file); 二、elementui 判断图片大小 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 const isSize = new Promise(function(resolve, reject) { let width =</description>
+    </item>
+    
+    <item>
+      <title>promise async await</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
+      <pubDate>Mon, 04 Mar 2019 17:29:17 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
+      <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>
+    </item>
     
     <item>
       <title>vueX的知识总结（包括在vue-cli中的使用）</title>
@@ -21,21 +84,21 @@
     </item>
     
     <item>
+      <title>冒泡排序</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>mockjs引入以及使用方式</title>
       <link>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</link>
       <pubDate>Tue, 19 Feb 2019 16:08:52 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</guid>
       <description>一、mock引入 1 2 3 4 5 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;#34;./mock&amp;#34; 二、mock 代码相关 拦截部分 1 2 3 4 5 6 7 8 9 10 11</description>
-    </item>
-    
-    <item>
-      <title>promise async await</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
-      <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>
     </item>
     
   </channel>

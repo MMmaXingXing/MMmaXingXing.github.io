@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>git 常用操作 - Astar Blog</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Astar" />
+  <meta name="description" content="git 是什么 GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分" />
+
+  <meta name="keywords" content="Hugo, blog, Astar" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+
+
+<link rel="canonical" href="https://mmmaxingxing.github.io/post/technology/plugin/git_op/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.a8f782adb8c5e6b8b503f1231091545fed226397f7147eafc32897d9a2ceec0f.css" integrity="sha256-qPeCrbjF5ri1A/EjEJFUX&#43;0iY5f3FH6vwyiX2aLO7A8=" media="screen" crossorigin="anonymous">
+
+
+
+
+
+<meta property="og:title" content="git 常用操作" />
+<meta property="og:description" content="git 是什么 GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/plugin/git_op/" />
+<meta property="article:published_time" content="2019-03-23T23:13:46&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-23T23:13:46&#43;08:00"/>
+
+<meta itemprop="name" content="git 常用操作">
+<meta itemprop="description" content="git 是什么 GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分">
+
+
+<meta itemprop="datePublished" content="2019-03-23T23:13:46&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-23T23:13:46&#43;08:00" />
+<meta itemprop="wordCount" content="1506">
+
+
+
+<meta itemprop="keywords" content="git,工具使用," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="git 常用操作"/>
+<meta name="twitter:description" content="git 是什么 GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Astar</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://mmmaxingxing.github.io/">首页</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://mmmaxingxing.github.io/post/">列表</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://mmmaxingxing.github.io/tags/">标签</a>
+          
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://mmmaxingxing.github.io/categories/">分类</a>
+          
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="/" class="logo">
+    
+      Astar
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://mmmaxingxing.github.io/">首页</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://mmmaxingxing.github.io/post/">列表</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://mmmaxingxing.github.io/tags/">标签</a>
+          
+
+        
+
+      </li>
+    
+        <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://mmmaxingxing.github.io/categories/">分类</a>
+          
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+        <h1 class="post-title">git 常用操作</h1>
+        
+        <div class="post-meta">
+            <time datetime=" 2019-03-23 " class="post-time">
+          2019-03-23
+        </time> <div class="post-category">
+                <a href="https://mmmaxingxing.github.io/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"> 工具使用 </a> 
+            </div> 
+
+            
+            
+            <span id="busuanzi_container_page_pv">
+            | 本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+            </span>
+            
+
+            
+            
+        </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+        
+
+<h3 id="git-是什么">git 是什么</h3>
+
+<p>GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分布式版本库方式。</p>
+
+<h3 id="基本操作指令">基本操作指令</h3>
+
+<h4 id="1-创建仓库">1、创建仓库</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">    // a 当前目录创建仓库 
+
+    git init 
+
+    // b 指定目录创建仓库
+
+    git init 目录名</pre></td></tr></table>
+</div>
+</div>
+<h4 id="2-设置配置">2、设置配置</h4>
+
+<h5 id="git的配置范围">git的配置范围</h5>
+
+<p>global选项是告知Git应该在多大范围内使用这一配置的一种方式&ndash;它应该应用到哪些仓库。Git模型旨在应用于多个较小的仓库，而不是较少的整体单一式仓库。由于用户通常会使用多个仓库，因此必须在每个仓库中配置相同的设置会很不方便。因此，Git提供了简化选择配置值范围的选项。有三种可用的级别配置：系统、全局和本地</p>
+
+<p>　　①系统：系统级别的配置意味着一个配置值会被应用到指定系统上的所有仓库，除非在一个较低的级别上对其重写。为了确保配置值应用在系统级别，要为config命令指定&ndash;system选项，比如git config &ndash;system core.autocrlf true</p>
+
+<p>　　②全局：全局级别的配置表明配置值适用于特定用户的所有仓库，除非在本地级别对其进行了重写。否则这就是用户要使用的最常见级别，因为它避免了必须为每一个仓库设置值的工作。这些设置被存储在每个用户的主目录中的一个名为.gitconfig的文件中</p>
+
+<p>③本地：在本地级别设置一个配置值意味着该设置只应用与一个仓库的上下文中，这对于指定一个特定仓库的唯一设置的场景来说会很有用。如果需要临时重写一个较高级别的设置，那么它也会很有用。本地仓库的配置会被存储在本地Git仓库的.git/config中</p>
+
+<p>全局配置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git config --global user.name woniu
+git config --global user.email woniu@163.com</pre></td></tr></table>
+</div>
+</div>
+<p>设置本地仓库配置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git config --local user.name woniu
+git config --local user.email woniu@163.com</pre></td></tr></table>
+</div>
+</div>
+<p>查看配置信息</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git config --global --list</pre></td></tr></table>
+</div>
+</div>
+<p>生成 shh-key</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">//切换到ssh文件夹
+
+cd ~/.ssh
+
+//没有则创建
+
+mkdir ~/.ssh
+
+//生成key
+ssh-keygen -t rsa -C &#34;邮件地址&#34;
+
+//生成地址
+/C/用户/Admin/.ssh
+
+//测试是否添加成功
+ssh git@网址</pre></td></tr></table>
+</div>
+</div>
+<h4 id="3-工作文件新增到暂存区">3、工作文件新增到暂存区</h4>
+
+<p>提交指定文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git add a.cpp</pre></td></tr></table>
+</div>
+</div>
+<p>提交指当前目录所有文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git add .</pre></td></tr></table>
+</div>
+</div>
+<p>把提交过暂存区，已经发生改变的文件再次提交到暂存区</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git add -u</pre></td></tr></table>
+</div>
+</div>
+<h4 id="4-暂存区文件提交到版本库">4、暂存区文件提交到版本库</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git commit -m &#34;初始版本&#34;</pre></td></tr></table>
+</div>
+</div>
+<h4 id="5-查看git提交日志">5、查看git提交日志</h4>
+
+<p>全部日志</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git log</pre></td></tr></table>
+</div>
+</div>
+<p>简化日志</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git log --oneline</pre></td></tr></table>
+</div>
+</div>
+<p>查看前5个日志</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git log -n5 --oneline</pre></td></tr></table>
+</div>
+</div>
+<p>查看所有日志</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git log --all</pre></td></tr></table>
+</div>
+</div>
+<p>图像化查看所有日志</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git log --all --graph</pre></td></tr></table>
+</div>
+</div>
+<h4 id="6-查看上次提交后是否有修改">6、查看上次提交后是否有修改</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git status</pre></td></tr></table>
+</div>
+</div>
+<h4 id="7-查看差异">7、查看差异</h4>
+
+<p>查看工作区与暂存区差异</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git diff</pre></td></tr></table>
+</div>
+</div>
+<p>查看暂存区与仓库之间的差异</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git diff --cached</pre></td></tr></table>
+</div>
+</div>
+<p>比较不同commit的差异</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git diff HEAD1 Mastar2</pre></td></tr></table>
+</div>
+</div>
+<h4 id="8-清空暂存区-工作区修改">8、清空暂存区，工作区修改</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git reset --hard</pre></td></tr></table>
+</div>
+</div>
+<h4 id="9-删除工作区和暂存文件">9、删除工作区和暂存文件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git rm 文件名</pre></td></tr></table>
+</div>
+</div>
+<h4 id="10-重命名文件">10、重命名文件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git mv a.app  b.app</pre></td></tr></table>
+</div>
+</div>
+<h4 id="11-版本回滚">11、版本回滚</h4>
+
+<p>恢复暂存区与head一致</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git reset HEAD</pre></td></tr></table>
+</div>
+</div>
+<p>恢复暂存区指定文件与head一致</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git reset HEAD --文件名</pre></td></tr></table>
+</div>
+</div>
+<p>恢复工作区与暂存区一致</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git checkout --文件名</pre></td></tr></table>
+</div>
+</div>
+<p>回退到指定commit，会清除之前提交的commit</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git reset --hard HEAD</pre></td></tr></table>
+</div>
+</div>
+<h3 id="分支管理">分支管理</h3>
+
+<h4 id="1-创建分支">1、创建分支</h4>
+
+<p>直接创建</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git branch dev（分支名）</pre></td></tr></table>
+</div>
+</div>
+<p>基于某个历史版本创建分支</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git branch dev HEAD</pre></td></tr></table>
+</div>
+</div>
+<h4 id="2-查看分支">2、查看分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git branch -av</pre></td></tr></table>
+</div>
+</div>
+<h4 id="3-删除分支">3、删除分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git branch -d dev</pre></td></tr></table>
+</div>
+</div>
+<h4 id="4-切换分支">4、切换分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git checkout dev</pre></td></tr></table>
+</div>
+</div>
+<h4 id="5-查看分支差异">5、查看分支差异</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git diff dev master
+
+//指定文件差异
+
+git diff dev master -- index</pre></td></tr></table>
+</div>
+</div>
+<h4 id="6-本地仓库推送到远端">6、本地仓库推送到远端</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">// 1、远端创建git仓库
+
+//2、本地仓库与远端仓库关联
+git remote add origin &#34;远端仓库路径&#34;
+
+//3、远端仓库为空则
+git push -u origin master
+//否则
+git pull --rebase origin master
+
+//4、提交到远程仓库
+git push origin master</pre></td></tr></table>
+</div>
+</div>
+<h4 id="7-拉取远程分支">7、拉取远程分支</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">//拉取远程分支 默认为住分支
+git clone git地址
+
+//拉取远程指定分支
+git clone -b dev git地址
+
+//拉取主分支后，基于远端指定分支本次创建新分支
+git branch -av //红色部分代表远端分支
+
+git branch dev origin/dev //基于远端的dev分支本次创建dev分支</pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+    
+
+
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-tags">
+            <a href="https://mmmaxingxing.github.io/tags/git/">git</a> <a href="https://mmmaxingxing.github.io/tags/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/">工具使用</a> 
+        </div>
+
+        
+        <nav class="post-nav">
+            
+            <a class="prev" href="/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">input type number 火狐兼容</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a> 
+            <a class="next" href="/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/">
+                <span class="next-text nav-default">多维数组转一维数组</span>
+                <span class="prev-text nav-mobile">下一篇</span> 
+                <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+            </a>
+        </nav>
+    </footer>
+</article>
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="icon-links">
+    
+  
+    <a href="mailto:1172406997@qq.com" rel="me noopener" class="iconfont"
+      title="email" >
+      <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M664.781909 681.472759 0 97.881301C0 3.997201 71.046997 0 71.046997 0L474.477909 0 961.649408 0 1361.641813 0C1361.641813 0 1432.688811 3.997201 1432.688811 97.881301L771.345323 681.472759C771.345323 681.472759 764.482731 685.154773 753.594283 688.65053L753.594283 688.664858C741.602731 693.493018 729.424896 695.068979 718.077952 694.839748 706.731093 695.068979 694.553173 693.493018 682.561621 688.664858L682.561621 688.65053C671.644501 685.140446 664.781909 681.472759 664.781909 681.472759L664.781909 681.472759ZM718.063616 811.603883C693.779541 811.016482 658.879232 802.205449 619.10784 767.734955 542.989056 701.759633 0 212.052267 0 212.052267L0 942.809523C0 942.809523 0 1024 83.726336 1024L682.532949 1024 753.579947 1024 1348.948139 1024C1432.688811 1024 1432.688811 942.809523 1432.688811 942.809523L1432.688811 212.052267C1432.688811 212.052267 893.138176 701.759633 817.019477 767.734955 777.248 802.205449 742.347691 811.03081 718.063616 811.603883L718.063616 811.603883Z"></path>
+</svg>
+
+    </a>
+  
+    <a href="https://github.com/mmmaxingxing" rel="me noopener" class="iconfont"
+      title="github"  target="_blank"
+      >
+      <svg class="icon" style="" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="36" height="36">
+  <path d="M512 12.672c-282.88 0-512 229.248-512 512 0 226.261333 146.688 418.133333 350.08 485.76 25.6 4.821333 34.986667-11.008 34.986667-24.618667 0-12.16-0.426667-44.373333-0.64-87.04-142.421333 30.890667-172.458667-68.693333-172.458667-68.693333C188.672 770.986667 155.008 755.2 155.008 755.2c-46.378667-31.744 3.584-31.104 3.584-31.104 51.413333 3.584 78.421333 52.736 78.421333 52.736 45.653333 78.293333 119.850667 55.68 149.12 42.581333 4.608-33.109333 17.792-55.68 32.426667-68.48-113.706667-12.8-233.216-56.832-233.216-253.013333 0-55.893333 19.84-101.546667 52.693333-137.386667-5.76-12.928-23.04-64.981333 4.48-135.509333 0 0 42.88-13.738667 140.8 52.48 40.96-11.392 84.48-17.024 128-17.28 43.52 0.256 87.04 5.888 128 17.28 97.28-66.218667 140.16-52.48 140.16-52.48 27.52 70.528 10.24 122.581333 5.12 135.509333 32.64 35.84 52.48 81.493333 52.48 137.386667 0 196.693333-119.68 240-233.6 252.586667 17.92 15.36 34.56 46.762667 34.56 94.72 0 68.522667-0.64 123.562667-0.64 140.202666 0 13.44 8.96 29.44 35.2 24.32C877.44 942.592 1024 750.592 1024 524.672c0-282.752-229.248-512-512-512"></path>
+</svg>
+
+    </a>
+
+
+<a href="https://mmmaxingxing.github.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+    class="iconfont" title="rss" target="_blank">
+    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="30" height="30">
+  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
+</svg>
+
+  </a>
+  
+</div>
+
+<div class="copyright">
+    <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+    <span class="division">|</span>
+    <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+    <span class="copyright-year">
+    &copy;
+    2019
+    <span class="heart">
+      
+      <i class="iconfont">
+        <svg class="icon" viewBox="0 0 1025 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="14" height="14">
+  <path d="M1000.1 247.9c-15.5-37.3-37.6-70.6-65.7-98.9-54.4-54.8-125.8-85-201-85-85.7 0-166 39-221.4 107.4C456.6 103 376.3 64 290.6 64c-75.1 0-146.5 30.4-201.1 85.6-28.2 28.5-50.4 61.9-65.8 99.3-16 38.8-24 79.9-23.6 122.2 0.7 91.7 40.1 177.2 108.1 234.8 3.1 2.6 6 5.1 8.9 7.8 14.9 13.4 58 52.8 112.6 102.7 93.5 85.5 209.9 191.9 257.5 234.2 7 6.1 15.8 9.5 24.9 9.5 9.2 0 18.1-3.4 24.9-9.5 34.5-30.7 105.8-95.9 181.4-165 74.2-67.8 150.9-138 195.8-178.2 69.5-57.9 109.6-144.4 109.9-237.3 0.1-42.5-8-83.6-24-122.2z"
+   fill="#8a8a8a"></path>
+</svg>
+
+      </i>
+    </span><span class="author">
+        Astar
+        
+      </span></span>
+
+    
+    
+    
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont">
+        
+        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="35" height="35">
+  <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
+</svg>
+
+      </i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="/js/main.dee43230127a73d039a734510fa896c89c3c7ce0cf0be0c7a7433f8fd69b76dc.js" integrity="sha256-3uQyMBJ6c9A5pzRRD6iWyJw8fODPC&#43;DHp0M/j9abdtw=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+  <script src="/js//static/js/gitment.browser.min.js"></script>
+
+
+</body>
+</html>

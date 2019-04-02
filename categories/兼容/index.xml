@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>兼容 on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/categories/%E5%85%BC%E5%AE%B9/</link>
+    <description>Recent content in 兼容 on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 30 Mar 2019 21:07:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/categories/%E5%85%BC%E5%AE%B9/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vue-Cli兼容IE9</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</link>
+      <pubDate>Sat, 30 Mar 2019 21:07:20 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</guid>
+      <description>1、meta标签要写好 1 2 3 4 5 6 &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;author&amp;#34; content=&amp;#34;lyadmin&amp;#34;&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=Edge,chrome=1&amp;#34;&amp;gt; 2、编译插件要装好 1 npm install babel-polyfill --save-dev 3、其他配置要配好 1 2 3 4 5 6 7 8 9 // webpack.base.conf.js entry:</description>
+    </item>
+    
+    <item>
+      <title>input type number 火狐兼容</title>
+      <link>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</link>
+      <pubDate>Sun, 24 Mar 2019 17:52:44 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</guid>
+      <description>input type number 火狐兼容 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; appearance: none; margin: 0; } input{ -moz-appearance:textfield !important; }</description>
+    </item>
+    
+  </channel>
+</rss>

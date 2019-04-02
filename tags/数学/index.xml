@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数学 on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/%E6%95%B0%E5%AD%A6/</link>
+    <description>Recent content in 数学 on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 16 Mar 2019 23:05:51 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/tags/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据结构与算法</title>
+      <link>https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sat, 16 Mar 2019 23:05:51 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</guid>
+      <description>数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 + 算法 数据结构，就是数据关系，</description>
+    </item>
+    
+  </channel>
+</rss>
