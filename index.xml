@@ -29,6 +29,20 @@
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/influxdata/influxdb&#34;&gt;社区&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;其他说明：他们的数据采集分析 ,存到了influxdb&lt;/p&gt;
+
+&lt;h4 id=&#34;beego&#34;&gt;Beego&lt;/h4&gt;
+
+&lt;p&gt;goweb框架&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://beego.me/&#34;&gt;中文文档&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;其他说明：江湖传闻有些臃肿，某些公司选此为技术栈之后进行了改造&lt;/p&gt;
+
+&lt;h4 id=&#34;goorm&#34;&gt;goOrm&lt;/h4&gt;
+
+&lt;p&gt;Golang写的，开发人员友好的ORM库。做数据库接入的。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://gorm.book.jasperxu.com/&#34;&gt;中文文档&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
       
     </item>
