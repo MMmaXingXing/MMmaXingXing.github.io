@@ -49,29 +49,20 @@
     
     <item>
       <title>vue elementui 使用记录 图片上传</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/elementuiupload/</link>
       <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/elementuiupload/</guid>
       <description>一、前端做图片上传展示 1 2 let _URL = window.URL || window.webkitURL; self.form.imageLogo = _URL.createObjectURL(file); 二、elementui 判断图片大小 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 const isSize = new Promise(function(resolve, reject) { let width =</description>
     </item>
     
     <item>
       <title>vueX的知识总结（包括在vue-cli中的使用）</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vuex-knowledge/</link>
       <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vuex-knowledge/</guid>
       <description>介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使</description>
-    </item>
-    
-    <item>
-      <title>冒泡排序</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
-      <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/01_%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
-      <description></description>
     </item>
     
     <item>

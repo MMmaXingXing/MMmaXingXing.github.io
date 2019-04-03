@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/categories/vue/</link>
+    <description>Recent content in Vue on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 22 Mar 2019 23:13:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/categories/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>vue3.0&amp;&amp;vue2.0项目安装以及初始化</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue3.0_installvue2.0/</link>
+      <pubDate>Fri, 22 Mar 2019 23:13:46 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue3.0_installvue2.0/</guid>
+      <description>Vue3.0项目安装以及介绍 1 2 3 4 5 //安装 npm install -g @vue/cli //安装vue2.0(兼容) npm install -g @vue/cli-init 变化更新 部分命令发生了变化 删除了vue list 创建项目 vue</description>
+    </item>
+    
+    <item>
+      <title>Vue常用操作整理</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86i/</link>
+      <pubDate>Wed, 20 Mar 2019 23:13:46 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86i/</guid>
+      <description>1、创建全局过滤器 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 //main.js 中 Object.keys(allFilter).forEach(key =&amp;gt; { Vue.filter(key,allFilter[key]) }) //base_filter中 //获取yyyy-mm-dd类型时间 let getDate = value =&amp;gt; {</description>
+    </item>
+    
+  </channel>
+</rss>

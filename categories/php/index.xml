@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Php on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/categories/php/</link>
+    <description>Recent content in Php on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 02 Apr 2019 21:27:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>php4.2小记</title>
+      <link>https://mmmaxingxing.github.io/post/cours/php/php_4.2%E5%B0%8F%E8%AE%B0/</link>
+      <pubDate>Tue, 02 Apr 2019 21:27:10 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/php/php_4.2%E5%B0%8F%E8%AE%B0/</guid>
+      <description>基础使用记录 $_POST 变量 预定义的 $_POST 变量用于收集来自 method=&amp;ldquo;post&amp;rdquo; 的表单中的值。 从带有 POST 方法的表单发送的信息，对任何人都是不可见的（不会显示在浏览器的地址栏），</description>
+    </item>
+    
+  </channel>
+</rss>

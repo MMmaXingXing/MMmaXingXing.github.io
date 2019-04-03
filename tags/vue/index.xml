@@ -13,11 +13,29 @@
     
     <item>
       <title>Vue-Cli兼容IE9</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%85%BC%E5%AE%B9ie9/</link>
       <pubDate>Sat, 30 Mar 2019 21:07:20 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/vue%E5%85%BC%E5%AE%B9ie9/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%85%BC%E5%AE%B9ie9/</guid>
       <description>1、meta标签要写好 1 2 3 4 5 6 &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;author&amp;#34; content=&amp;#34;lyadmin&amp;#34;&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=Edge,chrome=1&amp;#34;&amp;gt; 2、编译插件要装好 1 npm install babel-polyfill --save-dev 3、其他配置要配好 1 2 3 4 5 6 7 8 9 // webpack.base.conf.js entry:</description>
+    </item>
+    
+    <item>
+      <title>vue3.0&amp;&amp;vue2.0项目安装以及初始化</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue3.0_installvue2.0/</link>
+      <pubDate>Fri, 22 Mar 2019 23:13:46 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue3.0_installvue2.0/</guid>
+      <description>Vue3.0项目安装以及介绍 1 2 3 4 5 //安装 npm install -g @vue/cli //安装vue2.0(兼容) npm install -g @vue/cli-init 变化更新 部分命令发生了变化 删除了vue list 创建项目 vue</description>
+    </item>
+    
+    <item>
+      <title>Vue常用操作整理</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86i/</link>
+      <pubDate>Wed, 20 Mar 2019 23:13:46 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86i/</guid>
+      <description>1、创建全局过滤器 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 //main.js 中 Object.keys(allFilter).forEach(key =&amp;gt; { Vue.filter(key,allFilter[key]) }) //base_filter中 //获取yyyy-mm-dd类型时间 let getDate = value =&amp;gt; {</description>
     </item>
     
     <item>
@@ -40,19 +58,19 @@
     
     <item>
       <title>vue elementui 使用记录 图片上传</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/elementuiupload/</link>
       <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/elementuiupload/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/elementuiupload/</guid>
       <description>一、前端做图片上传展示 1 2 let _URL = window.URL || window.webkitURL; self.form.imageLogo = _URL.createObjectURL(file); 二、elementui 判断图片大小 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 const isSize = new Promise(function(resolve, reject) { let width =</description>
     </item>
     
     <item>
       <title>vueX的知识总结（包括在vue-cli中的使用）</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vuex-knowledge/</link>
       <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vuex-knowledge/</guid>
       <description>介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使</description>
     </item>
     

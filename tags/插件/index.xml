@@ -22,10 +22,10 @@
     
     <item>
       <title>vueX的知识总结（包括在vue-cli中的使用）</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vuex-knowledge/</link>
       <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/vuex-knowledge/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vuex-knowledge/</guid>
       <description>介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使</description>
     </item>
     
