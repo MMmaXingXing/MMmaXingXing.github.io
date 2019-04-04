@@ -6,10 +6,28 @@
     <description>Recent content in Javascript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 03 Apr 2019 13:28:13 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 16:47:31 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>前端技术栈</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/frontal_resource/</link>
+      <pubDate>Wed, 03 Apr 2019 16:47:31 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/frontal_resource/</guid>
+      <description>前端必备 正常技术栈 ES6 [ES7] TypeScript [Vue]() [React]() [Angular]() [小程序]() 混合app开发 [Ionic]() [ReactNative]() [Crodova+vue]() [Crodova+react]() [weex]() [Flutter]() 后台全栈 [nodejs]() [Express/Koa]() [tgg.js]() [Mongodb]() [MySql]() [Redis]() 电脑软件 [Electron]() 跨平台混合软件开发 其他 [Google插件</description>
+    </item>
+    
+    <item>
+      <title>javascript细碎tip</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/javascript_small/</link>
+      <pubDate>Wed, 03 Apr 2019 14:47:31 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/javascript_small/</guid>
+      <description>debugger() 断点调试 console.dir() 打印出元素具体信息 console.error() 打印出错误信息</description>
+    </item>
     
     <item>
       <title>For of 到 Generator</title>
@@ -17,7 +35,7 @@
       <pubDate>Wed, 03 Apr 2019 13:28:13 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/for_of%E5%88%B0generator/</guid>
-      <description>For of 是什么 For of 是如何进行迭代的</description>
+      <description>For of 是什么 ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、St</description>
     </item>
     
     <item>

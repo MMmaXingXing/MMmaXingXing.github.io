@@ -6,10 +6,80 @@
     <description>Recent content on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 03 Apr 2019 14:47:31 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 16:47:31 +0800</lastBuildDate>
     
         <atom:link href="https://mmmaxingxing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>前端技术栈</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/frontal_resource/</link>
+      <pubDate>Wed, 03 Apr 2019 16:47:31 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/frontal_resource/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;前端必备&#34;&gt;前端必备&lt;/h3&gt;
+
+&lt;h4 id=&#34;正常技术栈&#34;&gt;正常技术栈&lt;/h4&gt;
+
+&lt;h5 id=&#34;es6-http-es6-ruanyifeng-com&#34;&gt;&lt;a href=&#34;http://es6.ruanyifeng.com/&#34;&gt;ES6&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h5 id=&#34;es7&#34;&gt;[ES7]&lt;/h5&gt;
+
+&lt;h5 id=&#34;typescript-http-www-typescriptlang-org&#34;&gt;&lt;a href=&#34;http://www.typescriptlang.org/&#34;&gt;TypeScript&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h5 id=&#34;vue&#34;&gt;[Vue]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;react&#34;&gt;[React]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;angular&#34;&gt;[Angular]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;小程序&#34;&gt;[小程序]()&lt;/h5&gt;
+
+&lt;h4 id=&#34;混合app开发&#34;&gt;混合app开发&lt;/h4&gt;
+
+&lt;h5 id=&#34;ionic&#34;&gt;[Ionic]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;reactnative&#34;&gt;[ReactNative]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;crodova-vue&#34;&gt;[Crodova+vue]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;crodova-react&#34;&gt;[Crodova+react]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;weex&#34;&gt;[weex]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;flutter&#34;&gt;[Flutter]()&lt;/h5&gt;
+
+&lt;h4 id=&#34;后台全栈&#34;&gt;后台全栈&lt;/h4&gt;
+
+&lt;h5 id=&#34;nodejs&#34;&gt;[nodejs]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;express-koa&#34;&gt;[Express/Koa]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;tgg-js&#34;&gt;[tgg.js]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;mongodb&#34;&gt;[Mongodb]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;mysql&#34;&gt;[MySql]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;redis&#34;&gt;[Redis]()&lt;/h5&gt;
+
+&lt;h4 id=&#34;电脑软件&#34;&gt;电脑软件&lt;/h4&gt;
+
+&lt;h5 id=&#34;electron&#34;&gt;[Electron]()&lt;/h5&gt;
+
+&lt;p&gt;跨平台混合软件开发&lt;/p&gt;
+
+&lt;h4 id=&#34;其他&#34;&gt;其他&lt;/h4&gt;
+
+&lt;h5 id=&#34;google插件&#34;&gt;[Google插件]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;vscode插件&#34;&gt;[Vscode插件]()&lt;/h5&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>Golang技术栈程序员技术听说</title>
@@ -48,6 +118,30 @@
     </item>
     
     <item>
+      <title>javascript细碎tip</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/javascript_small/</link>
+      <pubDate>Wed, 03 Apr 2019 14:47:31 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/javascript_small/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;debugger&#34;&gt;debugger()&lt;/h4&gt;
+
+&lt;p&gt;断点调试&lt;/p&gt;
+
+&lt;h4 id=&#34;console-dir&#34;&gt;console.dir()&lt;/h4&gt;
+
+&lt;p&gt;打印出元素具体信息&lt;/p&gt;
+
+&lt;h4 id=&#34;console-error&#34;&gt;console.error()&lt;/h4&gt;
+
+&lt;p&gt;打印出错误信息&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>For of 到 Generator</title>
       <link>https://mmmaxingxing.github.io/post/cours/javascript/for_of%E5%88%B0generator/</link>
       <pubDate>Wed, 03 Apr 2019 13:28:13 +0800</pubDate>
@@ -58,7 +152,248 @@
 
 &lt;h3 id=&#34;for-of-是什么&#34;&gt;For of 是什么&lt;/h3&gt;
 
-&lt;h3 id=&#34;for-of-是如何进行迭代的&#34;&gt;For of 是如何进行迭代的&lt;/h3&gt;
+&lt;p&gt;ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、String、Sets(集合)、Arguments Object 等可迭代的数据结构等。&lt;/p&gt;
+
+&lt;p&gt;语法：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;var arr = [1,2,3,4]
+
+for(const value of arr){
+    console.log(value);
+}
+
+//maps 
+const iterable = new Map([[&amp;#39;one&amp;#39;, 1], [&amp;#39;two&amp;#39;, 2]]);
+
+for(const [ key, value ] of arr){
+    console.log(` key:$[key] and value:$[value] `);
+}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;注：普通对象不可迭代&lt;/p&gt;
+
+&lt;h5 id=&#34;why&#34;&gt;why???&lt;/h5&gt;
+
+&lt;p&gt;首先我们想一个问题，为什么我们使用  for-of  或者 map（）/ filer（） 方法就可以遍历一个数组 （或者类数组对象: Strings ， Maps ， Sets ， arguments ） 呢？&lt;/p&gt;
+
+&lt;p&gt;站在for-of的角度想一下，如果我们需要遍历一个数组，你需要知道什么信息呢？&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;对应下标的值&lt;/li&gt;
+&lt;li&gt;是否遍历结束的标志&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;//查看array对象
+
+const newArr = [1,2,3]
+
+console.dir(newArr);
+
+//都存在一个Symbol.iterator
+
+let iterator = nweArr[Symbol.iterator]();
+
+//里面有个next方法
+
+iterator.next();
+
+//下标超出时 value: undefined
+//iterator.next(); 每次都返回一个对象，包含两个信息
+//对应下标的值 &amp;amp;&amp;amp; 是否遍历结束
+
+以上，印证了之前的猜想&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;So Iterator是什么&lt;/p&gt;
+
+&lt;h4 id=&#34;迭代器-iterator-与迭代协议-the-iterator-protocol&#34;&gt;迭代器(iterator)与迭代协议(The iterator protocol)&lt;/h4&gt;
+
+&lt;p&gt;迭代协议:&lt;/p&gt;
+
+&lt;p&gt;The iterator protocol 迭代协议允许 javascript对象去定义或者定制它们的迭代行为，所以上面出现的Symbol.iterator这个方法，就是数组对于这个协议的实现。那么按照这个协议，数组是如何实现了一个iterator呢?&lt;/p&gt;
+
+&lt;p&gt;当需要对一个对象进行迭代时(比如开始一个for of循环),它的@@iterator方法都会在不传参的情况下调用，返回的迭代器用于获取要迭代的值。&lt;/p&gt;
+
+&lt;p&gt;一些内置类型拥有默认的迭代器方法[Array,TypeArray,String,Map,Set],其他类型(Object)则没有。&lt;/p&gt;
+
+&lt;p&gt;可以自定义迭代器&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;var myIterable = {}
+myIterable[Symbol.iterator] = function* () {
+    yield 1;
+    yield 2;
+    yield 3;
+};
+[...myIterable] // [1, 2, 3]
+
+//如果一个迭代器没有返回一个迭代器对象，那么它就是一个不符合标准的迭代器
+//运行时会抛出异常&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;为什么object中没有迭代器呢&#34;&gt;为什么object中没有迭代器呢？？&lt;/h4&gt;
+
+&lt;p&gt;在很多场景中，我们也需要遍历一个对象，为什么不内置一个迭代器呢？&lt;/p&gt;
+
+&lt;p&gt;我们可以从另一个角度出发，了解一些基本的概念:&lt;/p&gt;
+
+&lt;p&gt;我们常说遍历对象，实在两个程度上对一个js对象进行遍历&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;程序的层级：什么意思呢，在程序的层级上，我们对一个对象进行迭代,是在迭代展示其结构的对象属性。例如：array.prototype.length这个属性与对象的结构相关，但却不是它的数据。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;数据的层级：意味着迭代数据结构并提取它的数据。例如：我们在迭代一个数组的时候，迭代器是对于它的 每一个数据进行迭代，如array=[a,b,c,d]那么迭代器访问到的是，1，2，3，4。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;js中提供了 for in 方法来遍历所有非Symbol但是可枚举的数据类型。&lt;/p&gt;
+
+&lt;p&gt;如果任性的就是要使用 for of来遍历，则可以使用自定义迭代器的方式呀。[乖巧]&lt;/p&gt;
+
+&lt;p&gt;补充：object 只是对象 万物皆对象，它是最底层的抽象。&lt;/p&gt;
+
+&lt;p&gt;可遍历的对象是 为 具有父子结构的数据而设计的,是比object更高一级的抽象，不适用于所有的object，因此object并没有预制迭代器。&lt;/p&gt;
+
+&lt;p&gt;以上。&lt;/p&gt;
+
+&lt;h3 id=&#34;generators&#34;&gt;Generators&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;function* () {};&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;在上文迭代器实现中出现过此规则函数。即Generator函数。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;function* gen(){
+    yield 1;
+    yield 2;
+    yield 3;
+    yield 4;
+}
+
+//调用
+let s = gen();
+
+s.next();
+
+consoel.dir(s);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;由以上见，Generator 可以实例化出一个iterator,并且yield就是用来中断代码执行的。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;function* gen（） {
+  yield 1;
+  yield* gen2（）;
+  
+return;
+}
+
+function* gen2（） {
+  yield 4;
+  yield 5;
+}
+
+let iterator = gen（）;
+console.log（iterator.next）;
+console.log（iterator.next）;
+console.log（iterator.next）;
+console.log（iterator.next）;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Generator 可以嵌套 Generator 并且 return 会终极整个Generator;&lt;/p&gt;
+
+&lt;h4 id=&#34;业务场景&#34;&gt;业务场景&lt;/h4&gt;
+
+&lt;p&gt;两个异步函数 A、B , B的参数是A的返回值，也就是说A执行完之后才可以执行B ，由此可在A结束的时候调用 next;&lt;/p&gt;
+
+&lt;p&gt;其他：可参考 co库源码&lt;/p&gt;
 </description>
       
     </item>
@@ -2161,215 +2496,6 @@ process.env.BASE_API
 //其他&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>diff算法</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/diff-%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Sun, 17 Mar 2019 23:05:51 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/diff-%E7%AE%97%E6%B3%95/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;一-虚拟dom&#34;&gt;一、虚拟dom&lt;/h3&gt;
-
-&lt;p&gt;众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多了，如果每次都生成dom，对浏览器性能是巨大的浪费。&lt;/p&gt;
-
-&lt;p&gt;virtual dom就是解决这个问题的一个思路，到底什么是virtual dom呢？通俗易懂的来说就是用一个简单的对象去代替复杂的dom对象。&lt;/p&gt;
-
-&lt;p&gt;示例如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;var mydiv = document.createElement(&amp;#39;div&amp;#39;);
-mydiv.className = &amp;#39;a&amp;#39;;
-document.body.appendChild(mydiv);&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;//伪代码
-var mydivVirtual = { 
-  tagName: &amp;#39;DIV&amp;#39;,
-  className: &amp;#39;a&amp;#39;
-};
-var newmydivVirtual = {
-   tagName: &amp;#39;DIV&amp;#39;,
-   className: &amp;#39;b&amp;#39;
-}
-if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !== newmydivVirtual.className){
-   change(mydiv)
-}
-
-// 会执行相应的修改 mydiv.className = &amp;#39;b&amp;#39;;
-//最后  &amp;lt;div class=&amp;#39;b&amp;#39;&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;有些网站会选择采用手工优化的方式，确实在一定构建环境中手工优化效率高于 virtual Dom ，virtual dom很多时候都不是最优的操作，但它具有普适性，在效率、可维护性之间达平衡。&lt;/p&gt;
-
-&lt;h3 id=&#34;diff算法&#34;&gt;diff算法&lt;/h3&gt;
-
-&lt;p&gt;diff算法是一些前端框架常用的一种算法。它的作用是&lt;/p&gt;
-
-&lt;p&gt;在交叉对比的时候，当新节点跟旧节点==头尾交叉对比==没有结果的时候，会根据旧节点的key去对比旧节点数组中的key，从而找到相应旧节点（这里对应的是一个key=&amp;gt;index的map映射）。如果没找到就认为是一个新增节点。而如果没找到就认为是一个新增节点。而如果没有key，那么就会采用一种遍历查找的方式去找到对应的旧节点两种实现方式，一种是map映射，另一种是遍历查找。相比而言。map映射速度更快。&lt;/p&gt;
-
-&lt;h3 id=&#34;diff-比较规则&#34;&gt;diff 比较规则&lt;/h3&gt;
-
-&lt;p&gt;同级比较，不会越级比较。&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>数据结构与算法</title>
-      <link>https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Sat, 16 Mar 2019 23:05:51 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</guid>
-      
-        <description>
-
-&lt;h4 id=&#34;数据结构&#34;&gt;数据结构&lt;/h4&gt;
-
-&lt;p&gt;一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题&lt;/p&gt;
-
-&lt;p&gt;程序设计 = 数据结构 + 算法&lt;/p&gt;
-
-&lt;p&gt;数据结构，就是数据关系，就是数据元素之间存在的一种或多种特定关系的集合。&lt;/p&gt;
-
-&lt;h4 id=&#34;逻辑结构和物理结构&#34;&gt;逻辑结构和物理结构&lt;/h4&gt;
-
-&lt;h5 id=&#34;逻辑结构&#34;&gt;逻辑结构&lt;/h5&gt;
-
-&lt;p&gt;数据对象中数据元素之间的相互关系，也是我们之后需要关注和谈论的问题。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;常见逻辑结构&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;集合结构：集合结构中数据同属于一个集合，它们之间没有其他不三不四的关系。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;线性结构：线性结构中数据是一对一的逻辑关系。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;树形结构：元素之间存在一对多的层次关系。像WBS, dom树一样的类型结构。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;图形结构：（最复杂），图形结构数据元素是多对多的关系。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&#34;物理结构&#34;&gt;物理结构&lt;/h5&gt;
-
-&lt;p&gt;数据逻辑结构在计算机中存储的方式。研究的就是把数据元素存储到计算机的存储器中。&lt;/p&gt;
-
-&lt;p&gt;数据元素的存储结构形式主要有两种&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;顺序存储：把数据元素放在地址连续的存储单元中，其数据间的逻辑关系和物理关系是一致的。例如，编程语言的数组结构。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;链式存储： 将数据元素放在任意的存储单元里，这组存储单元可以是连续的，也可以是不连续的。需要用指针存放数据元素的地址。例如：医院排队，你只需要注意前一个数据的情况。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;算法&#34;&gt;算法&lt;/h4&gt;
-
-&lt;p&gt;数据结构与算法是紧密相关的一组概念。&lt;/p&gt;
-
-&lt;p&gt;算法是解决特定问题求解步骤的描述，在计算机中表现为指令的有限序列，并且每条指令表示一个或多个操作。&lt;/p&gt;
-
-&lt;p&gt;类似于：技巧和方式。对于给定的问题，是可以用多种算法来解决的。&lt;/p&gt;
-
-&lt;p&gt;算法的五个特性：输入、输出、有穷性、确定性和可行性。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;输入、输出：0个或多个&lt;/li&gt;
-&lt;li&gt;有穷性：不可以死循环&lt;/li&gt;
-&lt;li&gt;确定性： 每一个步骤都有确定的含义，不会出现二义性。&lt;/li&gt;
-&lt;li&gt;正确性
-1、无语法错误
-2、合法输入产出满足要求输出。
-3、非法输入能够产生满足规格的说明
-4、对于故意刁难的测试输入都有满足要求的输出结果。&lt;/li&gt;
-&lt;li&gt;可读性 便于阅读、理解和交流&lt;/li&gt;
-&lt;li&gt;健壮性&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;时间效率高和存储量低&lt;/p&gt;
-
-&lt;h5 id=&#34;示例引入&#34;&gt;示例引入&lt;/h5&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;从1累加到100，用计算机算出来&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sun&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-
-&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-
-&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 高斯算法
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// 算法速率增大
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sun&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-
-&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;学习掌握一些好的算法，对我们解决问题很有帮助。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;其他&#34;&gt;其他&lt;/h4&gt;
-
-&lt;p&gt;我们不说怎么能够成为XXX，我们先来看看成为XXX之后要做什么事情，而做这些事情，需要什么样的能力，在拥有了这些能力、做上了这件事情之后，又能向什么方向发展。&lt;/p&gt;
-
-&lt;p&gt;把算法当黑盒用的问题在于：黑盒能够解决问题的时候，使用方便，而一旦不能解决问题，或者对质量有所要求，就会感觉无所适从。&lt;/p&gt;
-
-&lt;p&gt;作为程序员、工程人员，想用机器学习算法解决实际问题，就得对算法有一定程度的掌握，此外对于数据处理和模型验证，也需具备相应知识。&lt;/p&gt;
-</description>
       
     </item>
     

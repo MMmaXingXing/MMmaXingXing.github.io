@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Astar" />
-  <meta name="description" content="For of 是什么 For of 是如何进行迭代的" />
+  <meta name="description" content="For of 是什么 ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、St" />
 
   <meta name="keywords" content="Hugo, blog, Astar" />
 
@@ -60,26 +60,26 @@
 
 
 <meta property="og:title" content="For of 到 Generator" />
-<meta property="og:description" content="For of 是什么 For of 是如何进行迭代的" />
+<meta property="og:description" content="For of 是什么 ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、St" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/javascript/for_of%E5%88%B0generator/" />
 <meta property="article:published_time" content="2019-04-03T13:28:13&#43;08:00"/>
 <meta property="article:modified_time" content="2019-04-03T13:28:13&#43;08:00"/>
 
 <meta itemprop="name" content="For of 到 Generator">
-<meta itemprop="description" content="For of 是什么 For of 是如何进行迭代的">
+<meta itemprop="description" content="For of 是什么 ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、St">
 
 
 <meta itemprop="datePublished" content="2019-04-03T13:28:13&#43;08:00" />
 <meta itemprop="dateModified" content="2019-04-03T13:28:13&#43;08:00" />
-<meta itemprop="wordCount" content="15">
+<meta itemprop="wordCount" content="1608">
 
 
 
 <meta itemprop="keywords" content="javascript,es6," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="For of 到 Generator"/>
-<meta name="twitter:description" content="For of 是什么 For of 是如何进行迭代的"/>
+<meta name="twitter:description" content="For of 是什么 ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、St"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -305,7 +305,248 @@
 
 <h3 id="for-of-是什么">For of 是什么</h3>
 
-<h3 id="for-of-是如何进行迭代的">For of 是如何进行迭代的</h3>
+<p>ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、String、Sets(集合)、Arguments Object 等可迭代的数据结构等。</p>
+
+<p>语法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">var arr = [1,2,3,4]
+
+for(const value of arr){
+    console.log(value);
+}
+
+//maps 
+const iterable = new Map([[&#39;one&#39;, 1], [&#39;two&#39;, 2]]);
+
+for(const [ key, value ] of arr){
+    console.log(` key:$[key] and value:$[value] `);
+}</pre></td></tr></table>
+</div>
+</div>
+<p>注：普通对象不可迭代</p>
+
+<h5 id="why">why???</h5>
+
+<p>首先我们想一个问题，为什么我们使用  for-of  或者 map（）/ filer（） 方法就可以遍历一个数组 （或者类数组对象: Strings ， Maps ， Sets ， arguments ） 呢？</p>
+
+<p>站在for-of的角度想一下，如果我们需要遍历一个数组，你需要知道什么信息呢？</p>
+
+<ul>
+<li>对应下标的值</li>
+<li>是否遍历结束的标志</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">//查看array对象
+
+const newArr = [1,2,3]
+
+console.dir(newArr);
+
+//都存在一个Symbol.iterator
+
+let iterator = nweArr[Symbol.iterator]();
+
+//里面有个next方法
+
+iterator.next();
+
+//下标超出时 value: undefined
+//iterator.next(); 每次都返回一个对象，包含两个信息
+//对应下标的值 &amp;&amp; 是否遍历结束
+
+以上，印证了之前的猜想</pre></td></tr></table>
+</div>
+</div>
+<p>So Iterator是什么</p>
+
+<h4 id="迭代器-iterator-与迭代协议-the-iterator-protocol">迭代器(iterator)与迭代协议(The iterator protocol)</h4>
+
+<p>迭代协议:</p>
+
+<p>The iterator protocol 迭代协议允许 javascript对象去定义或者定制它们的迭代行为，所以上面出现的Symbol.iterator这个方法，就是数组对于这个协议的实现。那么按照这个协议，数组是如何实现了一个iterator呢?</p>
+
+<p>当需要对一个对象进行迭代时(比如开始一个for of循环),它的@@iterator方法都会在不传参的情况下调用，返回的迭代器用于获取要迭代的值。</p>
+
+<p>一些内置类型拥有默认的迭代器方法[Array,TypeArray,String,Map,Set],其他类型(Object)则没有。</p>
+
+<p>可以自定义迭代器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">var myIterable = {}
+myIterable[Symbol.iterator] = function* () {
+    yield 1;
+    yield 2;
+    yield 3;
+};
+[...myIterable] // [1, 2, 3]
+
+//如果一个迭代器没有返回一个迭代器对象，那么它就是一个不符合标准的迭代器
+//运行时会抛出异常</pre></td></tr></table>
+</div>
+</div>
+<h4 id="为什么object中没有迭代器呢">为什么object中没有迭代器呢？？</h4>
+
+<p>在很多场景中，我们也需要遍历一个对象，为什么不内置一个迭代器呢？</p>
+
+<p>我们可以从另一个角度出发，了解一些基本的概念:</p>
+
+<p>我们常说遍历对象，实在两个程度上对一个js对象进行遍历</p>
+
+<ul>
+<li><p>程序的层级：什么意思呢，在程序的层级上，我们对一个对象进行迭代,是在迭代展示其结构的对象属性。例如：array.prototype.length这个属性与对象的结构相关，但却不是它的数据。</p></li>
+
+<li><p>数据的层级：意味着迭代数据结构并提取它的数据。例如：我们在迭代一个数组的时候，迭代器是对于它的 每一个数据进行迭代，如array=[a,b,c,d]那么迭代器访问到的是，1，2，3，4。</p></li>
+</ul>
+
+<p>js中提供了 for in 方法来遍历所有非Symbol但是可枚举的数据类型。</p>
+
+<p>如果任性的就是要使用 for of来遍历，则可以使用自定义迭代器的方式呀。[乖巧]</p>
+
+<p>补充：object 只是对象 万物皆对象，它是最底层的抽象。</p>
+
+<p>可遍历的对象是 为 具有父子结构的数据而设计的,是比object更高一级的抽象，不适用于所有的object，因此object并没有预制迭代器。</p>
+
+<p>以上。</p>
+
+<h3 id="generators">Generators</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">function* () {};</pre></td></tr></table>
+</div>
+</div>
+<p>在上文迭代器实现中出现过此规则函数。即Generator函数。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">function* gen(){
+    yield 1;
+    yield 2;
+    yield 3;
+    yield 4;
+}
+
+//调用
+let s = gen();
+
+s.next();
+
+consoel.dir(s);</pre></td></tr></table>
+</div>
+</div>
+<p>由以上见，Generator 可以实例化出一个iterator,并且yield就是用来中断代码执行的。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">function* gen（） {
+  yield 1;
+  yield* gen2（）;
+  
+return;
+}
+
+function* gen2（） {
+  yield 4;
+  yield 5;
+}
+
+let iterator = gen（）;
+console.log（iterator.next）;
+console.log（iterator.next）;
+console.log（iterator.next）;
+console.log（iterator.next）;</pre></td></tr></table>
+</div>
+</div>
+<p>Generator 可以嵌套 Generator 并且 return 会终极整个Generator;</p>
+
+<h4 id="业务场景">业务场景</h4>
+
+<p>两个异步函数 A、B , B的参数是A的返回值，也就是说A执行完之后才可以执行B ，由此可在A结束的时候调用 next;</p>
+
+<p>其他：可参考 co库源码</p>
 
     </div>
 
@@ -324,7 +565,7 @@
         
         <nav class="post-nav">
             
-            <a class="prev" href="/post/cours/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/">
+            <a class="prev" href="/post/cours/javascript/javascript_small/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -334,7 +575,7 @@
 </svg>
 
             </i>
-            <span class="prev-text nav-default">Golang技术栈程序员技术听说</span>
+            <span class="prev-text nav-default">javascript细碎tip</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a> 
             <a class="next" href="/post/cours/php/php_4.2%E5%B0%8F%E8%AE%B0/">

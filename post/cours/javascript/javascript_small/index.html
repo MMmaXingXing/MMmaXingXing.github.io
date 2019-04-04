@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Golang技术栈程序员技术听说 - Astar Blog</title>
+  <title>javascript细碎tip - Astar Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Astar" />
-  <meta name="description" content="InfluxDB 是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这" />
+  <meta name="description" content="debugger() 断点调试 console.dir() 打印出元素具体信息 console.error() 打印出错误信息" />
 
   <meta name="keywords" content="Hugo, blog, Astar" />
 
@@ -37,7 +37,7 @@
 
 
 
-<link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/" />
+<link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/javascript/javascript_small/" />
 
 
 
@@ -59,27 +59,27 @@
 
 
 
-<meta property="og:title" content="Golang技术栈程序员技术听说" />
-<meta property="og:description" content="InfluxDB 是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这" />
+<meta property="og:title" content="javascript细碎tip" />
+<meta property="og:description" content="debugger() 断点调试 console.dir() 打印出元素具体信息 console.error() 打印出错误信息" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/" />
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/javascript/javascript_small/" />
 <meta property="article:published_time" content="2019-04-03T14:47:31&#43;08:00"/>
 <meta property="article:modified_time" content="2019-04-03T14:47:31&#43;08:00"/>
 
-<meta itemprop="name" content="Golang技术栈程序员技术听说">
-<meta itemprop="description" content="InfluxDB 是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这">
+<meta itemprop="name" content="javascript细碎tip">
+<meta itemprop="description" content="debugger() 断点调试 console.dir() 打印出元素具体信息 console.error() 打印出错误信息">
 
 
 <meta itemprop="datePublished" content="2019-04-03T14:47:31&#43;08:00" />
 <meta itemprop="dateModified" content="2019-04-03T14:47:31&#43;08:00" />
-<meta itemprop="wordCount" content="192">
+<meta itemprop="wordCount" content="23">
 
 
 
-<meta itemprop="keywords" content="home,shortcodes,tag-6," />
+<meta itemprop="keywords" content="javascript," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Golang技术栈程序员技术听说"/>
-<meta name="twitter:description" content="InfluxDB 是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这"/>
+<meta name="twitter:title" content="javascript细碎tip"/>
+<meta name="twitter:description" content="debugger() 断点调试 console.dir() 打印出元素具体信息 console.error() 打印出错误信息"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -275,13 +275,13 @@
           <article class="post bg-white">
     
     <header class="post-header">
-        <h1 class="post-title">Golang技术栈程序员技术听说</h1>
+        <h1 class="post-title">javascript细碎tip</h1>
         
         <div class="post-meta">
             <time datetime=" 2019-04-03 " class="post-time">
           2019-04-03
         </time> <div class="post-category">
-                <a href="https://mmmaxingxing.github.io/categories/shortcodes/"> shortcodes </a> 
+                <a href="https://mmmaxingxing.github.io/categories/javascript/"> javascript </a> 
             </div> 
 
             
@@ -303,29 +303,17 @@
     <div class="post-content">
         
 
-<h4 id="influxdb">InfluxDB</h4>
+<h4 id="debugger">debugger()</h4>
 
-<p>是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这些数据进行快速的实时分析。</p>
+<p>断点调试</p>
 
-<p><strong><a href="https://jasper-zhang1.gitbooks.io/influxdb/content/">中文文档</a></strong></p>
+<h4 id="console-dir">console.dir()</h4>
 
-<p><strong><a href="https://github.com/influxdata/influxdb">社区</a></strong></p>
+<p>打印出元素具体信息</p>
 
-<p>其他说明：他们的数据采集分析 ,存到了influxdb</p>
+<h4 id="console-error">console.error()</h4>
 
-<h4 id="beego">Beego</h4>
-
-<p>goweb框架</p>
-
-<p><strong><a href="https://beego.me/">中文文档</a></strong></p>
-
-<p>其他说明：江湖传闻有些臃肿，某些公司选此为技术栈之后进行了改造</p>
-
-<h4 id="goorm">goOrm</h4>
-
-<p>Golang写的，开发人员友好的ORM库。做数据库接入的。</p>
-
-<p><strong><a href="http://gorm.book.jasperxu.com/">中文文档</a></strong></p>
+<p>打印出错误信息</p>
 
     </div>
 
@@ -338,13 +326,13 @@
 
     <footer class="post-footer">
         <div class="post-tags">
-            <a href="https://mmmaxingxing.github.io/tags/home/">home</a> <a href="https://mmmaxingxing.github.io/tags/shortcodes/">shortcodes</a> <a href="https://mmmaxingxing.github.io/tags/tag-6/">tag-6</a> 
+            <a href="https://mmmaxingxing.github.io/tags/javascript/">javascript</a> 
         </div>
 
         
         <nav class="post-nav">
             
-            <a class="prev" href="/post/technology/resource/frontal_resource/">
+            <a class="prev" href="/post/cours/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -354,11 +342,11 @@
 </svg>
 
             </i>
-            <span class="prev-text nav-default">前端技术栈</span>
+            <span class="prev-text nav-default">Golang技术栈程序员技术听说</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a> 
-            <a class="next" href="/post/cours/javascript/javascript_small/">
-                <span class="next-text nav-default">javascript细碎tip</span>
+            <a class="next" href="/post/cours/javascript/for_of%E5%88%B0generator/">
+                <span class="next-text nav-default">For of 到 Generator</span>
                 <span class="prev-text nav-mobile">下一篇</span> 
                 <i class="iconfont">
               <svg class="icon" viewBox="0 0 1024 1024" version="1.1"

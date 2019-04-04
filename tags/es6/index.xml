@@ -17,7 +17,7 @@
       <pubDate>Wed, 03 Apr 2019 13:28:13 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/for_of%E5%88%B0generator/</guid>
-      <description>For of 是什么 For of 是如何进行迭代的</description>
+      <description>For of 是什么 ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、St</description>
     </item>
     
     <item>
