@@ -6,17 +6,26 @@
     <description>Recent content in Php on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 02 Apr 2019 21:27:10 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 13:47:35 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>php4.17小记</title>
+      <link>https://mmmaxingxing.github.io/post/cours/php/php_4.17/</link>
+      <pubDate>Wed, 17 Apr 2019 13:47:35 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/php/php_4.17/</guid>
+      <description>页面跳转 Header 1 2 3 4 5 6 7 8 &amp;lt;? if (isset($url)) { Header(&amp;#34;HTTP/1.1 303 See Other&amp;#34;); Header(&amp;#34;Location: $url&amp;#34;); exit; //from www.w3sky.com } ?&amp;gt; location 1 2 3 4 5 6 &amp;lt;? $url=&amp;#34;http://www.jb51.net&amp;#34;; echo &amp;#34;&amp;lt;!--&amp;lt;scrīpt LANGUAGE=&amp;</description>
+    </item>
+    
+    <item>
       <title>php4.2小记</title>
-      <link>https://mmmaxingxing.github.io/post/cours/php/php_4.2%E5%B0%8F%E8%AE%B0/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/php/php_4.2/</link>
       <pubDate>Tue, 02 Apr 2019 21:27:10 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/php/php_4.2%E5%B0%8F%E8%AE%B0/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/php/php_4.2/</guid>
       <description>基础使用记录 $_POST 变量 预定义的 $_POST 变量用于收集来自 method=&amp;ldquo;post&amp;rdquo; 的表单中的值。 从带有 POST 方法的表单发送的信息，对任何人都是不可见的（不会显示在浏览器的地址栏），</description>
     </item>
     

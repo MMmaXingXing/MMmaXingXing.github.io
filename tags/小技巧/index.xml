@@ -6,10 +6,19 @@
     <description>Recent content in 小技巧 on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 15 Mar 2019 23:33:08 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 16 Apr 2019 14:24:37 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>imageUp To base64</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/image_up_base64/</link>
+      <pubDate>Tue, 16 Apr 2019 14:24:37 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/image_up_base64/</guid>
+      <description>一、本地上传图片转为base64 1 2 3 4 5 6 7 8 9 10 11 //假设已经拿到了 图片的file 则 var reader = new FileReader(); var imgUrlBase64; if (file) { //将文件以Data URL形式读</description>
+    </item>
     
     <item>
       <title>vue elementui 使用记录 图片上传</title>

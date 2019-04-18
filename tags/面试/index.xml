@@ -13,11 +13,11 @@
     
     <item>
       <title>js数组扁平化操作</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E6%93%8D%E4%BD%9C/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/array_flatten/</link>
       <pubDate>Wed, 27 Mar 2019 13:55:25 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E6%93%8D%E4%BD%9C/</guid>
-      <description>常规操作 for of 递归实现 1 2 3 4 5 6 7 8 9 function flatten(arr, result = []) { for (let item of arr) { if (Array.isArray(item.children)) flatten(item.children, result) else result.push(item) } return result } 迭代器实现 生成器实现 reduce 三句话实现法 降维打击法 lodash 层次法 参考感</description>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/array_flatten/</guid>
+      <description>二维数组转一维 1 2 3 4 5 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; data.forEach(item =&amp;gt; { item.forEach? item.forEach(val =&amp;gt;{res.push(val)}) :res.push(item) }) 1 2 3 4 5 6 7 8 9 10 11 12 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; var falt = (res) =&amp;gt; { if(res.forEach){ res.forEach(val =&amp;gt; { val.forEach ? falt(val) : res.push(val) }) }else{ res.push(res) } } 常规</description>
     </item>
     
     <item>

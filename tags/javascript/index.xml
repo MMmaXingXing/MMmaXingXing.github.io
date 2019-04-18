@@ -6,10 +6,46 @@
     <description>Recent content in Javascript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 03 Apr 2019 16:47:31 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 16 Apr 2019 14:24:37 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>imageUp To base64</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/image_up_base64/</link>
+      <pubDate>Tue, 16 Apr 2019 14:24:37 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/image_up_base64/</guid>
+      <description>一、本地上传图片转为base64 1 2 3 4 5 6 7 8 9 10 11 //假设已经拿到了 图片的file 则 var reader = new FileReader(); var imgUrlBase64; if (file) { //将文件以Data URL形式读</description>
+    </item>
+    
+    <item>
+      <title>Event Loop 机制</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/eventloop/</link>
+      <pubDate>Fri, 12 Apr 2019 16:52:29 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/eventloop/</guid>
+      <description>Event Loop 是一个很重要的概念，指的是计算机系统的一种运行机制。 JavaScript语言就采用这种机制，来解决单线程运行代表的一些问题。 要想理解Ev</description>
+    </item>
+    
+    <item>
+      <title>npx</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</link>
+      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</guid>
+      <description>npx 今天看react安装环境中有一句 npx create-react-app my-app,没有见过npx，查了查资料 聊以记录; npx 是 npm v5.2.0 引入的一条命令，目的是为了提升开发者使用包内</description>
+    </item>
+    
+    <item>
+      <title>Call&amp;&amp;Apply谁的效率高</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/callapply/</link>
+      <pubDate>Thu, 04 Apr 2019 12:54:18 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/callapply/</guid>
+      <description>Call 允许为不同的对象分配和调用属于一个对象的函数/方法。 call() 方法调用一个函数, 其具有一个指定的this值和分别地提供的参数(参数的列表)。 cal</description>
+    </item>
     
     <item>
       <title>前端技术栈</title>
@@ -57,29 +93,20 @@
     </item>
     
     <item>
-      <title>多维数组转一维数组</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
-      <pubDate>Thu, 21 Mar 2019 23:11:11 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
-      <description>二维数组转一维 1 2 3 4 5 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; data.forEach(item =&amp;gt; { item.forEach? item.forEach(val =&amp;gt;{res.push(val)}) :res.push(item) }) 1 2 3 4 5 6 7 8 9 10 11 12 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; var falt = (res) =&amp;gt; { if(res.forEach){ res.forEach(val =&amp;gt; { val.forEach ? falt(val) : res.push(val) }) }else{ res.push(res) } }</description>
-    </item>
-    
-    <item>
       <title>Vue常用操作整理</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86i/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue_useful_expressions/</link>
       <pubDate>Wed, 20 Mar 2019 23:13:46 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86i/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue_useful_expressions/</guid>
       <description>1、创建全局过滤器 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 //main.js 中 Object.keys(allFilter).forEach(key =&amp;gt; { Vue.filter(key,allFilter[key]) }) //base_filter中 //获取yyyy-mm-dd类型时间 let getDate = value =&amp;gt; {</description>
     </item>
     
     <item>
       <title>斐波拉契实现</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/fibonacci/</link>
       <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/fibonacci/</guid>
       <description>斐波拉契 斐波那契数列 1, 1, 2,3,5,8,13,21….. 使用公式f( n ) = f(n-1)+f(n-2),结束条件f(2) =1, f(1) = 1 1 2 3 4 5 6 7</description>
     </item>
     

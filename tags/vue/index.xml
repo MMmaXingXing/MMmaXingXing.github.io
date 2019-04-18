@@ -6,17 +6,26 @@
     <description>Recent content in Vue on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 30 Mar 2019 21:07:20 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 16 Apr 2019 14:24:37 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>imageUp To base64</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/image_up_base64/</link>
+      <pubDate>Tue, 16 Apr 2019 14:24:37 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/image_up_base64/</guid>
+      <description>一、本地上传图片转为base64 1 2 3 4 5 6 7 8 9 10 11 //假设已经拿到了 图片的file 则 var reader = new FileReader(); var imgUrlBase64; if (file) { //将文件以Data URL形式读</description>
+    </item>
+    
+    <item>
       <title>Vue-Cli兼容IE9</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%85%BC%E5%AE%B9ie9/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue_inclusive_ie9/</link>
       <pubDate>Sat, 30 Mar 2019 21:07:20 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%85%BC%E5%AE%B9ie9/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue_inclusive_ie9/</guid>
       <description>1、meta标签要写好 1 2 3 4 5 6 &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;author&amp;#34; content=&amp;#34;lyadmin&amp;#34;&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=Edge,chrome=1&amp;#34;&amp;gt; 2、编译插件要装好 1 npm install babel-polyfill --save-dev 3、其他配置要配好 1 2 3 4 5 6 7 8 9 // webpack.base.conf.js entry:</description>
     </item>
     
@@ -31,10 +40,10 @@
     
     <item>
       <title>Vue常用操作整理</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86i/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue_useful_expressions/</link>
       <pubDate>Wed, 20 Mar 2019 23:13:46 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86i/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue_useful_expressions/</guid>
       <description>1、创建全局过滤器 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 //main.js 中 Object.keys(allFilter).forEach(key =&amp;gt; { Vue.filter(key,allFilter[key]) }) //base_filter中 //获取yyyy-mm-dd类型时间 let getDate = value =&amp;gt; {</description>
     </item>
     

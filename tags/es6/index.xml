@@ -30,15 +30,6 @@
     </item>
     
     <item>
-      <title>多维数组转一维数组</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
-      <pubDate>Thu, 21 Mar 2019 23:11:11 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
-      <description>二维数组转一维 1 2 3 4 5 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; data.forEach(item =&amp;gt; { item.forEach? item.forEach(val =&amp;gt;{res.push(val)}) :res.push(item) }) 1 2 3 4 5 6 7 8 9 10 11 12 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; var falt = (res) =&amp;gt; { if(res.forEach){ res.forEach(val =&amp;gt; { val.forEach ? falt(val) : res.push(val) }) }else{ res.push(res) } }</description>
-    </item>
-    
-    <item>
       <title>promise async await</title>
       <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
       <pubDate>Mon, 04 Mar 2019 17:29:17 +0800</pubDate>

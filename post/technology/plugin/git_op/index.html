@@ -72,7 +72,7 @@
 
 <meta itemprop="datePublished" content="2019-03-23T23:13:46&#43;08:00" />
 <meta itemprop="dateModified" content="2019-03-23T23:13:46&#43;08:00" />
-<meta itemprop="wordCount" content="1526">
+<meta itemprop="wordCount" content="1580">
 
 
 
@@ -720,9 +720,17 @@ git push origin master</pre></td></tr></table>
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">//拉取远程分支 默认为住分支
+<pre class="chroma">//新分支需要先同步，将远程分支同步到本地
+git fetch origin branch1:branch2
+//使用远程branch1在本地创建branch2
+
+//拉取远程分支 默认为住分支
 git clone git地址
 
 //拉取远程指定分支

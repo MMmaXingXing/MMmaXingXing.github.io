@@ -13,10 +13,10 @@
     
     <item>
       <title>SQL查询不包括某条件</title>
-      <link>https://mmmaxingxing.github.io/post/cours/sql/sql%E6%9F%A5%E8%AF%A2%E4%B8%8D%E5%8C%85%E6%8B%AC%E6%9F%90%E6%9D%A1%E4%BB%B6/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/sql/sql_select_not_condition/</link>
       <pubDate>Thu, 28 Mar 2019 11:47:25 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/sql/sql%E6%9F%A5%E8%AF%A2%E4%B8%8D%E5%8C%85%E6%8B%AC%E6%9F%90%E6%9D%A1%E4%BB%B6/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/sql/sql_select_not_condition/</guid>
       <description>查询语句 1 2 3 select * from test_1 WHERE name!=&amp;#34;admin&amp;#34; 1 2 3 select * from test_1 WHERE not( name == &amp;#39;admin&amp;#39;);</description>
     </item>
     

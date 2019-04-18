@@ -6,10 +6,796 @@
     <description>Recent content on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 03 Apr 2019 16:47:31 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 11:10:59 +0800</lastBuildDate>
     
         <atom:link href="https://mmmaxingxing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MD语法整理</title>
+      <link>https://mmmaxingxing.github.io/post/cours/markdown/</link>
+      <pubDate>Thu, 18 Apr 2019 11:10:59 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/markdown/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;md语法整理&#34;&gt;MD语法整理&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;标题： #XXX    最多六级标题
+
+列表：  无序 ： * 、+、- 
+
+              有序：1.     2.    3.  
+
+引用： &amp;gt;这是引用文本
+
+链接： [链接名称](http://www.baidu.com)
+
+图片 :   ![ 图片名称 ]( 图片地址 )
+
+粗体： **AAA**                         斜体：*AAA*
+
+表格：
+
+|  Tables  |    AAA   |   BBB   |
+
+| ---------- | :----------:  | ----------: |
+
+|   aaa    |  bbbbbb   |  cccccc |
+
+ 
+
+代码：     ·   代码内容  ·    tab 缩进
+
+//```
+//代码块
+//```&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>php4.17小记</title>
+      <link>https://mmmaxingxing.github.io/post/cours/php/php_4.17/</link>
+      <pubDate>Wed, 17 Apr 2019 13:47:35 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/php/php_4.17/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;页面跳转&#34;&gt;页面跳转&lt;/h3&gt;
+
+&lt;h4 id=&#34;header&#34;&gt;Header&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&amp;lt;? 
+if (isset($url)) 
+{ 
+Header(&amp;#34;HTTP/1.1 303 See Other&amp;#34;); 
+Header(&amp;#34;Location: $url&amp;#34;); 
+exit; //from www.w3sky.com 
+} 
+?&amp;gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;location&#34;&gt;location&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&amp;lt;? 
+$url=&amp;#34;http://www.jb51.net&amp;#34;; 
+echo &amp;#34;&amp;lt;!--&amp;lt;scrīpt LANGUAGE=&amp;#34;Javascrīpt&amp;#34;&amp;gt;&amp;#34;; 
+echo &amp;#34;location.href=&amp;#39;$url&amp;#39;&amp;#34;; 
+echo &amp;#34;&amp;lt;/scrīpt&amp;gt;--&amp;gt;&amp;#34;; 
+?&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;meta&#34;&gt;meta&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;echo &amp;#34;&amp;lt; meta http-equiv=\\&amp;#34;Refresh\\&amp;#34; content=\\&amp;#34;秒数; url=跳转的文件或地址\\&amp;#34; &amp;gt; &amp;#34;; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>imageUp To base64</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/image_up_base64/</link>
+      <pubDate>Tue, 16 Apr 2019 14:24:37 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/image_up_base64/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;一-本地上传图片转为base64&#34;&gt;一、本地上传图片转为base64&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;//假设已经拿到了 图片的file 则
+
+        var reader = new FileReader();
+        var imgUrlBase64;
+        if (file) {
+            //将文件以Data URL形式读入页面  
+            imgUrlBase64 = reader.readAsDataURL(file);
+            reader.onload = function (e) {
+              console.log(e.currentTarget.result);
+            }
+         }&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;二-将本项目中的图片转为base64&#34;&gt;二、将本项目中的图片转为base64&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;    function(){
+       var url = &amp;#34;static/img/js1.jpg&amp;#34;;//这是站内的一张图片资源，采用的相对路径
+       convertImgToBase64(url, function(base64Img){
+        //转化后的base64
+        alert(base64Img);
+       });             
+    }
+
+    //实现将项目的图片转化成base64
+    function convertImgToBase64(url, callback, outputFormat){
+       var canvas = document.createElement(&amp;#39;CANVAS&amp;#39;),
+    　　ctx = canvas.getContext(&amp;#39;2d&amp;#39;),
+    　　img = new Image;
+    　　img.crossOrigin = &amp;#39;Anonymous&amp;#39;;
+    　　img.onload = function(){
+        　　canvas.height = img.height;
+        　　canvas.width = img.width;
+        　　ctx.drawImage(img,0,0);
+        　　var dataURL = canvas.toDataURL(outputFormat || &amp;#39;image/png&amp;#39;);
+        　　callback.call(this, dataURL);
+        　　canvas = null; 
+        };
+    　　img.src = url;
+    } &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;三-将网络图片资源转化为base64&#34;&gt;三、将网络图片资源转化为base64&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-script&#34; data-lang=&#34;script&#34;&gt;function(){
+    　　 //这是网上的一张图片链接
+    　　 var url=&amp;#34;http://p1.pstatp.com/large/435d000085555bd8de10&amp;#34;;
+        getBase64(url)
+            .then(function(base64){
+                  console.log(base64);//处理成功打印在控制台
+            },function(err){
+                  console.log(err);//打印异常信息
+            });                        
+    }    
+
+    //传入图片路径，返回base64
+    function getBase64(img){
+        function getBase64Image(img,width,height) {//width、height调用时传入具体像素值，控制大小 ,不传则默认图像大小
+          var canvas = document.createElement(&amp;#34;canvas&amp;#34;);
+          canvas.width = width ? width : img.width;
+          canvas.height = height ? height : img.height;
+ 
+          var ctx = canvas.getContext(&amp;#34;2d&amp;#34;);
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          var dataURL = canvas.toDataURL();
+          return dataURL;
+        }
+        var image = new Image();
+        image.crossOrigin = &amp;#39;&amp;#39;;
+        image.src = img;
+        var deferred=$.Deferred();
+        if(img){
+          image.onload =function (){
+            deferred.resolve(getBase64Image(image));//将base64传给done上传处理
+          }
+          return deferred.promise();//问题要让onload完成后再return sessionStorage[&amp;#39;imgTest&amp;#39;]
+        }
+      }&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;其他&#34;&gt;其他&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;reader.result.substring(reader.result.indexOf(&amp;#34;,&amp;#34;) + 1) //将base64截取掉标识
+
+//判断base64资源大小
+//reader.result.length 资源大小
+
+var AllowImgFileSize = 2100000;    //上传图片最大值(单位字节)（ 2 M = 2097152 B ）
+    if (AllowImgFileSize != 0 &amp;amp;&amp;amp; AllowImgFileSize &amp;lt; reader.result.length) {
+      alert( &amp;#39;上传失败，请上传不大于2M的图片！&amp;#39;);
+      return;
+}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Event Loop 机制</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/eventloop/</link>
+      <pubDate>Fri, 12 Apr 2019 16:52:29 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/eventloop/</guid>
+      
+        <description>&lt;p&gt;Event Loop 是一个很重要的概念，指的是计算机系统的一种运行机制。&lt;/p&gt;
+
+&lt;p&gt;JavaScript语言就采用这种机制，来解决单线程运行代表的一些问题。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/javascript/eventloop/loop_base.png&#34; alt=&#34;loop示例&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;要想理解Event Loop,就要从程序运行的模式讲起。运行以后的程序叫&amp;rdquo;进程&amp;rdquo;(process),一般情况下,一个进程一次只能执行一个任务。&lt;/p&gt;
+
+&lt;p&gt;如果有很多个任务需要执行，不外乎三种解决办法&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;(1)、排队。因为一个进程一次只能执行一个任务，只好等前面任务
+(2)、新建进程。使用fork命令，为每个任务新建一个进程。
+(3)、新建线程。因为进程太耗费资源，所以如今的程序往往允许一个进程包含多个线程，由线程去完成任务。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html&#34;&gt;进程与线程相关知识&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;以javascript为例，它是一种单线程语言,所有任务都在一个线程上完成，即采用上面的第一种方法，一旦遇到大量任务或者遇到一个耗时的任务，网页就会出现&amp;rdquo;假死&amp;rdquo;,因为javascript停不下来，也就无法响应用户的行为。&lt;/p&gt;
+
+&lt;p&gt;为什么javascript是单线程呢？难道不能实现为多线程么？&lt;/p&gt;
+
+&lt;p&gt;这跟历史有关系，jsvascript从诞生起就是单线程，原因大概是不想让浏览器变的太复杂，因为多线程需要共享资源、且有可能修改彼此的运行结果，对于一种脚本语言来说，这就太复杂了，后来就约定俗成，javascript是一种单线程语言（Worker API 可以实现多线程, 但javascript本身是单线程的）。&lt;/p&gt;
+
+&lt;p&gt;如果某个任务很耗时，比如高（I/O 输入输出操作），那么线程的运行如下：
+&lt;img src=&#34;https://mmmaxingxing.github.io/image/javascript/eventloop/a_lot_of_io.png&#34; alt=&#34;IO示例&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图Io绿色的是运行时间,红色部分是等待时间。可以看到，由于I/O操作很慢，所以这个线程的大部分时间都在空等I/O操作返回结果。这种运行方式称为&amp;rdquo;同步模式&amp;rdquo;(synchronous I/O)或&amp;rdquo;堵塞模式&amp;rdquo;(blocking I/O)。&lt;/p&gt;
+
+&lt;p&gt;如果采用多线程，同时运行多个任务，那可能就是下面这样。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/javascript/eventloop/sync.png&#34; alt=&#34;多线程示例&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图表明，多线程不仅占用多倍的系统资源，也闲置多倍的资源，这显然不合理。&lt;/p&gt;
+
+&lt;p&gt;Event Loop就是为了解决这个问题而提出的。Wikipedia这样定义：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Event Loop是一个程序结构，用于等待和发送消息和事件。(a programing construct that waits for and dispatches events or messages in a program .)&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;简单来说，就是程序中设置两个线程:一个负责程序本身的运行，称为&amp;rdquo;主线程&amp;rdquo;; 另一个负责主线程与其他进程(主要是各种 I/O操作)的通信，被称为&amp;rdquo;Event Loop线程&amp;rdquo;（可以译为&amp;rdquo;消息线程&amp;rdquo;）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/javascript/eventloop/event_loop.png&#34; alt=&#34;Event Loop&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图主线程的绿色部分，还是表示运行时间，而橙色部分表示空闲时间。每当遇到 I/O的时候，主线程就让Event Loop线程取通知相应的I/O程序，然后接着向后运行，所以不存在红色的等待时间。等到I/O程序完成操作，Event Loop线程再把结果返回主线程。主线程就调用事先设定的回调函数，完成整个任务。&lt;/p&gt;
+
+&lt;p&gt;可以看到，由于多出了橙色的空闲时间，所以主线程得以运行更多的任务，这就提高了效率。这种方式称为&amp;rdquo;异步模式&amp;rdquo;（asynchronous I/O）或&amp;rdquo;非阻塞模式&amp;rdquo;（non-blocking mode）。&lt;/p&gt;
+
+&lt;p&gt;这正是javascript语言的运行方式。单线程模型虽然对Javascript构成了很大的限制，但也因此使它具备了其他语言不具备的优势。如果部署的好，Javascript程序是不会出现堵塞的，这就是为什么node.js平台可以用很少的资源，应付大流量访问的原因。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;转载自 &lt;a href=&#34;http://www.ruanyifeng.com/blog/2013/10/event_loop.html&#34;&gt;http://www.ruanyifeng.com/blog/2013/10/event_loop.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>npx</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</link>
+      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;npx&#34;&gt;npx&lt;/h3&gt;
+
+&lt;p&gt;今天看react安装环境中有一句 npx create-react-app my-app,没有见过npx，查了查资料 聊以记录;&lt;/p&gt;
+
+&lt;p&gt;npx 是 npm v5.2.0 引入的一条命令，目的是为了提升开发者使用包内提供命令行工具的体验。&lt;/p&gt;
+
+&lt;h4 id=&#34;避免全局安装模块&#34;&gt;避免全局安装模块&lt;/h4&gt;
+
+&lt;h5 id=&#34;eg-使用create-react-app创建项目&#34;&gt;eg：使用create-react-app创建项目&lt;/h5&gt;
+
+&lt;p&gt;老方法：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npm install -g create-react-app
+create-react-app my-app&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;npx 方法:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npx create-react-app my-app
+
+//也可以指定版本
+npx uglify-js@3.1.0 main.js -o ./dist/main.js&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;这条命令会临时安装create-react-app包，命令完成后会删掉，不会出现在global中。&lt;/p&gt;
+
+&lt;h4 id=&#34;支持运行远程仓库中的可执行文件&#34;&gt;支持运行远程仓库中的可执行文件&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;执行 Gist 代码
+npx https://gist.github.com/zkat/4bc19503fe9e9309e2bfaa2c58074d32
+
+//执行可执行文件
+npx github:picco/cowsay hello&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;注意，远程代码必须是一个模块，即必须包含package.json和入口脚本。&lt;/p&gt;
+
+&lt;p&gt;使用http-server开启一个服务&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npx http-server //第一次有点慢&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;指定node版本来运行 npm scripts&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npx -p node@8 npm run build&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;调用项目安装的模块&#34;&gt;调用项目安装的模块&lt;/h4&gt;
+
+&lt;p&gt;npx 想要解决的主要问题，就是调用项目内部安装的模块。比如，项目内部安装了webpack。&lt;/p&gt;
+
+&lt;p&gt;举例来说，之前我们可能会写这样的命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npm i -D webpack
+./node_modules/.bin/webpack -v
+// webpack -v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;bash版&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npm i -D webpack
+`npm bin`/webpack -v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;npx&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npm i -D webpack
+npx webpack -v&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;也就是说 npx 会自动查找当前依赖包中的可执行文件，如果找不到，就会去 PATH 里找。如果依然找不到，就会帮你安装！&lt;/p&gt;
+
+&lt;h5 id=&#34;no-install-参数和-ignore-existing-参数&#34;&gt;&amp;ndash;no-install 参数和&amp;ndash;ignore-existing 参数&lt;/h5&gt;
+
+&lt;p&gt;如果想让 npx 强制使用本地模块，不下载远程模块，可以使用&amp;ndash;no-install参数。如果本地不存在该模块，就会报错。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npx --no-install http-server&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;反过来，如果忽略本地的同名模块，强制安装使用远程模块，可以使用&amp;ndash;ignore-existing参数。比如，本地已经全局安装了create-react-app，但还是想使用远程模块，就用这个参数。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npx --ignore-existing create-react-app my-react-app&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;使用不同版本的node&#34;&gt;使用不同版本的node&lt;/h4&gt;
+
+&lt;p&gt;利用 npx 可以下载模块这个特点，可以指定某个版本的 Node 运行脚本。它的窍门就是使用 npm 的 node 模块。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;$ npx node@0.12.8 -v
+v0.12.8&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;上面命令会使用 0.12.8 版本的 Node 执行脚本。原理是从 npm 下载这个版本的 node，使用后再删掉。&lt;/p&gt;
+
+&lt;p&gt;某些场景下，这个方法用来切换 Node 版本，要比 nvm 那样的版本管理器方便一些。&lt;/p&gt;
+
+&lt;h5 id=&#34;p参数&#34;&gt;-p参数&lt;/h5&gt;
+
+&lt;p&gt;-p 参数用于指定 npx 所要安装的模块，所以上一节的命令可以写成下面这样。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npx -p node@0.12.8 node -v 
+v0.12.8&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;上面命令先指定安装node@0.12.8，然后再执行node -v命令。&lt;/p&gt;
+
+&lt;p&gt;-p参数对于需要安装多个模块的场景很有用。&lt;/p&gt;
+
+&lt;h5 id=&#34;c参数&#34;&gt;-c参数&lt;/h5&gt;
+
+&lt;p&gt;如果 npx 安装多个模块，默认情况下，所执行的命令之中，只有第一个可执行项会使用 npx 安装的模块，后面的可执行项还是会交给 Shell 解释。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npx -p lolcatjs -p cowsay &amp;#39;cowsay hello | lolcatjs&amp;#39;
+# 报错&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;上面代码中，cowsay hello | lolcatjs执行时会报错，原因是第一项cowsay由 npx 解释，而第二项命令localcatjs由 Shell 解释，但是lolcatjs并没有全局安装，所以报错。&lt;/p&gt;
+
+&lt;p&gt;-c参数可以将所有命令都用 npx 解释。有了它，下面代码就可以正常执行了。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npx -p lolcatjs -p cowsay -c &amp;#39;cowsay hello | lolcatjs&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;-c参数的另一个作用，是将环境变量带入所要执行的命令。举例来说，npm 提供当前项目的一些环境变量，可以用下面的命令查看。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npm run env | grep npm_&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;-c参数可以把这些 npm 的环境变量带入 npx 命令。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npx -c &amp;#39;echo &amp;#34;$npm_package_name&amp;#34;&amp;#39;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;上面代码会输出当前项目的项目名。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>学习资源</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/basics/</link>
+      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/basics/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;美国伊利诺伊大学算法讲课笔记-英文-偏数学-https-github-com-jeffgerickson-algorithms&#34;&gt;&lt;a href=&#34;https://github.com/jeffgerickson/algorithms/&#34;&gt;美国伊利诺伊大学算法讲课笔记（英文 偏数学）&lt;/a&gt;&lt;/h4&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>mac资源汇总</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/mac/</link>
+      <pubDate>Fri, 12 Apr 2019 10:50:40 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/mac/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;mac软件资源网站-https-xclient-info&#34;&gt;&lt;a href=&#34;https://xclient.info/&#34;&gt;mac软件资源网站&lt;/a&gt;&lt;/h4&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>资源汇总</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/tool_resources/</link>
+      <pubDate>Fri, 12 Apr 2019 10:50:40 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/tool_resources/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;判断某元素是否被浏览器兼容-https-caniuse-com-index&#34;&gt;&lt;a href=&#34;https://caniuse.com/#index&#34;&gt;判断某元素是否被浏览器兼容&lt;/a&gt;&lt;/h4&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>win10_wamp_mysql运行不起来</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/win10_wamp_mysql%E8%BF%90%E8%A1%8C%E4%B8%8D%E8%B5%B7%E6%9D%A5/</link>
+      <pubDate>Thu, 11 Apr 2019 14:18:39 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/win10_wamp_mysql%E8%BF%90%E8%A1%8C%E4%B8%8D%E8%B5%B7%E6%9D%A5/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;wamp-姜黄色&#34;&gt;wamp 姜黄色&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;1、win + r 调出cmd 输入 services.msc 查看服务中是否有MySQL  
+  
+2、管理员运行cmd 进入sql目录 运行 mysqld --install
+
+3、net start mysql //启动mysql
+
+4、mysql -u root -p  //登录 mysql 账户
+
+5、mysqld --initialize --user=mysql --console //生成随机密码 初始可不用
+
+6、 SET PASSWORD = PASSWORD(&amp;#39;your new password&amp;#39;); //密码过期 使用控制台登录 创建新密码&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Call&amp;&amp;Apply谁的效率高</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/callapply/</link>
+      <pubDate>Thu, 04 Apr 2019 12:54:18 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/callapply/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;call&#34;&gt;Call&lt;/h3&gt;
+
+&lt;p&gt;允许为不同的对象分配和调用属于一个对象的函数/方法。&lt;/p&gt;
+
+&lt;p&gt;call() 方法调用一个函数, 其具有一个指定的this值和分别地提供的参数(参数的列表)。&lt;/p&gt;
+
+&lt;p&gt;call接受的是若干个参数的列表，而apply接受的是一个包含多个参数的数组。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;//使用
+
+function Produce(name,price){
+    this.name = name;
+    this.price = price;
+}
+
+function Food(name,price){
+    Produce.call(this,name,price);
+    this.category = &amp;#34;food&amp;#34;;
+}
+
+console.log(new Food(&amp;#34;cheese&amp;#34;,5).name);
+// cheese&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;apply&#34;&gt;Apply&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;func.apply(thisArg, [argsArray])&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;效率君&#34;&gt;效率君&lt;/h3&gt;
+
+&lt;p&gt;call的效率高于apply,因为apply的参数是数组，每次都需要循环。
+call的参数则为函数直接需要的参数，个人理解apply是call的更高一级的封装。&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>前端技术栈</title>
@@ -77,6 +863,8 @@
 &lt;h5 id=&#34;google插件&#34;&gt;[Google插件]()&lt;/h5&gt;
 
 &lt;h5 id=&#34;vscode插件&#34;&gt;[Vscode插件]()&lt;/h5&gt;
+
+&lt;h5 id=&#34;一大波资源-http-www-fly63-com-nav-1016&#34;&gt;&lt;a href=&#34;http://www.fly63.com/nav/1016&#34;&gt;一大波资源&lt;/a&gt;&lt;/h5&gt;
 </description>
       
     </item>
@@ -113,6 +901,10 @@
 &lt;p&gt;Golang写的，开发人员友好的ORM库。做数据库接入的。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://gorm.book.jasperxu.com/&#34;&gt;中文文档&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;micro-editor&#34;&gt;micro-editor&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/zyedidia/micro&#34;&gt;一个现代直观的基于终端的文本编辑器&lt;/a&gt;&lt;/p&gt;
 </description>
       
     </item>
@@ -400,10 +1192,10 @@ console.log（iterator.next）;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     
     <item>
       <title>php4.2小记</title>
-      <link>https://mmmaxingxing.github.io/post/cours/php/php_4.2%E5%B0%8F%E8%AE%B0/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/php/php_4.2/</link>
       <pubDate>Tue, 02 Apr 2019 21:27:10 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/php/php_4.2%E5%B0%8F%E8%AE%B0/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/php/php_4.2/</guid>
       
         <description>
 
@@ -726,10 +1518,10 @@ proxy_pass http://firstdemo，代理到firstdemo里两个服务器上&lt;/pre&gt
     
     <item>
       <title>Vue-Cli兼容IE9</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%85%BC%E5%AE%B9ie9/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue_inclusive_ie9/</link>
       <pubDate>Sat, 30 Mar 2019 21:07:20 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%85%BC%E5%AE%B9ie9/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue_inclusive_ie9/</guid>
       
         <description>
 
@@ -956,10 +1748,10 @@ Array.from({length:Math.ceil(arr.length/size)},(v,i) =&amp;gt; {
     
     <item>
       <title>SQL查询不包括某条件</title>
-      <link>https://mmmaxingxing.github.io/post/cours/sql/sql%E6%9F%A5%E8%AF%A2%E4%B8%8D%E5%8C%85%E6%8B%AC%E6%9F%90%E6%9D%A1%E4%BB%B6/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/sql/sql_select_not_condition/</link>
       <pubDate>Thu, 28 Mar 2019 11:47:25 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/sql/sql%E6%9F%A5%E8%AF%A2%E4%B8%8D%E5%8C%85%E6%8B%AC%E6%9F%90%E6%9D%A1%E4%BB%B6/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/sql/sql_select_not_condition/</guid>
       
         <description>
 
@@ -985,1515 +1777,6 @@ WHERE name!=&amp;#34;admin&amp;#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&
 &lt;pre class=&#34;chroma&#34;&gt;select * 
 from test_1 
 WHERE not( name == &amp;#39;admin&amp;#39;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>js数组扁平化操作</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E6%93%8D%E4%BD%9C/</link>
-      <pubDate>Wed, 27 Mar 2019 13:55:25 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E6%93%8D%E4%BD%9C/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;常规操作-for-of-递归实现&#34;&gt;常规操作 for of 递归实现&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;    function flatten(arr, result = []) {
-          for (let item of arr) {
-            if (Array.isArray(item.children))
-              flatten(item.children, result)
-            else
-              result.push(item)
-          }
-          return result
-    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;迭代器实现&#34;&gt;迭代器实现&lt;/h3&gt;
-
-&lt;h3 id=&#34;生成器实现&#34;&gt;生成器实现&lt;/h3&gt;
-
-&lt;h3 id=&#34;reduce-三句话实现法&#34;&gt;reduce 三句话实现法&lt;/h3&gt;
-
-&lt;h3 id=&#34;降维打击法&#34;&gt;降维打击法&lt;/h3&gt;
-
-&lt;h3 id=&#34;lodash-层次法&#34;&gt;lodash 层次法&lt;/h3&gt;
-
-&lt;h4 id=&#34;参考感谢-https-www-jianshu-com-p-b1fb3434e1f5&#34;&gt;参考感谢 &lt;a href=&#34;https://www.jianshu.com/p/b1fb3434e1f5&#34;&gt;https://www.jianshu.com/p/b1fb3434e1f5&lt;/a&gt;&lt;/h4&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>手机端网页调试小技巧</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Tue, 26 Mar 2019 20:15:50 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;chrome真机调试&#34;&gt;chrome真机调试&lt;/h3&gt;
-
-&lt;p&gt;只能调用手机端chrome浏览器，简单容易上手&lt;/p&gt;
-
-&lt;p&gt;1、访问 chrome://inspect  勾选&amp;rdquo;discovery usb device&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/github_blog/debugging/debugging.png&#34; alt=&#34;操作展示&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;手机连接usb调试，chrome自动查询到，手机端访问的页面可以直接打开。&lt;/p&gt;
-
-&lt;h3 id=&#34;weinre调试&#34;&gt;weinre调试&lt;/h3&gt;
-
-&lt;p&gt;Weinre(WebInspector Remote)是一款基于Web Inspector(Webkit)的远程调试工具，借助于网络，可以在PC上直接调试运行在移动设备上的远程页面。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//安装
-
-npm install -g weinre
-
-//打开 运行 成功则进入默认页面
-weinre --httpPort 8090 --boundHost -all-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;weinew启动参数说明&lt;/p&gt;
-
-&lt;p&gt;httpPort：设置Wninre使用的端口号，默认是8080。
-boundHost：[hostname | Ip | -all-]: 默认是 ‘localhost’。&lt;br /&gt;
-debug [true | false]：这个选项与–verbose类似， 会输出更多的信息。默认为false。
-readTimeout [seconds]：Server发送信息到Target/Client的超时时间， 默认为5s。&lt;br /&gt;
-deathTimeout [seconds]：默认为3倍的readTimeout， 如果页面超过这个时间都没有任何响应， 那么就会断开连接。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//在要调试的页面中新增 script 脚本
-
-&amp;lt;script src=&amp;#34;http://自己的ip:8090/target/target-script-min.js#anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;修改样式时，会在手机端即时生效，并且也可以查看控制台信息，唯一一点就是，不能进行断点调试。&lt;/p&gt;
-
-&lt;p&gt;最后，在调试结束之后，别忘记删除嵌入的script。&lt;/p&gt;
-
-&lt;h3 id=&#34;spy-debugger调试&#34;&gt;spy-debugger调试&lt;/h3&gt;
-
-&lt;p&gt;Spy-debugger内部集成了weinre，通过代理的方式拦截所有html自动注入weinre所需的js代码。简化了weinre需要给每个调试的页面添加js代码。spy-debugger原理是拦截所有html页面请求注入weinre所需要的js代码。让页面调试更加方便。&lt;/p&gt;
-
-&lt;p&gt;特性：&lt;/p&gt;
-
-&lt;p&gt;页面调试＋抓包&lt;br /&gt;
-操作简单&lt;br /&gt;
-支持HTTPS。
-spy-debugger内部集成了weinre、node-mitmproxy、AnyProxy。
-自动忽略原生App发起的https请求，只拦截webview发起的https请求。对使用了SSL pinning技术的原生App不造成任何影响。
-可以配合其它代理工具一起使用(默认使用AnyProxy)&lt;/p&gt;
-
-&lt;p&gt;安装：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;// 全局安装
-npm install –g spy-debugger
-
-//运行
-
-spy-debugger&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;设置手机的HTTP代理：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;代理的地址为PC的IP地址，代理的端口为spy-debugger的启动端口(默认端口为：9888)默认端口是 9888。
-如果要指定端口： spy-debugger–p8888。
-Android设置步骤：设置 - WLAN - 长按选中网络 - 修改网络 - 高级 - 代理设置 - 手动。
-iOS设置代理步骤：设置 - 无线局域网 - 选中网络 - HTTP代理手动。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;手机安装证书(node-mitmproxy CA根证书)：&lt;/p&gt;
-
-&lt;h5 id=&#34;第一步-生成证书&#34;&gt;第一步：生成证书&lt;/h5&gt;
-
-&lt;p&gt;生成CA根证书，根证书生成在 /Users/XXX/node-mitmproxy/ 目录下(Mac)。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;spy-debugger initCA&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h5 id=&#34;第二步-安装证书&#34;&gt;第二步：安装证书&lt;/h5&gt;
-
-&lt;p&gt;把node-mitmproxy文件夹下的 node-mitmproxy.ca.crt 传到手机上，点击安装即可。&lt;/p&gt;
-
-&lt;p&gt;Spy-debugger启动界面，同样，在手机端刷新页面之后，targets中会有记录。&lt;/p&gt;
-
-&lt;h3 id=&#34;eruda&#34;&gt;Eruda&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/liriliri/eruda&#34;&gt;https://github.com/liriliri/eruda&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;在html页面中引入此工具，既可自动使用控制台调试工具。&lt;/p&gt;
-
-&lt;h3 id=&#34;微信-web开发者工具&#34;&gt;微信 web开发者工具&lt;/h3&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>创建一个手机端项目</title>
-      <link>https://mmmaxingxing.github.io/post/cours/compatible/%E6%89%8B%E6%9C%BA%E7%89%88%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA/</link>
-      <pubDate>Mon, 25 Mar 2019 17:55:13 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/compatible/%E6%89%8B%E6%9C%BA%E7%89%88%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA/</guid>
-      
-        <description>
-
-&lt;h4 id=&#34;meta-标签&#34;&gt;meta 标签&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; //1：1屏占比
-&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0&amp;#34;/&amp;gt;  //手机端完美视图
-&amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt; //打开浏览器为ie9及以上版本
-&amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt;  //有限打开内核为webkit&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;引入处理&#34;&gt;引入处理&lt;/h4&gt;
-
-&lt;h5 id=&#34;选择性引入样式表&#34;&gt;选择性引入样式表&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; media=&amp;#34;screen and (min-width: 1026px)&amp;#34; href=&amp;#34;css/style1.css&amp;#34;&amp;gt;
-&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; media=&amp;#34;screen and (max-width: 1025px)&amp;#34; href=&amp;#34;css/Mobal.css&amp;#34;&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;兼容处理&#34;&gt;兼容处理&lt;/h4&gt;
-
-&lt;p&gt;手机端单位处理： （此处为手淘的flex解决方案，还有一版解决方案为Ydui）&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>input type number 火狐兼容</title>
-      <link>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</link>
-      <pubDate>Sun, 24 Mar 2019 17:52:44 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</guid>
-      
-        <description>
-
-&lt;h4 id=&#34;input-type-number-火狐兼容&#34;&gt;input type number 火狐兼容&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-input&#34; data-lang=&#34;input&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-input&#34; data-lang=&#34;input&#34;&gt;input::-webkit-outer-spin-button,
-
-input::-webkit-inner-spin-button {
-
--webkit-appearance: none;
-
-appearance: none;
-
-margin: 0;
-
-}
-
-input{
-
--moz-appearance:textfield !important;
-
-}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>git 常用操作</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/git_op/</link>
-      <pubDate>Sat, 23 Mar 2019 23:13:46 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/git_op/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;git-是什么&#34;&gt;git 是什么&lt;/h3&gt;
-
-&lt;p&gt;GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分布式版本库方式。&lt;/p&gt;
-
-&lt;h3 id=&#34;基本操作指令&#34;&gt;基本操作指令&lt;/h3&gt;
-
-&lt;h4 id=&#34;1-创建仓库&#34;&gt;1、创建仓库&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;    // a 当前目录创建仓库 
-
-    git init 
-
-    // b 指定目录创建仓库
-
-    git init 目录名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;2-设置配置&#34;&gt;2、设置配置&lt;/h4&gt;
-
-&lt;h5 id=&#34;git的配置范围&#34;&gt;git的配置范围&lt;/h5&gt;
-
-&lt;p&gt;global选项是告知Git应该在多大范围内使用这一配置的一种方式&amp;ndash;它应该应用到哪些仓库。Git模型旨在应用于多个较小的仓库，而不是较少的整体单一式仓库。由于用户通常会使用多个仓库，因此必须在每个仓库中配置相同的设置会很不方便。因此，Git提供了简化选择配置值范围的选项。有三种可用的级别配置：系统、全局和本地&lt;/p&gt;
-
-&lt;p&gt;　　①系统：系统级别的配置意味着一个配置值会被应用到指定系统上的所有仓库，除非在一个较低的级别上对其重写。为了确保配置值应用在系统级别，要为config命令指定&amp;ndash;system选项，比如git config &amp;ndash;system core.autocrlf true&lt;/p&gt;
-
-&lt;p&gt;　　②全局：全局级别的配置表明配置值适用于特定用户的所有仓库，除非在本地级别对其进行了重写。否则这就是用户要使用的最常见级别，因为它避免了必须为每一个仓库设置值的工作。这些设置被存储在每个用户的主目录中的一个名为.gitconfig的文件中&lt;/p&gt;
-
-&lt;p&gt;③本地：在本地级别设置一个配置值意味着该设置只应用与一个仓库的上下文中，这对于指定一个特定仓库的唯一设置的场景来说会很有用。如果需要临时重写一个较高级别的设置，那么它也会很有用。本地仓库的配置会被存储在本地Git仓库的.git/config中&lt;/p&gt;
-
-&lt;p&gt;全局配置&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git config --global user.name woniu
-git config --global user.email woniu@163.com
-
-//git 记住密码
-
-git config --global credential.helper store
-git config --local credential.helper store&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;设置本地仓库配置&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git config --local user.name woniu
-git config --local user.email woniu@163.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;查看配置信息&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git config --global --list&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;生成 shh-key&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//切换到ssh文件夹
-
-cd ~/.ssh
-
-//没有则创建
-
-mkdir ~/.ssh
-
-//生成key
-ssh-keygen -t rsa -C &amp;#34;邮件地址&amp;#34;
-
-//生成地址
-/C/用户/Admin/.ssh
-
-//测试是否添加成功
-ssh git@网址&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;3-工作文件新增到暂存区&#34;&gt;3、工作文件新增到暂存区&lt;/h4&gt;
-
-&lt;p&gt;提交指定文件&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git add a.cpp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;提交指当前目录所有文件&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git add .&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;把提交过暂存区，已经发生改变的文件再次提交到暂存区&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git add -u&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;4-暂存区文件提交到版本库&#34;&gt;4、暂存区文件提交到版本库&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git commit -m &amp;#34;初始版本&amp;#34;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;5-查看git提交日志&#34;&gt;5、查看git提交日志&lt;/h4&gt;
-
-&lt;p&gt;全部日志&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git log&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;简化日志&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git log --oneline&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;查看前5个日志&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git log -n5 --oneline&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;查看所有日志&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git log --all&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;图像化查看所有日志&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git log --all --graph&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;6-查看上次提交后是否有修改&#34;&gt;6、查看上次提交后是否有修改&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git status&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;7-查看差异&#34;&gt;7、查看差异&lt;/h4&gt;
-
-&lt;p&gt;查看工作区与暂存区差异&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git diff&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;查看暂存区与仓库之间的差异&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git diff --cached&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;比较不同commit的差异&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git diff HEAD1 Mastar2&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;8-清空暂存区-工作区修改&#34;&gt;8、清空暂存区，工作区修改&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git reset --hard&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;9-删除工作区和暂存文件&#34;&gt;9、删除工作区和暂存文件&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git rm 文件名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;10-重命名文件&#34;&gt;10、重命名文件&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git mv a.app  b.app&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;11-版本回滚&#34;&gt;11、版本回滚&lt;/h4&gt;
-
-&lt;p&gt;恢复暂存区与head一致&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git reset HEAD&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;恢复暂存区指定文件与head一致&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git reset HEAD --文件名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;恢复工作区与暂存区一致&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git checkout --文件名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;回退到指定commit，会清除之前提交的commit&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git reset --hard HEAD&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;分支管理&#34;&gt;分支管理&lt;/h3&gt;
-
-&lt;h4 id=&#34;1-创建分支&#34;&gt;1、创建分支&lt;/h4&gt;
-
-&lt;p&gt;直接创建&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git branch dev（分支名）&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;基于某个历史版本创建分支&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git branch dev HEAD&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;2-查看分支&#34;&gt;2、查看分支&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git branch -av&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;3-删除分支&#34;&gt;3、删除分支&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git branch -d dev&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;4-切换分支&#34;&gt;4、切换分支&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git checkout dev&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;5-查看分支差异&#34;&gt;5、查看分支差异&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;git diff dev master
-
-//指定文件差异
-
-git diff dev master -- index&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;6-本地仓库推送到远端&#34;&gt;6、本地仓库推送到远端&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;// 1、远端创建git仓库
-
-//2、本地仓库与远端仓库关联
-git remote add origin &amp;#34;远端仓库路径&amp;#34;
-
-//3、远端仓库为空则
-git push -u origin master
-//否则
-git pull --rebase origin master
-
-//4、提交到远程仓库
-git push origin master&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;7-拉取远程分支&#34;&gt;7、拉取远程分支&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//拉取远程分支 默认为住分支
-git clone git地址
-
-//拉取远程指定分支
-git clone -b dev git地址
-
-//拉取主分支后，基于远端指定分支本次创建新分支
-git branch -av //红色部分代表远端分支
-
-git branch dev origin/dev //基于远端的dev分支本次创建dev分支&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>vue3.0&amp;&amp;vue2.0项目安装以及初始化</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue3.0_installvue2.0/</link>
-      <pubDate>Fri, 22 Mar 2019 23:13:46 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue3.0_installvue2.0/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;vue3-0项目安装以及介绍&#34;&gt;Vue3.0项目安装以及介绍&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//安装
-npm install -g @vue/cli
-
-//安装vue2.0(兼容)
-npm install -g @vue/cli-init&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h5 id=&#34;变化更新&#34;&gt;变化更新&lt;/h5&gt;
-
-&lt;p&gt;&lt;strong&gt;部分命令发生了变化&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;删除了vue list&lt;/li&gt;
-&lt;li&gt;创建项目   vue create&lt;/li&gt;
-&lt;li&gt;启动项目   npm run serve&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;默认项目目录结构也发生了变化&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;移除了配置文件目录，config 和 build 文件夹&lt;/li&gt;
-&lt;li&gt;移除了 static 文件夹，新增 public 文件夹，并且 index.html 移动到 public 中&lt;/li&gt;
-&lt;li&gt;在 src 文件夹中新增了 views 文件夹，用于分类 视图组件 和 公共组件 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//安装
-vue creat projectName
-//选择自我配置或者默认配置
-//选择依赖项
-//选择css预处理
-//选择自动化代码格式化检测
-//选择是否保存配置
-//文件保存在哪（1）单独的文件配置 （2）packageJSON
-//是否保存为未来预配置
-
-npm run server //启动项目&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;ps 3.0 vue.config.js 没了&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;// conf 配置 (基础 + 常用)
-
-module.exports = {
-    baseUrl: process.env.NODE_ENV === &amp;#39;production&amp;#39; ? &amp;#39;/online/&amp;#39; : &amp;#39;/&amp;#39;,
-    // outputDir: 在npm run build时 生成文件的目录 type:string, default:&amp;#39;dist&amp;#39;
-    // outputDir: &amp;#39;dist&amp;#39;,
-    // pages:{ type:Object,Default:undfind } 
-    devServer: {
-        port: 8888, // 端口号
-        host: &amp;#39;localhost&amp;#39;,
-        https: false, // https:{type:Boolean}
-        open: true, //配置自动启动浏览器
-        // proxy: &amp;#39;http://localhost:4000&amp;#39; // 配置跨域处理,只有一个代理
-        proxy: {
-            &amp;#39;/api&amp;#39;: {
-                target: &amp;#39;&amp;lt;url&amp;gt;&amp;#39;,
-                ws: true,
-                changeOrigin: true
-            },
-            &amp;#39;/foo&amp;#39;: {
-                target: &amp;#39;&amp;lt;other_url&amp;gt;&amp;#39;
-            }
-        },  // 配置多个代理
-    }
-}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;  1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;  2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;  3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;  4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;  5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;  6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;  7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;  8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;  9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 45
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 46
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 47
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 48
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 49
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 50
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 51
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 52
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 53
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 54
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 55
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 56
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 57
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 58
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 59
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 60
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 61
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 62
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 63
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 64
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 65
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 66
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 67
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 68
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 69
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 70
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 71
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 72
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 73
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 74
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 75
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 76
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 77
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 78
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 79
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 80
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 81
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 82
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 83
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 84
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 85
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 86
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 87
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 88
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 89
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 90
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 91
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 92
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 93
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 94
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 95
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 96
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 97
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 98
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 99
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;100
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;101
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;102
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;103
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;104
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;105
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;106
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;107
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;108
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;109
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;110
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;111
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;112
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//多页应用配置
-
-const path = require(&amp;#39;path&amp;#39;);
-
-function resolve(dir) {
-    return path.join(__dirname, dir)
-}
-const PrerenderSpaPlugin = require(&amp;#39;prerender-spa-plugin&amp;#39;)
-const Renderer = PrerenderSpaPlugin.PuppeteerRenderer;
-module.exports = {
-    baseUrl: process.env.NODE_ENV === &amp;#39;production&amp;#39; ? &amp;#39;./&amp;#39; : &amp;#39;/&amp;#39;,
-    pages: {
-        index: {
-            // page 的入口
-            entry: &amp;#39;./src/main.js&amp;#39;,
-            // 模板来源
-            template: &amp;#39;./public/index.html&amp;#39;,
-            // 在 dist/index.html 的输出
-            filename: &amp;#39;index.html&amp;#39;,
-            // 当使用 title 选项时，
-            // template 中的 title 标签需要是 &amp;lt;title&amp;gt;&amp;lt;%= htmlWebpackPlugin.options.title %&amp;gt;&amp;lt;/title&amp;gt;
-            title: &amp;#39;Index Page&amp;#39;,
-            // 在这个页面中包含的块，默认情况下会包含
-            // 提取出来的通用 chunk 和 vendor chunk。
-            chunks: [&amp;#39;chunk-vendors&amp;#39;, &amp;#39;chunk-common&amp;#39;, &amp;#39;index&amp;#39;]
-        },
-        test: {
-            // 模板来源
-            template: &amp;#39;./src/mod1/test.html&amp;#39;,
-            // page 的入口
-            entry: &amp;#39;./src/mod1/test.js&amp;#39;,
-            // 在 dist/index.html 的输出
-            filename: &amp;#39;testDome.html&amp;#39;,
-            // 当使用 title 选项时，
-            // template 中的 title 标签需要是 &amp;lt;title&amp;gt;&amp;lt;%= htmlWebpackPlugin.options.title %&amp;gt;&amp;lt;/title&amp;gt;
-            title: &amp;#39;test Page&amp;#39;,
-            // 在这个页面中包含的块，默认情况下会包含
-            // 提取出来的通用 chunk 和 vendor chunk。
-            chunks: [&amp;#39;chunk-vendors&amp;#39;, &amp;#39;chunk-common&amp;#39;, &amp;#39;test&amp;#39;]
-        }
-    },
-    devServer: {
-        overlay: {
-            warnings: false,
-            errors: false
-        },
-        lintOnSave: false
-    },
-    chainWebpack: (config) =&amp;gt; {
-        config.resolve.alias
-            .set(&amp;#39;BaseComponents&amp;#39;, resolve(&amp;#39;../public/components/BaseComponents&amp;#39;))
-            .set(&amp;#39;BusinessComponents&amp;#39;, resolve(&amp;#39;../public/components/BusinessComponents&amp;#39;))
-    },
-    // configureWebpack: config =&amp;gt; {
-    //     if (process.env.NODE_ENV !== &amp;#39;production&amp;#39;) return;
-
-    //     return {
-    //         plugins: [
-
-    //             // 在vue-cli生成的文件的基础上，只有下面这个才是我们要配置的
-    //             new PrerenderSPAPlugin({
-    //                 // 生成文件的路径，也可以与webpakc打包的一致。
-    //                 // 下面这句话非常重要！！！
-    //                 // 这个目录只能有一级，如果目录层次大于一级，在生成的时候不会有任何错误提示，在预渲染的时候只会卡着不动。
-    //                 staticDir: path.join(__dirname, &amp;#39;../dist&amp;#39;),
-
-    //                 // 对应自己的路由文件，比如index有参数，就需要写成 /index/param1。
-    //                 routes: [&amp;#39;/&amp;#39;, &amp;#39;/about&amp;#39;],
-
-    //                 // 这个很重要，如果没有配置这段，也不会进行预编译
-    //                 renderer: new Renderer({
-    //                     inject: {
-    //                         foo: &amp;#39;bar&amp;#39;
-    //                     },
-    //                     headless: false,
-    //                     // 在 main.js 中 document.dispatchEvent(new Event(&amp;#39;render-event&amp;#39;))，两者的事件名称要对应上。
-    //                     renderAfterDocumentEvent: &amp;#39;render-event&amp;#39;
-    //                 })
-    //             })
-    //         ]
-    //     };
-    // },
-    css: {
-        loaderOptions: {
-            css: {
-                // options here will be passed to css-loader
-            },
-            postcss: {
-                modules: true
-            }
-        }
-    },
-    // webpack-dev-server 相关配置
-    devServer: {
-        open: process.platform === &amp;#39;darwin&amp;#39;,
-        host: &amp;#39;0.0.0.0&amp;#39;,
-        port: 8080,
-        https: false,
-        hotOnly: false,
-        proxy: {
-            &amp;#39;/api&amp;#39;: {
-                target: &amp;#39;http://app2.jg.eastmoney.com/&amp;#39;,
-                changeOrigin: true,
-                pathRewrite: {
-                    &amp;#39;^/api&amp;#39;: &amp;#39;&amp;#39;
-                }
-            }
-        }, // 设置代理
-        before: app =&amp;gt; {}
-    }
-
-}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>多维数组转一维数组</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
-      <pubDate>Thu, 21 Mar 2019 23:11:11 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E8%BD%AC%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
-      
-        <description>
-
-&lt;h4 id=&#34;二维数组转一维&#34;&gt;二维数组转一维&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;let data = [[1,2,3],[1,2,3],[1,2,3]];
-let res = [];
-data.forEach(item =&amp;gt; {
-    item.forEach? item.forEach(val =&amp;gt;{res.push(val)}) :res.push(item)
-})&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;let data = [[1,2,3],[1,2,3],[1,2,3]];
-let res = [];
-
-var falt = (res) =&amp;gt; {
-    if(res.forEach){
-        res.forEach(val =&amp;gt; {
-            val.forEach ? falt(val) : res.push(val)
-        })
-    }else{
-        res.push(res)
-    }
-}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Vue常用操作整理</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86i/</link>
-      <pubDate>Wed, 20 Mar 2019 23:13:46 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86i/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;1-创建全局过滤器&#34;&gt;1、创建全局过滤器&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//main.js 中
-
-Object.keys(allFilter).forEach(key =&amp;gt; {
-  Vue.filter(key,allFilter[key])
-})
-
-//base_filter中
-
-//获取yyyy-mm-dd类型时间
-let getDate = value =&amp;gt; {
-    return formateDate(&amp;#34;yyyy-MM-dd&amp;#34;,value);
-}
-
-export { 
-    getDate,
- } &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;函数中调用filter方法&#34;&gt;函数中调用filter方法&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt; this.$options.filters[filter](...args)&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;2-路由常见操作&#34;&gt;2、路由常见操作&lt;/h3&gt;
-
-&lt;h4 id=&#34;1-获取路由参数&#34;&gt;1、获取路由参数&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;this.$route.query.perams;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;2-路由跳转&#34;&gt;2、路由跳转&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;_this.$router.push({&amp;#34;path&amp;#34;:path,&amp;#34;query&amp;#34;:querys});&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;3-watch&#34;&gt;3.watch&lt;/h3&gt;
-
-&lt;h4 id=&#34;1-监听路由变化&#34;&gt;1、监听路由变化&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;watch: {
-    $route: {
-      handler: function(route) {
-        this.redirect = route.query &amp;amp;&amp;amp; route.query.redirect;
-      },
-      immediate: true
-    }
-  }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;2-监听对象-数组&#34;&gt;2、监听对象/数组&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;    example2:{
-　　　　　　//注意：当观察的数据为对象或数组时，curVal和oldVal是相等的，因为这两个形参指向的是同一个数据对象
-　　　　　　handler(curVal,oldVal){
-　　　　　　　　conosle.log(curVal,oldVal)
-　　　　　　},
-　　　　　　deep:true
-　　}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;3-普通监听&#34;&gt;3、普通监听&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;example0(curVal,oldVal){
-　  console.log(curVal,oldVal);
-},
-
-//也可为函数名
-
-example0:函数名&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;4-组件传参&#34;&gt;4、组件传参&lt;/h3&gt;
-
-&lt;h4 id=&#34;1-父组件调用子组件方法&#34;&gt;1、父组件调用子组件方法&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;this.$.refs.child.childFn()&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>斐波拉契实现</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</link>
-      <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/%E6%96%90%E6%B3%A2%E6%8B%89%E5%A5%91%E5%AE%9E%E7%8E%B0/</guid>
-      
-        <description>
-
-&lt;h4 id=&#34;斐波拉契&#34;&gt;斐波拉契&lt;/h4&gt;
-
-&lt;p&gt;斐波那契数列 1, 1, 2,3,5,8,13,21…..
-使用公式f( n ) = f(n-1)+f(n-2),结束条件f(2) =1, f(1) = 1&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;    //初始实现
-    function fib(n) {
-        if( n==1 || n == 2){
-            return 1;
-        }
-        else{
-            return fib(n-1)+fib(n-2);
-        }
-    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;    // for 循环实现
-
-    function fib(n){
-        var res = [1,1];
-        if( n==1 || n == 2){
-            return 1;
-        }
-        for(var i=2; i&amp;lt;n; i++){
-            res.push(res[i-1]+res[i-2]);
-        }
-        return res[n-1];
-    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;    var cache = [];
-    function fib(n){        
-        if(cache[n] !== undefined){               
-            return cache[n];
-        }          
-        if(n &amp;lt;= 2){               
-            cache[n] = 1;
-            return 1;
-        }    
-        cache.push(fib(n - 1) + fib(n - 2));
-        return cache[n];
-    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>webpack配置使用小技巧</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Mon, 18 Mar 2019 22:22:27 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
-      
-        <description>
-
-&lt;h4 id=&#34;webpack-之-dev-env-js-prod-env-js&#34;&gt;webpack 之 dev.env.js &amp;amp;&amp;amp; prod.env.js&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;//dev.env.js  //开发版本
-
-&amp;#39;use strict&amp;#39;
-const merge = require(&amp;#39;webpack-merge&amp;#39;)
-const prodEnv = require(&amp;#39;./prod.env&amp;#39;)
-
-module.exports = merge(prodEnv, {
-  NODE_ENV: &amp;#39;&amp;#34;development&amp;#34;&amp;#39;,
-  BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;,
-})&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;//prod.env.js  //线上
-
-&amp;#39;use strict&amp;#39;
-module.exports = {
-  NODE_ENV: &amp;#39;&amp;#34;production&amp;#34;&amp;#39;,
-  BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;,
-}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-webpack&#34; data-lang=&#34;webpack&#34;&gt;//webpack.dev.conf.js
-
-plugins: [
-    new webpack.DefinePlugin({
-      &amp;#39;process.env&amp;#39;: require(&amp;#39;../config/dev.env&amp;#39;)
-    }),
-  ]
-
-
-  //总文件
-  //build.js
-  //webpack.prode.conf.js
-  //webpack.base.conf.js
-  //webpack.dev.conf.js&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//页面中使用
-
-process.env.BASE_API
-
-//其他&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
       

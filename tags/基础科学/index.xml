@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基础科学 on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/%E5%9F%BA%E7%A1%80%E7%A7%91%E5%AD%A6/</link>
+    <description>Recent content in 基础科学 on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 12 Apr 2019 11:03:03 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/tags/%E5%9F%BA%E7%A1%80%E7%A7%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>学习资源</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/basics/</link>
+      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/basics/</guid>
+      <description>美国伊利诺伊大学算法讲课笔记（英文 偏数学）</description>
+    </item>
+    
+  </channel>
+</rss>
