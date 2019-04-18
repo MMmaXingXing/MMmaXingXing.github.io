@@ -6,10 +6,19 @@
     <description>Recent content in Javascript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 Apr 2019 14:24:37 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 17:58:24 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jsvascript中的宏任务和微任务</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/macro_micro_task/</link>
+      <pubDate>Thu, 18 Apr 2019 17:58:24 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/macro_micro_task/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>imageUp To base64</title>

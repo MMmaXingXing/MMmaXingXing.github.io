@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>数据结构与算法 - Astar Blog</title>
+  <title>Array_从排序数组中删除重复项 - Astar Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Astar" />
-  <meta name="description" content="数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 &#43; 算法 数据结构，就是数据关系，" />
+  <meta name="description" content="题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原" />
 
   <meta name="keywords" content="Hugo, blog, Astar" />
 
@@ -37,7 +37,7 @@
 
 
 
-<link rel="canonical" href="https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" />
+<link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/javascript/arithmetic.1/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/" />
 
 
 
@@ -59,27 +59,27 @@
 
 
 
-<meta property="og:title" content="数据结构与算法" />
-<meta property="og:description" content="数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 &#43; 算法 数据结构，就是数据关系，" />
+<meta property="og:title" content="Array_从排序数组中删除重复项" />
+<meta property="og:description" content="题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" />
-<meta property="article:published_time" content="2019-03-16T23:05:51&#43;08:00"/>
-<meta property="article:modified_time" content="2019-03-16T23:05:51&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/javascript/arithmetic.1/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/" />
+<meta property="article:published_time" content="2019-02-22T10:54:40&#43;08:00"/>
+<meta property="article:modified_time" content="2019-02-22T15:13:40&#43;08:00"/>
 
-<meta itemprop="name" content="数据结构与算法">
-<meta itemprop="description" content="数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 &#43; 算法 数据结构，就是数据关系，">
-
-
-<meta itemprop="datePublished" content="2019-03-16T23:05:51&#43;08:00" />
-<meta itemprop="dateModified" content="2019-03-16T23:05:51&#43;08:00" />
-<meta itemprop="wordCount" content="1024">
+<meta itemprop="name" content="Array_从排序数组中删除重复项">
+<meta itemprop="description" content="题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原">
 
 
+<meta itemprop="datePublished" content="2019-02-22T10:54:40&#43;08:00" />
+<meta itemprop="dateModified" content="2019-02-22T15:13:40&#43;08:00" />
+<meta itemprop="wordCount" content="859">
 
-<meta itemprop="keywords" content="数学,算法," />
+
+
+<meta itemprop="keywords" content="算法,Array," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="数据结构与算法"/>
-<meta name="twitter:description" content="数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 &#43; 算法 数据结构，就是数据关系，"/>
+<meta name="twitter:title" content="Array_从排序数组中删除重复项"/>
+<meta name="twitter:description" content="题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -275,11 +275,11 @@
           <article class="post bg-white">
     
     <header class="post-header">
-        <h1 class="post-title">数据结构与算法</h1>
+        <h1 class="post-title">Array_从排序数组中删除重复项</h1>
         
         <div class="post-meta">
-            <time datetime=" 2019-03-16 " class="post-time">
-          2019-03-16
+            <time datetime=" 2019-02-22 " class="post-time">
+          2019-02-22
         </time> <div class="post-category">
                 <a href="https://mmmaxingxing.github.io/categories/%E7%AE%97%E6%B3%95/"> 算法 </a> 
             </div> 
@@ -303,125 +303,272 @@
     <div class="post-content">
         
 
-<h4 id="数据结构">数据结构</h4>
+<h4 id="题目描述">题目描述</h4>
 
-<p>一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题</p>
+<p>给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。</p>
 
-<p>程序设计 = 数据结构 + 算法</p>
-
-<p>数据结构，就是数据关系，就是数据元素之间存在的一种或多种特定关系的集合。</p>
-
-<h4 id="逻辑结构和物理结构">逻辑结构和物理结构</h4>
-
-<h5 id="逻辑结构">逻辑结构</h5>
-
-<p>数据对象中数据元素之间的相互关系，也是我们之后需要关注和谈论的问题。</p>
-
-<p><strong>常见逻辑结构</strong></p>
-
-<ul>
-<li><p>集合结构：集合结构中数据同属于一个集合，它们之间没有其他不三不四的关系。</p></li>
-
-<li><p>线性结构：线性结构中数据是一对一的逻辑关系。</p></li>
-
-<li><p>树形结构：元素之间存在一对多的层次关系。像WBS, dom树一样的类型结构。</p></li>
-
-<li><p>图形结构：（最复杂），图形结构数据元素是多对多的关系。</p></li>
-</ul>
-
-<h5 id="物理结构">物理结构</h5>
-
-<p>数据逻辑结构在计算机中存储的方式。研究的就是把数据元素存储到计算机的存储器中。</p>
-
-<p>数据元素的存储结构形式主要有两种</p>
-
-<ul>
-<li><p>顺序存储：把数据元素放在地址连续的存储单元中，其数据间的逻辑关系和物理关系是一致的。例如，编程语言的数组结构。</p></li>
-
-<li><p>链式存储： 将数据元素放在任意的存储单元里，这组存储单元可以是连续的，也可以是不连续的。需要用指针存放数据元素的地址。例如：医院排队，你只需要注意前一个数据的情况。</p></li>
-</ul>
-
-<h4 id="算法">算法</h4>
-
-<p>数据结构与算法是紧密相关的一组概念。</p>
-
-<p>算法是解决特定问题求解步骤的描述，在计算机中表现为指令的有限序列，并且每条指令表示一个或多个操作。</p>
-
-<p>类似于：技巧和方式。对于给定的问题，是可以用多种算法来解决的。</p>
-
-<p>算法的五个特性：输入、输出、有穷性、确定性和可行性。</p>
-
-<ul>
-<li>输入、输出：0个或多个</li>
-<li>有穷性：不可以死循环</li>
-<li>确定性： 每一个步骤都有确定的含义，不会出现二义性。</li>
-<li>正确性
-1、无语法错误
-2、合法输入产出满足要求输出。
-3、非法输入能够产生满足规格的说明
-4、对于故意刁难的测试输入都有满足要求的输出结果。</li>
-<li>可读性 便于阅读、理解和交流</li>
-<li>健壮性</li>
-
-<li><p>时间效率高和存储量低</p>
-
-<h5 id="示例引入">示例引入</h5></li>
-</ul>
-
-<p>从1累加到100，用计算机算出来</p>
+<p>不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-C" data-lang="C"><span class="lnt">1
+<pre class="chroma"><code class="language-示例1" data-lang="示例1"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-C" data-lang="C"><span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="n">sun</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">100</span><span class="p">;</span>
+<pre class="chroma"><code class="language-示例1" data-lang="示例1">给定数组 nums = [1,1,2], 
 
-<span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++&gt;</span><span class="p">)</span>
+函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 
 
-<span class="p">{</span>
-    <span class="n">sum</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">i</span>
-<span class="p">}</span>
+你不需要考虑数组中超出新长度后面的元素。</code></pre></td></tr></table>
+</div>
+</div>
+<h4 id="解题思路">解题思路</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">一、审题 提取关键信息
 
-<span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span></code></pre></td></tr></table>
+1、输入 处理 输出  
+
+输入:数组 数组为有序 （此题延申为数组无序时如何处理，如何效率更高）
+
+处理：删除重复的元素
+
+输出：处理过的数组长度
+
+2、特殊条件 不使用额外的数组空间</pre></td></tr></table>
+</div>
+</div>
+<p>考点可以为数组函数的使用</p>
+
+<p>js中对数组本身进行操作的函数为split</p>
+
+<p>java中为remove 等</p>
+
+<h5 id="官方处理-双指针法">官方处理 （双指针法）</h5>
+
+<p>数组不变 有序时每 后一个和前一个不等则 ++ return</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-官方示例java" data-lang="官方示例java"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-官方示例java" data-lang="官方示例java">public int removeDuplicates(int[] nums) {
+    if (nums.length == 0) return 0;
+    int i = 0;
+    for (int j = 1; j &lt; nums.length; j++) {
+        if (nums[j] != nums[i]) {
+            i++;
+            nums[i] = nums[j];
+        }
+    }
+    return i + 1;
+}</code></pre></td></tr></table>
+</div>
+</div>
+<p>复杂度分析</p>
+
+<p>时间复杂度：O(n)O(n)， 假设数组的长度是 nn，那么 ii 和 jj 分别最多遍历 nn 步。</p>
+
+<p>空间复杂度：O(1)O(1)。</p>
+
+<h4 id="实际实现">实际实现</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-javascript 236m（自己）" data-lang="javascript 236m（自己）"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript 236m（自己）" data-lang="javascript 236m（自己）">var removeDuplicates = function(nums) {
+    if(nums instanceof Array){
+        if (nums.length == 0){
+            return nums.length
+        } 
+        let idx = 0;
+        while (idx &lt; nums.length){
+            if(nums[idx]==nums[idx+1]){
+                nums.splice(idx,1);
+            }else{
+                idx++;
+            }
+        }
+        return nums.length;
+    }
+};</code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-C" data-lang="C"><span class="lnt">1
+<pre class="chroma"><code class="language-jivascript 120ms (Catouse)" data-lang="jivascript 120ms (Catouse)"><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-C" data-lang="C"><span class="c1">// 高斯算法
-</span><span class="c1">// 算法速率增大
-</span><span class="c1"></span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="n">sun</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">100</span><span class="p">;</span>
-
-<span class="n">sum</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
-
-<span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-jivascript 120ms (Catouse)" data-lang="jivascript 120ms (Catouse)">var removeDuplicates = function(nums) {
+    return nums.splice(0, nums.length, ...Array.from(new Set(nums))).length;
+};</code></pre></td></tr></table>
 </div>
 </div>
-<p><strong>学习掌握一些好的算法，对我们解决问题很有帮助。</strong></p>
+<h5 id="知识点">知识点</h5>
 
-<h4 id="其他">其他</h4>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值</a>
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from">Array.from()</a>
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set">new Set()</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">解构赋值：语法是一个 Javascript 表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。
 
-<p>我们不说怎么能够成为XXX，我们先来看看成为XXX之后要做什么事情，而做这些事情，需要什么样的能力，在拥有了这些能力、做上了这件事情之后，又能向什么方向发展。</p>
+Array.from(参数1,参数2，参数3)
+1.想要转换成数组的伪数组对象或可迭代对象
+2.新数组中的每个元素会执行该回调函数
+3.执行回调里面的this指谁
+返回一个新的数组实例
 
-<p>把算法当黑盒用的问题在于：黑盒能够解决问题的时候，使用方便，而一旦不能解决问题，或者对质量有所要求，就会感觉无所适从。</p>
 
-<p>作为程序员、工程人员，想用机器学习算法解决实际问题，就得对算法有一定程度的掌握，此外对于数据处理和模型验证，也需具备相应知识。</p>
+new Set([iterable]);
+iterable：可迭代对象
+返回：新的set对象</pre></td></tr></table>
+</div>
+</div>
+<h4 id="go语言实现">Go语言实现</h4>
 
+<p>在强制类型里面的构造和弱类型语言中不同，强制类型中的arr是不可以动态改变的，由此此题解法需要采用官方双指针法求解</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-GO 116ms" data-lang="GO 116ms"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-GO 116ms" data-lang="GO 116ms">func removeDuplicates(nums []int) int {
+    if len(nums)==0 {
+        return 0;
+    }else{
+        i := 0;
+        j := 1;
+        for i+j&lt;len(nums) {
+            if nums[i]==nums[j+i]{
+                j++;
+            }else{
+                i++;
+                nums[i] = nums[j+i-1];
+            }
+        }
+        return len(nums)-j+1;
+    }
+}</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-Go 0s 非排序可执行 15123850133" data-lang="Go 0s 非排序可执行 15123850133"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Go 0s 非排序可执行 15123850133" data-lang="Go 0s 非排序可执行 15123850133">func removeDuplicates(nums []int) int {
+    length:=len(nums)
+    var count int
+    if length&gt;0{
+        count=1
+    }
+    maps:= map[int]int{}
+    for i,v :=range nums{
+        maps[v]=v
+        for j:=i+1;j&lt;length;j++{
+            if _,ok:= maps[nums[j]];!ok{
+                nums[i+1]=nums[j]
+                maps[nums[j]]=nums[j]
+                count++
+                break
+            }
+        }
+    }
+    return count
+}</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -450,13 +597,13 @@
 
     <footer class="post-footer">
         <div class="post-tags">
-            <a href="https://mmmaxingxing.github.io/tags/%E6%95%B0%E5%AD%A6/">数学</a> <a href="https://mmmaxingxing.github.io/tags/%E7%AE%97%E6%B3%95/">算法</a> 
+            <a href="https://mmmaxingxing.github.io/tags/%E7%AE%97%E6%B3%95/">算法</a> <a href="https://mmmaxingxing.github.io/tags/array/">Array</a> 
         </div>
 
         
         <nav class="post-nav">
             
-            <a class="prev" href="/post/cours/javascript/arithmetic.1/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">
+            <a class="prev" href="/post/cours/javascript/vue/vuex-knowledge/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -466,11 +613,11 @@
 </svg>
 
             </i>
-            <span class="prev-text nav-default">数据结构与算法</span>
+            <span class="prev-text nav-default">vueX的知识总结（包括在vue-cli中的使用）</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a> 
-            <a class="next" href="/post/cours/javascript/vue/elementuiupload/">
-                <span class="next-text nav-default">vue elementui 使用记录 图片上传</span>
+            <a class="next" href="/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/">
+                <span class="next-text nav-default">Array_从排序数组中删除重复项</span>
                 <span class="prev-text nav-mobile">下一篇</span> 
                 <i class="iconfont">
               <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -502,10 +649,10 @@
         <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
       <script type="text/javascript">
       const gitment = new Gitment({
-        id: '01_数据结构与算法.md',
-        title: '数据结构与算法',
+        id: '01_Array_从排序数组中删除重复项.md',
+        title: 'Array_从排序数组中删除重复项',
         link: decodeURI(location.href),
-        desc: '数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 \x2b 算法 数据结构，就是数据关系，',
+        desc: '题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原',
         owner: 'MMmaXingXing',
         repo: 'comments',
         oauth: {

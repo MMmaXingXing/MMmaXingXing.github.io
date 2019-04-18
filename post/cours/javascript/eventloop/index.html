@@ -72,7 +72,7 @@
 
 <meta itemprop="datePublished" content="2019-04-12T16:52:29&#43;08:00" />
 <meta itemprop="dateModified" content="2019-04-12T16:52:29&#43;08:00" />
-<meta itemprop="wordCount" content="1444">
+<meta itemprop="wordCount" content="1550">
 
 
 
@@ -338,7 +338,20 @@
 <p>如果采用多线程，同时运行多个任务，那可能就是下面这样。</p>
 
 <p><img src="/image/javascript/eventloop/sync.png" alt="多线程示例" /></p>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">&gt; 大概简介:
+&gt; CPU -&gt; 单个CPU一次只能运行一个任务
+&gt; 进程好比车间，CPU所处理的单个任务；任一时刻，CPU处理一个进程
+&gt; 一个车间有很多工人协同，线程好比车间工人，一个进程可以有多个线程，进程内享有空间共享。</pre></td></tr></table>
+</div>
+</div>
 <p>上图表明，多线程不仅占用多倍的系统资源，也闲置多倍的资源，这显然不合理。</p>
 
 <p>Event Loop就是为了解决这个问题而提出的。Wikipedia这样定义：</p>
