@@ -199,13 +199,6 @@
   </url>
   
   <url>
-    <loc>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic.1/fibonacci/</loc>
-    <lastmod>2019-03-19T22:54:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/fibonacci/</loc>
     <lastmod>2019-03-19T22:54:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -220,22 +213,8 @@
   </url>
   
   <url>
-    <loc>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic.1/diff-%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2019-03-17T23:05:51+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2019-03-17T23:05:51+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic.1/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2019-03-16T23:05:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -264,13 +243,6 @@
   <url>
     <loc>https://mmmaxingxing.github.io/post/cours/javascript/vue/vuex-knowledge/</loc>
     <lastmod>2019-02-28T11:11:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic.1/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/</loc>
-    <lastmod>2019-02-22T15:13:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

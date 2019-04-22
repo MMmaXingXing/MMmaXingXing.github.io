@@ -58,15 +58,6 @@
     
     <item>
       <title>diff算法</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic.1/diff-%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Sun, 17 Mar 2019 23:05:51 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic.1/diff-%E7%AE%97%E6%B3%95/</guid>
-      <description>一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多</description>
-    </item>
-    
-    <item>
-      <title>diff算法</title>
       <link>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/</link>
       <pubDate>Sun, 17 Mar 2019 23:05:51 +0800</pubDate>
       
