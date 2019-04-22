@@ -17,7 +17,7 @@
       <pubDate>Thu, 18 Apr 2019 17:58:24 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/macro_micro_task/</guid>
-      <description></description>
+      <description>javascript运行模式 javascript是一门单线程语言,我们常见理解是从上向下一行一行运行，但是，事实上同步单线程是不能满足我们常</description>
     </item>
     
     <item>
