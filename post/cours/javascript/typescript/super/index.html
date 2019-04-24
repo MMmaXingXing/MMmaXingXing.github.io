@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>jsvascript中的宏任务和微任务 - Astar Blog</title>
+  <title>TypeScript之super - Astar Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Astar" />
-  <meta name="description" content="javascript运行模式 javascript是一门单线程语言,我们常见理解是从上向下一行一行运行，但是，事实上同步单线程是不能满足我们常" />
+  <meta name="description" content="前置知识 子类构造器中需要调用super; super实现继承，super.method() 这样就可以达到调用父类同名的方法." />
 
   <meta name="keywords" content="Hugo, blog, Astar" />
 
@@ -37,7 +37,7 @@
 
 
 
-<link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/javascript/macro_micro_task/" />
+<link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/javascript/typescript/super/" />
 
 
 
@@ -59,27 +59,27 @@
 
 
 
-<meta property="og:title" content="jsvascript中的宏任务和微任务" />
-<meta property="og:description" content="javascript运行模式 javascript是一门单线程语言,我们常见理解是从上向下一行一行运行，但是，事实上同步单线程是不能满足我们常" />
+<meta property="og:title" content="TypeScript之super" />
+<meta property="og:description" content="前置知识 子类构造器中需要调用super; super实现继承，super.method() 这样就可以达到调用父类同名的方法." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/javascript/macro_micro_task/" />
-<meta property="article:published_time" content="2019-04-18T17:58:24&#43;08:00"/>
-<meta property="article:modified_time" content="2019-04-18T17:58:24&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/javascript/typescript/super/" />
+<meta property="article:published_time" content="2019-04-23T14:45:19&#43;08:00"/>
+<meta property="article:modified_time" content="2019-04-23T14:45:19&#43;08:00"/>
 
-<meta itemprop="name" content="jsvascript中的宏任务和微任务">
-<meta itemprop="description" content="javascript运行模式 javascript是一门单线程语言,我们常见理解是从上向下一行一行运行，但是，事实上同步单线程是不能满足我们常">
-
-
-<meta itemprop="datePublished" content="2019-04-18T17:58:24&#43;08:00" />
-<meta itemprop="dateModified" content="2019-04-18T17:58:24&#43;08:00" />
-<meta itemprop="wordCount" content="1530">
+<meta itemprop="name" content="TypeScript之super">
+<meta itemprop="description" content="前置知识 子类构造器中需要调用super; super实现继承，super.method() 这样就可以达到调用父类同名的方法.">
 
 
+<meta itemprop="datePublished" content="2019-04-23T14:45:19&#43;08:00" />
+<meta itemprop="dateModified" content="2019-04-23T14:45:19&#43;08:00" />
+<meta itemprop="wordCount" content="61">
 
-<meta itemprop="keywords" content="javascript,运行模式," />
+
+
+<meta itemprop="keywords" content="typescript," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="jsvascript中的宏任务和微任务"/>
-<meta name="twitter:description" content="javascript运行模式 javascript是一门单线程语言,我们常见理解是从上向下一行一行运行，但是，事实上同步单线程是不能满足我们常"/>
+<meta name="twitter:title" content="TypeScript之super"/>
+<meta name="twitter:description" content="前置知识 子类构造器中需要调用super; super实现继承，super.method() 这样就可以达到调用父类同名的方法."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -275,13 +275,13 @@
           <article class="post bg-white">
     
     <header class="post-header">
-        <h1 class="post-title">jsvascript中的宏任务和微任务</h1>
+        <h1 class="post-title">TypeScript之super</h1>
         
         <div class="post-meta">
-            <time datetime=" 2019-04-18 " class="post-time">
-          2019-04-18
+            <time datetime=" 2019-04-23 " class="post-time">
+          2019-04-23
         </time> <div class="post-category">
-                <a href="https://mmmaxingxing.github.io/categories/javascript/"> javascript </a> 
+                <a href="https://mmmaxingxing.github.io/categories/typescript/"> typescript </a> 
             </div> 
 
             
@@ -303,119 +303,12 @@
     <div class="post-content">
         
 
-<h3 id="javascript运行模式">javascript运行模式</h3>
-
-<p>javascript是一门单线程语言,我们常见理解是从上向下一行一行运行，但是，事实上同步单线程是不能满足我们常见的开发任务需求的。我们还需要异步这样一个功能来满足开发需求。即共有两类，同步任务和异步任务。具体运行如下：</p>
-
-<p><img src="/image/javascript/macro_micro_loop/async_sync.png" alt="js运行示例" /></p>
-
-<p><strong>运行示例解释</strong></p>
+<h4 id="前置知识">前置知识</h4>
 
 <ul>
-<li>同步和异步任务分别进入不同的执行&rdquo;场所&rdquo;，同步的进入主线程，异步的进入Event Table并注册函数。</li>
-<li>当指定的事情完成时，Event Table会将这个函数移入Event Queue。</li>
-<li>主线程内的任务执行完毕为空，会去Event Queue读取对应的函数，进入主线程执行。</li>
-<li>上述过程会不断重复，也就是常说的Event Loop(事件循环)。</li>
+<li>子类构造器中需要调用super;</li>
+<li>super实现继承，super.method() 这样就可以达到调用父类同名的方法.</li>
 </ul>
-
-<p>我们不禁要问了，那怎么知道主线程执行栈为空啊？js引擎存在monitoring process进程，会持续不断的检查主线程执行栈是否为空，一旦为空，就会去Event Queue那里检查是否有等待被调用的函数。</p>
-
-<h4 id="settimeout">setTimeOut</h4>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">setTimeout(() =&gt; {
-    task()
-},3000)
-
-sleep(10000000)</pre></td></tr></table>
-</div>
-</div>
-<p><strong>说明</strong></p>
-
-<ul>
-<li>task()进入Event Table并注册,计时开始。</li>
-<li>执行sleep函数，很慢，非常慢，计时仍在继续。</li>
-<li>3秒到了，计时事件timeout完成，task()进入Event Queue，但是sleep也太慢了吧，还没执行完，只好等着。</li>
-<li>sleep终于执行完了，task()终于从Event Queue进入了主线程执行。</li>
-</ul>
-
-<blockquote>
-<p>上述的流程走完，我们知道setTimeout这个函数，是经过指定时间后，把要执行的任务(本例中为task())加入到Event Queue中，又因为是单线程任务要一个一个执行，如果前面的任务需要的时间太久，那么只能等着，导致真正的延迟时间远远大于3秒。</p>
-</blockquote>
-
-<h4 id="setinterval">setInterval</h4>
-
-<ul>
-<li>对于setInterval(fn,ms)来说，我们已经知道不是每过ms秒会执行一次fn，而是每过ms秒，会有fn进入Event Queue。一旦setInterval的回调函数fn执行时间超过了延迟时间ms，那么就完全看不出来有时间间隔了。</li>
-</ul>
-
-<p>初学javascript我们会使用setInterval做图片轮播，有时候轮播越跑越快就是这么一个原因。</p>
-
-<h4 id="promise-process-nexttick-callback">Promise &amp;&amp; process.nextTick(callBack)</h4>
-
-<p><strong>process.nextTick</strong>
-在事件循环的下一次调用callback回调函数。</p>
-
-<p>除了广义的同步任务和异步任务，我们对任务有着更精细的定义</p>
-
-<ul>
-<li>macro-task(宏任务)：包括整体代码script，setTimeout，setInterval</li>
-<li>micro-task(微任务)：Promise，process.nextTick</li>
-</ul>
-
-<p>不同的任务类型会进入对应的Event Queue</p>
-
-<p>事件循环的顺序，决定js代码的执行顺序。进入整体代码(宏任务)后，开始第一次循环。接着执行所有的微任务。然后再从宏任务开始，找到其中一个任务队列执行完毕，再执行所有的微任务。以下:</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">setTimeout(function() {
-    console.log(&#39;setTimeout&#39;);
-})
-
-new Promise(function(resolve) {
-    console.log(&#39;promise&#39;);
-}).then(function() {
-    console.log(&#39;then&#39;);
-})
-
-console.log(&#39;console&#39;);</pre></td></tr></table>
-</div>
-</div>
-<p>即：
-* 这段代码作为宏任务，进入主线程。
-* 先遇到setTimeout，那么将其回调函数注册后分发到宏任务Event Queue。(注册过程与上同，下文不再描述)
-* 接下来遇到了Promise，new Promise立即执行，then函数分发到微任务Event Queue。
-* 遇到console.log()，立即执行。
-* 好啦，整体代码script作为第一个宏任务执行结束，看看有哪些微任务？我们发现了then在微任务Event Queue里面，执行。
-* ok，第一轮事件循环结束了，我们开始第二轮循环，当然要从宏任务Event Queue开始。我们发现了宏任务Event Queue中setTimeout对应的回调函数，立即执行。
-* 结束。</p>
-
-<p>事件循环，宏任务，微任务的关系如图所示：
-<img src="/image/javascript/macro_micro_loop/eventloop_macro_micro.png" alt="js运行示例" /></p>
-
-<blockquote>
-<p>转自<a href="https://juejin.im/post/59e85eebf265da430d571f89">https://juejin.im/post/59e85eebf265da430d571f89</a></p>
-</blockquote>
 
     </div>
 
@@ -428,13 +321,13 @@ console.log(&#39;console&#39;);</pre></td></tr></table>
 
     <footer class="post-footer">
         <div class="post-tags">
-            <a href="https://mmmaxingxing.github.io/tags/javascript/">javascript</a> <a href="https://mmmaxingxing.github.io/tags/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F/">运行模式</a> 
+            <a href="https://mmmaxingxing.github.io/tags/typescript/">typescript</a> 
         </div>
 
         
         <nav class="post-nav">
             
-            <a class="prev" href="/post/cours/javascript/typescript/super/">
+            <a class="prev" href="/post/cours/book/tips/checkpress/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -444,11 +337,11 @@ console.log(&#39;console&#39;);</pre></td></tr></table>
 </svg>
 
             </i>
-            <span class="prev-text nav-default">TypeScript之super</span>
+            <span class="prev-text nav-default">选择古籍小tips</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a> 
-            <a class="next" href="/post/cours/markdown/">
-                <span class="next-text nav-default">MD语法整理</span>
+            <a class="next" href="/post/cours/javascript/macro_micro_task/">
+                <span class="next-text nav-default">jsvascript中的宏任务和微任务</span>
                 <span class="prev-text nav-mobile">下一篇</span> 
                 <i class="iconfont">
               <svg class="icon" viewBox="0 0 1024 1024" version="1.1"

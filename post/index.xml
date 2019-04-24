@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 18 Apr 2019 17:58:24 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Apr 2019 10:18:49 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>选择古籍小tips</title>
+      <link>https://mmmaxingxing.github.io/post/cours/book/tips/checkpress/</link>
+      <pubDate>Wed, 24 Apr 2019 10:18:49 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/book/tips/checkpress/</guid>
+      <description>阅读古籍，选出版社很重要，中华书局和上海古籍出版社是古籍整理出版的最专业出版社 其次是人文社，岳麓书社和凤凰出版社（原浙江古籍出版社） 偶尔涉及</description>
+    </item>
+    
+    <item>
+      <title>TypeScript之super</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/typescript/super/</link>
+      <pubDate>Tue, 23 Apr 2019 14:45:19 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/typescript/super/</guid>
+      <description>前置知识 子类构造器中需要调用super; super实现继承，super.method() 这样就可以达到调用父类同名的方法.</description>
+    </item>
     
     <item>
       <title>jsvascript中的宏任务和微任务</title>
@@ -171,24 +189,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</guid>
       <description>反向代理和负载均衡 什么是反向代理 当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集</description>
-    </item>
-    
-    <item>
-      <title>Vue-Cli兼容IE9</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue_inclusive_ie9/</link>
-      <pubDate>Sat, 30 Mar 2019 21:07:20 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue_inclusive_ie9/</guid>
-      <description>1、meta标签要写好 1 2 3 4 5 6 &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; &amp;lt;meta name=&amp;#34;author&amp;#34; content=&amp;#34;lyadmin&amp;#34;&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=Edge,chrome=1&amp;#34;&amp;gt; 2、编译插件要装好 1 npm install babel-polyfill --save-dev 3、其他配置要配好 1 2 3 4 5 6 7 8 9 // webpack.base.conf.js entry:</description>
-    </item>
-    
-    <item>
-      <title>利用Array From 实现分页骚操作</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/paging/</link>
-      <pubDate>Fri, 29 Mar 2019 15:24:51 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/paging/</guid>
-      <description>Array.form 是什么 array用于将两类对象转换为真正的数组, 即:类似数组的对象(array-likeobject) 和可遍历（iterable）的对象 包</description>
     </item>
     
   </channel>
