@@ -6,10 +6,19 @@
     <description>Recent content in Github on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 15 Feb 2019 16:43:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 17:00:13 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>为Hugo添加utterances评论</title>
+      <link>https://mmmaxingxing.github.io/post/cours/change_plugin_issue/</link>
+      <pubDate>Sun, 05 May 2019 17:00:13 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/change_plugin_issue/</guid>
+      <description>config.toml中添加 1 2 3 4 5 [params.utteranc] enable = true repo = &amp;#34;owner/repo&amp;#34; # 存储评论的Repo，格式为 owner/repo issueTerm = &amp;#34;pathname&amp;#34; #表示你选择以那种方式让github issue的评论</description>
+    </item>
     
     <item>
       <title>依靠github创建自己的博客站点</title>
