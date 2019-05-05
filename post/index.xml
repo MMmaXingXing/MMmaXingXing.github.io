@@ -6,10 +6,37 @@
     <description>Recent content in Posts on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 24 Apr 2019 10:18:49 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2019 17:44:46 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>音视频以及其他资源汇总</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/video_audio/</link>
+      <pubDate>Fri, 26 Apr 2019 17:44:46 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/video_audio/</guid>
+      <description>MP4视频查找 MP4视频查找 MP4视频查找</description>
+    </item>
+    
+    <item>
+      <title>onedriver 的 本地管理工具</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/pyone/</link>
+      <pubDate>Wed, 24 Apr 2019 17:47:35 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/pyone/</guid>
+      <description>1、安装宝塔面板 主要配置 1、nginx 2、mySql</description>
+    </item>
+    
+    <item>
+      <title>宝塔面板安装记录</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/bt/</link>
+      <pubDate>Wed, 24 Apr 2019 13:47:35 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/bt/</guid>
+      <description>宝塔面板安装记录 Centos安装命令： 1 yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;amp;&amp;amp; sh install.sh Ubuntu/Deepin安装命令： 1 wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;amp;&amp;amp; sudo bash install.sh Debian安装命令：</description>
+    </item>
     
     <item>
       <title>选择古籍小tips</title>
@@ -72,6 +99,15 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/eventloop/</guid>
       <description>Event Loop 是一个很重要的概念，指的是计算机系统的一种运行机制。 JavaScript语言就采用这种机制，来解决单线程运行代表的一些问题。 要想理解Ev</description>
+    </item>
+    
+    <item>
+      <title>React框架学习01</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</link>
+      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</guid>
+      <description>创建一个react项目 1 npx create-react-app my-app 创建一个react模块 方法一：https://codepen.io/gaearon/pen/YGYmEG?ed</description>
     </item>
     
     <item>
@@ -153,42 +189,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/javascript_small/</guid>
       <description>debugger() 断点调试 console.dir() 打印出元素具体信息 console.error() 打印出错误信息</description>
-    </item>
-    
-    <item>
-      <title>For of 到 Generator</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/for_of%E5%88%B0generator/</link>
-      <pubDate>Wed, 03 Apr 2019 13:28:13 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/for_of%E5%88%B0generator/</guid>
-      <description>For of 是什么 ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、St</description>
-    </item>
-    
-    <item>
-      <title>php4.2小记</title>
-      <link>https://mmmaxingxing.github.io/post/cours/php/php_4.2/</link>
-      <pubDate>Tue, 02 Apr 2019 21:27:10 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/php/php_4.2/</guid>
-      <description>基础使用记录 $_POST 变量 预定义的 $_POST 变量用于收集来自 method=&amp;ldquo;post&amp;rdquo; 的表单中的值。 从带有 POST 方法的表单发送的信息，对任何人都是不可见的（不会显示在浏览器的地址栏），</description>
-    </item>
-    
-    <item>
-      <title>资源汇总之后台管理系统</title>
-      <link>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</link>
-      <pubDate>Mon, 01 Apr 2019 17:15:23 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</guid>
-      <description>vue技术栈 后台管理系统 vue-element-admin vuetify 正常技术栈 后台管理系统 bootstrap: Admin LTE php 技术栈 后台管理系统 fastAdmin</description>
-    </item>
-    
-    <item>
-      <title>nginx 配置 申请</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</link>
-      <pubDate>Sun, 31 Mar 2019 17:15:23 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</guid>
-      <description>反向代理和负载均衡 什么是反向代理 当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集</description>
     </item>
     
   </channel>

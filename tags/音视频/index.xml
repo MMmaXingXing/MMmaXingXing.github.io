@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>音视频 on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91/</link>
+    <description>Recent content in 音视频 on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 26 Apr 2019 17:44:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>音视频以及其他资源汇总</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/video_audio/</link>
+      <pubDate>Fri, 26 Apr 2019 17:44:46 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/video_audio/</guid>
+      <description>MP4视频查找 MP4视频查找 MP4视频查找</description>
+    </item>
+    
+  </channel>
+</rss>

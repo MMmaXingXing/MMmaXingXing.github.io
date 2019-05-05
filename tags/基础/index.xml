@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基础 on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/%E5%9F%BA%E7%A1%80/</link>
+    <description>Recent content in 基础 on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 12 Apr 2019 11:03:03 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/tags/%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>React框架学习01</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</link>
+      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</guid>
+      <description>创建一个react项目 1 npx create-react-app my-app 创建一个react模块 方法一：https://codepen.io/gaearon/pen/YGYmEG?ed</description>
+    </item>
+    
+  </channel>
+</rss>

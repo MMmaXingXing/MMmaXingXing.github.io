@@ -6,10 +6,28 @@
     <description>Recent content in 环境配置 on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 11 Apr 2019 14:18:39 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Apr 2019 17:47:35 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>onedriver 的 本地管理工具</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/pyone/</link>
+      <pubDate>Wed, 24 Apr 2019 17:47:35 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/pyone/</guid>
+      <description>1、安装宝塔面板 主要配置 1、nginx 2、mySql</description>
+    </item>
+    
+    <item>
+      <title>宝塔面板安装记录</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/bt/</link>
+      <pubDate>Wed, 24 Apr 2019 13:47:35 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/bt/</guid>
+      <description>宝塔面板安装记录 Centos安装命令： 1 yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;amp;&amp;amp; sh install.sh Ubuntu/Deepin安装命令： 1 wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;amp;&amp;amp; sudo bash install.sh Debian安装命令：</description>
+    </item>
     
     <item>
       <title>win10_wamp_mysql运行不起来</title>

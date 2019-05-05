@@ -6,10 +6,108 @@
     <description>Recent content on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 24 Apr 2019 10:18:49 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Apr 2019 17:44:46 +0800</lastBuildDate>
     
         <atom:link href="https://mmmaxingxing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>音视频以及其他资源汇总</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/video_audio/</link>
+      <pubDate>Fri, 26 Apr 2019 17:44:46 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/video_audio/</guid>
+      
+        <description>
+
+&lt;h4 id=&#34;mp4视频查找-http-torrentkitty123-com&#34;&gt;&lt;a href=&#34;http://torrentkitty123.com/&#34;&gt;MP4视频查找&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&#34;mp4视频查找-http-m-imomoe-jp&#34;&gt;&lt;a href=&#34;http://m.imomoe.jp/&#34;&gt;MP4视频查找&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&#34;mp4视频查找-http-v-xndyy-cc&#34;&gt;&lt;a href=&#34;http://v.xndyy.cc/&#34;&gt;MP4视频查找&lt;/a&gt;&lt;/h4&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>onedriver 的 本地管理工具</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/pyone/</link>
+      <pubDate>Wed, 24 Apr 2019 17:47:35 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/pyone/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;1-安装宝塔面板&#34;&gt;1、安装宝塔面板&lt;/h3&gt;
+
+&lt;p&gt;主要配置&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;1、nginx&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;2、mySql&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>宝塔面板安装记录</title>
+      <link>https://mmmaxingxing.github.io/post/technology/plugin/bt/</link>
+      <pubDate>Wed, 24 Apr 2019 13:47:35 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/plugin/bt/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;宝塔面板安装记录&#34;&gt;宝塔面板安装记录&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Centos安装命令：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;amp;&amp;amp; sh install.sh&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Ubuntu/Deepin安装命令：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;amp;&amp;amp; sudo bash install.sh&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Debian安装命令：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;amp;&amp;amp; bash install.sh&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Fedora安装命令:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;wget -O install.sh http://download.bt.cn/install/install.sh &amp;amp;&amp;amp; bash install.sh&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
     
     <item>
       <title>选择古籍小tips</title>
@@ -638,6 +736,33 @@ var AllowImgFileSize = 2100000;    //上传图片最大值(单位字节)（ 2 M 
     </item>
     
     <item>
+      <title>React框架学习01</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</link>
+      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;创建一个react项目&#34;&gt;创建一个react项目&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;npx create-react-app my-app&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;创建一个react模块&#34;&gt;创建一个react模块&lt;/h3&gt;
+
+&lt;p&gt;方法一：&lt;a href=&#34;https://codepen.io/gaearon/pen/YGYmEG?editors=0010&#34;&gt;https://codepen.io/gaearon/pen/YGYmEG?editors=0010&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;方法二：&lt;a href=&#34;https://codepen.io/AstarX/pen/gyjwYv?editors=0010&#34;&gt;https://codepen.io/AstarX/pen/gyjwYv?editors=0010&lt;/a&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>npx</title>
       <link>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</link>
       <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
@@ -1145,589 +1270,6 @@ call的参数则为函数直接需要的参数，个人理解apply是call的更�
 &lt;h4 id=&#34;console-error&#34;&gt;console.error()&lt;/h4&gt;
 
 &lt;p&gt;打印出错误信息&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>For of 到 Generator</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/for_of%E5%88%B0generator/</link>
-      <pubDate>Wed, 03 Apr 2019 13:28:13 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/for_of%E5%88%B0generator/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;for-of-是什么&#34;&gt;For of 是什么&lt;/h3&gt;
-
-&lt;p&gt;ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、String、Sets(集合)、Arguments Object 等可迭代的数据结构等。&lt;/p&gt;
-
-&lt;p&gt;语法：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;var arr = [1,2,3,4]
-
-for(const value of arr){
-    console.log(value);
-}
-
-//maps 
-const iterable = new Map([[&amp;#39;one&amp;#39;, 1], [&amp;#39;two&amp;#39;, 2]]);
-
-for(const [ key, value ] of arr){
-    console.log(` key:$[key] and value:$[value] `);
-}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;注：普通对象不可迭代&lt;/p&gt;
-
-&lt;h5 id=&#34;why&#34;&gt;why???&lt;/h5&gt;
-
-&lt;p&gt;首先我们想一个问题，为什么我们使用  for-of  或者 map（）/ filer（） 方法就可以遍历一个数组 （或者类数组对象: Strings ， Maps ， Sets ， arguments ） 呢？&lt;/p&gt;
-
-&lt;p&gt;站在for-of的角度想一下，如果我们需要遍历一个数组，你需要知道什么信息呢？&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;对应下标的值&lt;/li&gt;
-&lt;li&gt;是否遍历结束的标志&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//查看array对象
-
-const newArr = [1,2,3]
-
-console.dir(newArr);
-
-//都存在一个Symbol.iterator
-
-let iterator = nweArr[Symbol.iterator]();
-
-//里面有个next方法
-
-iterator.next();
-
-//下标超出时 value: undefined
-//iterator.next(); 每次都返回一个对象，包含两个信息
-//对应下标的值 &amp;amp;&amp;amp; 是否遍历结束
-
-以上，印证了之前的猜想&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;So Iterator是什么&lt;/p&gt;
-
-&lt;h4 id=&#34;迭代器-iterator-与迭代协议-the-iterator-protocol&#34;&gt;迭代器(iterator)与迭代协议(The iterator protocol)&lt;/h4&gt;
-
-&lt;p&gt;迭代协议:&lt;/p&gt;
-
-&lt;p&gt;The iterator protocol 迭代协议允许 javascript对象去定义或者定制它们的迭代行为，所以上面出现的Symbol.iterator这个方法，就是数组对于这个协议的实现。那么按照这个协议，数组是如何实现了一个iterator呢?&lt;/p&gt;
-
-&lt;p&gt;当需要对一个对象进行迭代时(比如开始一个for of循环),它的@@iterator方法都会在不传参的情况下调用，返回的迭代器用于获取要迭代的值。&lt;/p&gt;
-
-&lt;p&gt;一些内置类型拥有默认的迭代器方法[Array,TypeArray,String,Map,Set],其他类型(Object)则没有。&lt;/p&gt;
-
-&lt;p&gt;可以自定义迭代器&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;var myIterable = {}
-myIterable[Symbol.iterator] = function* () {
-    yield 1;
-    yield 2;
-    yield 3;
-};
-[...myIterable] // [1, 2, 3]
-
-//如果一个迭代器没有返回一个迭代器对象，那么它就是一个不符合标准的迭代器
-//运行时会抛出异常&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;为什么object中没有迭代器呢&#34;&gt;为什么object中没有迭代器呢？？&lt;/h4&gt;
-
-&lt;p&gt;在很多场景中，我们也需要遍历一个对象，为什么不内置一个迭代器呢？&lt;/p&gt;
-
-&lt;p&gt;我们可以从另一个角度出发，了解一些基本的概念:&lt;/p&gt;
-
-&lt;p&gt;我们常说遍历对象，实在两个程度上对一个js对象进行遍历&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;程序的层级：什么意思呢，在程序的层级上，我们对一个对象进行迭代,是在迭代展示其结构的对象属性。例如：array.prototype.length这个属性与对象的结构相关，但却不是它的数据。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;数据的层级：意味着迭代数据结构并提取它的数据。例如：我们在迭代一个数组的时候，迭代器是对于它的 每一个数据进行迭代，如array=[a,b,c,d]那么迭代器访问到的是，1，2，3，4。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;js中提供了 for in 方法来遍历所有非Symbol但是可枚举的数据类型。&lt;/p&gt;
-
-&lt;p&gt;如果任性的就是要使用 for of来遍历，则可以使用自定义迭代器的方式呀。[乖巧]&lt;/p&gt;
-
-&lt;p&gt;补充：object 只是对象 万物皆对象，它是最底层的抽象。&lt;/p&gt;
-
-&lt;p&gt;可遍历的对象是 为 具有父子结构的数据而设计的,是比object更高一级的抽象，不适用于所有的object，因此object并没有预制迭代器。&lt;/p&gt;
-
-&lt;p&gt;以上。&lt;/p&gt;
-
-&lt;h3 id=&#34;generators&#34;&gt;Generators&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;function* () {};&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;在上文迭代器实现中出现过此规则函数。即Generator函数。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;function* gen(){
-    yield 1;
-    yield 2;
-    yield 3;
-    yield 4;
-}
-
-//调用
-let s = gen();
-
-s.next();
-
-consoel.dir(s);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;由以上见，Generator 可以实例化出一个iterator,并且yield就是用来中断代码执行的。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;function* gen（） {
-  yield 1;
-  yield* gen2（）;
-  
-return;
-}
-
-function* gen2（） {
-  yield 4;
-  yield 5;
-}
-
-let iterator = gen（）;
-console.log（iterator.next）;
-console.log（iterator.next）;
-console.log（iterator.next）;
-console.log（iterator.next）;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Generator 可以嵌套 Generator 并且 return 会终极整个Generator;&lt;/p&gt;
-
-&lt;h4 id=&#34;业务场景&#34;&gt;业务场景&lt;/h4&gt;
-
-&lt;p&gt;两个异步函数 A、B , B的参数是A的返回值，也就是说A执行完之后才可以执行B ，由此可在A结束的时候调用 next;&lt;/p&gt;
-
-&lt;p&gt;其他：可参考 co库源码&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>php4.2小记</title>
-      <link>https://mmmaxingxing.github.io/post/cours/php/php_4.2/</link>
-      <pubDate>Tue, 02 Apr 2019 21:27:10 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/php/php_4.2/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;基础使用记录&#34;&gt;基础使用记录&lt;/h3&gt;
-
-&lt;h4 id=&#34;post-变量&#34;&gt;$_POST 变量&lt;/h4&gt;
-
-&lt;p&gt;预定义的 $_POST 变量用于收集来自 method=&amp;ldquo;post&amp;rdquo; 的表单中的值。&lt;/p&gt;
-
-&lt;p&gt;从带有 POST 方法的表单发送的信息，对任何人都是不可见的（不会显示在浏览器的地址栏），并且对发送信息的量也没有限制。&lt;/p&gt;
-
-&lt;p&gt;注释：然而，默认情况下，POST 方法的发送信息的量最大值为 8 MB（可通过设置 php.ini 文件中的 post_max_size 进行更改）。&lt;/p&gt;
-
-&lt;h4 id=&#34;echo&#34;&gt;echo&lt;/h4&gt;
-
-&lt;p&gt;在浏览器输出文本&lt;/p&gt;
-
-&lt;h4 id=&#34;断点调试&#34;&gt;断点调试&lt;/h4&gt;
-
-&lt;h5 id=&#34;die-exit&#34;&gt;die() &amp;amp;&amp;amp; exit()&lt;/h5&gt;
-
-&lt;p&gt;输出一条信息，并退出当前脚本&lt;/p&gt;
-
-&lt;h5 id=&#34;var-dump-打印变量的相关信息&#34;&gt;var_dump &amp;ndash; 打印变量的相关信息&lt;/h5&gt;
-
-&lt;p&gt;此函数显示关于一个或多个表达式的结构信息，包括表达式的类型与值。数组将递归展开值，通过缩进显示其结构。&lt;/p&gt;
-
-&lt;h5 id=&#34;print-r-打印关于变量的易于理解的信息&#34;&gt;print_r &amp;ndash;  打印关于变量的易于理解的信息&lt;/h5&gt;
-
-&lt;p&gt;print_r() 显示关于一个变量的易于理解的信息。如果给出的是 string、integer 或 float，将打印变量值本身。如果给出的是 array，将会按照一定格式显示键和元素。object 与数组类似。&lt;/p&gt;
-
-&lt;h5 id=&#34;file-put-contents-打印到后台文本进行查看&#34;&gt;file_put_contents() 打印到后台文本进行查看&lt;/h5&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;file_put_contents(&amp;#34;/test.txt&amp;#34;, var_export($mydata,true).&amp;#34;\r\n&amp;#34;,FILE_APPEND);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;include&#34;&gt;include&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;vars.php
-
-&amp;lt;?php
-    $color = &amp;#34;green&amp;#34;
-    $fruit = &amp;#34;apple&amp;#34;
-?&amp;gt;
-
-test.php
-
-&amp;lt;?php 
-    echo &amp;#34;A $color $fruit&amp;#34;; //A
-
-    include vars.php;
-
-    echo &amp;#34;A $color #fruit&amp;#34;; // A green Apple
-?&amp;gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>资源汇总之后台管理系统</title>
-      <link>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</link>
-      <pubDate>Mon, 01 Apr 2019 17:15:23 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;vue技术栈&#34;&gt;vue技术栈&lt;/h3&gt;
-
-&lt;h4 id=&#34;后台管理系统&#34;&gt;后台管理系统&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/PanJiaChen/vue-element-admin&#34;&gt;vue-element-admin&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://vuetifyjs.com/zh-Hans/getting-started/quick-start&#34;&gt;vuetify&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;正常技术栈&#34;&gt;正常技术栈&lt;/h3&gt;
-
-&lt;h4 id=&#34;后台管理系统-1&#34;&gt;后台管理系统&lt;/h4&gt;
-
-&lt;p&gt;bootstrap:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/ColorlibHQ/AdminLTE&#34;&gt;Admin LTE&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;php-技术栈&#34;&gt;php 技术栈&lt;/h3&gt;
-
-&lt;h4 id=&#34;后台管理系统-2&#34;&gt;后台管理系统&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.fastadmin.net/&#34;&gt;fastAdmin&lt;/a&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>nginx 配置 申请</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</link>
-      <pubDate>Sun, 31 Mar 2019 17:15:23 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;反向代理和负载均衡&#34;&gt;反向代理和负载均衡&lt;/h3&gt;
-
-&lt;h4 id=&#34;什么是反向代理&#34;&gt;什么是反向代理&lt;/h4&gt;
-
-&lt;p&gt;当我们有一个服务器集群，并且服务器集群中的每台服务器的内容一样的时候，同样我们要直接从个人电脑访问到服务器集群服务器的时候无法访问，必须通过第三方服务器才能访问集群&lt;/p&gt;
-
-&lt;p&gt;这个时候，我们通过第三方服务器访问服务器集群的内容，但是我们并不知道是哪一台服务器提供的内容，此种代理方式称为反向代理&lt;/p&gt;
-
-&lt;h4 id=&#34;什么是负载均衡&#34;&gt;什么是负载均衡&lt;/h4&gt;
-
-&lt;p&gt;公司会建立很多的服务器，这些服务器组成了服务器集群，然后，当用户访问网站的时候，先访问一个中间服务器，再让这个中间服务器在服务器集群中选择一个压力较小的服务器，然后将该访问请求引入选择的服务器&lt;/p&gt;
-
-&lt;p&gt;所以，用户每次访问，都会保证服务器集群中的每个服务器压力趋于平衡，分担了服务器压力，避免了服务器崩溃的情况&lt;/p&gt;
-
-&lt;p&gt;一句话：nginx会给你分配服务器压力小的去访问&lt;/p&gt;
-
-&lt;h3 id=&#34;nginx-安装&#34;&gt;nginx 安装&lt;/h3&gt;
-
-&lt;p&gt;进入nginx 官网 根据不同环境配置安装&lt;/p&gt;
-
-&lt;p&gt;window 直接下载 运行 即可&lt;/p&gt;
-
-&lt;p&gt;Linux 安装 (回头补)&lt;/p&gt;
-
-&lt;h3 id=&#34;常用命令&#34;&gt;常用命令&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;nginx //打开运行nginx
-
-nginx -s stop //停止nginx
-
-nginx -s reload //重新运行nginx
-
-ps -ef | grep nginx  // linux 查看 nginx.conf是从哪开始的
-
-find /|grep nginx.conf // linux 查看是否已安装nginx 及其安装路径
-
-nginx -t //检查语法是否正确&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;配置项&#34;&gt;配置项&lt;/h3&gt;
-
-&lt;p&gt;找到 nginx.conf&lt;/p&gt;
-
-&lt;h4 id=&#34;proxy-pass-反向代理配置&#34;&gt;proxy_pass 反向代理配置&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;server {
-    listen 80;
-    server_name  chd.news.so.m.qss.test.so.com ;
-    location / {
-        proxy_pass http://10.10.10.10:20186;
-    }
-    #api server 完全代理
-    location /wwwthings {
-        proxy_pass http://verify7011;
-            proxy_set_header Host $host;
-            proxy_set_header X-Real-IP $remote_addr;
-            proxy_set_header REMOTE-HOST $remote_addr;
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;    
-    }
-}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h4 id=&#34;负载均衡配置-upstream&#34;&gt;负载均衡配置 Upstream&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ip_hash指令&lt;/li&gt;
-&lt;li&gt;server 指令&lt;/li&gt;
-&lt;li&gt;upstream 指令以及其相关变量&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;// 修改nginx.conf
-worker_processes 1;
-events {
-    worker_connections 1024;
-}
-http {
-    upstream firstdemo {
-        server 39.106.145.33;
-        server 47.93.6.93;
-    }
-    server {
-        listen 8080;
-        location / {
-            proxy_pass http://firstdemo;
-        }
-    }
-}
-
-//示意
-worker_processes
-工作进程数，和CPU核数相同
-worker_connections
-每个进程允许的最大连接数
-upstream模块
-负载均衡就靠它
-语法格式：upstream name {}
-里面写的两个server分别对应着不同的服务器
-server模块
-实现反向代理
-listen监督端口号
-location / {}访问根路径
-proxy_pass http://firstdemo，代理到firstdemo里两个服务器上&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;每次刷新都会访问不同的服务器，这样就做到了负载均衡处理&lt;/p&gt;
-
-&lt;p&gt;不过，更应该做到的是当用户第一次访问到其中一台服务器后，下次再访问的时候就直接访问该台服务器就好了，不用总变化了。那么就发挥了ip_hash的威力了&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt; upstream firstdemo {
-        ip_hash;
-        server 39.106.145.33;
-        server 47.93.6.93;
-    }&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;ip_hash它的作用是如果第一次访问该服务器后就记录，之后再访问都是该服务器了，这样比如第一次访问是33服务器，那之后再访问也会分配为33服务器访问了&lt;/p&gt;
 </description>
       
     </item>
