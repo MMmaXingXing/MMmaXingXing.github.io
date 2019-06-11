@@ -17,7 +17,7 @@
       <pubDate>Sun, 05 May 2019 17:00:13 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/change_plugin_issue/</guid>
-      <description>config.toml中添加 1 2 3 4 5 [params.utteranc] enable = true repo = &amp;#34;owner/repo&amp;#34; # 存储评论的Repo，格式为 owner/repo issueTerm = &amp;#34;pathname&amp;#34; #表示你选择以那种方式让github issue的评论</description>
+      <description>&lt;p&gt;为Hugo添加utterances评论，原本选择的评论系统是gitment，但是此项目需要的验证系统有点复杂，综合各方面考量，决定更换评论系统的插件。&lt;/p&gt;</description>
     </item>
     
     <item>

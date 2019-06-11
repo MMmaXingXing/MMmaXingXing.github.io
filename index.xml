@@ -6,10 +6,259 @@
     <description>Recent content on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 May 2019 17:00:13 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 May 2019 15:39:50 +0800</lastBuildDate>
     
         <atom:link href="https://mmmaxingxing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue nextTicket 源码分析</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/01-vue-soundcode-nextticket/</link>
+      <pubDate>Tue, 07 May 2019 15:39:50 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/01-vue-soundcode-nextticket/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;nextticket源码构成&#34;&gt;nextTicket源码构成&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1、能力检测&lt;/li&gt;
+&lt;li&gt;2、延时调用&lt;/li&gt;
+&lt;li&gt;3、原理是利用js同步函数执行完毕后才会执行进入异步加载流的规则&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;全部源码&#34;&gt;全部源码&lt;/h4&gt;
+
+&lt;p&gt;/* @flow &lt;em&gt;/
+/&lt;/em&gt; globals MutationObserver */&lt;/p&gt;
+
+&lt;p&gt;import { noop } from &amp;lsquo;shared/util&amp;rsquo;
+import { handleError } from &amp;lsquo;./error&amp;rsquo;
+import { isIE, isIOS, isNative } from &amp;lsquo;./env&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;export let isUsingMicroTask = false&lt;/p&gt;
+
+&lt;p&gt;const callbacks = []
+let pending = false&lt;/p&gt;
+
+&lt;p&gt;function flushCallbacks () {
+  pending = false
+  const copies = callbacks.slice(0)
+  callbacks.length = 0
+  for (let i = 0; i &amp;lt; copies.length; i++) {
+    copies[i]()
+  }
+}&lt;/p&gt;
+
+&lt;p&gt;// Here we have async deferring wrappers using microtasks.
+//这里我们有使用微任务的异步延迟包装器。
+// In 2.5 we used (macro) tasks (in combination with microtasks).
+//在2.5中，我们使用(宏)任务(与微任务结合使用)。
+// However, it has subtle problems when state is changed right before repaint
+//然而，当状态在重新绘制之前发生变化时，就会出现一些微妙的问题
+// (e.g. #6813, out-in transitions).
+// Also, using (macro) tasks in event handler would cause some weird behaviors
+//同样，在事件处理程序中使用(宏)任务会导致一些奇怪的行为
+// that cannot be circumvented (e.g. #7109, #7153, #7546, #7834, #8109).
+//这是无法回避的(例如#7109、#7153、#7546、#7834、#8109)。
+// So we now use microtasks everywhere, again.
+//所以 我们现在在任何地方都使用微任务
+// A major drawback of this tradeoff is that there are some scenarios
+//这种折中的情况会出现的主要问题就是存在一些场景
+// where microtasks have too high a priority and fire in between supposedly
+//这种情况下，微任务的优先级太高，而且介于两者之间
+// sequential events (e.g. #4521, #6690, which have workarounds)
+//顺序事件(例如#4521、#6690，它们有变通方法)
+// or even between bubbling of the same event (#6566).
+//甚至在冒泡同一个事件(#6566)之间。
+let timerFunc&lt;/p&gt;
+
+&lt;p&gt;// The nextTick behavior leverages the microtask queue, which can be accessed
+//nestTick 利用可以访问的微任务队列
+// via either native Promise.then or MutationObserver.
+//通过 Promise 或者 MutationObserver
+// MutationObserver has wider support, however it is seriously bugged in
+// MutationObserver有更广泛的支持，但是它被严重地窃听了
+// UIWebView in iOS &amp;gt;= 9.3.3 when triggered in touch event handlers. It
+// completely stops working after triggering a few times&amp;hellip; so, if native
+// Promise is available, we will use it:
+// UIWebView 在 IOS &amp;gt;= 9.3.3中触发。当他被触发几次后会完全停止工作，所以，如果Promise可用，建议使用promise
+/* istanbul ignore next, $flow-disable-line */
+if (typeof Promise !== &amp;lsquo;undefined&amp;rsquo; &amp;amp;&amp;amp; isNative(Promise)) {
+  const p = Promise.resolve()
+  timerFunc = () =&amp;gt; {
+    p.then(flushCallbacks)
+    // In problematic UIWebViews, Promise.then doesn&amp;rsquo;t completely break, but
+    ////在有问题的uiwebview中，Promise。不会完全断裂，但是
+    // it can get stuck in a weird state where callbacks are pushed into the
+    // 它会陷入一种奇怪的状态，回调被推入
+    // microtask queue but the queue isn&amp;rsquo;t being flushed, until the browser
+    //微任务队列，但队列不会被刷新，直到浏览器
+    // needs to do some other work, e.g. handle a timer. Therefore we can
+    //需要做一些其他的工作，例如处理一个定时器。因此,我们可以
+    // &amp;ldquo;force&amp;rdquo; the microtask queue to be flushed by adding an empty timer.
+    //通过添加一个空计时器来强制刷新微任务队列。
+    if (isIOS) setTimeout(noop)
+  }
+  isUsingMicroTask = true
+} else if (!isIE &amp;amp;&amp;amp; typeof MutationObserver !== &amp;lsquo;undefined&amp;rsquo; &amp;amp;&amp;amp; (
+  isNative(MutationObserver) ||
+  // PhantomJS and iOS 7.x
+  MutationObserver.toString() === &amp;lsquo;[object MutationObserverConstructor]&amp;rsquo;
+)) {
+  // Use MutationObserver where native Promise is not available,
+  //promise不可用的地方使用 MutationObserver
+  // e.g. PhantomJS, iOS7, Android 4.4
+  // (#6466 MutationObserver is unreliable in IE11)
+  let counter = 1
+  const observer = new MutationObserver(flushCallbacks)
+  const textNode = document.createTextNode(String(counter))
+  observer.observe(textNode, {
+    characterData: true
+  })
+  timerFunc = () =&amp;gt; {
+    counter = (counter + 1) % 2
+    textNode.data = String(counter)
+  }
+  isUsingMicroTask = true&lt;/p&gt;
+
+&lt;p&gt;// 优先检查是否支持setImmediate，这是一个高版本 IE 和 Edge 才支持的特性（和setTimeout差不多，但优先级最高）
+} else if (typeof setImmediate !== &amp;lsquo;undefined&amp;rsquo; &amp;amp;&amp;amp; isNative(setImmediate)) {
+  // Fallback to setImmediate.
+  // Techinically it leverages the (macro) task queue,
+  //技术上它利用(宏)任务队列，
+  // but it is still a better choice than setTimeout.
+  //但他仍是比setTimeout更好的选择
+  timerFunc = () =&amp;gt; {
+    setImmediate(flushCallbacks)
+  }
+} else {
+  // Fallback to setTimeout.
+  // 回退到setTimeout
+  timerFunc = () =&amp;gt; {
+    setTimeout(flushCallbacks, 0)
+  }
+}&lt;/p&gt;
+
+&lt;p&gt;export function nextTick (cb?: Function, ctx?: Object) {
+  let _resolve
+  callbacks.push(() =&amp;gt; {
+    if (cb) {
+      try {
+        cb.call(ctx)
+      } catch (e) {
+        handleError(e, ctx, &amp;lsquo;nextTick&amp;rsquo;)
+      }
+    } else if (_resolve) {
+      _resolve(ctx)
+    }
+  })
+  if (!pending) {
+    pending = true
+    timerFunc()
+  }
+  // $flow-disable-line
+  if (!cb &amp;amp;&amp;amp; typeof Promise !== &amp;lsquo;undefined&amp;rsquo;) {
+    return new Promise(resolve =&amp;gt; {
+      _resolve = resolve
+    })
+  }
+}
+```&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Vue Mixins</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/01-vue-grammer-mixins/</link>
+      <pubDate>Tue, 07 May 2019 15:31:38 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/01-vue-grammer-mixins/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;一-mixins&#34;&gt;一、Mixins&lt;/h3&gt;
+
+&lt;p&gt;把vue 的方法拉出来写了,相同的覆盖，不同的打包进去。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Golang环境配置及相关参数说明</title>
+      <link>https://mmmaxingxing.github.io/post/cours/golang/2019050601-golang-test/</link>
+      <pubDate>Mon, 06 May 2019 10:58:02 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/golang/2019050601-golang-test/</guid>
+      
+        <description>&lt;p&gt;Golang环境配置&lt;/p&gt;
+
+&lt;h3 id=&#34;入门书籍-https-github-com-unknwon-the-way-to-go-zh-cn-blob-master-ebook-02-3-md&#34;&gt;&lt;a href=&#34;https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/02.3.md&#34;&gt;入门书籍&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&#34;window下环境配置以及参数说明&#34;&gt;window下环境配置以及参数说明&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;$GOROOT 表示 Go 在你的电脑上的安装位置，它的值一般都是 $HOME/go，当然，你也可以安装在别的地方。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$GOBIN 表示编译器和链接器的安装位置，默认是 $GOROOT/bin，如果你使用的是 Go 1.0.3 及以后的版本，一般情况下你可以将它的值设置为空，Go 将会使用前面提到的默认值。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;$GOPATH 默认采用和 $GOROOT 一样的值，但从 Go 1.1 版本开始，你必须修改为其它路径。它可以包含多个 Go 语言源码文件、包文件和可执行文件的路径，而这些路径下又必须分别包含三个规定的目录：src、pkg 和 bin，这三个目录分别用于存放源码文件、包文件和可执行文件。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;关于-vscode环境下-gopath的配置&#34;&gt;关于 vscode环境下 gopath的配置&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/ys5773477/article/details/78881841&#34;&gt;https://blog.csdn.net/ys5773477/article/details/78881841&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>2019年五月 课程进度记录</title>
+      <link>https://mmmaxingxing.github.io/post/reporter/exam/20190505-exam/</link>
+      <pubDate>Sun, 05 May 2019 17:52:14 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/reporter/exam/20190505-exam/</guid>
+      
+        <description>&lt;p&gt;每日完成课程进度记录&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;日期&lt;/th&gt;
+&lt;th&gt;课程名&lt;/th&gt;
+&lt;th&gt;今日完成&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2019-05-05&lt;/td&gt;
+&lt;td&gt;中国近现代史纲要&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;第一章视频&lt;/code&gt; &lt;code&gt;第一章练习&lt;/code&gt;  &lt;code&gt;第一章精讲练习&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2019-05-06&lt;/td&gt;
+&lt;td&gt;中国近现代史纲要&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;第二章视频&lt;/code&gt; &lt;code&gt;第二章练习&lt;/code&gt;  &lt;code&gt;第二章精讲练习&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2019-05-07&lt;/td&gt;
+&lt;td&gt;中国近现代史纲要&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;第三章视频&lt;/code&gt; &lt;code&gt;第三章练习&lt;/code&gt;  &lt;code&gt;第三章精讲练习&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;2019-05-08&lt;/td&gt;
+&lt;td&gt;中国近现代史纲要&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;第三章视频&lt;/code&gt; &lt;code&gt;第三章练习&lt;/code&gt;  &lt;code&gt;第三章精讲练习&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
+      
+    </item>
     
     <item>
       <title>为Hugo添加utterances评论</title>
@@ -18,7 +267,7 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/change_plugin_issue/</guid>
       
-        <description>
+        <description>&lt;p&gt;为Hugo添加utterances评论，原本选择的评论系统是gitment，但是此项目需要的验证系统有点复杂，综合各方面考量，决定更换评论系统的插件。&lt;/p&gt;
 
 &lt;h3 id=&#34;config-toml中添加&#34;&gt;config.toml中添加&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -43,8 +292,7 @@
 
 &lt;p&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/github_blog/utterances3.png&#34; alt=&#34;步骤2&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;设置完毕打开博客认证即可使用&lt;/p&gt;
-</description>
+&lt;p&gt;设置完毕打开博客认证即可使用&lt;/p&gt;</description>
       
     </item>
     
@@ -62,28 +310,6 @@
 &lt;h4 id=&#34;mp4视频查找-http-m-imomoe-jp&#34;&gt;&lt;a href=&#34;http://m.imomoe.jp/&#34;&gt;MP4视频查找&lt;/a&gt;&lt;/h4&gt;
 
 &lt;h4 id=&#34;mp4视频查找-http-v-xndyy-cc&#34;&gt;&lt;a href=&#34;http://v.xndyy.cc/&#34;&gt;MP4视频查找&lt;/a&gt;&lt;/h4&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>onedriver 的 本地管理工具</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/pyone/</link>
-      <pubDate>Wed, 24 Apr 2019 17:47:35 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/pyone/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;1-安装宝塔面板&#34;&gt;1、安装宝塔面板&lt;/h3&gt;
-
-&lt;p&gt;主要配置&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;1、nginx&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;2、mySql&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
       
     </item>
@@ -356,9 +582,9 @@ console.log(&amp;#39;console&amp;#39;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/ta
       
       <guid>https://mmmaxingxing.github.io/post/cours/markdown/</guid>
       
-        <description>
+        <description>&lt;p&gt;&lt;strong&gt;jane主题是基于markdown语法的拓展，其中每个版本的语法都有细微差别，这里记录一下，方便以后书写，同时也做一个备忘。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;md语法整理&#34;&gt;MD语法整理&lt;/h3&gt;
+&lt;h3 id=&#34;md常用语法整理&#34;&gt;MD常用语法整理&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -380,16 +606,6 @@ console.log(&amp;#39;console&amp;#39;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/ta
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;标题： #XXX    最多六级标题
@@ -406,22 +622,358 @@ console.log(&amp;#39;console&amp;#39;);&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/ta
 
 粗体： **AAA**                         斜体：*AAA*
 
-表格：
-
-|  Tables  |    AAA   |   BBB   |
-
-| ---------- | :----------:  | ----------: |
-
-|   aaa    |  bbbbbb   |  cccccc |
-
- 
-
 代码：     ·   代码内容  ·    tab 缩进
 
 //```
 //代码块
 //```&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;表格&#34;&gt;表格&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;表格：
+
+| Name              | Markdown            | HTML tag             |
+| ----------------- | ------------------- | -------------------- |
+| *Emphasis*        | `*Emphasis*`        | `&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;`          |
+| **Strong**        | `**Strong****`        | `&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;` |
+| `code`            | ``code``            | `&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;`      |
+| ~~Strikethrough~~ | `~~Strikethrough~~` | `&amp;lt;del&amp;gt;&amp;lt;/del`         |
+| &amp;lt;u&amp;gt;Underline&amp;lt;/u&amp;gt;  | `&amp;lt;u&amp;gt;underline&amp;lt;/u&amp;gt;`  | `&amp;lt;u&amp;gt;&amp;lt;/u&amp;gt;`            |&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Markdown&lt;/th&gt;
+&lt;th&gt;HTML tag&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Emphasis&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;*Emphasis*&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Strong&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;**Strong****&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~~Strikethrough~~&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;del&amp;gt;&amp;lt;/del&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;u&gt;Underline&lt;/u&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;u&amp;gt;underline&amp;lt;/u&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;u&amp;gt;&amp;lt;/u&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;横向规则&#34;&gt;横向规则&lt;/h4&gt;
+
+&lt;p&gt;输入***或&amp;mdash;在空行上按，return将绘制一条水平线。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;其他jane主题&#34;&gt;其他jane主题&lt;/h3&gt;
+
+&lt;h4 id=&#34;引入豆瓣条目&#34;&gt;引入豆瓣条目&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-code&#34; data-lang=&#34;code&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-code&#34; data-lang=&#34;code&#34;&gt;{{&amp;lt; douban id &amp;gt;}}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;douban_show&#34;&gt;
+  &lt;div id=&#34;db9787532132263&#34; date-dbid=&#34;9787532132263&#34; class=&#34;douban_item post-preview&#34;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&#34;tips&#34;&gt;Tips&lt;/h4&gt;
+
+&lt;p&gt;代码:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;{{% notice note %}}
+A notice disclaimer
+{{% /notice %}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例:
+&lt;div class=&#34;shortcode-notice note&#34;&gt;
+  &lt;div class=&#34;shortcode-notice-title note&#34;&gt;
+    
+      note
+    
+  &lt;/div&gt;
+  &lt;p&gt;A notice disclaimer&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;代码 :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;{{% notice note 笔记 %}}
+A notice disclaimer
+{{% /notice %}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例：
+&lt;div class=&#34;shortcode-notice note&#34;&gt;
+  &lt;div class=&#34;shortcode-notice-title note&#34;&gt;
+    
+      笔记
+    
+  &lt;/div&gt;
+  &lt;p&gt;A notice disclaimer&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;代码 :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;{{% notice tip 笔记 %}}
+A notice disclaimer
+{{% /notice %}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例：
+&lt;div class=&#34;shortcode-notice tip&#34;&gt;
+  &lt;div class=&#34;shortcode-notice-title tip&#34;&gt;
+    
+      笔记
+    
+  &lt;/div&gt;
+  &lt;p&gt;A notice disclaimer&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;代码 :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;{{% notice info 笔记 %}}
+A notice disclaimer
+{{% /notice %}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例：
+&lt;div class=&#34;shortcode-notice info&#34;&gt;
+  &lt;div class=&#34;shortcode-notice-title info&#34;&gt;
+    
+      笔记
+    
+  &lt;/div&gt;
+  &lt;p&gt;A notice disclaimer&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;代码 :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;{{% notice warning 笔记 %}}
+A notice disclaimer
+{{% /notice %}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;示例：
+&lt;div class=&#34;shortcode-notice warning&#34;&gt;
+  &lt;div class=&#34;shortcode-notice-title warning&#34;&gt;
+    
+      笔记
+    
+  &lt;/div&gt;
+  &lt;p&gt;A notice disclaimer&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h4 id=&#34;music&#34;&gt;music&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;{{% music &amp;#34;3950552&amp;#34; %}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+  &lt;iframe style=&#34;max-width: 100%&#34;
+      class=&#34;music163&#34;
+      frameborder=&#34;no&#34;
+      border=&#34;0&#34;
+      marginwidth=&#34;0&#34;
+      marginheight=&#34;0&#34;
+      width=&#34;330&#34;
+      height=&#34;86&#34;
+      src=&#34;//music.163.com/outchain/player?type=2&amp;id=3950552&amp;auto=0&amp;height=66&#34;&gt;
+    &lt;/iframe&gt;
+
+&lt;h2 id=&#34;youku&#34;&gt;youku&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;{{% youku XMzQ0ODUxMjM2NA %}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+    &lt;iframe src=&#34;https://player.youku.com/embed/XMzQ0ODUxMjM2NA?autoplay=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouKu Video&#34;&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+
+
+&lt;h4 id=&#34;脚注&#34;&gt;脚注&lt;/h4&gt;
+
+&lt;h5 id=&#34;footnote-1&#34;&gt;Footnote-1&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote1&#34;&gt;&lt;a href=&#34;#fn:footnote1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+
+&lt;h5 id=&#34;footnote-2&#34;&gt;Footnote-2&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote2].&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote&#34;&gt;&lt;a href=&#34;#fn:footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+
+&lt;h5 id=&#34;footnote-3&#34;&gt;Footnote-3&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote3&#34;&gt;&lt;a href=&#34;#fn:footnote3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+
+&lt;h5 id=&#34;footnote-4&#34;&gt;Footnote-4&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote4&#34;&gt;&lt;a href=&#34;#fn:footnote4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+
+&lt;h5 id=&#34;footnote-5&#34;&gt;Footnote-5&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;will produce dddddddddddddddddddddddddddddddddddddddddddddd:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote5&#34;&gt;&lt;a href=&#34;#fn:footnote5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:footnote1&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-1&lt;/strong&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:footnote&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote&lt;/strong&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:footnote3&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-3&lt;/strong&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:footnote4&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-4&lt;/strong&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:footnote5&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-5&lt;/strong&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote5&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/div&gt;</description>
       
     </item>
@@ -1105,185 +1657,6 @@ v0.12.8&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 6、 SET PASSWORD = PASSWORD(&amp;#39;your new password&amp;#39;); //密码过期 使用控制台登录 创建新密码&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Call&amp;&amp;Apply谁的效率高</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/callapply/</link>
-      <pubDate>Thu, 04 Apr 2019 12:54:18 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/callapply/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;call&#34;&gt;Call&lt;/h3&gt;
-
-&lt;p&gt;允许为不同的对象分配和调用属于一个对象的函数/方法。&lt;/p&gt;
-
-&lt;p&gt;call() 方法调用一个函数, 其具有一个指定的this值和分别地提供的参数(参数的列表)。&lt;/p&gt;
-
-&lt;p&gt;call接受的是若干个参数的列表，而apply接受的是一个包含多个参数的数组。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;//使用
-
-function Produce(name,price){
-    this.name = name;
-    this.price = price;
-}
-
-function Food(name,price){
-    Produce.call(this,name,price);
-    this.category = &amp;#34;food&amp;#34;;
-}
-
-console.log(new Food(&amp;#34;cheese&amp;#34;,5).name);
-// cheese&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;apply&#34;&gt;Apply&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;func.apply(thisArg, [argsArray])&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;效率君&#34;&gt;效率君&lt;/h3&gt;
-
-&lt;p&gt;call的效率高于apply,因为apply的参数是数组，每次都需要循环。
-call的参数则为函数直接需要的参数，个人理解apply是call的更高一级的封装。&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>前端技术栈</title>
-      <link>https://mmmaxingxing.github.io/post/technology/resource/frontal_resource/</link>
-      <pubDate>Wed, 03 Apr 2019 16:47:31 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/resource/frontal_resource/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;前端必备&#34;&gt;前端必备&lt;/h3&gt;
-
-&lt;h4 id=&#34;正常技术栈&#34;&gt;正常技术栈&lt;/h4&gt;
-
-&lt;h5 id=&#34;es6-http-es6-ruanyifeng-com&#34;&gt;&lt;a href=&#34;http://es6.ruanyifeng.com/&#34;&gt;ES6&lt;/a&gt;&lt;/h5&gt;
-
-&lt;h5 id=&#34;es7&#34;&gt;[ES7]&lt;/h5&gt;
-
-&lt;h5 id=&#34;typescript-http-www-typescriptlang-org&#34;&gt;&lt;a href=&#34;http://www.typescriptlang.org/&#34;&gt;TypeScript&lt;/a&gt;&lt;/h5&gt;
-
-&lt;h5 id=&#34;vue&#34;&gt;[Vue]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;react&#34;&gt;[React]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;angular&#34;&gt;[Angular]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;小程序&#34;&gt;[小程序]()&lt;/h5&gt;
-
-&lt;h4 id=&#34;混合app开发&#34;&gt;混合app开发&lt;/h4&gt;
-
-&lt;h5 id=&#34;ionic&#34;&gt;[Ionic]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;reactnative&#34;&gt;[ReactNative]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;crodova-vue&#34;&gt;[Crodova+vue]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;crodova-react&#34;&gt;[Crodova+react]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;weex&#34;&gt;[weex]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;flutter&#34;&gt;[Flutter]()&lt;/h5&gt;
-
-&lt;h4 id=&#34;后台全栈&#34;&gt;后台全栈&lt;/h4&gt;
-
-&lt;h5 id=&#34;nodejs&#34;&gt;[nodejs]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;express-koa&#34;&gt;[Express/Koa]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;tgg-js&#34;&gt;[tgg.js]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;mongodb&#34;&gt;[Mongodb]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;mysql&#34;&gt;[MySql]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;redis&#34;&gt;[Redis]()&lt;/h5&gt;
-
-&lt;h4 id=&#34;电脑软件&#34;&gt;电脑软件&lt;/h4&gt;
-
-&lt;h5 id=&#34;electron&#34;&gt;[Electron]()&lt;/h5&gt;
-
-&lt;p&gt;跨平台混合软件开发&lt;/p&gt;
-
-&lt;h4 id=&#34;其他&#34;&gt;其他&lt;/h4&gt;
-
-&lt;h5 id=&#34;google插件&#34;&gt;[Google插件]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;vscode插件&#34;&gt;[Vscode插件]()&lt;/h5&gt;
-
-&lt;h5 id=&#34;一大波资源-http-www-fly63-com-nav-1016&#34;&gt;&lt;a href=&#34;http://www.fly63.com/nav/1016&#34;&gt;一大波资源&lt;/a&gt;&lt;/h5&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>Golang技术栈程序员技术听说</title>
-      <link>https://mmmaxingxing.github.io/post/cours/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Wed, 03 Apr 2019 14:47:31 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/</guid>
-      
-        <description>
-
-&lt;h4 id=&#34;influxdb&#34;&gt;InfluxDB&lt;/h4&gt;
-
-&lt;p&gt;是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这些数据进行快速的实时分析。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://jasper-zhang1.gitbooks.io/influxdb/content/&#34;&gt;中文文档&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/influxdata/influxdb&#34;&gt;社区&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;其他说明：他们的数据采集分析 ,存到了influxdb&lt;/p&gt;
-
-&lt;h4 id=&#34;beego&#34;&gt;Beego&lt;/h4&gt;
-
-&lt;p&gt;goweb框架&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://beego.me/&#34;&gt;中文文档&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;其他说明：江湖传闻有些臃肿，某些公司选此为技术栈之后进行了改造&lt;/p&gt;
-
-&lt;h4 id=&#34;goorm&#34;&gt;goOrm&lt;/h4&gt;
-
-&lt;p&gt;Golang写的，开发人员友好的ORM库。做数据库接入的。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://gorm.book.jasperxu.com/&#34;&gt;中文文档&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;micro-editor&#34;&gt;micro-editor&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/zyedidia/micro&#34;&gt;一个现代直观的基于终端的文本编辑器&lt;/a&gt;&lt;/p&gt;
-</description>
       
     </item>
     

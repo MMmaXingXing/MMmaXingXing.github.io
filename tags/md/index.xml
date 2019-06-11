@@ -6,10 +6,19 @@
     <description>Recent content in Md on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 18 Apr 2019 11:10:59 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 17:52:14 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/md/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019年五月 课程进度记录</title>
+      <link>https://mmmaxingxing.github.io/post/reporter/exam/20190505-exam/</link>
+      <pubDate>Sun, 05 May 2019 17:52:14 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/reporter/exam/20190505-exam/</guid>
+      <description>&lt;p&gt;每日完成课程进度记录&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>MD语法整理</title>
@@ -17,7 +26,7 @@
       <pubDate>Thu, 18 Apr 2019 11:10:59 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/markdown/</guid>
-      <description>MD语法整理 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 标题： #XXX 最多六级标题 列表： 无序 ： * 、+、- 有序：1. 2. 3. 引用： &amp;gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;jane主题是基于markdown语法的拓展，其中每个版本的语法都有细微差别，这里记录一下，方便以后书写，同时也做一个备忘。&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

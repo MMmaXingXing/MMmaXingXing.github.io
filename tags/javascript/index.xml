@@ -6,10 +6,28 @@
     <description>Recent content in Javascript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 18 Apr 2019 17:58:24 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 May 2019 15:39:50 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vue nextTicket 源码分析</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/01-vue-soundcode-nextticket/</link>
+      <pubDate>Tue, 07 May 2019 15:39:50 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/01-vue-soundcode-nextticket/</guid>
+      <description>nextTicket源码构成 1、能力检测 2、延时调用 3、原理是利用js同步函数执行完毕后才会执行进入异步加载流的规则 全部源码 /* @flow / / globals MutationObserver */ import</description>
+    </item>
+    
+    <item>
+      <title>Vue Mixins</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/01-vue-grammer-mixins/</link>
+      <pubDate>Tue, 07 May 2019 15:31:38 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/01-vue-grammer-mixins/</guid>
+      <description>一、Mixins 把vue 的方法拉出来写了,相同的覆盖，不同的打包进去。</description>
+    </item>
     
     <item>
       <title>jsvascript中的宏任务和微任务</title>
@@ -121,10 +139,10 @@
     
     <item>
       <title>斐波拉契实现</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/fibonacci/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript-desktop-4046i54/arithmetic/fibonacci/</link>
       <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/fibonacci/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript-desktop-4046i54/arithmetic/fibonacci/</guid>
       <description>斐波拉契 斐波那契数列 1, 1, 2,3,5,8,13,21….. 使用公式f( n ) = f(n-1)+f(n-2),结束条件f(2) =1, f(1) = 1 1 2 3 4 5 6 7</description>
     </item>
     
@@ -139,10 +157,10 @@
     
     <item>
       <title>diff算法</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript-desktop-4046i54/arithmetic/diff-%E7%AE%97%E6%B3%95/</link>
       <pubDate>Sun, 17 Mar 2019 23:05:51 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript-desktop-4046i54/arithmetic/diff-%E7%AE%97%E6%B3%95/</guid>
       <description>一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多</description>
     </item>
     
@@ -171,15 +189,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vuex-knowledge/</guid>
       <description>介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使</description>
-    </item>
-    
-    <item>
-      <title>mockjs引入以及使用方式</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</link>
-      <pubDate>Tue, 19 Feb 2019 16:08:52 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/mockjs_bas/</guid>
-      <description>一、mock引入 1 2 3 4 5 1、普通引入 script src 即可 2、vue中使用 npm install mockjs --dev main.js中 import &amp;#34;./mock&amp;#34; 二、mock 代码相关 拦截部分 1 2 3 4 5 6 7 8 9 10 11</description>
     </item>
     
   </channel>

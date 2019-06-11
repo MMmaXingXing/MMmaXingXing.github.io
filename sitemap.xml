@@ -3,6 +3,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mmmaxingxing.github.io/post/cours/javascript/vue/01-vue-soundcode-nextticket/</loc>
+    <lastmod>2019-05-07T15:39:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/post/cours/javascript/vue/01-vue-grammer-mixins/</loc>
+    <lastmod>2019-05-07T15:31:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/post/cours/golang/2019050601-golang-test/</loc>
+    <lastmod>2019-05-06T10:58:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/post/reporter/exam/20190505-exam/</loc>
+    <lastmod>2019-05-05T17:52:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://mmmaxingxing.github.io/post/cours/change_plugin_issue/</loc>
     <lastmod>2019-05-05T17:00:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -12,13 +40,6 @@
   <url>
     <loc>https://mmmaxingxing.github.io/post/technology/resource/video_audio/</loc>
     <lastmod>2019-04-26T17:44:46+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://mmmaxingxing.github.io/post/technology/plugin/pyone/</loc>
-    <lastmod>2019-04-24T17:47:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -53,7 +74,7 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/post/cours/markdown/</loc>
-    <lastmod>2019-04-18T11:10:59+08:00</lastmod>
+    <lastmod>2019-05-05T17:52:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -248,7 +269,7 @@
   </url>
   
   <url>
-    <loc>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/fibonacci/</loc>
+    <loc>https://mmmaxingxing.github.io/post/cours/javascript-desktop-4046i54/arithmetic/fibonacci/</loc>
     <lastmod>2019-03-19T22:54:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -262,7 +283,7 @@
   </url>
   
   <url>
-    <loc>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://mmmaxingxing.github.io/post/cours/javascript-desktop-4046i54/arithmetic/diff-%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2019-03-17T23:05:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -347,7 +368,7 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/</loc>
-    <lastmod>2019-05-05T17:00:13+08:00</lastmod>
+    <lastmod>2019-05-07T15:39:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -402,6 +423,20 @@
   </url>
   
   <url>
+    <loc>https://mmmaxingxing.github.io/tags/golang/</loc>
+    <lastmod>2019-05-06T10:58:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/categories/golang/</loc>
+    <lastmod>2019-05-06T10:58:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mmmaxingxing.github.io/tags/home/</loc>
     <lastmod>2019-04-03T14:47:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -424,7 +459,7 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/tags/javascript/</loc>
-    <lastmod>2019-04-18T17:58:24+08:00</lastmod>
+    <lastmod>2019-05-07T15:39:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -438,14 +473,14 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/tags/md/</loc>
-    <lastmod>2019-04-18T11:10:59+08:00</lastmod>
+    <lastmod>2019-05-05T17:52:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mmmaxingxing.github.io/categories/md/</loc>
-    <lastmod>2019-04-18T11:10:59+08:00</lastmod>
+    <lastmod>2019-05-05T17:52:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -487,7 +522,7 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/post/</loc>
-    <lastmod>2019-05-05T17:00:13+08:00</lastmod>
+    <lastmod>2019-05-07T15:39:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -571,14 +606,14 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/tags/vue/</loc>
-    <lastmod>2019-04-16T14:24:37+08:00</lastmod>
+    <lastmod>2019-05-07T15:39:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mmmaxingxing.github.io/categories/vue/</loc>
-    <lastmod>2019-03-22T23:13:46+08:00</lastmod>
+    <lastmod>2019-05-07T15:31:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -613,14 +648,14 @@
   
   <url>
     <loc>https://mmmaxingxing.github.io/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2019-04-16T14:24:37+08:00</lastmod>
+    <lastmod>2019-05-07T15:39:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mmmaxingxing.github.io/tags/%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2019-04-12T11:03:03+08:00</lastmod>
+    <lastmod>2019-05-06T10:58:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -717,15 +752,36 @@
   </url>
   
   <url>
+    <loc>https://mmmaxingxing.github.io/tags/%E6%BA%90%E7%A0%81/</loc>
+    <lastmod>2019-05-07T15:39:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/categories/%E6%BA%90%E7%A0%81/</loc>
+    <lastmod>2019-05-07T15:39:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/tags/%E7%8E%AF%E5%A2%83%E5%88%9B%E5%BB%BA/</loc>
+    <lastmod>2019-05-06T10:58:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mmmaxingxing.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2019-04-24T17:47:35+08:00</lastmod>
+    <lastmod>2019-04-24T13:47:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mmmaxingxing.github.io/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2019-04-24T17:47:35+08:00</lastmod>
+    <lastmod>2019-04-24T13:47:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -740,6 +796,13 @@
   <url>
     <loc>https://mmmaxingxing.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2019-03-19T22:54:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mmmaxingxing.github.io/tags/%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2019-05-07T15:31:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
