@@ -6,10 +6,19 @@
     <description>Recent content in Javascript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 07 May 2019 15:39:50 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 18:02:44 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>创建一个原生属性并且模拟触发事件</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</link>
+      <pubDate>Tue, 11 Jun 2019 18:02:44 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</guid>
+      <description>创建一个a标签并触发其事件 1 2 3 4 5 6 7 8 9 10 var a = document.createElement(&amp;#39;a&amp;#39;); a.setAttribute(&amp;#39;href&amp;#39;, href); a.setAttribute(&amp;#39;target&amp;#39;, &amp;#39;_blank&amp;#39;); a.setAttribute(&amp;#39;id&amp;#39;, &amp;#39;startTelMedicine&amp;#39;); // 防止反复添加 if(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)) { document.body.removeChild(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)); } document.body.appendChild(a); a.click();</description>
+    </item>
     
     <item>
       <title>Vue nextTicket 源码分析</title>
@@ -180,15 +189,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
       <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>
-    </item>
-    
-    <item>
-      <title>vueX的知识总结（包括在vue-cli中的使用）</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vuex-knowledge/</link>
-      <pubDate>Thu, 28 Feb 2019 11:11:48 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vuex-knowledge/</guid>
-      <description>介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使</description>
     </item>
     
   </channel>

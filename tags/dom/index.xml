@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>基础 on Astar Blog</title>
-    <link>https://mmmaxingxing.github.io/tags/%E5%9F%BA%E7%A1%80/</link>
-    <description>Recent content in 基础 on Astar Blog</description>
+    <title>Dom on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/dom/</link>
+    <description>Recent content in Dom on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 11 Jun 2019 18:02:44 +0800</lastBuildDate>
     
-	<atom:link href="https://mmmaxingxing.github.io/tags/%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mmmaxingxing.github.io/tags/dom/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,24 +18,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</guid>
       <description>创建一个a标签并触发其事件 1 2 3 4 5 6 7 8 9 10 var a = document.createElement(&amp;#39;a&amp;#39;); a.setAttribute(&amp;#39;href&amp;#39;, href); a.setAttribute(&amp;#39;target&amp;#39;, &amp;#39;_blank&amp;#39;); a.setAttribute(&amp;#39;id&amp;#39;, &amp;#39;startTelMedicine&amp;#39;); // 防止反复添加 if(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)) { document.body.removeChild(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)); } document.body.appendChild(a); a.click();</description>
-    </item>
-    
-    <item>
-      <title>Golang环境配置及相关参数说明</title>
-      <link>https://mmmaxingxing.github.io/post/cours/golang/2019050601-golang-test/</link>
-      <pubDate>Mon, 06 May 2019 10:58:02 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/golang/2019050601-golang-test/</guid>
-      <description>&lt;p&gt;Golang环境配置&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>React框架学习01</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</link>
-      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</guid>
-      <description>创建一个react项目 1 npx create-react-app my-app 创建一个react模块 方法一：https://codepen.io/gaearon/pen/YGYmEG?ed</description>
     </item>
     
   </channel>

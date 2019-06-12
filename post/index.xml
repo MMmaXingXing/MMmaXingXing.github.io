@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 07 May 2019 15:39:50 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 18:02:44 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>创建一个原生属性并且模拟触发事件</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</link>
+      <pubDate>Tue, 11 Jun 2019 18:02:44 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</guid>
+      <description>创建一个a标签并触发其事件 1 2 3 4 5 6 7 8 9 10 var a = document.createElement(&amp;#39;a&amp;#39;); a.setAttribute(&amp;#39;href&amp;#39;, href); a.setAttribute(&amp;#39;target&amp;#39;, &amp;#39;_blank&amp;#39;); a.setAttribute(&amp;#39;id&amp;#39;, &amp;#39;startTelMedicine&amp;#39;); // 防止反复添加 if(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)) { document.body.removeChild(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)); } document.body.appendChild(a); a.click();</description>
+    </item>
+    
+    <item>
+      <title>Flutter环境配置</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</link>
+      <pubDate>Tue, 11 Jun 2019 13:15:49 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</guid>
+      <description>初始环境（临时变量） 1 2 3 4 5 6 7 8 git clone -b master https://github.com/flutter/flutter.git ./flutter/bin/flutter --version export PUB_HOSTED_URL=https://pub.flutter-io.cn export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn export PATH=`pwd`/flutter/bin:$PATH 按照上述步骤操作时: 执行flutter doctor 会提示 -bash: fultter: command not found 执行 source ~/.bashr</description>
+    </item>
     
     <item>
       <title>Vue nextTicket 源码分析</title>
@@ -171,24 +189,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/technology/resource/mac/</guid>
       <description>mac软件资源网站</description>
-    </item>
-    
-    <item>
-      <title>资源汇总</title>
-      <link>https://mmmaxingxing.github.io/post/technology/resource/tool_resources/</link>
-      <pubDate>Fri, 12 Apr 2019 10:50:40 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/resource/tool_resources/</guid>
-      <description>判断某元素是否被浏览器兼容</description>
-    </item>
-    
-    <item>
-      <title>win10_wamp_mysql运行不起来</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/win10_wamp_mysql%E8%BF%90%E8%A1%8C%E4%B8%8D%E8%B5%B7%E6%9D%A5/</link>
-      <pubDate>Thu, 11 Apr 2019 14:18:39 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/win10_wamp_mysql%E8%BF%90%E8%A1%8C%E4%B8%8D%E8%B5%B7%E6%9D%A5/</guid>
-      <description>wamp 姜黄色 1 2 3 4 5 6 7 8 9 10 11 1、win + r 调出cmd 输入 services.msc 查看服务中是否有MySQL 2、管理员运行cmd 进入sql目录 运行 mysqld --install 3、net start</description>
     </item>
     
   </channel>

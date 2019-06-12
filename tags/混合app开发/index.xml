@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>混合app开发 on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/%E6%B7%B7%E5%90%88app%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 混合app开发 on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Jun 2019 13:15:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://mmmaxingxing.github.io/tags/%E6%B7%B7%E5%90%88app%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flutter环境配置</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</link>
+      <pubDate>Tue, 11 Jun 2019 13:15:49 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</guid>
+      <description>初始环境（临时变量） 1 2 3 4 5 6 7 8 git clone -b master https://github.com/flutter/flutter.git ./flutter/bin/flutter --version export PUB_HOSTED_URL=https://pub.flutter-io.cn export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn export PATH=`pwd`/flutter/bin:$PATH 按照上述步骤操作时: 执行flutter doctor 会提示 -bash: fultter: command not found 执行 source ~/.bashr</description>
+    </item>
+    
+  </channel>
+</rss>

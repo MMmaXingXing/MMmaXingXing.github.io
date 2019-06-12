@@ -6,10 +6,112 @@
     <description>Recent content on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 07 May 2019 15:39:50 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 18:02:44 +0800</lastBuildDate>
     
         <atom:link href="https://mmmaxingxing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>创建一个原生属性并且模拟触发事件</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</link>
+      <pubDate>Tue, 11 Jun 2019 18:02:44 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;创建一个a标签并触发其事件&#34;&gt;创建一个a标签并触发其事件&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;var a = document.createElement(&amp;#39;a&amp;#39;);
+a.setAttribute(&amp;#39;href&amp;#39;, href);
+a.setAttribute(&amp;#39;target&amp;#39;, &amp;#39;_blank&amp;#39;);
+a.setAttribute(&amp;#39;id&amp;#39;, &amp;#39;startTelMedicine&amp;#39;);
+// 防止反复添加
+if(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)) {
+    document.body.removeChild(document.getElementById(&amp;#39;startTelMedicine&amp;#39;));
+}
+document.body.appendChild(a);
+a.click();&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Flutter环境配置</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</link>
+      <pubDate>Tue, 11 Jun 2019 13:15:49 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</guid>
+      
+        <description>
+
+&lt;h3 id=&#34;初始环境-临时变量&#34;&gt;初始环境（临时变量）&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;git clone -b master https://github.com/flutter/flutter.git
+ ./flutter/bin/flutter --version
+
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+
+export PATH=`pwd`/flutter/bin:$PATH&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;按照上述步骤操作时: 执行flutter doctor 会提示 -bash: fultter: command not found
+执行 source ~/.bashrc即可&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;将flutter添加到系统环境变量中&#34;&gt;将flutter添加到系统环境变量中&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;    touch ~/.bash_profile
+    open ~/.bash_profile
+
+    export PATH=`pwd`/flutter/bin:$PATH
+
+    //保存后执行
+
+    source ~/.bashrc （或重启终端）即可&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
+    </item>
     
     <item>
       <title>Vue nextTicket 源码分析</title>
@@ -1602,61 +1704,6 @@ v0.12.8&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 &lt;h4 id=&#34;mac软件资源网站-https-xclient-info&#34;&gt;&lt;a href=&#34;https://xclient.info/&#34;&gt;mac软件资源网站&lt;/a&gt;&lt;/h4&gt;
 </description>
-      
-    </item>
-    
-    <item>
-      <title>资源汇总</title>
-      <link>https://mmmaxingxing.github.io/post/technology/resource/tool_resources/</link>
-      <pubDate>Fri, 12 Apr 2019 10:50:40 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/resource/tool_resources/</guid>
-      
-        <description>
-
-&lt;h4 id=&#34;判断某元素是否被浏览器兼容-https-caniuse-com-index&#34;&gt;&lt;a href=&#34;https://caniuse.com/#index&#34;&gt;判断某元素是否被浏览器兼容&lt;/a&gt;&lt;/h4&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>win10_wamp_mysql运行不起来</title>
-      <link>https://mmmaxingxing.github.io/post/technology/plugin/win10_wamp_mysql%E8%BF%90%E8%A1%8C%E4%B8%8D%E8%B5%B7%E6%9D%A5/</link>
-      <pubDate>Thu, 11 Apr 2019 14:18:39 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/plugin/win10_wamp_mysql%E8%BF%90%E8%A1%8C%E4%B8%8D%E8%B5%B7%E6%9D%A5/</guid>
-      
-        <description>
-
-&lt;h3 id=&#34;wamp-姜黄色&#34;&gt;wamp 姜黄色&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;1、win + r 调出cmd 输入 services.msc 查看服务中是否有MySQL  
-  
-2、管理员运行cmd 进入sql目录 运行 mysqld --install
-
-3、net start mysql //启动mysql
-
-4、mysql -u root -p  //登录 mysql 账户
-
-5、mysqld --initialize --user=mysql --console //生成随机密码 初始可不用
-
-6、 SET PASSWORD = PASSWORD(&amp;#39;your new password&amp;#39;); //密码过期 使用控制台登录 创建新密码&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
       
     </item>
     
