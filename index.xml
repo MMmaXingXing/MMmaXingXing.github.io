@@ -6,10 +6,25 @@
     <description>Recent content on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Jun 2019 18:02:44 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jun 2019 14:58:53 +0800</lastBuildDate>
     
         <atom:link href="https://mmmaxingxing.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ElementUI2.4.11 Upload 源码</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/element-ui/environment/</link>
+      <pubDate>Wed, 12 Jun 2019 14:58:53 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/element-ui/environment/</guid>
+      
+        <description>&lt;p&gt;upload 源码 整理&lt;/p&gt;
+
+&lt;h3 id=&#34;顺序流程&#34;&gt;顺序流程&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://mmmaxingxing.github.io/image/vue/sourcecode/IMG_20190612_145324-upload.jpg&#34; alt=&#34;elemntUI-upload&#34; /&gt;&lt;/p&gt;</description>
+      
+    </item>
     
     <item>
       <title>创建一个原生属性并且模拟触发事件</title>
@@ -18,9 +33,10 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</guid>
       
-        <description>
+        <description>&lt;h3 id=&#34;创建一个a标签并触发其事件&#34;&gt;创建一个a标签并触发其事件&lt;/h3&gt;
 
-&lt;h3 id=&#34;创建一个a标签并触发其事件&#34;&gt;创建一个a标签并触发其事件&lt;/h3&gt;
+&lt;p&gt;有个项目需求，需要下载一个文件时名称不乱码显示，前段解决方案，使用a标签新增download 字段，由于需要模拟a标签，以下以做记录。&lt;/p&gt;
+
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -57,7 +73,7 @@ a.click();&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</guid>
       
-        <description>
+        <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;
 
 &lt;h3 id=&#34;初始环境-临时变量&#34;&gt;初始环境（临时变量）&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -1689,20 +1705,6 @@ v0.12.8&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
         <description>
 
 &lt;h4 id=&#34;美国伊利诺伊大学算法讲课笔记-英文-偏数学-https-github-com-jeffgerickson-algorithms&#34;&gt;&lt;a href=&#34;https://github.com/jeffgerickson/algorithms/&#34;&gt;美国伊利诺伊大学算法讲课笔记（英文 偏数学）&lt;/a&gt;&lt;/h4&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>mac资源汇总</title>
-      <link>https://mmmaxingxing.github.io/post/technology/resource/mac/</link>
-      <pubDate>Fri, 12 Apr 2019 10:50:40 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/resource/mac/</guid>
-      
-        <description>
-
-&lt;h4 id=&#34;mac软件资源网站-https-xclient-info&#34;&gt;&lt;a href=&#34;https://xclient.info/&#34;&gt;mac软件资源网站&lt;/a&gt;&lt;/h4&gt;
 </description>
       
     </item>

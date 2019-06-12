@@ -17,7 +17,7 @@
       <pubDate>Tue, 11 Jun 2019 13:15:49 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</guid>
-      <description>初始环境（临时变量） 1 2 3 4 5 6 7 8 git clone -b master https://github.com/flutter/flutter.git ./flutter/bin/flutter --version export PUB_HOSTED_URL=https://pub.flutter-io.cn export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn export PATH=`pwd`/flutter/bin:$PATH 按照上述步骤操作时: 执行flutter doctor 会提示 -bash: fultter: command not found 执行 source ~/.bashr</description>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
     </item>
     
     <item>

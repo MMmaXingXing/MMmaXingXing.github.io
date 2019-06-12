@@ -17,7 +17,9 @@
       <pubDate>Tue, 11 Jun 2019 18:02:44 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</guid>
-      <description>创建一个a标签并触发其事件 1 2 3 4 5 6 7 8 9 10 var a = document.createElement(&amp;#39;a&amp;#39;); a.setAttribute(&amp;#39;href&amp;#39;, href); a.setAttribute(&amp;#39;target&amp;#39;, &amp;#39;_blank&amp;#39;); a.setAttribute(&amp;#39;id&amp;#39;, &amp;#39;startTelMedicine&amp;#39;); // 防止反复添加 if(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)) { document.body.removeChild(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)); } document.body.appendChild(a); a.click();</description>
+      <description>&lt;h3 id=&#34;创建一个a标签并触发其事件&#34;&gt;创建一个a标签并触发其事件&lt;/h3&gt;
+
+&lt;p&gt;有个项目需求，需要下载一个文件时名称不乱码显示，前段解决方案，使用a标签新增download 字段，由于需要模拟a标签，以下以做记录。&lt;/p&gt;</description>
     </item>
     
     <item>

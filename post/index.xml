@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Jun 2019 18:02:44 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jun 2019 14:58:53 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ElementUI2.4.11 Upload 源码</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/element-ui/environment/</link>
+      <pubDate>Wed, 12 Jun 2019 14:58:53 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/element-ui/environment/</guid>
+      <description>&lt;p&gt;upload 源码 整理&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>创建一个原生属性并且模拟触发事件</title>
@@ -17,7 +26,9 @@
       <pubDate>Tue, 11 Jun 2019 18:02:44 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</guid>
-      <description>创建一个a标签并触发其事件 1 2 3 4 5 6 7 8 9 10 var a = document.createElement(&amp;#39;a&amp;#39;); a.setAttribute(&amp;#39;href&amp;#39;, href); a.setAttribute(&amp;#39;target&amp;#39;, &amp;#39;_blank&amp;#39;); a.setAttribute(&amp;#39;id&amp;#39;, &amp;#39;startTelMedicine&amp;#39;); // 防止反复添加 if(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)) { document.body.removeChild(document.getElementById(&amp;#39;startTelMedicine&amp;#39;)); } document.body.appendChild(a); a.click();</description>
+      <description>&lt;h3 id=&#34;创建一个a标签并触发其事件&#34;&gt;创建一个a标签并触发其事件&lt;/h3&gt;
+
+&lt;p&gt;有个项目需求，需要下载一个文件时名称不乱码显示，前段解决方案，使用a标签新增download 字段，由于需要模拟a标签，以下以做记录。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,7 +37,7 @@
       <pubDate>Tue, 11 Jun 2019 13:15:49 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</guid>
-      <description>初始环境（临时变量） 1 2 3 4 5 6 7 8 git clone -b master https://github.com/flutter/flutter.git ./flutter/bin/flutter --version export PUB_HOSTED_URL=https://pub.flutter-io.cn export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn export PATH=`pwd`/flutter/bin:$PATH 按照上述步骤操作时: 执行flutter doctor 会提示 -bash: fultter: command not found 执行 source ~/.bashr</description>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -180,15 +191,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/technology/resource/basics/</guid>
       <description>美国伊利诺伊大学算法讲课笔记（英文 偏数学）</description>
-    </item>
-    
-    <item>
-      <title>mac资源汇总</title>
-      <link>https://mmmaxingxing.github.io/post/technology/resource/mac/</link>
-      <pubDate>Fri, 12 Apr 2019 10:50:40 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/resource/mac/</guid>
-      <description>mac软件资源网站</description>
     </item>
     
   </channel>
