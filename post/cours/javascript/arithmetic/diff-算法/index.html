@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>归档 - Astar Blog</title>
+  <title>diff算法 - Astar Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Astar" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多" />
+
   <meta name="keywords" content="Hugo, blog, Astar" />
 
 
@@ -34,8 +35,7 @@
 <meta name="generator" content="Hugo 0.54.0" />
 
 
-<link rel="canonical" href="https://mmmaxingxing.github.io/post/" />
-<link href="https://mmmaxingxing.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="Astar Blog" />
+<link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/" />
 
 
 
@@ -59,19 +59,27 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/" />
+<meta property="og:title" content="diff算法" />
+<meta property="og:description" content="一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/" />
+<meta property="article:published_time" content="2019-03-17T23:05:51&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-17T23:05:51&#43;08:00"/>
 
-<meta property="og:updated_time" content="2019-03-23T23:13:46&#43;08:00"/>
+<meta itemprop="name" content="diff算法">
+<meta itemprop="description" content="一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多">
 
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Hugo theme jane example site.">
 
+<meta itemprop="datePublished" content="2019-03-17T23:05:51&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-17T23:05:51&#43;08:00" />
+<meta itemprop="wordCount" content="577">
+
+
+
+<meta itemprop="keywords" content="javascript,Vue,前端,算法," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:title" content="diff算法"/>
+<meta name="twitter:description" content="一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -219,7 +227,7 @@
 
       </li>
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -262,186 +270,200 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="archive" class="archive">
+          <article class="post bg-white">
     
-      <div class="collection-title">
-        <h2 class="archive-year">2019</h2>
+    <header class="post-header">
+      <h1 class="post-title">diff算法</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-03-17" class="post-time">
+          2019-03-17
+        </time>
+        <div class="post-category">
+            <a href="https://mmmaxingxing.github.io/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
+            
+          </div>
+        
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
       </div>
+    </header>
 
-    <div class="archive-post">
-      <time datetime="2019-03-23" class="archive-post-time">
-        2019-03-23
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/technology/plugin/git_op/" class="archive-post-link">
-          git 常用操作
-        </a>
-      </span>
-    </div>
+    
     
 
-    <div class="archive-post">
-      <time datetime="2019-03-22" class="archive-post-time">
-        2019-03-22
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/vue/vue3.0_installvue2.0/" class="archive-post-link">
-          vue3.0&amp;&amp;vue2.0项目安装以及初始化
-        </a>
-      </span>
-    </div>
     
-
-    <div class="archive-post">
-      <time datetime="2019-03-20" class="archive-post-time">
-        2019-03-20
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/vue/vue_useful_expressions/" class="archive-post-link">
-          Vue常用操作整理
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-03-19" class="archive-post-time">
-        2019-03-19
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/arithmetic/fibonacci/" class="archive-post-link">
-          斐波拉契实现
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-03-18" class="archive-post-time">
-        2019-03-18
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="archive-post-link">
-          webpack配置使用小技巧
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-03-17" class="archive-post-time">
-        2019-03-17
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/" class="archive-post-link">
-          diff算法
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-03-16" class="archive-post-time">
-        2019-03-16
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="archive-post-link">
-          数据结构与算法
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-03-15" class="archive-post-time">
-        2019-03-15
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/vue/elementuiupload/" class="archive-post-link">
-          vue elementui 使用记录 图片上传
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-03-04" class="archive-post-time">
-        2019-03-04
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/async_await_promise/" class="archive-post-link">
-          promise async await
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-02-28" class="archive-post-time">
-        2019-02-28
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/vue/vuex-knowledge/" class="archive-post-link">
-          vueX的知识总结（包括在vue-cli中的使用）
-        </a>
-      </span>
-    </div></section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
+    <div class="post-content">
       
-      <li >
-        <a href="/post/">1</a>
-      </li>
+
+<h3 id="一-虚拟dom">一、虚拟dom</h3>
+
+<p>众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多了，如果每次都生成dom，对浏览器性能是巨大的浪费。</p>
+
+<p>virtual dom就是解决这个问题的一个思路，到底什么是virtual dom呢？通俗易懂的来说就是用一个简单的对象去代替复杂的dom对象。</p>
+
+<p>示例如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-script" data-lang="script"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-script" data-lang="script">var mydiv = document.createElement(&#39;div&#39;);
+mydiv.className = &#39;a&#39;;
+document.body.appendChild(mydiv);</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-script" data-lang="script"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-script" data-lang="script">//伪代码
+var mydivVirtual = { 
+  tagName: &#39;DIV&#39;,
+  className: &#39;a&#39;
+};
+var newmydivVirtual = {
+   tagName: &#39;DIV&#39;,
+   className: &#39;b&#39;
+}
+if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !== newmydivVirtual.className){
+   change(mydiv)
+}
+
+// 会执行相应的修改 mydiv.className = &#39;b&#39;;
+//最后  &lt;div class=&#39;b&#39;&gt;&lt;/div&gt;</code></pre></td></tr></table>
+</div>
+</div>
+<p>有些网站会选择采用手工优化的方式，确实在一定构建环境中手工优化效率高于 virtual Dom ，virtual dom很多时候都不是最优的操作，但它具有普适性，在效率、可维护性之间达平衡。</p>
+
+<h3 id="diff算法">diff算法</h3>
+
+<p>diff算法是一些前端框架常用的一种算法。它的作用是</p>
+
+<p>在交叉对比的时候，当新节点跟旧节点==头尾交叉对比==没有结果的时候，会根据旧节点的key去对比旧节点数组中的key，从而找到相应旧节点（这里对应的是一个key=&gt;index的map映射）。如果没找到就认为是一个新增节点。而如果没找到就认为是一个新增节点。而如果没有key，那么就会采用一种遍历查找的方式去找到对应的旧节点两种实现方式，一种是map映射，另一种是遍历查找。相比而言。map映射速度更快。</p>
+
+<h3 id="diff-比较规则">diff 比较规则</h3>
+
+<p>同级比较，不会越级比较。</p>
+
+    </div>
+
+    
+    
+
+
+    
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/image/weixin.png">
+        <span>微信打赏</span>
+      </label>
+    
+      <label class="qr-code-image" for="reward">
+        <img class="image" src="/image/ali.png">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://mmmaxingxing.github.io/tags/javascript/">javascript</a>
+          <a href="https://mmmaxingxing.github.io/tags/vue/">Vue</a>
+          <a href="https://mmmaxingxing.github.io/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+          <a href="https://mmmaxingxing.github.io/tags/%E7%AE%97%E6%B3%95/">算法</a>
+          
+        </div>
+
       
-      <li >
-        <a href="/post/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/4/">4</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/post/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/6/">6</a>
-      </li>
-      
-    </ul>
-  </nav>
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">webpack配置使用小技巧</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        
+          <a class="next" href="/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">
+            <span class="next-text nav-default">数据结构与算法</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
 
   
   
 
+  
+  
 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "MMmaXingXing/comments"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+  
+    
 
 
 

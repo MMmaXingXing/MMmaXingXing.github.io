@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 12 Jun 2019 14:58:53 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Jun 2019 13:29:34 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Flutter-01-创建一个tabbar&amp;&amp;footerbar页面</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/base_use01/</link>
+      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/base_use01/</guid>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Flutter在使用或相关包整理</title>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/package/</link>
+      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/package/</guid>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>ElementUI2.4.11 Upload 源码</title>
@@ -173,24 +191,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</guid>
       <description>创建一个react项目 1 npx create-react-app my-app 创建一个react模块 方法一：https://codepen.io/gaearon/pen/YGYmEG?ed</description>
-    </item>
-    
-    <item>
-      <title>npx</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</link>
-      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</guid>
-      <description>npx 今天看react安装环境中有一句 npx create-react-app my-app,没有见过npx，查了查资料 聊以记录; npx 是 npm v5.2.0 引入的一条命令，目的是为了提升开发者使用包内</description>
-    </item>
-    
-    <item>
-      <title>学习资源</title>
-      <link>https://mmmaxingxing.github.io/post/technology/resource/basics/</link>
-      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/technology/resource/basics/</guid>
-      <description>美国伊利诺伊大学算法讲课笔记（英文 偏数学）</description>
     </item>
     
   </channel>

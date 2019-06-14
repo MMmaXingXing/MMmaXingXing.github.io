@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Flutter on Astar Blog</title>
-    <link>https://mmmaxingxing.github.io/tags/flutter/</link>
-    <description>Recent content in Flutter on Astar Blog</description>
+    <title>相关资源 on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90/</link>
+    <description>Recent content in 相关资源 on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 14 Jun 2019 13:29:34 +0800</lastBuildDate>
     
-	<atom:link href="https://mmmaxingxing.github.io/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mmmaxingxing.github.io/tags/%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -26,15 +26,6 @@
       <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/package/</guid>
-      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Flutter环境配置</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</link>
-      <pubDate>Tue, 11 Jun 2019 13:15:49 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</guid>
       <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
     </item>
     

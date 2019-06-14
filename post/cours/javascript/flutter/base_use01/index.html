@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>归档 - Astar Blog</title>
+  <title>Flutter-01-创建一个tabbar&amp;&amp;footerbar页面 - Astar Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Astar" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="入坑进行时。。
+" />
+
   <meta name="keywords" content="Hugo, blog, Astar" />
 
 
@@ -34,8 +36,7 @@
 <meta name="generator" content="Hugo 0.54.0" />
 
 
-<link rel="canonical" href="https://mmmaxingxing.github.io/post/" />
-<link href="https://mmmaxingxing.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="Astar Blog" />
+<link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/javascript/flutter/base_use01/" />
 
 
 
@@ -59,19 +60,27 @@
 <link rel="stylesheet" href="/css/custom.css">
 
 
-<meta property="og:title" content="Posts" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/" />
+<meta property="og:title" content="Flutter-01-创建一个tabbar&amp;&amp;footerbar页面" />
+<meta property="og:description" content="入坑进行时。。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/javascript/flutter/base_use01/" />
+<meta property="article:published_time" content="2019-06-14T13:29:34&#43;08:00"/>
+<meta property="article:modified_time" content="2019-06-14T13:29:34&#43;08:00"/>
 
-<meta property="og:updated_time" content="2019-03-23T23:13:46&#43;08:00"/>
+<meta itemprop="name" content="Flutter-01-创建一个tabbar&amp;&amp;footerbar页面">
+<meta itemprop="description" content="入坑进行时。。">
 
-<meta itemprop="name" content="Posts">
-<meta itemprop="description" content="Hugo theme jane example site.">
 
+<meta itemprop="datePublished" content="2019-06-14T13:29:34&#43;08:00" />
+<meta itemprop="dateModified" content="2019-06-14T13:29:34&#43;08:00" />
+<meta itemprop="wordCount" content="685">
+
+
+
+<meta itemprop="keywords" content="Flutter,相关资源,混合app开发," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:title" content="Flutter-01-创建一个tabbar&amp;&amp;footerbar页面"/>
+<meta name="twitter:description" content="入坑进行时。。"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -219,7 +228,7 @@
 
       </li>
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -262,186 +271,261 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="archive" class="archive">
+          <article class="post bg-white">
     
-      <div class="collection-title">
-        <h2 class="archive-year">2019</h2>
+    <header class="post-header">
+      <h1 class="post-title">Flutter-01-创建一个tabbar&amp;&amp;footerbar页面</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-06-14" class="post-time">
+          2019-06-14
+        </time>
+        <div class="post-category">
+            <a href="https://mmmaxingxing.github.io/categories/flutter/"> Flutter </a>
+            
+          </div>
+        
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
       </div>
+    </header>
 
-    <div class="archive-post">
-      <time datetime="2019-03-23" class="archive-post-time">
-        2019-03-23
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/technology/plugin/git_op/" class="archive-post-link">
-          git 常用操作
-        </a>
-      </span>
-    </div>
+    
     
 
-    <div class="archive-post">
-      <time datetime="2019-03-22" class="archive-post-time">
-        2019-03-22
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/vue/vue3.0_installvue2.0/" class="archive-post-link">
-          vue3.0&amp;&amp;vue2.0项目安装以及初始化
-        </a>
-      </span>
+    
+    <div class="post-content">
+      <p>入坑进行时。。</p>
+
+<h3 id="完整示例代码">完整示例代码</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">import &#39;package:flutter/material.dart&#39;;
+
+class AppIndexPage extends StatefulWidget {
+  @override //元数据注解
+  State&lt;StatefulWidget&gt; createState() {
+    return _MyHomePageState();
+  }
+}
+
+class _MyHomePageState extends State&lt;AppIndexPage&gt; with SingleTickerProviderStateMixin {
+  TabController _tabcontroller;
+  List tabList = [&#39;首页&#39;, &#39;更多&#39;, &#39;我的&#39;];
+  var _selectedIndex = 0;
+
+  @override
+  // 生命周期 初始化状态
+  void initState(){
+    super.initState();
+    _tabcontroller = new TabController(vsync: this,length: tabList.length);
+  }
+
+  void _onItemTapped(int index){
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+  
+  @override
+  Widget build(BuildContext context) {
+    return  Scaffold(
+      appBar: AppBar( //导航栏
+        title: Text(&#34;Demo App&#34;), 
+        actions: &lt;Widget&gt;[ //导航栏右侧菜单
+          IconButton(icon: Icon(Icons.share), onPressed: () {}),
+        ],
+        bottom: TabBar(
+          controller: _tabcontroller,
+          tabs: tabList.map((e) =&gt; Tab(text:e)).toList(),
+        ),
+      ),
+      bottomNavigationBar:BottomNavigationBar(
+          currentIndex: _selectedIndex,
+          items: tabList.map((e) =&gt; BottomNavigationBarItem(icon:Icon(Icons.home),title:Text(e))).toList(),
+          onTap: _onItemTapped,
+        ),
+    );
+  }  
+}</pre></td></tr></table>
+</div>
+</div>
+<h3 id="过程分解">过程分解</h3>
+
+<h4 id="1-定义一个控制器-tabcontroller-用于监听-tab菜单切换-并初始化">1. 定义一个控制器 TabController 用于监听 tab菜单切换 并初始化</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">@override
+  void initState(){
+    super.initState();
+    _tabcontroller = new TabController(vsync: this,length: tabList.length);
+  }</pre></td></tr></table>
+</div>
+</div>
+<h4 id="2-定义一个-list-数组-此数组可以为-const">2.定义一个 List（数组） 此数组可以为 const</h4>
+
+<p>const和final的区别 final 实例化时生成  const 运行时生成</p>
+
+<h4 id="3-创建一个tabbar-widget-用于展示-tabbar">3.创建一个TabBar widget 用于展示 tabbar</h4>
+
+<blockquote>
+<p>tabbar tabs属性可接受一个Widget数组 可直接生成，也可以使用其他组件。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">Widget build(BuildContext context) {}  //生成Widget的页面样式使用此方法 Widget build   
+build 中可以返回 widget ，也可以 使用 MaterialApp   
+
+&gt; Material应用程序以MaterialApp widget开始， 该widget在应用程序的根部创建了一些有用的widget，比如一个Theme，它配置了应用的主题。
+
+疑问： 如何在子元素中访问 初始化的应用和层序根部的widget，比如Theme。</pre></td></tr></table>
+</div>
+</div>
+<p>Scaffold
+   &gt;Flutter Material库提供了一个Scaffold Widget，它是一个路由页的骨架，可以非常容易的拼装出一个完整的页面。
+   &gt; TabBar和TabBarView的controller是同一个以此来实现菜单切换和滑动状态同步。</p>
+
+<h4 id="4-使用-material-组件库提供meterial风格的-tab菜单">4. 使用 Material 组件库提供Meterial风格的 Tab菜单</h4>
+
+<h4 id="5-bottomnavigationbar-同理">5.BottomNavigationBar 同理</h4>
+
+<h4 id="参考文档-https-www-jianshu-com-p-ed28cc2df5ca"><a href="https://www.jianshu.com/p/ed28cc2df5ca">参考文档</a></h4>
     </div>
+
+    
     
 
-    <div class="archive-post">
-      <time datetime="2019-03-20" class="archive-post-time">
-        2019-03-20
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/vue/vue_useful_expressions/" class="archive-post-link">
-          Vue常用操作整理
-        </a>
-      </span>
-    </div>
+
+    
     
 
-    <div class="archive-post">
-      <time datetime="2019-03-19" class="archive-post-time">
-        2019-03-19
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/arithmetic/fibonacci/" class="archive-post-link">
-          斐波拉契实现
-        </a>
-      </span>
-    </div>
-    
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://mmmaxingxing.github.io/tags/flutter/">Flutter</a>
+          <a href="https://mmmaxingxing.github.io/tags/%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90/">相关资源</a>
+          <a href="https://mmmaxingxing.github.io/tags/%E6%B7%B7%E5%90%88app%E5%BC%80%E5%8F%91/">混合app开发</a>
+          
+        </div>
 
-    <div class="archive-post">
-      <time datetime="2019-03-18" class="archive-post-time">
-        2019-03-18
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="archive-post-link">
-          webpack配置使用小技巧
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-03-17" class="archive-post-time">
-        2019-03-17
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/" class="archive-post-link">
-          diff算法
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-03-16" class="archive-post-time">
-        2019-03-16
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="archive-post-link">
-          数据结构与算法
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-03-15" class="archive-post-time">
-        2019-03-15
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/vue/elementuiupload/" class="archive-post-link">
-          vue elementui 使用记录 图片上传
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-03-04" class="archive-post-time">
-        2019-03-04
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/async_await_promise/" class="archive-post-link">
-          promise async await
-        </a>
-      </span>
-    </div>
-    
-
-    <div class="archive-post">
-      <time datetime="2019-02-28" class="archive-post-time">
-        2019-02-28
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/cours/javascript/vue/vuex-knowledge/" class="archive-post-link">
-          vueX的知识总结（包括在vue-cli中的使用）
-        </a>
-      </span>
-    </div></section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
       
-      <li >
-        <a href="/post/">1</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/3/">3</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/4/">4</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/post/page/5/">5</a>
-      </li>
-      
-      <li >
-        <a href="/post/page/6/">6</a>
-      </li>
-      
-    </ul>
-  </nav>
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/cours/javascript/flutter/package/">
+            <span class="next-text nav-default">Flutter在使用或相关包整理</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
 
   
   
 
+  
+  
 
+  
+  
+    <div class="post bg-white">
+      <script src="https://utteranc.es/client.js"
+            repo= "MMmaXingXing/comments"
+            issue-term="pathname"
+            crossorigin="anonymous"
+            async>
+      </script>
+    </div>
+  
+
+  
+
+  
+
+  
+  
+    
 
 
 

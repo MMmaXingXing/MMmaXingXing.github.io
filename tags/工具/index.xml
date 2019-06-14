@@ -20,5 +20,14 @@
       <description>npx 今天看react安装环境中有一句 npx create-react-app my-app,没有见过npx，查了查资料 聊以记录; npx 是 npm v5.2.0 引入的一条命令，目的是为了提升开发者使用包内</description>
     </item>
     
+    <item>
+      <title>资源汇总</title>
+      <link>https://mmmaxingxing.github.io/post/technology/resource/tool_resources/</link>
+      <pubDate>Fri, 12 Apr 2019 10:50:40 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/technology/resource/tool_resources/</guid>
+      <description>判断某元素是否被浏览器兼容 起名神器 tinymce api</description>
+    </item>
+    
   </channel>
 </rss>

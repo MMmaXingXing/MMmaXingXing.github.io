@@ -13,19 +13,19 @@
     
     <item>
       <title>斐波拉契实现</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript-desktop-4046i54/arithmetic/fibonacci/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/fibonacci/</link>
       <pubDate>Tue, 19 Mar 2019 22:54:31 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript-desktop-4046i54/arithmetic/fibonacci/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/fibonacci/</guid>
       <description>斐波拉契 斐波那契数列 1, 1, 2,3,5,8,13,21….. 使用公式f( n ) = f(n-1)+f(n-2),结束条件f(2) =1, f(1) = 1 1 2 3 4 5 6 7</description>
     </item>
     
     <item>
       <title>diff算法</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript-desktop-4046i54/arithmetic/diff-%E7%AE%97%E6%B3%95/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/</link>
       <pubDate>Sun, 17 Mar 2019 23:05:51 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript-desktop-4046i54/arithmetic/diff-%E7%AE%97%E6%B3%95/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/</guid>
       <description>一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多</description>
     </item>
     

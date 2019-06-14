@@ -73,7 +73,7 @@
 
 <meta itemprop="datePublished" content="2019-06-11T13:15:49&#43;08:00" />
 <meta itemprop="dateModified" content="2019-06-11T13:15:49&#43;08:00" />
-<meta itemprop="wordCount" content="130">
+<meta itemprop="wordCount" content="260">
 
 
 
@@ -305,17 +305,21 @@
     <div class="post-content">
       <p>入坑进行时。。</p>
 
-<h3 id="初始环境-临时变量">初始环境（临时变量）</h3>
+<h2 id="初始环境">初始环境</h2>
+
+<h3 id="初始环境配置-添加-临时变量-临时变量">初始环境配置 添加 临时变量（临时变量）</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></pre></td>
 <td class="lntd">
 <pre class="chroma">git clone -b master https://github.com/flutter/flutter.git
@@ -325,7 +329,9 @@ export PUB_HOSTED_URL=https://pub.flutter-io.cn
 
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
-export PATH=`pwd`/flutter/bin:$PATH</pre></td></tr></table>
+export PATH=`pwd`/flutter/bin:$PATH
+
+echo $PATH</pre></td></tr></table>
 </div>
 </div>
 <blockquote>
@@ -354,6 +360,60 @@ export PATH=`pwd`/flutter/bin:$PATH</pre></td></tr></table>
     //保存后执行
 
     source ~/.bashrc （或重启终端）即可</pre></td></tr></table>
+</div>
+</div>
+<h3 id="vscode-配置">vscode 配置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">plugin 查找 flutter
+
+ctrl + aommand + p  install  flutter doctor</pre></td></tr></table>
+</div>
+</div>
+<h3 id="fluter-版本更新-或-切换">fluter 版本更新 或 切换</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">flutter channel //查看分支
+
+flutter upgrade //更新sdk</pre></td></tr></table>
+</div>
+</div>
+<h3 id="打包发布">打包发布</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">flutter build apk --release</pre></td></tr></table>
+</div>
+</div>
+<h2 id="初始化基础代码配置">初始化基础代码配置</h2>
+
+<h3 id="在flutter中使用第三方包">在flutter中使用第三方包</h3>
+
+<ol>
+<li>打开pubspec.yaml<br /></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">2. 拉取声明的第三方库到本地工程
+
+flutter packages get</pre></td></tr></table>
 </div>
 </div>
     </div>
