@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Golang on Astar Blog</title>
+    <title>GoLang on Astar Blog</title>
     <link>https://mmmaxingxing.github.io/categories/golang/</link>
-    <description>Recent content in Golang on Astar Blog</description>
+    <description>Recent content in GoLang on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 06 May 2019 10:58:02 +0800</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Golang环境配置及相关参数说明</title>
-      <link>https://mmmaxingxing.github.io/post/cours/golang/2019050601-golang-test/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/backends/golang/2019050601-golang-test/</link>
       <pubDate>Mon, 06 May 2019 10:58:02 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/golang/2019050601-golang-test/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/backends/golang/2019050601-golang-test/</guid>
       <description>&lt;p&gt;Golang环境配置&lt;/p&gt;</description>
     </item>
     

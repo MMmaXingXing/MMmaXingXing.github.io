@@ -6,26 +6,26 @@
     <description>Recent content in 相关资源 on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 14 Jun 2019 13:29:34 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2019 14:50:34 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/%E7%9B%B8%E5%85%B3%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Flutter-01-创建一个tabbar&amp;&amp;footerbar页面</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/base_use01/</link>
-      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
+      <title>操作小Tips</title>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/operate/</link>
+      <pubDate>Mon, 30 Sep 2019 14:50:34 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/base_use01/</guid>
-      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/operate/</guid>
+      <description>&lt;p&gt;写Flutter中遇见的一些操作记录。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Flutter在使用或相关包整理</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/package/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</link>
       <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/package/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</guid>
       <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
     </item>
     

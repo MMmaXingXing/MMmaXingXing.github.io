@@ -13,10 +13,10 @@
     
     <item>
       <title>vue3.0&amp;&amp;vue2.0项目安装以及初始化</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue3.0_installvue2.0/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/vue/vue3.0_installvue2.0/</link>
       <pubDate>Fri, 22 Mar 2019 23:13:46 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/vue3.0_installvue2.0/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/vue/vue3.0_installvue2.0/</guid>
       <description>Vue3.0项目安装以及介绍 1 2 3 4 5 //安装 npm install -g @vue/cli //安装vue2.0(兼容) npm install -g @vue/cli-init 变化更新 部分命令发生了变化 删除了vue list 创建项目 vue</description>
     </item>
     

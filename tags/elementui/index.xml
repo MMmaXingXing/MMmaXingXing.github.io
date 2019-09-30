@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Elementui on Astar Blog</title>
+    <title>ElementUi on Astar Blog</title>
     <link>https://mmmaxingxing.github.io/tags/elementui/</link>
-    <description>Recent content in Elementui on Astar Blog</description>
+    <description>Recent content in ElementUi on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 12 Jun 2019 14:58:53 +0800</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>ElementUI2.4.11 Upload 源码</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/vue/element-ui/environment/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/vue/element-ui/environment/</link>
       <pubDate>Wed, 12 Jun 2019 14:58:53 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/vue/element-ui/environment/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/vue/element-ui/environment/</guid>
       <description>&lt;p&gt;upload 源码 整理&lt;/p&gt;</description>
     </item>
     

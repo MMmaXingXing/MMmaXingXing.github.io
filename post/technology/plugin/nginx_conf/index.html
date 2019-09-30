@@ -32,7 +32,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.55.6" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/technology/plugin/nginx_conf/" />
@@ -51,7 +51,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.a8f782adb8c5e6b8b503f1231091545fed226397f7147eafc32897d9a2ceec0f.css" integrity="sha256-qPeCrbjF5ri1A/EjEJFUX&#43;0iY5f3FH6vwyiX2aLO7A8=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
 
 
 
@@ -403,8 +403,8 @@ nginx -t //检查语法是否正确</pre></td></tr></table>
 <ul>
 <li>ip_hash指令</li>
 <li>server 指令</li>
-<li>upstream 指令以及其相关变量</li>
-</ul>
+
+<li><p>upstream 指令以及其相关变量</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><span class="lnt"> 1
@@ -444,19 +444,19 @@ nginx -t //检查语法是否正确</pre></td></tr></table>
 <pre class="chroma">// 修改nginx.conf
 worker_processes 1;
 events {
-    worker_connections 1024;
+worker_connections 1024;
 }
 http {
-    upstream firstdemo {
-        server 39.106.145.33;
-        server 47.93.6.93;
+upstream firstdemo {
+    server 39.106.145.33;
+    server 47.93.6.93;
+}
+server {
+    listen 8080;
+    location / {
+        proxy_pass http://firstdemo;
     }
-    server {
-        listen 8080;
-        location / {
-            proxy_pass http://firstdemo;
-        }
-    }
+}
 }
 
 //示意
@@ -474,7 +474,9 @@ listen监督端口号
 location / {}访问根路径
 proxy_pass http://firstdemo，代理到firstdemo里两个服务器上</pre></td></tr></table>
 </div>
-</div>
+</div></li>
+</ul>
+
 <p>每次刷新都会访问不同的服务器，这样就做到了负载均衡处理</p>
 
 <p>不过，更应该做到的是当用户第一次访问到其中一台服务器后，下次再访问的时候就直接访问该台服务器就好了，不用总变化了。那么就发挥了ip_hash的威力了</p>
@@ -529,7 +531,7 @@ proxy_pass http://firstdemo，代理到firstdemo里两个服务器上</pre></td>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/cours/javascript/vue/vue_inclusive_ie9/">
+          <a class="next" href="/post/cours/front/vue/vue_inclusive_ie9/">
             <span class="next-text nav-default">Vue-Cli兼容IE9</span>
             <span class="prev-text nav-mobile">下一篇</span>
             

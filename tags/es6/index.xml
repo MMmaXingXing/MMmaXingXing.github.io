@@ -13,28 +13,28 @@
     
     <item>
       <title>For of 到 Generator</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/for_of%E5%88%B0generator/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/for_of%E5%88%B0generator/</link>
       <pubDate>Wed, 03 Apr 2019 13:28:13 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/for_of%E5%88%B0generator/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/for_of%E5%88%B0generator/</guid>
       <description>For of 是什么 ES6中引入的for of循环可以用来替代 for in 和 forEach(),并支持新的迭代协议,允许你遍历 Array、Maps(映射)、St</description>
     </item>
     
     <item>
       <title>利用Array From 实现分页骚操作</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/paging/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/paging/</link>
       <pubDate>Fri, 29 Mar 2019 15:24:51 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/paging/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/paging/</guid>
       <description>Array.form 是什么 array用于将两类对象转换为真正的数组, 即:类似数组的对象(array-likeobject) 和可遍历（iterable）的对象 包</description>
     </item>
     
     <item>
       <title>promise async await</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/async_await_promise/</link>
       <pubDate>Mon, 04 Mar 2019 17:29:17 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/async_await_promise/</guid>
       <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>
     </item>
     

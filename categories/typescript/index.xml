@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Typescript on Astar Blog</title>
+    <title>typescript on Astar Blog</title>
     <link>https://mmmaxingxing.github.io/categories/typescript/</link>
-    <description>Recent content in Typescript on Astar Blog</description>
+    <description>Recent content in typescript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 23 Apr 2019 14:45:19 +0800</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>TypeScript之super</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/typescript/super/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/typescript/super/</link>
       <pubDate>Tue, 23 Apr 2019 14:45:19 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/typescript/super/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/typescript/super/</guid>
       <description>前置知识 子类构造器中需要调用super; super实现继承，super.method() 这样就可以达到调用父类同名的方法.</description>
     </item>
     

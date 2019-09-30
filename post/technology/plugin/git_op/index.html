@@ -32,7 +32,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.55.6" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/technology/plugin/git_op/" />
@@ -51,7 +51,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.a8f782adb8c5e6b8b503f1231091545fed226397f7147eafc32897d9a2ceec0f.css" integrity="sha256-qPeCrbjF5ri1A/EjEJFUX&#43;0iY5f3FH6vwyiX2aLO7A8=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
 
 
 
@@ -72,7 +72,7 @@
 
 <meta itemprop="datePublished" content="2019-03-23T23:13:46&#43;08:00" />
 <meta itemprop="dateModified" content="2019-03-23T23:13:46&#43;08:00" />
-<meta itemprop="wordCount" content="1580">
+<meta itemprop="wordCount" content="1650">
 
 
 
@@ -413,7 +413,7 @@ cd ~/.ssh
 
 mkdir ~/.ssh
 
-//生成key
+//git生成密钥
 ssh-keygen -t rsa -C &#34;邮件地址&#34;
 
 //生成地址
@@ -743,6 +743,31 @@ git branch -av //红色部分代表远端分支
 git branch dev origin/dev //基于远端的dev分支本次创建dev分支</pre></td></tr></table>
 </div>
 </div>
+<h4 id="8-git-stash-暂存区">8、Git stash 暂存区</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-git" data-lang="git"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-git" data-lang="git">//执行存储区 添加备注
+
+git stash save &#34;save message&#34; 
+
+// 命令行恢复之前缓存的工作目录
+git stash pop 
+
+// 查看stash了哪些数据
+git stash list</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -762,7 +787,7 @@ git branch dev origin/dev //基于远端的dev分支本次创建dev分支</pre><
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/cours/compatible/input_type_number_%E5%85%BC%E5%AE%B9/">
+          <a class="prev" href="/post/cours/front/compatible/input_type_number_%E5%85%BC%E5%AE%B9/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -776,7 +801,7 @@ git branch dev origin/dev //基于远端的dev分支本次创建dev分支</pre><
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/cours/javascript/vue/vue3.0_installvue2.0/">
+          <a class="next" href="/post/cours/front/vue/vue3.0_installvue2.0/">
             <span class="next-text nav-default">vue3.0&amp;&amp;vue2.0项目安装以及初始化</span>
             <span class="prev-text nav-mobile">下一篇</span>
             

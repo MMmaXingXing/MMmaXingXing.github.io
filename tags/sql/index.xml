@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sql on Astar Blog</title>
+    <title>sql on Astar Blog</title>
     <link>https://mmmaxingxing.github.io/tags/sql/</link>
-    <description>Recent content in Sql on Astar Blog</description>
+    <description>Recent content in sql on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 28 Mar 2019 11:47:25 +0800</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>SQL查询不包括某条件</title>
-      <link>https://mmmaxingxing.github.io/post/cours/sql/sql_select_not_condition/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/backends/sql/sql_select_not_condition/</link>
       <pubDate>Thu, 28 Mar 2019 11:47:25 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/sql/sql_select_not_condition/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/backends/sql/sql_select_not_condition/</guid>
       <description>查询语句 1 2 3 select * from test_1 WHERE name!=&amp;#34;admin&amp;#34; 1 2 3 select * from test_1 WHERE not( name == &amp;#39;admin&amp;#39;);</description>
     </item>
     

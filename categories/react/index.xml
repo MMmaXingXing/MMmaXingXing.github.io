@@ -13,10 +13,10 @@
     
     <item>
       <title>React框架学习01</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/react/react-study-01/</link>
       <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/react/react-study-01/</guid>
       <description>创建一个react项目 1 npx create-react-app my-app 创建一个react模块 方法一：https://codepen.io/gaearon/pen/YGYmEG?ed</description>
     </item>
     

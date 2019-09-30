@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Npm on Astar Blog</title>
+    <title>npm on Astar Blog</title>
     <link>https://mmmaxingxing.github.io/tags/npm/</link>
-    <description>Recent content in Npm on Astar Blog</description>
+    <description>Recent content in npm on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 12 Apr 2019 11:03:03 +0800</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>npx</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/react/npx/</link>
       <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/react/npx/</guid>
       <description>npx 今天看react安装环境中有一句 npx create-react-app my-app,没有见过npx，查了查资料 聊以记录; npx 是 npm v5.2.0 引入的一条命令，目的是为了提升开发者使用包内</description>
     </item>
     

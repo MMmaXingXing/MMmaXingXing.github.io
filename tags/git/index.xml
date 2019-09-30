@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on Astar Blog</title>
+    <title>git on Astar Blog</title>
     <link>https://mmmaxingxing.github.io/tags/git/</link>
-    <description>Recent content in Git on Astar Blog</description>
+    <description>Recent content in git on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 23 Mar 2019 23:13:46 +0800</lastBuildDate>

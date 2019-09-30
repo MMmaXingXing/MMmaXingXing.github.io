@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shortcodes on Astar Blog</title>
+    <title>shortcodes on Astar Blog</title>
     <link>https://mmmaxingxing.github.io/categories/shortcodes/</link>
-    <description>Recent content in Shortcodes on Astar Blog</description>
+    <description>Recent content in shortcodes on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 03 Apr 2019 14:47:31 +0800</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Golang技术栈程序员技术听说</title>
-      <link>https://mmmaxingxing.github.io/post/cours/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/backends/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Wed, 03 Apr 2019 14:47:31 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/backends/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/</guid>
       <description>InfluxDB 是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这</description>
     </item>
     

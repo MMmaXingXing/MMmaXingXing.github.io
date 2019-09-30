@@ -6,17 +6,26 @@
     <description>Recent content in 工具 on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 12 Apr 2019 11:03:03 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2019 15:00:55 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>抓包工具记录</title>
+      <link>https://mmmaxingxing.github.io/post/cours/tool/capture/</link>
+      <pubDate>Mon, 30 Sep 2019 15:00:55 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/tool/capture/</guid>
+      <description>&lt;p&gt;抓包工具整理&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>npx</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/react/npx/</link>
       <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/npx/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/react/npx/</guid>
       <description>npx 今天看react安装环境中有一句 npx create-react-app my-app,没有见过npx，查了查资料 聊以记录; npx 是 npm v5.2.0 引入的一条命令，目的是为了提升开发者使用包内</description>
     </item>
     

@@ -13,19 +13,19 @@
     
     <item>
       <title>jsvascript中的宏任务和微任务</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/macro_micro_task/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/macro_micro_task/</link>
       <pubDate>Thu, 18 Apr 2019 17:58:24 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/macro_micro_task/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/macro_micro_task/</guid>
       <description>javascript运行模式 javascript是一门单线程语言,我们常见理解是从上向下一行一行运行，但是，事实上同步单线程是不能满足我们常</description>
     </item>
     
     <item>
       <title>Event Loop 机制</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/eventloop/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/eventloop/</link>
       <pubDate>Fri, 12 Apr 2019 16:52:29 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/eventloop/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/eventloop/</guid>
       <description>Event Loop 是一个很重要的概念，指的是计算机系统的一种运行机制。 JavaScript语言就采用这种机制，来解决单线程运行代表的一些问题。 要想理解Ev</description>
     </item>
     

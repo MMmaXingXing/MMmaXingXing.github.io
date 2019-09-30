@@ -13,10 +13,10 @@
     
     <item>
       <title>创建一个原生属性并且模拟触发事件</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/dom/creat_a_click/</link>
       <pubDate>Tue, 11 Jun 2019 18:02:44 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/dom/creat_a_click/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/dom/creat_a_click/</guid>
       <description>&lt;h3 id=&#34;创建一个a标签并触发其事件&#34;&gt;创建一个a标签并触发其事件&lt;/h3&gt;
 
 &lt;p&gt;有个项目需求，需要下载一个文件时名称不乱码显示，前段解决方案，使用a标签新增download 字段，由于需要模拟a标签，以下以做记录。&lt;/p&gt;</description>
@@ -24,19 +24,19 @@
     
     <item>
       <title>Golang环境配置及相关参数说明</title>
-      <link>https://mmmaxingxing.github.io/post/cours/golang/2019050601-golang-test/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/backends/golang/2019050601-golang-test/</link>
       <pubDate>Mon, 06 May 2019 10:58:02 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/golang/2019050601-golang-test/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/backends/golang/2019050601-golang-test/</guid>
       <description>&lt;p&gt;Golang环境配置&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>React框架学习01</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/react/react-study-01/</link>
       <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/react/react-study-01/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/react/react-study-01/</guid>
       <description>创建一个react项目 1 npx create-react-app my-app 创建一个react模块 方法一：https://codepen.io/gaearon/pen/YGYmEG?ed</description>
     </item>
     

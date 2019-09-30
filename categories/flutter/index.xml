@@ -6,35 +6,71 @@
     <description>Recent content in Flutter on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 14 Jun 2019 13:29:34 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2019 14:50:34 +0800</lastBuildDate>
     
 	<atom:link href="https://mmmaxingxing.github.io/categories/flutter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>操作小Tips</title>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/operate/</link>
+      <pubDate>Mon, 30 Sep 2019 14:50:34 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/operate/</guid>
+      <description>&lt;p&gt;写Flutter中遇见的一些操作记录。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Flutter-02-配置基础路由规则</title>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use02/</link>
+      <pubDate>Sun, 16 Jun 2019 20:05:06 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use02/</guid>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Flutter-01-创建一个tabbar&amp;&amp;footerbar页面</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/base_use01/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/</link>
       <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/base_use01/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/</guid>
       <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Flutter在使用或相关包整理</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/package/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</link>
       <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/package/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</guid>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>dart-01-基础dart语法整理</title>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/dart01/</link>
+      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/dart01/</guid>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>flutter-01-基础flatter语法整理</title>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/flutter01/</link>
+      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/flutter01/</guid>
       <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Flutter环境配置</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/environment/</link>
       <pubDate>Tue, 11 Jun 2019 13:15:49 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/flutter/environment/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/environment/</guid>
       <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
     </item>
     

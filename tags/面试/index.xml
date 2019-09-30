@@ -13,19 +13,19 @@
     
     <item>
       <title>js数组扁平化操作</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/array_flatten/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/array_flatten/</link>
       <pubDate>Wed, 27 Mar 2019 13:55:25 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/array_flatten/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/array_flatten/</guid>
       <description>二维数组转一维 1 2 3 4 5 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; data.forEach(item =&amp;gt; { item.forEach? item.forEach(val =&amp;gt;{res.push(val)}) :res.push(item) }) 1 2 3 4 5 6 7 8 9 10 11 12 let data = [[1,2,3],[1,2,3],[1,2,3]]; let res = []; var falt = (res) =&amp;gt; { if(res.forEach){ res.forEach(val =&amp;gt; { val.forEach ? falt(val) : res.push(val) }) }else{ res.push(res) } } 常规</description>
     </item>
     
     <item>
       <title>promise async await</title>
-      <link>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</link>
+      <link>https://mmmaxingxing.github.io/post/cours/front/async_await_promise/</link>
       <pubDate>Mon, 04 Mar 2019 17:29:17 +0800</pubDate>
       
-      <guid>https://mmmaxingxing.github.io/post/cours/javascript/async_await_promise/</guid>
+      <guid>https://mmmaxingxing.github.io/post/cours/front/async_await_promise/</guid>
       <description>Promise promise 是异步编程的一种解决方案，简单来说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个一步操作）的结果。从语法上来说，Promis</description>
     </item>
     
