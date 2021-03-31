@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -33,10 +33,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/" />
+
+
 
 
 
@@ -52,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,22 +65,15 @@
 <meta property="og:title" content="Flutter-01-创建一个tabbar&amp;&amp;footerbar页面" />
 <meta property="og:description" content="入坑进行时。。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/" />
-<meta property="article:published_time" content="2019-06-14T13:29:34&#43;08:00"/>
-<meta property="article:modified_time" content="2019-06-14T13:29:34&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-06-14T13:29:34&#43;08:00" />
+<meta property="article:modified_time" content="2019-06-14T13:29:34&#43;08:00" />
 
 <meta itemprop="name" content="Flutter-01-创建一个tabbar&amp;&amp;footerbar页面">
-<meta itemprop="description" content="入坑进行时。。">
-
-
-<meta itemprop="datePublished" content="2019-06-14T13:29:34&#43;08:00" />
+<meta itemprop="description" content="入坑进行时。。"><meta itemprop="datePublished" content="2019-06-14T13:29:34&#43;08:00" />
 <meta itemprop="dateModified" content="2019-06-14T13:29:34&#43;08:00" />
-<meta itemprop="wordCount" content="685">
-
-
-
-<meta itemprop="keywords" content="Flutter,基础配置,混合app开发," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="679">
+<meta itemprop="keywords" content="Flutter,基础配置,混合app开发," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Flutter-01-创建一个tabbar&amp;&amp;footerbar页面"/>
 <meta name="twitter:description" content="入坑进行时。。"/>
 
@@ -137,6 +132,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -204,6 +201,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -261,6 +260,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -304,11 +307,10 @@
     
     <div class="post-content">
       <p>入坑进行时。。</p>
-
 <h3 id="完整示例代码">完整示例代码</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -356,9 +358,9 @@
 </span><span class="lnt">46
 </span><span class="lnt">47
 </span><span class="lnt">48
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">import &#39;package:flutter/material.dart&#39;;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">import &#39;package:flutter/material.dart&#39;;
 
 class AppIndexPage extends StatefulWidget {
   @override //元数据注解
@@ -405,64 +407,50 @@ class _MyHomePageState extends State&lt;AppIndexPage&gt; with SingleTickerProvid
         ),
     );
   }  
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="过程分解">过程分解</h3>
-
+</div><h3 id="过程分解">过程分解</h3>
 <h4 id="1-定义一个控制器-tabcontroller-用于监听-tab菜单切换-并初始化">1. 定义一个控制器 TabController 用于监听 tab菜单切换 并初始化</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">@override
-  void initState(){
-    super.initState();
-    _tabcontroller = new TabController(vsync: this,length: tabList.length);
-  }</pre></td></tr></table>
-</div>
-</div>
-<h4 id="2-定义一个-list-数组-此数组可以为-consts">2.定义一个 List（数组） 此数组可以为 consts</h4>
-
-<p>const和final的区别 final 实例化时生成  const 运行时生成</p>
-
-<h4 id="3-创建一个tabbar-widget-用于展示-tabbar">3.创建一个TabBar widget 用于展示 tabbar</h4>
-
-<blockquote>
-<p>tabbar tabs属性可接受一个Widget数组 可直接生成，也可以使用其他组件。</p>
-</blockquote>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">Widget build(BuildContext context) {}  //生成Widget的页面样式使用此方法 Widget build   
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">@override
+  void initState(){
+    super.initState();
+    _tabcontroller = new TabController(vsync: this,length: tabList.length);
+  }
+
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="2定义一个-list数组-此数组可以为-consts">2.定义一个 List（数组） 此数组可以为 consts</h4>
+<p>const和final的区别 final 实例化时生成  const 运行时生成</p>
+<h4 id="3创建一个tabbar-widget-用于展示-tabbar">3.创建一个TabBar widget 用于展示 tabbar</h4>
+<blockquote>
+<p>tabbar tabs属性可接受一个Widget数组 可直接生成，也可以使用其他组件。</p>
+</blockquote>
+<pre><code>Widget build(BuildContext context) {}  //生成Widget的页面样式使用此方法 Widget build   
 build 中可以返回 widget ，也可以 使用 MaterialApp   
 
 &gt; Material应用程序以MaterialApp widget开始， 该widget在应用程序的根部创建了一些有用的widget，比如一个Theme，它配置了应用的主题。
 
-疑问： 如何在子元素中访问 初始化的应用和层序根部的widget，比如Theme。</pre></td></tr></table>
-</div>
-</div>
-<p>Scaffold
-   &gt;Flutter Material库提供了一个Scaffold Widget，它是一个路由页的骨架，可以非常容易的拼装出一个完整的页面。
-   &gt; TabBar和TabBarView的controller是同一个以此来实现菜单切换和滑动状态同步。</p>
-
+疑问： 如何在子元素中访问 初始化的应用和层序根部的widget，比如Theme。
+</code></pre>
+<p>Scaffold</p>
+<blockquote>
+<p>Flutter Material库提供了一个Scaffold Widget，它是一个路由页的骨架，可以非常容易的拼装出一个完整的页面。
+TabBar和TabBarView的controller是同一个以此来实现菜单切换和滑动状态同步。</p>
+</blockquote>
 <h4 id="4-使用-material-组件库提供meterial风格的-tab菜单">4. 使用 Material 组件库提供Meterial风格的 Tab菜单</h4>
-
-<h4 id="5-bottomnavigationbar-同理">5.BottomNavigationBar 同理</h4>
-
-<h4 id="参考文档-https-www-jianshu-com-p-ed28cc2df5ca"><a href="https://www.jianshu.com/p/ed28cc2df5ca">参考文档</a></h4>
+<h4 id="5bottomnavigationbar-同理">5.BottomNavigationBar 同理</h4>
+<h4 id="参考文档httpswwwjianshucomped28cc2df5ca"><a href="https://www.jianshu.com/p/ed28cc2df5ca">参考文档</a></h4>
     </div>
 
     
@@ -483,7 +471,7 @@ build 中可以返回 widget ，也可以 使用 MaterialApp
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/cours/front/flutter/base_use02/">
+          <a class="prev" href="/post/cours/front/flutter/dart01/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -493,12 +481,12 @@ build 中可以返回 widget ，也可以 使用 MaterialApp
 </svg>
 
             </i>
-            <span class="prev-text nav-default">Flutter-02-配置基础路由规则</span>
+            <span class="prev-text nav-default">dart-01-基础dart语法整理</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/cours/front/flutter/package/">
-            <span class="next-text nav-default">Flutter在使用或相关包整理</span>
+          <a class="next" href="/post/cours/front/flutter/flutter01/">
+            <span class="next-text nav-default">flutter-01-基础flatter语法整理</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
@@ -521,11 +509,14 @@ build 中可以返回 widget ，也可以 使用 MaterialApp
   
 
   
+
+  
   
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
             repo= "MMmaXingXing/comments"
             issue-term="pathname"
+            theme="github-light"
             crossorigin="anonymous"
             async>
       </script>
@@ -537,10 +528,10 @@ build 中可以返回 widget ，也可以 使用 MaterialApp
   
 
   
-  
+
     
 
-
+  
 
         </div>
       </div>
@@ -595,7 +586,9 @@ build 中可以返回 widget ，也可以 使用 MaterialApp
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -650,6 +643,12 @@ build 中可以返回 widget ，也可以 使用 MaterialApp
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -660,6 +659,8 @@ build 中可以返回 widget ，也可以 使用 MaterialApp
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -32,10 +32,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/front/vue/vuex-knowledge/" />
+
+
 
 
 
@@ -51,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -62,22 +64,15 @@
 <meta property="og:title" content="vueX的知识总结（包括在vue-cli中的使用）" />
 <meta property="og:description" content="介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/vue/vuex-knowledge/" />
-<meta property="article:published_time" content="2019-02-28T11:11:48&#43;08:00"/>
-<meta property="article:modified_time" content="2019-02-28T11:11:48&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/vue/vuex-knowledge/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-02-28T11:11:48&#43;08:00" />
+<meta property="article:modified_time" content="2019-02-28T11:11:48&#43;08:00" />
 
 <meta itemprop="name" content="vueX的知识总结（包括在vue-cli中的使用）">
-<meta itemprop="description" content="介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使">
-
-
-<meta itemprop="datePublished" content="2019-02-28T11:11:48&#43;08:00" />
+<meta itemprop="description" content="介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使"><meta itemprop="datePublished" content="2019-02-28T11:11:48&#43;08:00" />
 <meta itemprop="dateModified" content="2019-02-28T11:11:48&#43;08:00" />
 <meta itemprop="wordCount" content="500">
-
-
-
-<meta itemprop="keywords" content="javascript,Vue,前端,插件," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="javascript,Vue,前端,插件," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="vueX的知识总结（包括在vue-cli中的使用）"/>
 <meta name="twitter:description" content="介绍 Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分 （1）、state：单一状态树，每个应用仅仅包含一个sate实例，使"/>
 
@@ -136,6 +131,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -203,6 +200,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -260,6 +259,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -302,60 +305,48 @@
 
     
     <div class="post-content">
-      
-
-<h4 id="介绍">介绍</h4>
-
-<h5 id="vuex是一个专门为vue-js应用程序开发的状态管理模式-四个部分">Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分</h5>
-
+      <h4 id="介绍">介绍</h4>
+<h5 id="vuex是一个专门为vuejs应用程序开发的状态管理模式四个部分">Vuex是一个专门为vue.js应用程序开发的状态管理模式，四个部分</h5>
 <p><strong>（1）、state：单一状态树，每个应用仅仅包含一个sate实例，使用时</strong></p>
-
 <ul>
-<li>this.$store.state.状态名字 （使用）<br /></li>
-<li>&hellip;mapState([&ldquo;title&rdquo;])<br /></li>
+<li>this.$store.state.状态名字 （使用）</li>
+<li>&hellip;mapState([&ldquo;title&rdquo;])</li>
 </ul>
-
 <p><strong>（2）、getters：从store中的state中派生出一些状态，可以认为是state的计算属性</strong></p>
-
 <ul>
-<li>this.$store.getters.计算属性名字 （使用）<br /></li>
-<li>&hellip;mapGetters([&ldquo;getFilms&rdquo;])<br /></li>
+<li>this.$store.getters.计算属性名字 （使用）</li>
+<li>&hellip;mapGetters([&ldquo;getFilms&rdquo;])</li>
 </ul>
-
 <p><strong>（3）、mutations：更改Vuex的store中的状态的唯一方法</strong></p>
-
 <ul>
-<li><p>常量的设计风格</p>
+<li>常量的设计风格</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">[SOME_MUTATION](state){
-// mutate state
-}</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[SOME_MUTATION](state){
+    // mutate state
+}
+</code></pre></td></tr></table>
 </div>
-</div></li>
-
-<li><p>必须是同步函数</p></li>
-
-<li><p>this.$store.commit(&ldquo;type&rdquo;,&ldquo;payload&rdquo;)（调用）</p></li>
+</div><ul>
+<li>必须是同步函数</li>
+<li>this.$store.commit(&ldquo;type&rdquo;,&ldquo;payload&rdquo;)（调用）</li>
 </ul>
-
 <p><strong>（4）、actions：</strong></p>
-
 <ul>
-<li>Action 提交的是mulation，而不是直接变更状态。<br /></li>
-<li>Action 可以包含任意异步操作。<br /></li>
-<li>this.$store.dispatch(&ldquo;type&rdquo;,&ldquo;payload&rdquo;)<br /></li>
+<li>Action 提交的是mulation，而不是直接变更状态。</li>
+<li>Action 可以包含任意异步操作。</li>
+<li>this.$store.dispatch(&ldquo;type&rdquo;,&ldquo;payload&rdquo;)</li>
 </ul>
-
 <p><strong>(5)、基础模板</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -371,9 +362,9 @@
 </span><span class="lnt">14
 </span><span class="lnt">15
 </span><span class="lnt">16
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">// module 模板
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">// module 模板
 const store = new Vuex.Store({
     state:{
         count:0
@@ -388,19 +379,23 @@ const store = new Vuex.Store({
             context.commit(&#34;increment&#34;);
         }
     }
-})</pre></td></tr></table>
+})
+</code></pre></td></tr></table>
 </div>
-</div>
-<p><strong>（6）、注意</strong></p>
-
+</div><p><strong>（6）、注意</strong></p>
 <ul>
-<li><p>应用层级的状态应该集中到单个store对象中</p></li>
-
-<li><p>提交mulation是更改状态的唯一方法，并且这个过程是同步的</p></li>
-
-<li><p>异步逻辑都应该封装到action里面</p></li>
-
-<li><p>其他 查看vuex数据流可以使用 vue chrome devtools此工具</p></li>
+<li>
+<p>应用层级的状态应该集中到单个store对象中</p>
+</li>
+<li>
+<p>提交mulation是更改状态的唯一方法，并且这个过程是同步的</p>
+</li>
+<li>
+<p>异步逻辑都应该封装到action里面</p>
+</li>
+<li>
+<p>其他 查看vuex数据流可以使用 vue chrome devtools此工具</p>
+</li>
 </ul>
 
     </div>
@@ -479,11 +474,14 @@ const store = new Vuex.Store({
   
 
   
+
+  
   
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
             repo= "MMmaXingXing/comments"
             issue-term="pathname"
+            theme="github-light"
             crossorigin="anonymous"
             async>
       </script>
@@ -495,10 +493,10 @@ const store = new Vuex.Store({
   
 
   
-  
+
     
 
-
+  
 
         </div>
       </div>
@@ -553,7 +551,9 @@ const store = new Vuex.Store({
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -608,6 +608,12 @@ const store = new Vuex.Store({
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -618,6 +624,8 @@ const store = new Vuex.Store({
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

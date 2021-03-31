@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javascript on Astar Blog</title>
@@ -6,11 +6,7 @@
     <description>Recent content in javascript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Jun 2019 18:02:44 +0800</lastBuildDate>
-    
-	<atom:link href="https://mmmaxingxing.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 11 Jun 2019 18:02:44 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>创建一个原生属性并且模拟触发事件</title>
       <link>https://mmmaxingxing.github.io/post/cours/front/dom/creat_a_click/</link>
@@ -18,7 +14,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/dom/creat_a_click/</guid>
       <description>&lt;h3 id=&#34;创建一个a标签并触发其事件&#34;&gt;创建一个a标签并触发其事件&lt;/h3&gt;
-
 &lt;p&gt;有个项目需求，需要下载一个文件时名称不乱码显示，前段解决方案，使用a标签新增download 字段，由于需要模拟a标签，以下以做记录。&lt;/p&gt;</description>
     </item>
     
@@ -68,21 +63,21 @@
     </item>
     
     <item>
-      <title>React框架学习01</title>
-      <link>https://mmmaxingxing.github.io/post/cours/front/react/react-study-01/</link>
-      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/front/react/react-study-01/</guid>
-      <description>创建一个react项目 1 npx create-react-app my-app 创建一个react模块 方法一：https://codepen.io/gaearon/pen/YGYmEG?ed</description>
-    </item>
-    
-    <item>
       <title>npx</title>
       <link>https://mmmaxingxing.github.io/post/cours/front/react/npx/</link>
       <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/react/npx/</guid>
       <description>npx 今天看react安装环境中有一句 npx create-react-app my-app,没有见过npx，查了查资料 聊以记录; npx 是 npm v5.2.0 引入的一条命令，目的是为了提升开发者使用包内</description>
+    </item>
+    
+    <item>
+      <title>React框架学习01</title>
+      <link>https://mmmaxingxing.github.io/post/cours/front/react/react-study-01/</link>
+      <pubDate>Fri, 12 Apr 2019 11:03:03 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/front/react/react-study-01/</guid>
+      <description>创建一个react项目 1 2 npx create-react-app my-app 创建一个react模块 方法一：https://codepen.io/gaearon/pen/YGYmEG?e</description>
     </item>
     
     <item>
@@ -100,7 +95,7 @@
       <pubDate>Wed, 03 Apr 2019 16:47:31 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/technology/resource/frontal_resource/</guid>
-      <description>前端必备 正常技术栈 ES6 [ES7] TypeScript [Vue]() [React]() [Angular]() [小程序]() 混合app开发 [Ionic]() [ReactNative]() [Crodova+vue]() [Crodova+react]() [weex]() [Flutter]() 后台全栈 [nodejs]() [Express/Koa]() [tgg.js]() [Mongodb]() [MySql]() [Redis]() 电脑软件 [Electron]() 跨平台混合软件开发 其他 [Google插件</description>
+      <description>前端必备 正常技术栈 ES6 [ES7] TypeScript Vue React Angular 小程序 混合app开发 Ionic ReactNative Crodova+vue Crodova+react weex Flutter 后台全栈 nodejs Express/Koa tgg.js Mongodb MySql Redis 电脑软件 Electron 跨平台混合软件开发 其他 Google插件 Vscod</description>
     </item>
     
     <item>
@@ -136,7 +131,7 @@
       <pubDate>Fri, 22 Mar 2019 23:13:46 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/vue/vue3.0_installvue2.0/</guid>
-      <description>Vue3.0项目安装以及介绍 1 2 3 4 5 //安装 npm install -g @vue/cli //安装vue2.0(兼容) npm install -g @vue/cli-init 变化更新 部分命令发生了变化 删除了vue list 创建项目 vue</description>
+      <description>Vue3.0项目安装以及介绍 1 2 3 4 5 6 //安装 npm install -g @vue/cli //安装vue2.0(兼容) npm install -g @vue/cli-init 变化更新 部分命令发生了变化 删除了vue list 创建项目</description>
     </item>
     
     <item>
@@ -145,7 +140,7 @@
       <pubDate>Wed, 20 Mar 2019 23:13:46 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/vue/vue_useful_expressions/</guid>
-      <description>1、创建全局过滤器 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 //main.js 中 Object.keys(allFilter).forEach(key =&amp;gt; { Vue.filter(key,allFilter[key]) }) //base_filter中 //获取yyyy-mm-dd类型时间 let getDate = value =&amp;gt; {</description>
+      <description>1、创建全局过滤器 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 //main.js 中 Object.keys(allFilter).forEach(key =&amp;gt; { Vue.filter(key,allFilter[key]) }) //base_filter中 //获取yyyy-mm-dd类型时间 let getDate = value =&amp;gt;</description>
     </item>
     
     <item>
@@ -163,7 +158,7 @@
       <pubDate>Mon, 18 Mar 2019 22:22:27 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
-      <description>webpack 之 dev.env.js &amp;amp;&amp;amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 //dev.env.js //开发版本 &amp;#39;use strict&amp;#39; const merge = require(&amp;#39;webpack-merge&amp;#39;) const prodEnv = require(&amp;#39;./prod.env&amp;#39;) module.exports = merge(prodEnv, { NODE_ENV: &amp;#39;&amp;#34;development&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, }) 1 2 3 4 5 6 7 //prod.env.js //线上 &amp;#39;use strict&amp;#39; module.exports = { NODE_ENV: &amp;#39;&amp;#34;production&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, } 1 2 3 4 5 6 7</description>
+      <description>webpack 之 dev.env.js &amp;amp;&amp;amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 11 12 //dev.env.js //开发版本 &amp;#39;use strict&amp;#39; const merge = require(&amp;#39;webpack-merge&amp;#39;) const prodEnv = require(&amp;#39;./prod.env&amp;#39;) module.exports = merge(prodEnv, { NODE_ENV: &amp;#39;&amp;#34;development&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, }) 1 2 3 4 5 6 7 8 //prod.env.js //线上 &amp;#39;use strict&amp;#39; module.exports = { NODE_ENV: &amp;#39;&amp;#34;production&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, } 1 2 3 4</description>
     </item>
     
     <item>
@@ -181,7 +176,7 @@
       <pubDate>Fri, 15 Mar 2019 23:33:08 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/vue/elementuiupload/</guid>
-      <description>一、前端做图片上传展示 1 2 let _URL = window.URL || window.webkitURL; self.form.imageLogo = _URL.createObjectURL(file); 二、elementui 判断图片大小 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 const isSize = new Promise(function(resolve, reject) { let width =</description>
+      <description>一、前端做图片上传展示 1 2 3 4 let _URL = window.URL || window.webkitURL; self.form.imageLogo = _URL.createObjectURL(file); 二、elementui 判断图片大小 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 const isSize = new Promise(function(resolve, reject)</description>
     </item>
     
     <item>

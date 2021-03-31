@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>环境配置 on Astar Blog</title>
@@ -6,11 +6,7 @@
     <description>Recent content in 环境配置 on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Jun 2019 13:15:49 +0800</lastBuildDate>
-    
-	<atom:link href="https://mmmaxingxing.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 11 Jun 2019 13:15:49 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flutter环境配置</title>
       <link>https://mmmaxingxing.github.io/post/cours/front/flutter/environment/</link>
@@ -26,7 +22,7 @@
       <pubDate>Wed, 24 Apr 2019 13:47:35 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/technology/plugin/bt/</guid>
-      <description>宝塔面板安装记录 Centos安装命令： 1 yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;amp;&amp;amp; sh install.sh Ubuntu/Deepin安装命令： 1 wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;amp;&amp;amp; sudo bash install.sh Debian安装命令：</description>
+      <description>宝塔面板安装记录 Centos安装命令： 1 2 yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;amp;&amp;amp; sh install.sh Ubuntu/Deepin安装命令： 1 2 wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;amp;&amp;amp; sudo bash install.sh Debian安装命</description>
     </item>
     
     <item>

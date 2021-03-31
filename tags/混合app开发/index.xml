@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>混合app开发 on Astar Blog</title>
@@ -6,11 +6,7 @@
     <description>Recent content in 混合app开发 on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 30 Sep 2019 14:50:34 +0800</lastBuildDate>
-    
-	<atom:link href="https://mmmaxingxing.github.io/tags/%E6%B7%B7%E5%90%88app%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 30 Sep 2019 14:50:34 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/tags/%E6%B7%B7%E5%90%88app%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>操作小Tips</title>
       <link>https://mmmaxingxing.github.io/post/cours/front/flutter/operate/</link>
@@ -30,24 +26,6 @@
     </item>
     
     <item>
-      <title>Flutter-01-创建一个tabbar&amp;&amp;footerbar页面</title>
-      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/</link>
-      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/</guid>
-      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Flutter在使用或相关包整理</title>
-      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</link>
-      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</guid>
-      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>dart-01-基础dart语法整理</title>
       <link>https://mmmaxingxing.github.io/post/cours/front/flutter/dart01/</link>
       <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
@@ -57,11 +35,29 @@
     </item>
     
     <item>
+      <title>Flutter-01-创建一个tabbar&amp;&amp;footerbar页面</title>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/</link>
+      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/</guid>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>flutter-01-基础flatter语法整理</title>
       <link>https://mmmaxingxing.github.io/post/cours/front/flutter/flutter01/</link>
       <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/flutter01/</guid>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Flutter在使用或相关包整理</title>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</link>
+      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</guid>
       <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
     </item>
     

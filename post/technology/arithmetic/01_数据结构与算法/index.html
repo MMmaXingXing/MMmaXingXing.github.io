@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -32,10 +32,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" />
+
+
 
 
 
@@ -51,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -62,22 +64,15 @@
 <meta property="og:title" content="数据结构与算法" />
 <meta property="og:description" content="数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 &#43; 算法 数据结构，就是数据关系，" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" />
-<meta property="article:published_time" content="2019-03-16T23:05:51&#43;08:00"/>
-<meta property="article:modified_time" content="2019-03-16T23:05:51&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/arithmetic/01_%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-03-16T23:05:51&#43;08:00" />
+<meta property="article:modified_time" content="2019-03-16T23:05:51&#43;08:00" />
 
 <meta itemprop="name" content="数据结构与算法">
-<meta itemprop="description" content="数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 &#43; 算法 数据结构，就是数据关系，">
-
-
-<meta itemprop="datePublished" content="2019-03-16T23:05:51&#43;08:00" />
+<meta itemprop="description" content="数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 &#43; 算法 数据结构，就是数据关系，"><meta itemprop="datePublished" content="2019-03-16T23:05:51&#43;08:00" />
 <meta itemprop="dateModified" content="2019-03-16T23:05:51&#43;08:00" />
-<meta itemprop="wordCount" content="1024">
-
-
-
-<meta itemprop="keywords" content="数学,算法," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="1027">
+<meta itemprop="keywords" content="数学,算法," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="数据结构与算法"/>
 <meta name="twitter:description" content="数据结构 一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题 程序设计 = 数据结构 &#43; 算法 数据结构，就是数据关系，"/>
 
@@ -136,6 +131,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -203,6 +200,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -260,6 +259,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -302,85 +305,71 @@
 
     
     <div class="post-content">
-      
-
-<h4 id="数据结构">数据结构</h4>
-
+      <h4 id="数据结构">数据结构</h4>
 <p>一种研究非数值计算的程序设计问题中的操作对象，以及他们之间的关系和操作之间的相关问题</p>
-
 <p>程序设计 = 数据结构 + 算法</p>
-
 <p>数据结构，就是数据关系，就是数据元素之间存在的一种或多种特定关系的集合。</p>
-
 <h4 id="逻辑结构和物理结构">逻辑结构和物理结构</h4>
-
 <h5 id="逻辑结构">逻辑结构</h5>
-
 <p>数据对象中数据元素之间的相互关系，也是我们之后需要关注和谈论的问题。</p>
-
 <p><strong>常见逻辑结构</strong></p>
-
 <ul>
-<li><p>集合结构：集合结构中数据同属于一个集合，它们之间没有其他不三不四的关系。</p></li>
-
-<li><p>线性结构：线性结构中数据是一对一的逻辑关系。</p></li>
-
-<li><p>树形结构：元素之间存在一对多的层次关系。像WBS, dom树一样的类型结构。</p></li>
-
-<li><p>图形结构：（最复杂），图形结构数据元素是多对多的关系。</p></li>
+<li>
+<p>集合结构：集合结构中数据同属于一个集合，它们之间没有其他不三不四的关系。</p>
+</li>
+<li>
+<p>线性结构：线性结构中数据是一对一的逻辑关系。</p>
+</li>
+<li>
+<p>树形结构：元素之间存在一对多的层次关系。像WBS, dom树一样的类型结构。</p>
+</li>
+<li>
+<p>图形结构：（最复杂），图形结构数据元素是多对多的关系。</p>
+</li>
 </ul>
-
 <h5 id="物理结构">物理结构</h5>
-
 <p>数据逻辑结构在计算机中存储的方式。研究的就是把数据元素存储到计算机的存储器中。</p>
-
 <p>数据元素的存储结构形式主要有两种</p>
-
 <ul>
-<li><p>顺序存储：把数据元素放在地址连续的存储单元中，其数据间的逻辑关系和物理关系是一致的。例如，编程语言的数组结构。</p></li>
-
-<li><p>链式存储： 将数据元素放在任意的存储单元里，这组存储单元可以是连续的，也可以是不连续的。需要用指针存放数据元素的地址。例如：医院排队，你只需要注意前一个数据的情况。</p></li>
+<li>
+<p>顺序存储：把数据元素放在地址连续的存储单元中，其数据间的逻辑关系和物理关系是一致的。例如，编程语言的数组结构。</p>
+</li>
+<li>
+<p>链式存储： 将数据元素放在任意的存储单元里，这组存储单元可以是连续的，也可以是不连续的。需要用指针存放数据元素的地址。例如：医院排队，你只需要注意前一个数据的情况。</p>
+</li>
 </ul>
-
 <h4 id="算法">算法</h4>
-
 <p>数据结构与算法是紧密相关的一组概念。</p>
-
 <p>算法是解决特定问题求解步骤的描述，在计算机中表现为指令的有限序列，并且每条指令表示一个或多个操作。</p>
-
 <p>类似于：技巧和方式。对于给定的问题，是可以用多种算法来解决的。</p>
-
 <p>算法的五个特性：输入、输出、有穷性、确定性和可行性。</p>
-
 <ul>
 <li>输入、输出：0个或多个</li>
 <li>有穷性：不可以死循环</li>
 <li>确定性： 每一个步骤都有确定的含义，不会出现二义性。</li>
-<li>正确性
-1、无语法错误
+<li>正确性 
+1、无语法错误 
 2、合法输入产出满足要求输出。
 3、非法输入能够产生满足规格的说明
 4、对于故意刁难的测试输入都有满足要求的输出结果。</li>
 <li>可读性 便于阅读、理解和交流</li>
 <li>健壮性</li>
-
-<li><p>时间效率高和存储量低</p>
-
-<h5 id="示例引入">示例引入</h5></li>
+<li>时间效率高和存储量低</li>
 </ul>
-
+<h5 id="示例引入">示例引入</h5>
 <p>从1累加到100，用计算机算出来</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-C" data-lang="C"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-C" data-lang="C"><span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="n">sun</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">100</span><span class="p">;</span>
@@ -391,36 +380,38 @@
     <span class="n">sum</span> <span class="o">=</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">i</span>
 <span class="p">}</span>
 
-<span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span></code></pre></td></tr></table>
+<span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span>
+
+</code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-C" data-lang="C"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-C" data-lang="C"><span class="c1">// 高斯算法
+<pre class="chroma"><code class="language-C" data-lang="C">
+<span class="c1">// 高斯算法
 </span><span class="c1">// 算法速率增大
 </span><span class="c1"></span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="n">sun</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">100</span><span class="p">;</span>
 
 <span class="n">sum</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="n">n</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
 
-<span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span></code></pre></td></tr></table>
-</div>
-</div>
-<p><strong>学习掌握一些好的算法，对我们解决问题很有帮助。</strong></p>
+<span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="n">sum</span><span class="p">);</span>
 
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>学习掌握一些好的算法，对我们解决问题很有帮助。</strong></p>
 <h4 id="其他">其他</h4>
-
 <p>我们不说怎么能够成为XXX，我们先来看看成为XXX之后要做什么事情，而做这些事情，需要什么样的能力，在拥有了这些能力、做上了这件事情之后，又能向什么方向发展。</p>
-
 <p>把算法当黑盒用的问题在于：黑盒能够解决问题的时候，使用方便，而一旦不能解决问题，或者对质量有所要求，就会感觉无所适从。</p>
-
 <p>作为程序员、工程人员，想用机器学习算法解决实际问题，就得对算法有一定程度的掌握，此外对于数据处理和模型验证，也需具备相应知识。</p>
 
     </div>
@@ -497,11 +488,14 @@
   
 
   
+
+  
   
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
             repo= "MMmaXingXing/comments"
             issue-term="pathname"
+            theme="github-light"
             crossorigin="anonymous"
             async>
       </script>
@@ -513,10 +507,10 @@
   
 
   
-  
+
     
 
-
+  
 
         </div>
       </div>
@@ -571,7 +565,9 @@
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -626,6 +622,12 @@
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -636,6 +638,8 @@
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

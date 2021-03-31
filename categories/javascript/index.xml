@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javascript on Astar Blog</title>
@@ -6,11 +6,7 @@
     <description>Recent content in javascript on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Jun 2019 18:02:44 +0800</lastBuildDate>
-    
-	<atom:link href="https://mmmaxingxing.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 11 Jun 2019 18:02:44 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>创建一个原生属性并且模拟触发事件</title>
       <link>https://mmmaxingxing.github.io/post/cours/front/dom/creat_a_click/</link>
@@ -18,7 +14,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/dom/creat_a_click/</guid>
       <description>&lt;h3 id=&#34;创建一个a标签并触发其事件&#34;&gt;创建一个a标签并触发其事件&lt;/h3&gt;
-
 &lt;p&gt;有个项目需求，需要下载一个文件时名称不乱码显示，前段解决方案，使用a标签新增download 字段，由于需要模拟a标签，以下以做记录。&lt;/p&gt;</description>
     </item>
     
@@ -64,7 +59,7 @@
       <pubDate>Wed, 03 Apr 2019 16:47:31 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/technology/resource/frontal_resource/</guid>
-      <description>前端必备 正常技术栈 ES6 [ES7] TypeScript [Vue]() [React]() [Angular]() [小程序]() 混合app开发 [Ionic]() [ReactNative]() [Crodova+vue]() [Crodova+react]() [weex]() [Flutter]() 后台全栈 [nodejs]() [Express/Koa]() [tgg.js]() [Mongodb]() [MySql]() [Redis]() 电脑软件 [Electron]() 跨平台混合软件开发 其他 [Google插件</description>
+      <description>前端必备 正常技术栈 ES6 [ES7] TypeScript Vue React Angular 小程序 混合app开发 Ionic ReactNative Crodova+vue Crodova+react weex Flutter 后台全栈 nodejs Express/Koa tgg.js Mongodb MySql Redis 电脑软件 Electron 跨平台混合软件开发 其他 Google插件 Vscod</description>
     </item>
     
     <item>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GoLang on Astar Blog</title>
@@ -6,11 +6,7 @@
     <description>Recent content in GoLang on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 06 May 2019 10:58:02 +0800</lastBuildDate>
-    
-	<atom:link href="https://mmmaxingxing.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 06 May 2019 10:58:02 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang环境配置及相关参数说明</title>
       <link>https://mmmaxingxing.github.io/post/cours/backends/golang/2019050601-golang-test/</link>

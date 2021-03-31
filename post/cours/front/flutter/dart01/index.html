@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -33,10 +33,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/front/flutter/dart01/" />
+
+
 
 
 
@@ -52,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,22 +65,15 @@
 <meta property="og:title" content="dart-01-基础dart语法整理" />
 <meta property="og:description" content="入坑进行时。。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/flutter/dart01/" />
-<meta property="article:published_time" content="2019-06-14T13:29:34&#43;08:00"/>
-<meta property="article:modified_time" content="2019-06-14T13:29:34&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/flutter/dart01/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-06-14T13:29:34&#43;08:00" />
+<meta property="article:modified_time" content="2019-06-14T13:29:34&#43;08:00" />
 
 <meta itemprop="name" content="dart-01-基础dart语法整理">
-<meta itemprop="description" content="入坑进行时。。">
-
-
-<meta itemprop="datePublished" content="2019-06-14T13:29:34&#43;08:00" />
+<meta itemprop="description" content="入坑进行时。。"><meta itemprop="datePublished" content="2019-06-14T13:29:34&#43;08:00" />
 <meta itemprop="dateModified" content="2019-06-14T13:29:34&#43;08:00" />
-<meta itemprop="wordCount" content="253">
-
-
-
-<meta itemprop="keywords" content="Flutter,Dart,混合app开发," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="255">
+<meta itemprop="keywords" content="Flutter,Dart,混合app开发," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="dart-01-基础dart语法整理"/>
 <meta name="twitter:description" content="入坑进行时。。"/>
 
@@ -137,6 +132,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -204,6 +201,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -261,6 +260,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -304,73 +307,75 @@
     
     <div class="post-content">
       <p>入坑进行时。。</p>
-
 <h3 id="基础语法">基础语法</h3>
-
 <h4 id="class规则">Class规则</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">class [ class name ] extends [ State&lt;XXXPage&gt; ] width [ SingleTickerProviderStateMinin ] {}</pre></td></tr></table>
-</div>
-</div>
-<h4 id="函数">函数</h4>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">class [ class name ] extends [ State&lt;XXXPage&gt; ] width [ SingleTickerProviderStateMinin ] {}
 
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="函数">函数</h4>
 <p>1、函数参数分为固定函数,可选参数对象函数,可选位置参数;其中可选参数可以制定默认值,可选对象参数在flutter类中非常常见.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span></pre></td>
+</span><span class="lnt">6
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">String test(String a, {String b = &#39;b&#39;}, {String c = &#39;c&#39;}){
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">String test(String a, {String b = &#39;b&#39;}, {String c = &#39;c&#39;}){
   print(&#39;$a $b $c&#39;);
 }
 // 调用
-test(&#39;a&#39;, b:&#39;b&#39;, c) // a b c</pre></td></tr></table>
-</div>
-</div>
-<h4 id="构造函数">构造函数</h4>
+test(&#39;a&#39;, b:&#39;b&#39;, c) // a b c
 
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="构造函数">构造函数</h4>
 <p>Dart中构造函数不是用constructor 关键字,而是跟类同名的函数,且函数体一般为空,用;表示</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">class A {
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">class A {
   String a;
   A(this.a); // 空构造体的构造函数
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="变量定义">变量定义</h4>
+</div><h4 id="变量定义">变量定义</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">Map&lt;String,Handler&gt; handlers 
-类型&lt;取值范围(范型)&gt; 变量名</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">Map&lt;String,Handler&gt; handlers 
+类型&lt;取值范围(范型)&gt; 变量名
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="常量">常量</h4>
-
+</div><h4 id="常量">常量</h4>
 <ul>
-<li><p>const *
-运行时定义</p></li>
-
-<li><p>final
-可以在实例化时初始化</p></li>
+<li>
+<p>const *
+运行时定义</p>
+</li>
+<li>
+<p>final
+可以在实例化时初始化</p>
+</li>
 </ul>
     </div>
 
@@ -392,7 +397,7 @@ test(&#39;a&#39;, b:&#39;b&#39;, c) // a b c</pre></td></tr></table>
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/cours/front/flutter/package/">
+          <a class="prev" href="/post/cours/front/flutter/base_use02/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -402,12 +407,12 @@ test(&#39;a&#39;, b:&#39;b&#39;, c) // a b c</pre></td></tr></table>
 </svg>
 
             </i>
-            <span class="prev-text nav-default">Flutter在使用或相关包整理</span>
+            <span class="prev-text nav-default">Flutter-02-配置基础路由规则</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/cours/front/flutter/flutter01/">
-            <span class="next-text nav-default">flutter-01-基础flatter语法整理</span>
+          <a class="next" href="/post/cours/front/flutter/base_use01/">
+            <span class="next-text nav-default">Flutter-01-创建一个tabbar&amp;&amp;footerbar页面</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
@@ -430,11 +435,14 @@ test(&#39;a&#39;, b:&#39;b&#39;, c) // a b c</pre></td></tr></table>
   
 
   
+
+  
   
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
             repo= "MMmaXingXing/comments"
             issue-term="pathname"
+            theme="github-light"
             crossorigin="anonymous"
             async>
       </script>
@@ -446,10 +454,10 @@ test(&#39;a&#39;, b:&#39;b&#39;, c) // a b c</pre></td></tr></table>
   
 
   
-  
+
     
 
-
+  
 
         </div>
       </div>
@@ -504,7 +512,9 @@ test(&#39;a&#39;, b:&#39;b&#39;, c) // a b c</pre></td></tr></table>
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -559,6 +569,12 @@ test(&#39;a&#39;, b:&#39;b&#39;, c) // a b c</pre></td></tr></table>
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -569,6 +585,8 @@ test(&#39;a&#39;, b:&#39;b&#39;, c) // a b c</pre></td></tr></table>
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

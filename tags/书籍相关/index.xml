@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>书籍相关 on Astar Blog</title>
@@ -6,11 +6,7 @@
     <description>Recent content in 书籍相关 on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 24 Apr 2019 10:18:49 +0800</lastBuildDate>
-    
-	<atom:link href="https://mmmaxingxing.github.io/tags/%E4%B9%A6%E7%B1%8D%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 24 Apr 2019 10:18:49 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/tags/%E4%B9%A6%E7%B1%8D%E7%9B%B8%E5%85%B3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>选择古籍小tips</title>
       <link>https://mmmaxingxing.github.io/post/cours/book/tips/checkpress/</link>

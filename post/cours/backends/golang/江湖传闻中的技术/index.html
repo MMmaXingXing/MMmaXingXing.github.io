@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -32,10 +32,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/backends/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/" />
+
+
 
 
 
@@ -51,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -62,22 +64,15 @@
 <meta property="og:title" content="Golang技术栈程序员技术听说" />
 <meta property="og:description" content="InfluxDB 是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/backends/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/" />
-<meta property="article:published_time" content="2019-04-03T14:47:31&#43;08:00"/>
-<meta property="article:modified_time" content="2019-04-03T14:47:31&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/backends/golang/%E6%B1%9F%E6%B9%96%E4%BC%A0%E9%97%BB%E4%B8%AD%E7%9A%84%E6%8A%80%E6%9C%AF/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-04-03T14:47:31&#43;08:00" />
+<meta property="article:modified_time" content="2019-04-03T14:47:31&#43;08:00" />
 
 <meta itemprop="name" content="Golang技术栈程序员技术听说">
-<meta itemprop="description" content="InfluxDB 是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这">
-
-
-<meta itemprop="datePublished" content="2019-04-03T14:47:31&#43;08:00" />
+<meta itemprop="description" content="InfluxDB 是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这"><meta itemprop="datePublished" content="2019-04-03T14:47:31&#43;08:00" />
 <meta itemprop="dateModified" content="2019-04-03T14:47:31&#43;08:00" />
 <meta itemprop="wordCount" content="210">
-
-
-
-<meta itemprop="keywords" content="home,shortcodes,tag-6," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="home,shortcodes,tag-6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Golang技术栈程序员技术听说"/>
 <meta name="twitter:description" content="InfluxDB 是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这"/>
 
@@ -136,6 +131,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -203,6 +200,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -260,6 +259,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -302,34 +305,19 @@
 
     
     <div class="post-content">
-      
-
-<h4 id="influxdb">InfluxDB</h4>
-
+      <h4 id="influxdb">InfluxDB</h4>
 <p>是一个时间序列数据库，SQL数据库可以提供时序的功能，但严格说时序不是其目的。简而言之，InfluxDB用于存储大量的时间序列数据，并对这些数据进行快速的实时分析。</p>
-
 <p><strong><a href="https://jasper-zhang1.gitbooks.io/influxdb/content/">中文文档</a></strong></p>
-
 <p><strong><a href="https://github.com/influxdata/influxdb">社区</a></strong></p>
-
 <p>其他说明：他们的数据采集分析 ,存到了influxdb</p>
-
 <h4 id="beego">Beego</h4>
-
 <p>goweb框架</p>
-
 <p><strong><a href="https://beego.me/">中文文档</a></strong></p>
-
 <p>其他说明：江湖传闻有些臃肿，某些公司选此为技术栈之后进行了改造</p>
-
 <h4 id="goorm">goOrm</h4>
-
 <p>Golang写的，开发人员友好的ORM库。做数据库接入的。</p>
-
 <p><strong><a href="http://gorm.book.jasperxu.com/">中文文档</a></strong></p>
-
 <h4 id="micro-editor">micro-editor</h4>
-
 <p><a href="https://github.com/zyedidia/micro">一个现代直观的基于终端的文本编辑器</a></p>
 
     </div>
@@ -389,8 +377,6 @@
   
   
 
-
-
         </div>
       </div>
     </main>
@@ -444,7 +430,9 @@
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -499,6 +487,12 @@
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -509,6 +503,8 @@
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -32,10 +32,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/" />
+
+
 
 
 
@@ -51,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -62,22 +64,15 @@
 <meta property="og:title" content="Array_从排序数组中删除重复项" />
 <meta property="og:description" content="题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/" />
-<meta property="article:published_time" content="2019-02-22T10:54:40&#43;08:00"/>
-<meta property="article:modified_time" content="2019-02-22T15:13:40&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/arithmetic/01_array_%E4%BB%8E%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E9%87%8D%E5%A4%8D%E9%A1%B9/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-02-22T10:54:40&#43;08:00" />
+<meta property="article:modified_time" content="2019-02-22T15:13:40&#43;08:00" />
 
 <meta itemprop="name" content="Array_从排序数组中删除重复项">
-<meta itemprop="description" content="题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原">
-
-
-<meta itemprop="datePublished" content="2019-02-22T10:54:40&#43;08:00" />
+<meta itemprop="description" content="题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原"><meta itemprop="datePublished" content="2019-02-22T10:54:40&#43;08:00" />
 <meta itemprop="dateModified" content="2019-02-22T15:13:40&#43;08:00" />
-<meta itemprop="wordCount" content="859">
-
-
-
-<meta itemprop="keywords" content="算法,Array," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="862">
+<meta itemprop="keywords" content="算法,Array," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Array_从排序数组中删除重复项"/>
 <meta name="twitter:description" content="题目描述 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。 不要使用额外的数组空间，你必须在原"/>
 
@@ -136,6 +131,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -203,6 +200,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -260,6 +259,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -302,33 +305,33 @@
 
     
     <div class="post-content">
-      
-
-<h4 id="题目描述">题目描述</h4>
-
+      <h4 id="题目描述">题目描述</h4>
 <p>给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。</p>
-
 <p>不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-示例1" data-lang="示例1"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-示例1" data-lang="示例1">给定数组 nums = [1,1,2], 
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+给定数组 nums = [1,1,2], 
 
 函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 
 
-你不需要考虑数组中超出新长度后面的元素。</code></pre></td></tr></table>
+你不需要考虑数组中超出新长度后面的元素。
+
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="解题思路">解题思路</h4>
+</div><h4 id="解题思路">解题思路</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -339,9 +342,10 @@
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
-</span></pre></td>
+</span><span class="lnt">12
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">一、审题 提取关键信息
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">一、审题 提取关键信息
 
 1、输入 处理 输出  
 
@@ -351,21 +355,18 @@
 
 输出：处理过的数组长度
 
-2、特殊条件 不使用额外的数组空间</pre></td></tr></table>
-</div>
-</div>
-<p>考点可以为数组函数的使用</p>
+2、特殊条件 不使用额外的数组空间
 
+</code></pre></td></tr></table>
+</div>
+</div><p>考点可以为数组函数的使用</p>
 <p>js中对数组本身进行操作的函数为split</p>
-
 <p>java中为remove 等</p>
-
 <h5 id="官方处理-双指针法">官方处理 （双指针法）</h5>
-
 <p>数组不变 有序时每 后一个和前一个不等则 ++ return</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-官方示例java" data-lang="官方示例java"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -378,7 +379,7 @@
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-官方示例java" data-lang="官方示例java">public int removeDuplicates(int[] nums) {
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">public int removeDuplicates(int[] nums) {
     if (nums.length == 0) return 0;
     int i = 0;
     for (int j = 1; j &lt; nums.length; j++) {
@@ -388,19 +389,16 @@
         }
     }
     return i + 1;
-}</code></pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>复杂度分析</p>
-
+</div><p>复杂度分析</p>
 <p>时间复杂度：O(n)O(n)， 假设数组的长度是 nn，那么 ii 和 jj 分别最多遍历 nn 步。</p>
-
 <p>空间复杂度：O(1)O(1)。</p>
-
 <h4 id="实际实现">实际实现</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-javascript 236m（自己）" data-lang="javascript 236m（自己）"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -418,43 +416,43 @@
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript 236m（自己）" data-lang="javascript 236m（自己）">var removeDuplicates = function(nums) {
-    if(nums instanceof Array){
-        if (nums.length == 0){
-            return nums.length
-        } 
-        let idx = 0;
-        while (idx &lt; nums.length){
-            if(nums[idx]==nums[idx+1]){
-                nums.splice(idx,1);
-            }else{
-                idx++;
-            }
-        }
-        return nums.length;
-    }
-};</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">removeDuplicates</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">nums</span> <span class="k">instanceof</span> <span class="nb">Array</span><span class="p">){</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">nums</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+            <span class="k">return</span> <span class="nx">nums</span><span class="p">.</span><span class="nx">length</span>
+        <span class="p">}</span> 
+        <span class="kd">let</span> <span class="nx">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">while</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">&lt;</span> <span class="nx">nums</span><span class="p">.</span><span class="nx">length</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="nx">nums</span><span class="p">[</span><span class="nx">idx</span><span class="p">]</span><span class="o">==</span><span class="nx">nums</span><span class="p">[</span><span class="nx">idx</span><span class="o">+</span><span class="mi">1</span><span class="p">]){</span>
+                <span class="nx">nums</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">idx</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+            <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+                <span class="nx">idx</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nx">nums</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+</code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-jivascript 120ms (Catouse)" data-lang="jivascript 120ms (Catouse)"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-jivascript 120ms (Catouse)" data-lang="jivascript 120ms (Catouse)">var removeDuplicates = function(nums) {
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">var removeDuplicates = function(nums) {
     return nums.splice(0, nums.length, ...Array.from(new Set(nums))).length;
-};</code></pre></td></tr></table>
+};
+</code></pre></td></tr></table>
 </div>
-</div>
-<h5 id="知识点">知识点</h5>
-
+</div><h5 id="知识点">知识点</h5>
 <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">解构赋值</a>
 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from">Array.from()</a>
 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set">new Set()</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -466,9 +464,9 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">解构赋值：语法是一个 Javascript 表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">解构赋值：语法是一个 Javascript 表达式，这使得可以将值从数组或属性从对象提取到不同的变量中。
 
 Array.from(参数1,参数2，参数3)
 1.想要转换成数组的伪数组对象或可迭代对象
@@ -479,15 +477,14 @@ Array.from(参数1,参数2，参数3)
 
 new Set([iterable]);
 iterable：可迭代对象
-返回：新的set对象</pre></td></tr></table>
+返回：新的set对象
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="go语言实现">Go语言实现</h4>
-
+</div><h4 id="go语言实现">Go语言实现</h4>
 <p>在强制类型里面的构造和弱类型语言中不同，强制类型中的arr是不可以动态改变的，由此此题解法需要采用官方双指针法求解</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-GO 116ms" data-lang="GO 116ms"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -506,27 +503,28 @@ iterable：可迭代对象
 </span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-GO 116ms" data-lang="GO 116ms">func removeDuplicates(nums []int) int {
-    if len(nums)==0 {
-        return 0;
-    }else{
-        i := 0;
-        j := 1;
-        for i+j&lt;len(nums) {
-            if nums[i]==nums[j+i]{
-                j++;
-            }else{
-                i++;
-                nums[i] = nums[j+i-1];
-            }
-        }
-        return len(nums)-j+1;
-    }
-}</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-GO" data-lang="GO"><span class="kd">func</span> <span class="nf">removeDuplicates</span><span class="p">(</span><span class="nx">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="nx">j</span> <span class="o">:=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">for</span> <span class="nx">i</span><span class="o">+</span><span class="nx">j</span><span class="p">&lt;</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">==</span><span class="nx">nums</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="nx">i</span><span class="p">]{</span>
+                <span class="nx">j</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+                <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
+                <span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">=</span> <span class="nx">nums</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="nx">i</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span><span class="o">-</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-Go 0s 非排序可执行 15123850133" data-lang="Go 0s 非排序可执行 15123850133"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -548,26 +546,27 @@ iterable：可迭代对象
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Go 0s 非排序可执行 15123850133" data-lang="Go 0s 非排序可执行 15123850133">func removeDuplicates(nums []int) int {
-    length:=len(nums)
-    var count int
-    if length&gt;0{
-        count=1
-    }
-    maps:= map[int]int{}
-    for i,v :=range nums{
-        maps[v]=v
-        for j:=i+1;j&lt;length;j++{
-            if _,ok:= maps[nums[j]];!ok{
-                nums[i+1]=nums[j]
-                maps[nums[j]]=nums[j]
-                count++
-                break
-            }
-        }
-    }
-    return count
-}</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-Go" data-lang="Go"><span class="kd">func</span> <span class="nf">removeDuplicates</span><span class="p">(</span><span class="nx">nums</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+    <span class="nx">length</span><span class="o">:=</span><span class="nb">len</span><span class="p">(</span><span class="nx">nums</span><span class="p">)</span>
+    <span class="kd">var</span> <span class="nx">count</span> <span class="kt">int</span>
+    <span class="k">if</span> <span class="nx">length</span><span class="p">&gt;</span><span class="mi">0</span><span class="p">{</span>
+        <span class="nx">count</span><span class="p">=</span><span class="mi">1</span>
+    <span class="p">}</span>
+    <span class="nx">maps</span><span class="o">:=</span> <span class="kd">map</span><span class="p">[</span><span class="kt">int</span><span class="p">]</span><span class="kt">int</span><span class="p">{}</span>
+    <span class="k">for</span> <span class="nx">i</span><span class="p">,</span><span class="nx">v</span> <span class="o">:=</span><span class="k">range</span> <span class="nx">nums</span><span class="p">{</span>
+        <span class="nx">maps</span><span class="p">[</span><span class="nx">v</span><span class="p">]=</span><span class="nx">v</span>
+        <span class="k">for</span> <span class="nx">j</span><span class="o">:=</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span><span class="nx">j</span><span class="p">&lt;</span><span class="nx">length</span><span class="p">;</span><span class="nx">j</span><span class="o">++</span><span class="p">{</span>
+            <span class="k">if</span> <span class="nx">_</span><span class="p">,</span><span class="nx">ok</span><span class="o">:=</span> <span class="nx">maps</span><span class="p">[</span><span class="nx">nums</span><span class="p">[</span><span class="nx">j</span><span class="p">]];!</span><span class="nx">ok</span><span class="p">{</span>
+                <span class="nx">nums</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]=</span><span class="nx">nums</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span>
+                <span class="nx">maps</span><span class="p">[</span><span class="nx">nums</span><span class="p">[</span><span class="nx">j</span><span class="p">]]=</span><span class="nx">nums</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span>
+                <span class="nx">count</span><span class="o">++</span>
+                <span class="k">break</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">count</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -644,11 +643,14 @@ iterable：可迭代对象
   
 
   
+
+  
   
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
             repo= "MMmaXingXing/comments"
             issue-term="pathname"
+            theme="github-light"
             crossorigin="anonymous"
             async>
       </script>
@@ -660,10 +662,10 @@ iterable：可迭代对象
   
 
   
-  
+
     
 
-
+  
 
         </div>
       </div>
@@ -718,7 +720,9 @@ iterable：可迭代对象
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -773,6 +777,12 @@ iterable：可迭代对象
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -783,6 +793,8 @@ iterable：可迭代对象
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

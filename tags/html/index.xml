@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>html on Astar Blog</title>
@@ -6,18 +6,14 @@
     <description>Recent content in html on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 17 Apr 2019 13:47:35 +0800</lastBuildDate>
-    
-	<atom:link href="https://mmmaxingxing.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 17 Apr 2019 13:47:35 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>php4.17小记</title>
       <link>https://mmmaxingxing.github.io/post/cours/backends/php/php_4.17/</link>
       <pubDate>Wed, 17 Apr 2019 13:47:35 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/backends/php/php_4.17/</guid>
-      <description>页面跳转 Header 1 2 3 4 5 6 7 8 &amp;lt;? if (isset($url)) { Header(&amp;#34;HTTP/1.1 303 See Other&amp;#34;); Header(&amp;#34;Location: $url&amp;#34;); exit; //from www.w3sky.com } ?&amp;gt; location 1 2 3 4 5 6 &amp;lt;? $url=&amp;#34;http://www.jb51.net&amp;#34;; echo &amp;#34;&amp;lt;!--&amp;lt;scrīpt LANGUAGE=&amp;</description>
+      <description>页面跳转 Header 1 2 3 4 5 6 7 8 9 &amp;lt;? if (isset($url)) { Header(&amp;#34;HTTP/1.1 303 See Other&amp;#34;); Header(&amp;#34;Location: $url&amp;#34;); exit; //from www.w3sky.com } ?&amp;gt; location 1 2 3 4 5 6 7 &amp;lt;? $url=&amp;#34;http://www.jb51.net&amp;#34;; echo &amp;#34;&amp;lt;!--&amp;lt;scrīpt LANGUAGE</description>
     </item>
     
     <item>
@@ -35,7 +31,7 @@
       <pubDate>Tue, 26 Mar 2019 20:15:50 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/technology/plugin/%E6%89%8B%E6%9C%BA%E7%AB%AF%E7%BD%91%E9%A1%B5%E8%B0%83%E8%AF%95%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
-      <description>chrome真机调试 只能调用手机端chrome浏览器，简单容易上手 1、访问 chrome://inspect 勾选&amp;rdquo;discovery usb device&amp;rdquo; 手机连接usb调试，ch</description>
+      <description>chrome真机调试 只能调用手机端chrome浏览器，简单容易上手 1、访问 chrome://inspect 勾选&amp;quot;discovery usb device&amp;quot; 手机连接usb调试，chr</description>
     </item>
     
     <item>
@@ -44,7 +40,7 @@
       <pubDate>Mon, 25 Mar 2019 17:55:13 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/compatible/%E6%89%8B%E6%9C%BA%E7%89%88%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA/</guid>
-      <description>meta 标签 1 2 3 4 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; //1：1屏占比 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0&amp;#34;/&amp;gt; //手机端完美视图 &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt; //打开浏览器为ie9及以上版本 &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; //有限打开内核为webkit 引入</description>
+      <description>meta 标签 1 2 3 4 5 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;&amp;gt; //1：1屏占比 &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0&amp;#34;/&amp;gt; //手机端完美视图 &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt; //打开浏览器为ie9及以上版本 &amp;lt;meta name=&amp;#34;renderer&amp;#34; content=&amp;#34;webkit&amp;#34;&amp;gt; //有限打开内核为webkit 引</description>
     </item>
     
     <item>
@@ -53,7 +49,7 @@
       <pubDate>Sun, 24 Mar 2019 17:52:44 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/compatible/input_type_number_%E5%85%BC%E5%AE%B9/</guid>
-      <description>input type number 火狐兼容 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; appearance: none; margin: 0; } input{ -moz-appearance:textfield !important; }</description>
+      <description>input type number 火狐兼容 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; appearance: none; margin: 0; } input{ -moz-appearance:textfield !important; }</description>
     </item>
     
   </channel>

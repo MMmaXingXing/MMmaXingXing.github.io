@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSS on Astar Blog</title>
@@ -6,18 +6,14 @@
     <description>Recent content in CSS on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 21 Feb 2019 17:17:52 +0800</lastBuildDate>
-    
-	<atom:link href="https://mmmaxingxing.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 21 Feb 2019 17:17:52 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CSS绘制心形</title>
       <link>https://mmmaxingxing.github.io/post/technology/css/heart/</link>
       <pubDate>Thu, 21 Feb 2019 17:17:52 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/technology/css/heart/</guid>
-      <description>一、创建一个dom元素并为其增加宽高 1 &amp;lt;div id=&amp;#34;heart&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; 1 2 3 4 5 #heart { position: relative; width: 50px; height: 40px; } 二、对目标元素的伪元素进行操作 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 #heart::before, #heart::after {</description>
+      <description>1 &amp;lt;div id=&amp;#34;heart&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; 1 2 3 4 5 #heart { position: relative; width: 50px; height: 40px; } 二、对目标元素的伪元素进行操作 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 #heart::before, #heart::after { position: absolute; left: 0; top: 0; content: &amp;#34;&amp;#34;; width: 25px; height: 40px; background: red; border-radius: 20px 20px</description>
     </item>
     
   </channel>

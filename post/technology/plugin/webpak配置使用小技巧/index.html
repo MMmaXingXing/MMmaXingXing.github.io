@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Astar" />
-  <meta name="description" content="webpack 之 dev.env.js &amp;amp;&amp;amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 //dev.env.js //开发版本 &amp;#39;use strict&amp;#39; const merge = require(&amp;#39;webpack-merge&amp;#39;) const prodEnv = require(&amp;#39;./prod.env&amp;#39;) module.exports = merge(prodEnv, { NODE_ENV: &amp;#39;&amp;#34;development&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, }) 1 2 3 4 5 6 7 //prod.env.js //线上 &amp;#39;use strict&amp;#39; module.exports = { NODE_ENV: &amp;#39;&amp;#34;production&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, } 1 2 3 4 5 6 7" />
+  <meta name="description" content="webpack 之 dev.env.js &amp;amp;&amp;amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 11 12 //dev.env.js //开发版本 &amp;#39;use strict&amp;#39; const merge = require(&amp;#39;webpack-merge&amp;#39;) const prodEnv = require(&amp;#39;./prod.env&amp;#39;) module.exports = merge(prodEnv, { NODE_ENV: &amp;#39;&amp;#34;development&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, }) 1 2 3 4 5 6 7 8 //prod.env.js //线上 &amp;#39;use strict&amp;#39; module.exports = { NODE_ENV: &amp;#39;&amp;#34;production&amp;#34;&amp;#39;, BASE_API: &amp;#39;&amp;#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&amp;#34;&amp;#39;, } 1 2 3 4" />
 
   <meta name="keywords" content="Hugo, blog, Astar" />
 
@@ -32,10 +32,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
+
+
 
 
 
@@ -51,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -60,26 +62,19 @@
 
 
 <meta property="og:title" content="webpack配置使用小技巧" />
-<meta property="og:description" content="webpack 之 dev.env.js &amp;&amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 //dev.env.js //开发版本 &#39;use strict&#39; const merge = require(&#39;webpack-merge&#39;) const prodEnv = require(&#39;./prod.env&#39;) module.exports = merge(prodEnv, { NODE_ENV: &#39;&#34;development&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, }) 1 2 3 4 5 6 7 //prod.env.js //线上 &#39;use strict&#39; module.exports = { NODE_ENV: &#39;&#34;production&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, } 1 2 3 4 5 6 7" />
+<meta property="og:description" content="webpack 之 dev.env.js &amp;&amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 11 12 //dev.env.js //开发版本 &#39;use strict&#39; const merge = require(&#39;webpack-merge&#39;) const prodEnv = require(&#39;./prod.env&#39;) module.exports = merge(prodEnv, { NODE_ENV: &#39;&#34;development&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, }) 1 2 3 4 5 6 7 8 //prod.env.js //线上 &#39;use strict&#39; module.exports = { NODE_ENV: &#39;&#34;production&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, } 1 2 3 4" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/" />
-<meta property="article:published_time" content="2019-03-18T22:22:27&#43;08:00"/>
-<meta property="article:modified_time" content="2019-03-18T22:22:27&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/plugin/webpak%E9%85%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-03-18T22:22:27&#43;08:00" />
+<meta property="article:modified_time" content="2019-03-18T22:22:27&#43;08:00" />
 
 <meta itemprop="name" content="webpack配置使用小技巧">
-<meta itemprop="description" content="webpack 之 dev.env.js &amp;&amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 //dev.env.js //开发版本 &#39;use strict&#39; const merge = require(&#39;webpack-merge&#39;) const prodEnv = require(&#39;./prod.env&#39;) module.exports = merge(prodEnv, { NODE_ENV: &#39;&#34;development&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, }) 1 2 3 4 5 6 7 //prod.env.js //线上 &#39;use strict&#39; module.exports = { NODE_ENV: &#39;&#34;production&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, } 1 2 3 4 5 6 7">
-
-
-<meta itemprop="datePublished" content="2019-03-18T22:22:27&#43;08:00" />
+<meta itemprop="description" content="webpack 之 dev.env.js &amp;&amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 11 12 //dev.env.js //开发版本 &#39;use strict&#39; const merge = require(&#39;webpack-merge&#39;) const prodEnv = require(&#39;./prod.env&#39;) module.exports = merge(prodEnv, { NODE_ENV: &#39;&#34;development&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, }) 1 2 3 4 5 6 7 8 //prod.env.js //线上 &#39;use strict&#39; module.exports = { NODE_ENV: &#39;&#34;production&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, } 1 2 3 4"><meta itemprop="datePublished" content="2019-03-18T22:22:27&#43;08:00" />
 <meta itemprop="dateModified" content="2019-03-18T22:22:27&#43;08:00" />
-<meta itemprop="wordCount" content="112">
-
-
-
-<meta itemprop="keywords" content="javascript,Vue,前端,插件," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="115">
+<meta itemprop="keywords" content="javascript,Vue,前端,插件," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="webpack配置使用小技巧"/>
-<meta name="twitter:description" content="webpack 之 dev.env.js &amp;&amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 //dev.env.js //开发版本 &#39;use strict&#39; const merge = require(&#39;webpack-merge&#39;) const prodEnv = require(&#39;./prod.env&#39;) module.exports = merge(prodEnv, { NODE_ENV: &#39;&#34;development&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, }) 1 2 3 4 5 6 7 //prod.env.js //线上 &#39;use strict&#39; module.exports = { NODE_ENV: &#39;&#34;production&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, } 1 2 3 4 5 6 7"/>
+<meta name="twitter:description" content="webpack 之 dev.env.js &amp;&amp; prod.env.js 1 2 3 4 5 6 7 8 9 10 11 12 //dev.env.js //开发版本 &#39;use strict&#39; const merge = require(&#39;webpack-merge&#39;) const prodEnv = require(&#39;./prod.env&#39;) module.exports = merge(prodEnv, { NODE_ENV: &#39;&#34;development&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, }) 1 2 3 4 5 6 7 8 //prod.env.js //线上 &#39;use strict&#39; module.exports = { NODE_ENV: &#39;&#34;production&#34;&#39;, BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;, } 1 2 3 4"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -136,6 +131,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -203,6 +200,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -260,6 +259,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -302,12 +305,10 @@
 
     
     <div class="post-content">
-      
-
-<h4 id="webpack-之-dev-env-js-prod-env-js">webpack 之 dev.env.js &amp;&amp; prod.env.js</h4>
+      <h4 id="webpack-之-devenvjs--prodenvjs">webpack 之 dev.env.js &amp;&amp; prod.env.js</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-webpack" data-lang="webpack"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -317,9 +318,11 @@
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-webpack" data-lang="webpack">//dev.env.js  //开发版本
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//dev.env.js  //开发版本
 
 &#39;use strict&#39;
 const merge = require(&#39;webpack-merge&#39;)
@@ -328,30 +331,36 @@ const prodEnv = require(&#39;./prod.env&#39;)
 module.exports = merge(prodEnv, {
   NODE_ENV: &#39;&#34;development&#34;&#39;,
   BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;,
-})</code></pre></td></tr></table>
+})
+
+
+</code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-webpack" data-lang="webpack"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-webpack" data-lang="webpack">//prod.env.js  //线上
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//prod.env.js  //线上
 
 &#39;use strict&#39;
 module.exports = {
   NODE_ENV: &#39;&#34;production&#34;&#39;,
   BASE_API: &#39;&#34;https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin&#34;&#39;,
-}</code></pre></td></tr></table>
+}
+
+</code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-webpack" data-lang="webpack"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -367,7 +376,7 @@ module.exports = {
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-webpack" data-lang="webpack">//webpack.dev.conf.js
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//webpack.dev.conf.js
 
 plugins: [
     new webpack.DefinePlugin({
@@ -380,22 +389,24 @@ plugins: [
   //build.js
   //webpack.prode.conf.js
   //webpack.base.conf.js
-  //webpack.dev.conf.js</code></pre></td></tr></table>
+  //webpack.dev.conf.js
+</code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">//页面中使用
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//页面中使用
 
 process.env.BASE_API
 
-//其他</pre></td></tr></table>
+//其他
+</code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -474,11 +485,14 @@ process.env.BASE_API
   
 
   
+
+  
   
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
             repo= "MMmaXingXing/comments"
             issue-term="pathname"
+            theme="github-light"
             crossorigin="anonymous"
             async>
       </script>
@@ -490,10 +504,10 @@ process.env.BASE_API
   
 
   
-  
+
     
 
-
+  
 
         </div>
       </div>
@@ -548,7 +562,9 @@ process.env.BASE_API
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -603,6 +619,12 @@ process.env.BASE_API
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -613,6 +635,8 @@ process.env.BASE_API
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

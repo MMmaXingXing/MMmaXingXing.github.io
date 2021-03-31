@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -32,10 +32,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/front/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/" />
+
+
 
 
 
@@ -51,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -62,22 +64,15 @@
 <meta property="og:title" content="diff算法" />
 <meta property="og:description" content="一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/" />
-<meta property="article:published_time" content="2019-03-17T23:05:51&#43;08:00"/>
-<meta property="article:modified_time" content="2019-03-17T23:05:51&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/javascript/arithmetic/diff-%E7%AE%97%E6%B3%95/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-03-17T23:05:51&#43;08:00" />
+<meta property="article:modified_time" content="2019-03-17T23:05:51&#43;08:00" />
 
 <meta itemprop="name" content="diff算法">
-<meta itemprop="description" content="一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多">
-
-
-<meta itemprop="datePublished" content="2019-03-17T23:05:51&#43;08:00" />
+<meta itemprop="description" content="一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多"><meta itemprop="datePublished" content="2019-03-17T23:05:51&#43;08:00" />
 <meta itemprop="dateModified" content="2019-03-17T23:05:51&#43;08:00" />
-<meta itemprop="wordCount" content="577">
-
-
-
-<meta itemprop="keywords" content="javascript,Vue,前端,算法," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="581">
+<meta itemprop="keywords" content="javascript,Vue,前端,算法," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="diff算法"/>
 <meta name="twitter:description" content="一、虚拟dom 众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多"/>
 
@@ -136,6 +131,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -203,6 +200,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -260,6 +259,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -302,29 +305,29 @@
 
     
     <div class="post-content">
-      
-
-<h3 id="一-虚拟dom">一、虚拟dom</h3>
-
+      <h3 id="一虚拟dom">一、虚拟dom</h3>
 <p>众所周知，直接使用真实dom对性能的耗费是非常巨大的，因为它会造成浏览器频繁的重绘，浏览器中渲染一个页面所需要的标准实在是太多了，如果每次都生成dom，对浏览器性能是巨大的浪费。</p>
-
 <p>virtual dom就是解决这个问题的一个思路，到底什么是virtual dom呢？通俗易懂的来说就是用一个简单的对象去代替复杂的dom对象。</p>
-
 <p>示例如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-script" data-lang="script"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-script" data-lang="script">var mydiv = document.createElement(&#39;div&#39;);
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+var mydiv = document.createElement(&#39;div&#39;);
 mydiv.className = &#39;a&#39;;
-document.body.appendChild(mydiv);</code></pre></td></tr></table>
+document.body.appendChild(mydiv);
+
+</code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-script" data-lang="script"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -339,9 +342,12 @@ document.body.appendChild(mydiv);</code></pre></td></tr></table>
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-script" data-lang="script">//伪代码
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+//伪代码
 var mydivVirtual = { 
   tagName: &#39;DIV&#39;,
   className: &#39;a&#39;
@@ -355,19 +361,15 @@ if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !
 }
 
 // 会执行相应的修改 mydiv.className = &#39;b&#39;;
-//最后  &lt;div class=&#39;b&#39;&gt;&lt;/div&gt;</code></pre></td></tr></table>
-</div>
-</div>
-<p>有些网站会选择采用手工优化的方式，确实在一定构建环境中手工优化效率高于 virtual Dom ，virtual dom很多时候都不是最优的操作，但它具有普适性，在效率、可维护性之间达平衡。</p>
+//最后  &lt;div class=&#39;b&#39;&gt;&lt;/div&gt;
 
+</code></pre></td></tr></table>
+</div>
+</div><p>有些网站会选择采用手工优化的方式，确实在一定构建环境中手工优化效率高于 virtual Dom ，virtual dom很多时候都不是最优的操作，但它具有普适性，在效率、可维护性之间达平衡。</p>
 <h3 id="diff算法">diff算法</h3>
-
 <p>diff算法是一些前端框架常用的一种算法。它的作用是</p>
-
 <p>在交叉对比的时候，当新节点跟旧节点==头尾交叉对比==没有结果的时候，会根据旧节点的key去对比旧节点数组中的key，从而找到相应旧节点（这里对应的是一个key=&gt;index的map映射）。如果没找到就认为是一个新增节点。而如果没找到就认为是一个新增节点。而如果没有key，那么就会采用一种遍历查找的方式去找到对应的旧节点两种实现方式，一种是map映射，另一种是遍历查找。相比而言。map映射速度更快。</p>
-
 <h3 id="diff-比较规则">diff 比较规则</h3>
-
 <p>同级比较，不会越级比较。</p>
 
     </div>
@@ -446,11 +448,14 @@ if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !
   
 
   
+
+  
   
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
             repo= "MMmaXingXing/comments"
             issue-term="pathname"
+            theme="github-light"
             crossorigin="anonymous"
             async>
       </script>
@@ -462,10 +467,10 @@ if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !
   
 
   
-  
+
     
 
-
+  
 
         </div>
       </div>
@@ -520,7 +525,9 @@ if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -575,6 +582,12 @@ if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -585,6 +598,8 @@ if(mydivVirtual.tagName !== newmydivVirtual.tagName || mydivVirtual.className  !
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

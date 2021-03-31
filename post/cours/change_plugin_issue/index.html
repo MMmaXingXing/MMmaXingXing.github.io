@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -33,10 +33,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/change_plugin_issue/" />
+
+
 
 
 
@@ -52,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,22 +65,15 @@
 <meta property="og:title" content="为Hugo添加utterances评论" />
 <meta property="og:description" content="为Hugo添加utterances评论，原本选择的评论系统是gitment，但是此项目需要的验证系统有点复杂，综合各方面考量，决定更换评论系统的插件。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/change_plugin_issue/" />
-<meta property="article:published_time" content="2019-05-05T17:00:13&#43;08:00"/>
-<meta property="article:modified_time" content="2019-05-05T17:00:13&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/change_plugin_issue/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-05-05T17:00:13&#43;08:00" />
+<meta property="article:modified_time" content="2019-05-05T17:00:13&#43;08:00" />
 
 <meta itemprop="name" content="为Hugo添加utterances评论">
-<meta itemprop="description" content="为Hugo添加utterances评论，原本选择的评论系统是gitment，但是此项目需要的验证系统有点复杂，综合各方面考量，决定更换评论系统的插件。">
-
-
-<meta itemprop="datePublished" content="2019-05-05T17:00:13&#43;08:00" />
+<meta itemprop="description" content="为Hugo添加utterances评论，原本选择的评论系统是gitment，但是此项目需要的验证系统有点复杂，综合各方面考量，决定更换评论系统的插件。"><meta itemprop="datePublished" content="2019-05-05T17:00:13&#43;08:00" />
 <meta itemprop="dateModified" content="2019-05-05T17:00:13&#43;08:00" />
-<meta itemprop="wordCount" content="224">
-
-
-
-<meta itemprop="keywords" content="github,blog,教程," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="225">
+<meta itemprop="keywords" content="github,blog,教程," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="为Hugo添加utterances评论"/>
 <meta name="twitter:description" content="为Hugo添加utterances评论，原本选择的评论系统是gitment，但是此项目需要的验证系统有点复杂，综合各方面考量，决定更换评论系统的插件。"/>
 
@@ -137,6 +132,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -204,6 +201,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -261,6 +260,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -304,30 +307,28 @@
     
     <div class="post-content">
       <p>为Hugo添加utterances评论，原本选择的评论系统是gitment，但是此项目需要的验证系统有点复杂，综合各方面考量，决定更换评论系统的插件。</p>
-
-<h3 id="config-toml中添加">config.toml中添加</h3>
+<h3 id="configtoml中添加">config.toml中添加</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span></pre></td>
+</span><span class="lnt">6
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">    [params.utteranc]
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">    [params.utteranc]
     enable = true
     repo = &#34;owner/repo&#34;    # 存储评论的Repo，格式为 owner/repo
     issueTerm = &#34;pathname&#34;  #表示你选择以那种方式让github issue的评论和你的文章关联。
-    theme = &#34;github-light&#34; # 样式主题，有github-light和github-dark两种</pre></td></tr></table>
+    theme = &#34;github-light&#34; # 样式主题，有github-light和github-dark两种
+
+</code></pre></td></tr></table>
 </div>
-</div>
-<p><strong>为你设置的repo安装<a href="https://utteranc.es/">utterances</a></strong></p>
-
-<p><img src="/image/github_blog/utterances1.png" alt="步骤1" /></p>
-
-<p><img src="/image/github_blog/utterances3.png" alt="步骤2" /></p>
-
+</div><p><strong>为你设置的repo安装<a href="https://utteranc.es/">utterances</a></strong></p>
+<p><img src="/image/github_blog/utterances1.png" alt="步骤1"></p>
+<p><img src="/image/github_blog/utterances3.png" alt="步骤2"></p>
 <p>设置完毕打开博客认证即可使用</p>
     </div>
 
@@ -404,11 +405,14 @@
   
 
   
+
+  
   
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
             repo= "MMmaXingXing/comments"
             issue-term="pathname"
+            theme="github-light"
             crossorigin="anonymous"
             async>
       </script>
@@ -420,10 +424,10 @@
   
 
   
-  
+
     
 
-
+  
 
         </div>
       </div>
@@ -478,7 +482,9 @@
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -528,6 +534,8 @@
 
 <script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
+
+
   <script type="text/javascript">
     window.MathJax = {
       showProcessingMessages: false,
@@ -535,6 +543,10 @@
     };
   </script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+
+
 
 
 
@@ -550,6 +562,8 @@
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

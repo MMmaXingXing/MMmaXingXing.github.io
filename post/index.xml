@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Astar Blog</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Posts on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 30 Sep 2019 15:00:55 +0800</lastBuildDate>
-    
-	<atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 30 Sep 2019 15:00:55 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>抓包工具记录</title>
       <link>https://mmmaxingxing.github.io/post/cours/tool/capture/</link>
@@ -39,24 +35,6 @@
     </item>
     
     <item>
-      <title>Flutter-01-创建一个tabbar&amp;&amp;footerbar页面</title>
-      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/</link>
-      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/</guid>
-      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Flutter在使用或相关包整理</title>
-      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</link>
-      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</guid>
-      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>dart-01-基础dart语法整理</title>
       <link>https://mmmaxingxing.github.io/post/cours/front/flutter/dart01/</link>
       <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
@@ -66,11 +44,29 @@
     </item>
     
     <item>
+      <title>Flutter-01-创建一个tabbar&amp;&amp;footerbar页面</title>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/</link>
+      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/base_use01/</guid>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>flutter-01-基础flatter语法整理</title>
       <link>https://mmmaxingxing.github.io/post/cours/front/flutter/flutter01/</link>
       <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/flutter01/</guid>
+      <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Flutter在使用或相关包整理</title>
+      <link>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</link>
+      <pubDate>Fri, 14 Jun 2019 13:29:34 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/front/flutter/package/</guid>
       <description>&lt;p&gt;入坑进行时。。&lt;/p&gt;</description>
     </item>
     
@@ -90,7 +86,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/dom/creat_a_click/</guid>
       <description>&lt;h3 id=&#34;创建一个a标签并触发其事件&#34;&gt;创建一个a标签并触发其事件&lt;/h3&gt;
-
 &lt;p&gt;有个项目需求，需要下载一个文件时名称不乱码显示，前段解决方案，使用a标签新增download 字段，由于需要模拟a标签，以下以做记录。&lt;/p&gt;</description>
     </item>
     
@@ -163,7 +158,7 @@
       <pubDate>Wed, 24 Apr 2019 13:47:35 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/technology/plugin/bt/</guid>
-      <description>宝塔面板安装记录 Centos安装命令： 1 yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;amp;&amp;amp; sh install.sh Ubuntu/Deepin安装命令： 1 wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;amp;&amp;amp; sudo bash install.sh Debian安装命令：</description>
+      <description>宝塔面板安装记录 Centos安装命令： 1 2 yum install -y wget &amp;amp;&amp;amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;amp;&amp;amp; sh install.sh Ubuntu/Deepin安装命令： 1 2 wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;amp;&amp;amp; sudo bash install.sh Debian安装命</description>
     </item>
     
     <item>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>resource on Astar Blog</title>
@@ -6,18 +6,14 @@
     <description>Recent content in resource on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 01 Apr 2019 17:15:23 +0800</lastBuildDate>
-    
-	<atom:link href="https://mmmaxingxing.github.io/tags/resource/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 01 Apr 2019 17:15:23 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/tags/resource/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>资源汇总之后台管理系统</title>
       <link>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</link>
       <pubDate>Mon, 01 Apr 2019 17:15:23 +0800</pubDate>
       
       <guid>https://mmmaxingxing.github.io/post/technology/resource/admin-ui/</guid>
-      <description>vue技术栈 后台管理系统 vue-element-admin vuetify 正常技术栈 后台管理系统 bootstrap: Admin LTE php 技术栈 后台管理系统 fastAdmin</description>
+      <description>vue 技术栈 后台管理系统 vue-element-admin vuetify 正常技术栈 后台管理系统 bootstrap: Admin LTE php 技术栈 后台管理系统 fastAdmin</description>
     </item>
     
   </channel>

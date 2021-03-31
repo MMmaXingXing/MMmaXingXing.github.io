@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -32,10 +32,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/front/vue/01-vue-soundcode-nextticket/" />
+
+
 
 
 
@@ -51,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -62,22 +64,15 @@
 <meta property="og:title" content="Vue nextTicket 源码分析" />
 <meta property="og:description" content="nextTicket源码构成 1、能力检测 2、延时调用 3、原理是利用js同步函数执行完毕后才会执行进入异步加载流的规则 全部源码 1 2 3 4 5 6 7 8" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/vue/01-vue-soundcode-nextticket/" />
-<meta property="article:published_time" content="2019-05-07T15:39:50&#43;08:00"/>
-<meta property="article:modified_time" content="2019-05-07T15:39:50&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/vue/01-vue-soundcode-nextticket/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-05-07T15:39:50&#43;08:00" />
+<meta property="article:modified_time" content="2019-05-07T15:39:50&#43;08:00" />
 
 <meta itemprop="name" content="Vue nextTicket 源码分析">
-<meta itemprop="description" content="nextTicket源码构成 1、能力检测 2、延时调用 3、原理是利用js同步函数执行完毕后才会执行进入异步加载流的规则 全部源码 1 2 3 4 5 6 7 8">
-
-
-<meta itemprop="datePublished" content="2019-05-07T15:39:50&#43;08:00" />
+<meta itemprop="description" content="nextTicket源码构成 1、能力检测 2、延时调用 3、原理是利用js同步函数执行完毕后才会执行进入异步加载流的规则 全部源码 1 2 3 4 5 6 7 8"><meta itemprop="datePublished" content="2019-05-07T15:39:50&#43;08:00" />
 <meta itemprop="dateModified" content="2019-05-07T15:39:50&#43;08:00" />
 <meta itemprop="wordCount" content="1388">
-
-
-
-<meta itemprop="keywords" content="javascript,Vue,前端,源码," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="javascript,Vue,前端,源码," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Vue nextTicket 源码分析"/>
 <meta name="twitter:description" content="nextTicket源码构成 1、能力检测 2、延时调用 3、原理是利用js同步函数执行完毕后才会执行进入异步加载流的规则 全部源码 1 2 3 4 5 6 7 8"/>
 
@@ -136,6 +131,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -203,6 +200,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -260,6 +259,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -302,20 +305,16 @@
 
     
     <div class="post-content">
-      
-
-<h3 id="nextticket源码构成">nextTicket源码构成</h3>
-
+      <h3 id="nextticket源码构成">nextTicket源码构成</h3>
 <ul>
 <li>1、能力检测</li>
 <li>2、延时调用</li>
 <li>3、原理是利用js同步函数执行完毕后才会执行进入异步加载流的规则</li>
 </ul>
-
 <h4 id="全部源码">全部源码</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="lnt">  1
+<pre class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -455,18 +454,18 @@
 <pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="cm">/* @flow */</span>
 <span class="cm">/* globals MutationObserver */</span>
 
-<span class="k">import</span> <span class="p">{</span> <span class="nx">noop</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;shared/util&#39;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">handleError</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./error&#39;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">isIE</span><span class="p">,</span> <span class="nx">isIOS</span><span class="p">,</span> <span class="nx">isNative</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./env&#39;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">noop</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;shared/util&#39;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">handleError</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./error&#39;</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">isIE</span><span class="p">,</span> <span class="nx">isIOS</span><span class="p">,</span> <span class="nx">isNative</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./env&#39;</span>
 
-<span class="k">export</span> <span class="kd">let</span> <span class="nx">isUsingMicroTask</span> <span class="o">=</span> <span class="kc">false</span>
+<span class="kr">export</span> <span class="kd">let</span> <span class="nx">isUsingMicroTask</span> <span class="o">=</span> <span class="kc">false</span>
 
-<span class="k">const</span> <span class="nx">callbacks</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="kr">const</span> <span class="nx">callbacks</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="kd">let</span> <span class="nx">pending</span> <span class="o">=</span> <span class="kc">false</span>
 
 <span class="kd">function</span> <span class="nx">flushCallbacks</span> <span class="p">()</span> <span class="p">{</span>
   <span class="nx">pending</span> <span class="o">=</span> <span class="kc">false</span>
-  <span class="k">const</span> <span class="nx">copies</span> <span class="o">=</span> <span class="nx">callbacks</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+  <span class="kr">const</span> <span class="nx">copies</span> <span class="o">=</span> <span class="nx">callbacks</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
   <span class="nx">callbacks</span><span class="p">.</span><span class="nx">length</span> <span class="o">=</span> <span class="mi">0</span>
   <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">copies</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
     <span class="nx">copies</span><span class="p">[</span><span class="nx">i</span><span class="p">]()</span>
@@ -508,7 +507,7 @@
 </span><span class="c1">// UIWebView 在 IOS &gt;= 9.3.3中触发。当他被触发几次后会完全停止工作，所以，如果Promise可用，建议使用promise
 </span><span class="c1"></span><span class="cm">/* istanbul ignore next, $flow-disable-line */</span>
 <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nb">Promise</span> <span class="o">!==</span> <span class="s1">&#39;undefined&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">isNative</span><span class="p">(</span><span class="nb">Promise</span><span class="p">))</span> <span class="p">{</span>
-  <span class="k">const</span> <span class="nx">p</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">()</span>
+  <span class="kr">const</span> <span class="nx">p</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">()</span>
   <span class="nx">timerFunc</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="nx">p</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">flushCallbacks</span><span class="p">)</span>
     <span class="c1">// In problematic UIWebViews, Promise.then doesn&#39;t completely break, but
@@ -534,8 +533,8 @@
 </span><span class="c1"></span>  <span class="c1">// e.g. PhantomJS, iOS7, Android 4.4
 </span><span class="c1"></span>  <span class="c1">// (#6466 MutationObserver is unreliable in IE11)
 </span><span class="c1"></span>  <span class="kd">let</span> <span class="nx">counter</span> <span class="o">=</span> <span class="mi">1</span>
-  <span class="k">const</span> <span class="nx">observer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MutationObserver</span><span class="p">(</span><span class="nx">flushCallbacks</span><span class="p">)</span>
-  <span class="k">const</span> <span class="nx">textNode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="nb">String</span><span class="p">(</span><span class="nx">counter</span><span class="p">))</span>
+  <span class="kr">const</span> <span class="nx">observer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MutationObserver</span><span class="p">(</span><span class="nx">flushCallbacks</span><span class="p">)</span>
+  <span class="kr">const</span> <span class="nx">textNode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="nb">String</span><span class="p">(</span><span class="nx">counter</span><span class="p">))</span>
   <span class="nx">observer</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">textNode</span><span class="p">,</span> <span class="p">{</span>
     <span class="nx">characterData</span><span class="o">:</span> <span class="kc">true</span>
   <span class="p">})</span>
@@ -563,7 +562,7 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="k">export</span> <span class="kd">function</span> <span class="nx">nextTick</span> <span class="p">(</span><span class="nx">cb</span><span class="o">?:</span> <span class="nb">Function</span><span class="p">,</span> <span class="nx">ctx</span><span class="o">?:</span> <span class="nb">Object</span><span class="p">)</span> <span class="p">{</span>
+<span class="kr">export</span> <span class="kd">function</span> <span class="nx">nextTick</span> <span class="p">(</span><span class="nx">cb</span><span class="o">?:</span> <span class="nb">Function</span><span class="p">,</span> <span class="nx">ctx</span><span class="o">?:</span> <span class="nb">Object</span><span class="p">)</span> <span class="p">{</span>
   <span class="kd">let</span> <span class="nx">_resolve</span>
   <span class="nx">callbacks</span><span class="p">.</span><span class="nx">push</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
@@ -666,11 +665,14 @@
   
 
   
+
+  
   
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
             repo= "MMmaXingXing/comments"
             issue-term="pathname"
+            theme="github-light"
             crossorigin="anonymous"
             async>
       </script>
@@ -682,10 +684,10 @@
   
 
   
-  
+
     
 
-
+  
 
         </div>
       </div>
@@ -740,7 +742,9 @@
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -795,6 +799,12 @@
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -805,6 +815,8 @@
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

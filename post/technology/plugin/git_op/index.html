@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -32,10 +32,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/technology/plugin/git_op/" />
+
+
 
 
 
@@ -51,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -62,22 +64,15 @@
 <meta property="og:title" content="git 常用操作" />
 <meta property="og:description" content="git 是什么 GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/plugin/git_op/" />
-<meta property="article:published_time" content="2019-03-23T23:13:46&#43;08:00"/>
-<meta property="article:modified_time" content="2019-03-23T23:13:46&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/technology/plugin/git_op/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-03-23T23:13:46&#43;08:00" />
+<meta property="article:modified_time" content="2019-03-23T23:13:46&#43;08:00" />
 
 <meta itemprop="name" content="git 常用操作">
-<meta itemprop="description" content="git 是什么 GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分">
-
-
-<meta itemprop="datePublished" content="2019-03-23T23:13:46&#43;08:00" />
+<meta itemprop="description" content="git 是什么 GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分"><meta itemprop="datePublished" content="2019-03-23T23:13:46&#43;08:00" />
 <meta itemprop="dateModified" content="2019-03-23T23:13:46&#43;08:00" />
-<meta itemprop="wordCount" content="1650">
-
-
-
-<meta itemprop="keywords" content="git,工具使用," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="1656">
+<meta itemprop="keywords" content="git,工具使用," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="git 常用操作"/>
 <meta name="twitter:description" content="git 是什么 GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分"/>
 
@@ -136,6 +131,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -203,6 +200,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -260,6 +259,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -302,92 +305,87 @@
 
     
     <div class="post-content">
-      
-
-<h3 id="git-是什么">git 是什么</h3>
-
+      <h3 id="git-是什么">git 是什么</h3>
 <p>GIT是一个开源的分布式的版本控制系统，是由Linus 为了管理Linux内核开发而开发的一个开源的版本控制软件。相比SVN，它采用分布式版本库方式。</p>
-
 <h3 id="基本操作指令">基本操作指令</h3>
-
-<h4 id="1-创建仓库">1、创建仓库</h4>
+<h4 id="1创建仓库">1、创建仓库</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">    // a 当前目录创建仓库 
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">    // a 当前目录创建仓库 
 
     git init 
 
     // b 指定目录创建仓库
 
-    git init 目录名</pre></td></tr></table>
+    git init 目录名
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="2-设置配置">2、设置配置</h4>
-
+</div><h4 id="2设置配置">2、设置配置</h4>
 <h5 id="git的配置范围">git的配置范围</h5>
-
 <p>global选项是告知Git应该在多大范围内使用这一配置的一种方式&ndash;它应该应用到哪些仓库。Git模型旨在应用于多个较小的仓库，而不是较少的整体单一式仓库。由于用户通常会使用多个仓库，因此必须在每个仓库中配置相同的设置会很不方便。因此，Git提供了简化选择配置值范围的选项。有三种可用的级别配置：系统、全局和本地</p>
-
 <p>　　①系统：系统级别的配置意味着一个配置值会被应用到指定系统上的所有仓库，除非在一个较低的级别上对其重写。为了确保配置值应用在系统级别，要为config命令指定&ndash;system选项，比如git config &ndash;system core.autocrlf true</p>
-
 <p>　　②全局：全局级别的配置表明配置值适用于特定用户的所有仓库，除非在本地级别对其进行了重写。否则这就是用户要使用的最常见级别，因为它避免了必须为每一个仓库设置值的工作。这些设置被存储在每个用户的主目录中的一个名为.gitconfig的文件中</p>
-
 <p>③本地：在本地级别设置一个配置值意味着该设置只应用与一个仓库的上下文中，这对于指定一个特定仓库的唯一设置的场景来说会很有用。如果需要临时重写一个较高级别的设置，那么它也会很有用。本地仓库的配置会被存储在本地Git仓库的.git/config中</p>
-
 <p>全局配置</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
-</span></pre></td>
+</span><span class="lnt">8
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git config --global user.name woniu
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git config --global user.name woniu
 git config --global user.email woniu@163.com
 
 //git 记住密码
 
 git config --global credential.helper store
-git config --local credential.helper store</pre></td></tr></table>
+git config --local credential.helper store
+
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>设置本地仓库配置</p>
+</div><p>设置本地仓库配置</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></pre></td>
+</span><span class="lnt">3
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git config --local user.name woniu
-git config --local user.email woniu@163.com</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git config --local user.name woniu
+git config --local user.email woniu@163.com
+
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>查看配置信息</p>
+</div><p>查看配置信息</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git config --global --list</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git config --global --list
+
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>生成 shh-key</p>
+</div><p>生成 shh-key</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -403,9 +401,10 @@ git config --local user.email woniu@163.com</pre></td></tr></table>
 </span><span class="lnt">14
 </span><span class="lnt">15
 </span><span class="lnt">16
-</span></pre></td>
+</span><span class="lnt">17
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">//切换到ssh文件夹
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//切换到ssh文件夹
 
 cd ~/.ssh
 
@@ -420,267 +419,264 @@ ssh-keygen -t rsa -C &#34;邮件地址&#34;
 /C/用户/Admin/.ssh
 
 //测试是否添加成功
-ssh git@网址</pre></td></tr></table>
-</div>
-</div>
-<h4 id="3-工作文件新增到暂存区">3、工作文件新增到暂存区</h4>
+ssh git@网址
 
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="3工作文件新增到暂存区">3、工作文件新增到暂存区</h4>
 <p>提交指定文件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git add a.cpp</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git add a.cpp
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>提交指当前目录所有文件</p>
+</div><p>提交指当前目录所有文件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git add .</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git add .
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>把提交过暂存区，已经发生改变的文件再次提交到暂存区</p>
+</div><p>把提交过暂存区，已经发生改变的文件再次提交到暂存区</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git add -u</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git add -u
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="4-暂存区文件提交到版本库">4、暂存区文件提交到版本库</h4>
+</div><h4 id="4暂存区文件提交到版本库">4、暂存区文件提交到版本库</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git commit -m &#34;初始版本&#34;</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git commit -m &#34;初始版本&#34;
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="5-查看git提交日志">5、查看git提交日志</h4>
-
+</div><h4 id="5查看git提交日志">5、查看git提交日志</h4>
 <p>全部日志</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git log</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git log
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>简化日志</p>
+</div><p>简化日志</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git log --oneline</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git log --oneline
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>查看前5个日志</p>
+</div><p>查看前5个日志</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git log -n5 --oneline</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git log -n5 --oneline
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>查看所有日志</p>
+</div><p>查看所有日志</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git log --all</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git log --all
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>图像化查看所有日志</p>
+</div><p>图像化查看所有日志</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git log --all --graph</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git log --all --graph
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="6-查看上次提交后是否有修改">6、查看上次提交后是否有修改</h4>
+</div><h4 id="6查看上次提交后是否有修改">6、查看上次提交后是否有修改</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git status</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git status
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="7-查看差异">7、查看差异</h4>
-
+</div><h4 id="7查看差异">7、查看差异</h4>
 <p>查看工作区与暂存区差异</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git diff</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git diff
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>查看暂存区与仓库之间的差异</p>
+</div><p>查看暂存区与仓库之间的差异</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git diff --cached</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git diff --cached
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>比较不同commit的差异</p>
+</div><p>比较不同commit的差异</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git diff HEAD1 Mastar2</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git diff HEAD1 Mastar2
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="8-清空暂存区-工作区修改">8、清空暂存区，工作区修改</h4>
+</div><h4 id="8清空暂存区工作区修改">8、清空暂存区，工作区修改</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git reset --hard</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git reset --hard
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="9-删除工作区和暂存文件">9、删除工作区和暂存文件</h4>
+</div><h4 id="9删除工作区和暂存文件">9、删除工作区和暂存文件</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git rm 文件名</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git rm 文件名
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="10-重命名文件">10、重命名文件</h4>
+</div><h4 id="10重命名文件">10、重命名文件</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git mv a.app  b.app</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git mv a.app  b.app
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="11-版本回滚">11、版本回滚</h4>
-
+</div><h4 id="11版本回滚">11、版本回滚</h4>
 <p>恢复暂存区与head一致</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git reset HEAD</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git reset HEAD
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>恢复暂存区指定文件与head一致</p>
+</div><p>恢复暂存区指定文件与head一致</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git reset HEAD --文件名</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git reset HEAD --文件名
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>恢复工作区与暂存区一致</p>
+</div><p>恢复工作区与暂存区一致</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git checkout --文件名</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git checkout --文件名
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>回退到指定commit，会清除之前提交的commit</p>
+</div><p>回退到指定commit，会清除之前提交的commit</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git reset --hard HEAD</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git reset --hard HEAD
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="分支管理">分支管理</h3>
-
-<h4 id="1-创建分支">1、创建分支</h4>
-
+</div><h3 id="分支管理">分支管理</h3>
+<h4 id="1创建分支">1、创建分支</h4>
 <p>直接创建</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git branch dev（分支名）</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git branch dev（分支名）
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>基于某个历史版本创建分支</p>
+</div><p>基于某个历史版本创建分支</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git branch dev HEAD</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git branch dev HEAD
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="2-查看分支">2、查看分支</h4>
+</div><h4 id="2查看分支">2、查看分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git branch -av</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git branch -av
+
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="3-删除分支">3、删除分支</h4>
+</div><h4 id="3删除分支">3、删除分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git branch -d dev</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git branch -d dev
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="4-切换分支">4、切换分支</h4>
+</div><h4 id="4切换分支">4、切换分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git checkout dev</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git checkout dev
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="5-查看分支差异">5、查看分支差异</h4>
+</div><h4 id="5查看分支差异">5、查看分支差异</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">git diff dev master
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git diff dev master
 
 //指定文件差异
 
-git diff dev master -- index</pre></td></tr></table>
+git diff dev master -- index
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="6-本地仓库推送到远端">6、本地仓库推送到远端</h4>
+</div><h4 id="6本地仓库推送到远端">6、本地仓库推送到远端</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -692,9 +688,10 @@ git diff dev master -- index</pre></td></tr></table>
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span></pre></td>
+</span><span class="lnt">13
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">// 1、远端创建git仓库
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">// 1、远端创建git仓库
 
 //2、本地仓库与远端仓库关联
 git remote add origin &#34;远端仓库路径&#34;
@@ -705,13 +702,14 @@ git push -u origin master
 git pull --rebase origin master
 
 //4、提交到远程仓库
-git push origin master</pre></td></tr></table>
+git push origin master
+
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="7-拉取远程分支">7、拉取远程分支</h4>
+</div><h4 id="7拉取远程分支">7、拉取远程分支</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -725,9 +723,9 @@ git push origin master</pre></td></tr></table>
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">//新分支需要先同步，将远程分支同步到本地
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//新分支需要先同步，将远程分支同步到本地
 git fetch origin branch1:branch2
 //使用远程branch1在本地创建branch2
 
@@ -740,13 +738,13 @@ git clone -b dev git地址
 //拉取主分支后，基于远端指定分支本次创建新分支
 git branch -av //红色部分代表远端分支
 
-git branch dev origin/dev //基于远端的dev分支本次创建dev分支</pre></td></tr></table>
+git branch dev origin/dev //基于远端的dev分支本次创建dev分支
+</code></pre></td></tr></table>
 </div>
-</div>
-<h4 id="8-git-stash-暂存区">8、Git stash 暂存区</h4>
+</div><h4 id="8git-stash-暂存区">8、Git stash 暂存区</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-git" data-lang="git"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -757,7 +755,7 @@ git branch dev origin/dev //基于远端的dev分支本次创建dev分支</pre><
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-git" data-lang="git">//执行存储区 添加备注
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">//执行存储区 添加备注
 
 git stash save &#34;save message&#34; 
 
@@ -765,7 +763,8 @@ git stash save &#34;save message&#34;
 git stash pop 
 
 // 查看stash了哪些数据
-git stash list</code></pre></td></tr></table>
+git stash list
+</code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -824,8 +823,6 @@ git stash list</code></pre></td></tr></table>
   
   
 
-
-
         </div>
       </div>
     </main>
@@ -879,7 +876,9 @@ git stash list</code></pre></td></tr></table>
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -934,6 +933,12 @@ git stash list</code></pre></td></tr></table>
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -944,6 +949,8 @@ git stash list</code></pre></td></tr></table>
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 

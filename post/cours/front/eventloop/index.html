@@ -7,7 +7,7 @@
   
 
 <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
 <meta name="MobileOptimized" content="width"/>
 <meta name="HandheldFriendly" content="true"/>
@@ -32,10 +32,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 
 <link rel="canonical" href="https://mmmaxingxing.github.io/post/cours/front/eventloop/" />
+
+
 
 
 
@@ -51,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.ec807d8b802a40889537c26e014f733206312ea440d42e1f0dabed80918de1ac.css" integrity="sha256-7IB9i4AqQIiVN8JuAU9zMgYxLqRA1C4fDavtgJGN4aw=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.f7440b5c0d223f47a09bf5853465434e6f91d80a591c2f8d2d5e8220e5db0580.css" integrity="sha256-90QLXA0iP0egm/WFNGVDTm&#43;R2ApZHC&#43;NLV6CIOXbBYA=" media="screen" crossorigin="anonymous">
 
 
 
@@ -62,22 +64,15 @@
 <meta property="og:title" content="Event Loop 机制" />
 <meta property="og:description" content="Event Loop 是一个很重要的概念，指的是计算机系统的一种运行机制。 JavaScript语言就采用这种机制，来解决单线程运行代表的一些问题。 要想理解Ev" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/eventloop/" />
-<meta property="article:published_time" content="2019-04-12T16:52:29&#43;08:00"/>
-<meta property="article:modified_time" content="2019-04-12T16:52:29&#43;08:00"/>
+<meta property="og:url" content="https://mmmaxingxing.github.io/post/cours/front/eventloop/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-04-12T16:52:29&#43;08:00" />
+<meta property="article:modified_time" content="2019-04-12T16:52:29&#43;08:00" />
 
 <meta itemprop="name" content="Event Loop 机制">
-<meta itemprop="description" content="Event Loop 是一个很重要的概念，指的是计算机系统的一种运行机制。 JavaScript语言就采用这种机制，来解决单线程运行代表的一些问题。 要想理解Ev">
-
-
-<meta itemprop="datePublished" content="2019-04-12T16:52:29&#43;08:00" />
+<meta itemprop="description" content="Event Loop 是一个很重要的概念，指的是计算机系统的一种运行机制。 JavaScript语言就采用这种机制，来解决单线程运行代表的一些问题。 要想理解Ev"><meta itemprop="datePublished" content="2019-04-12T16:52:29&#43;08:00" />
 <meta itemprop="dateModified" content="2019-04-12T16:52:29&#43;08:00" />
-<meta itemprop="wordCount" content="1550">
-
-
-
-<meta itemprop="keywords" content="javascript,运行模式," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="1533">
+<meta itemprop="keywords" content="javascript,运行模式," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Event Loop 机制"/>
 <meta name="twitter:description" content="Event Loop 是一个很重要的概念，指的是计算机系统的一种运行机制。 JavaScript语言就采用这种机制，来解决单线程运行代表的一些问题。 要想理解Ev"/>
 
@@ -136,6 +131,8 @@
           
         
       </li>
+    
+
     
   </ul>
 </nav>
@@ -203,6 +200,8 @@
 
   
 
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/" class="logo">
@@ -260,6 +259,10 @@
 
       </li>
     
+
+    
+    
+
     
   </ul>
 </nav>
@@ -303,74 +306,57 @@
     
     <div class="post-content">
       <p>Event Loop 是一个很重要的概念，指的是计算机系统的一种运行机制。</p>
-
 <p>JavaScript语言就采用这种机制，来解决单线程运行代表的一些问题。</p>
-
-<p><img src="/image/javascript/eventloop/loop_base.png" alt="loop示例" /></p>
-
-<p>要想理解Event Loop,就要从程序运行的模式讲起。运行以后的程序叫&rdquo;进程&rdquo;(process),一般情况下,一个进程一次只能执行一个任务。</p>
-
+<p><img src="/image/javascript/eventloop/loop_base.png" alt="loop示例"></p>
+<p>要想理解Event Loop,就要从程序运行的模式讲起。运行以后的程序叫&quot;进程&quot;(process),一般情况下,一个进程一次只能执行一个任务。</p>
 <p>如果有很多个任务需要执行，不外乎三种解决办法</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">(1)、排队。因为一个进程一次只能执行一个任务，只好等前面任务
-(2)、新建进程。使用fork命令，为每个任务新建一个进程。
-(3)、新建线程。因为进程太耗费资源，所以如今的程序往往允许一个进程包含多个线程，由线程去完成任务。</pre></td></tr></table>
-</div>
-</div>
-<p><a href="http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html">进程与线程相关知识</a></p>
-
-<p>以javascript为例，它是一种单线程语言,所有任务都在一个线程上完成，即采用上面的第一种方法，一旦遇到大量任务或者遇到一个耗时的任务，网页就会出现&rdquo;假死&rdquo;,因为javascript停不下来，也就无法响应用户的行为。</p>
-
-<p>为什么javascript是单线程呢？难道不能实现为多线程么？</p>
-
-<p>这跟历史有关系，jsvascript从诞生起就是单线程，原因大概是不想让浏览器变的太复杂，因为多线程需要共享资源、且有可能修改彼此的运行结果，对于一种脚本语言来说，这就太复杂了，后来就约定俗成，javascript是一种单线程语言（Worker API 可以实现多线程, 但javascript本身是单线程的）。</p>
-
-<p>如果某个任务很耗时，比如高（I/O 输入输出操作），那么线程的运行如下：
-<img src="/image/javascript/eventloop/a_lot_of_io.png" alt="IO示例" /></p>
-
-<p>上图Io绿色的是运行时间,红色部分是等待时间。可以看到，由于I/O操作很慢，所以这个线程的大部分时间都在空等I/O操作返回结果。这种运行方式称为&rdquo;同步模式&rdquo;(synchronous I/O)或&rdquo;堵塞模式&rdquo;(blocking I/O)。</p>
-
-<p>如果采用多线程，同时运行多个任务，那可能就是下面这样。</p>
-
-<p><img src="/image/javascript/eventloop/sync.png" alt="多线程示例" /></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">&gt; 大概简介:
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">(1)、排队。因为一个进程一次只能执行一个任务，只好等前面任务
+(2)、新建进程。使用fork命令，为每个任务新建一个进程。
+(3)、新建线程。因为进程太耗费资源，所以如今的程序往往允许一个进程包含多个线程，由线程去完成任务。
+
+</code></pre></td></tr></table>
+</div>
+</div><p><a href="http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html">进程与线程相关知识</a></p>
+<p>以javascript为例，它是一种单线程语言,所有任务都在一个线程上完成，即采用上面的第一种方法，一旦遇到大量任务或者遇到一个耗时的任务，网页就会出现&quot;假死&quot;,因为javascript停不下来，也就无法响应用户的行为。</p>
+<p>为什么javascript是单线程呢？难道不能实现为多线程么？</p>
+<p>这跟历史有关系，jsvascript从诞生起就是单线程，原因大概是不想让浏览器变的太复杂，因为多线程需要共享资源、且有可能修改彼此的运行结果，对于一种脚本语言来说，这就太复杂了，后来就约定俗成，javascript是一种单线程语言（Worker API 可以实现多线程, 但javascript本身是单线程的）。</p>
+<p>如果某个任务很耗时，比如高（I/O 输入输出操作），那么线程的运行如下：
+<img src="/image/javascript/eventloop/a_lot_of_io.png" alt="IO示例"></p>
+<p>上图Io绿色的是运行时间,红色部分是等待时间。可以看到，由于I/O操作很慢，所以这个线程的大部分时间都在空等I/O操作返回结果。这种运行方式称为&quot;同步模式&quot;(synchronous I/O)或&quot;堵塞模式&quot;(blocking I/O)。</p>
+<p>如果采用多线程，同时运行多个任务，那可能就是下面这样。</p>
+<p><img src="/image/javascript/eventloop/sync.png" alt="多线程示例"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt; 大概简介:
 &gt; CPU -&gt; 单个CPU一次只能运行一个任务
 &gt; 进程好比车间，CPU所处理的单个任务；任一时刻，CPU处理一个进程
-&gt; 一个车间有很多工人协同，线程好比车间工人，一个进程可以有多个线程，进程内享有空间共享。</pre></td></tr></table>
+&gt; 一个车间有很多工人协同，线程好比车间工人，一个进程可以有多个线程，进程内享有空间共享。
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>上图表明，多线程不仅占用多倍的系统资源，也闲置多倍的资源，这显然不合理。</p>
-
+</div><p>上图表明，多线程不仅占用多倍的系统资源，也闲置多倍的资源，这显然不合理。</p>
 <p>Event Loop就是为了解决这个问题而提出的。Wikipedia这样定义：</p>
-
 <blockquote>
 <p>&ldquo;Event Loop是一个程序结构，用于等待和发送消息和事件。(a programing construct that waits for and dispatches events or messages in a program .)&rdquo;</p>
 </blockquote>
-
-<p>简单来说，就是程序中设置两个线程:一个负责程序本身的运行，称为&rdquo;主线程&rdquo;; 另一个负责主线程与其他进程(主要是各种 I/O操作)的通信，被称为&rdquo;Event Loop线程&rdquo;（可以译为&rdquo;消息线程&rdquo;）。</p>
-
-<p><img src="/image/javascript/eventloop/event_loop.png" alt="Event Loop" /></p>
-
+<p>简单来说，就是程序中设置两个线程:一个负责程序本身的运行，称为&quot;主线程&quot;; 另一个负责主线程与其他进程(主要是各种 I/O操作)的通信，被称为&quot;Event Loop线程&quot;（可以译为&quot;消息线程&quot;）。</p>
+<p><img src="/image/javascript/eventloop/event_loop.png" alt="Event Loop"></p>
 <p>上图主线程的绿色部分，还是表示运行时间，而橙色部分表示空闲时间。每当遇到 I/O的时候，主线程就让Event Loop线程取通知相应的I/O程序，然后接着向后运行，所以不存在红色的等待时间。等到I/O程序完成操作，Event Loop线程再把结果返回主线程。主线程就调用事先设定的回调函数，完成整个任务。</p>
-
-<p>可以看到，由于多出了橙色的空闲时间，所以主线程得以运行更多的任务，这就提高了效率。这种方式称为&rdquo;异步模式&rdquo;（asynchronous I/O）或&rdquo;非阻塞模式&rdquo;（non-blocking mode）。</p>
-
+<p>可以看到，由于多出了橙色的空闲时间，所以主线程得以运行更多的任务，这就提高了效率。这种方式称为&quot;异步模式&quot;（asynchronous I/O）或&quot;非阻塞模式&quot;（non-blocking mode）。</p>
 <p>这正是javascript语言的运行方式。单线程模型虽然对Javascript构成了很大的限制，但也因此使它具备了其他语言不具备的优势。如果部署的好，Javascript程序是不会出现堵塞的，这就是为什么node.js平台可以用很少的资源，应付大流量访问的原因。</p>
-
 <blockquote>
 <p>转载自 <a href="http://www.ruanyifeng.com/blog/2013/10/event_loop.html">http://www.ruanyifeng.com/blog/2013/10/event_loop.html</a></p>
 </blockquote>
@@ -408,8 +394,8 @@
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         
-          <a class="next" href="/post/cours/front/react/react-study-01/">
-            <span class="next-text nav-default">React框架学习01</span>
+          <a class="next" href="/post/cours/front/react/npx/">
+            <span class="next-text nav-default">npx</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
@@ -430,8 +416,6 @@
 
   
   
-
-
 
         </div>
       </div>
@@ -486,7 +470,9 @@
 
   <span class="copyright-year">
     &copy;
-    2019
+    
+      2019 -
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -541,6 +527,12 @@
 
 
 
+
+
+
+
+
+
   
     <script type="text/javascript" src="/js/load-photoswipe.js"></script>
     <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
@@ -551,6 +543,8 @@
 
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
 
 
 
