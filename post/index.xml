@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Astar Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 30 Sep 2019 15:00:55 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Apr 2021 14:46:13 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VsCode创建自定义代码片段</title>
+      <link>https://mmmaxingxing.github.io/post/cours/tool/vscode/snippets/</link>
+      <pubDate>Thu, 01 Apr 2021 14:46:13 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/tool/vscode/snippets/</guid>
+      <description>Snippets vscode 提供的用户自定义代码提示设置 1 2 3 4 5 6 7 8 9 10 11 shift + ctrl + p ---&amp;gt; Snippets ---&amp;gt; 首选项配置用户代码片段 // 样式如下 &amp;#34;Print to console&amp;#34;: { &amp;#34;prefix&amp;#34;: &amp;#34;log&amp;#34;, &amp;#34;body&amp;#34;: [ &amp;#34;console.log(&amp;#39;$1&amp;#39;);&amp;#34;, &amp;#34;$2&amp;#34; ], &amp;#34;description&amp;#34;: &amp;#34;Log output to console&amp;#34; } 自定</description>
+    </item>
+    
     <item>
       <title>抓包工具记录</title>
       <link>https://mmmaxingxing.github.io/post/cours/tool/capture/</link>
@@ -177,15 +186,6 @@
       
       <guid>https://mmmaxingxing.github.io/post/cours/front/typescript/super/</guid>
       <description>前置知识 子类构造器中需要调用super; super实现继承，super.method() 这样就可以达到调用父类同名的方法.</description>
-    </item>
-    
-    <item>
-      <title>jsvascript中的宏任务和微任务</title>
-      <link>https://mmmaxingxing.github.io/post/cours/front/macro_micro_task/</link>
-      <pubDate>Thu, 18 Apr 2019 17:58:24 +0800</pubDate>
-      
-      <guid>https://mmmaxingxing.github.io/post/cours/front/macro_micro_task/</guid>
-      <description>javascript运行模式 javascript是一门单线程语言,我们常见理解是从上向下一行一行运行，但是，事实上同步单线程是不能满足我们常</description>
     </item>
     
   </channel>

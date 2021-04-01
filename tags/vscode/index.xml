@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vscode on Astar Blog</title>
+    <link>https://mmmaxingxing.github.io/tags/vscode/</link>
+    <description>Recent content in vscode on Astar Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 01 Apr 2021 14:46:13 +0800</lastBuildDate><atom:link href="https://mmmaxingxing.github.io/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VsCode创建自定义代码片段</title>
+      <link>https://mmmaxingxing.github.io/post/cours/tool/vscode/snippets/</link>
+      <pubDate>Thu, 01 Apr 2021 14:46:13 +0800</pubDate>
+      
+      <guid>https://mmmaxingxing.github.io/post/cours/tool/vscode/snippets/</guid>
+      <description>Snippets vscode 提供的用户自定义代码提示设置 1 2 3 4 5 6 7 8 9 10 11 shift + ctrl + p ---&amp;gt; Snippets ---&amp;gt; 首选项配置用户代码片段 // 样式如下 &amp;#34;Print to console&amp;#34;: { &amp;#34;prefix&amp;#34;: &amp;#34;log&amp;#34;, &amp;#34;body&amp;#34;: [ &amp;#34;console.log(&amp;#39;$1&amp;#39;);&amp;#34;, &amp;#34;$2&amp;#34; ], &amp;#34;description&amp;#34;: &amp;#34;Log output to console&amp;#34; } 自定</description>
+    </item>
+    
+  </channel>
+</rss>
